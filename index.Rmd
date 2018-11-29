@@ -1,0 +1,29 @@
+---
+title: ""
+output: 
+  html_document:
+   theme: flatly
+---
+```{r, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+## <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Instructors
+
+[Professor Nathan Taback](http://utstat.toronto.edu/~nathan/) and [Professor Fanny Chevalier](http://fannychevalier.net).
+
+## <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Syllabus
+
+## <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Course Calendar
+
+Important course dates can be found in the [course calender]().
+
+## <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Computing
+
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+R Markdown source for this website <a href="https://github.com/ntaback/UofT_STA130">
+<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+</a>

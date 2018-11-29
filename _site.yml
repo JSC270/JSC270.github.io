@@ -1,0 +1,20 @@
+name: jsc270website
+output_dir: '.'
+navbar:
+  title: JSC270 Winter 2019
+  left:
+  - text: Course Information
+    menu:
+    - text: Syllabus
+      icon: fas fa-info
+      href: 
+    - text: Course Calendar
+      icon: far fa-calendar-alt
+      href: 
+    - text: Course Content
+      icon: fa-slideshare
+      href: 
+output:
+  html_document:
+    lib_dir: site_libs
+    self_contained: no
