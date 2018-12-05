@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>JSC270H1S: Data Science I</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">JSC270 Winter 2019</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Course Information
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Syllabus</li>
+    <li class="dropdown-header">Course Calendar</li>
+    <li class="dropdown-header">Course Content</li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">JSC270H1S: Data Science I</h1>
+<h3 class="subtitle"><em>Syllabus - Draft (subject to change before the start of the course)</em></h3>
+<h4 class="date"><em>Winter 2019</em></h4>
+
+</div>
+
+
+<div id="teaching-team" class="section level2">
+<h2>Teaching Team</h2>
+<ul>
+<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. <a href="http://utstat.toronto.edu/nathan/">N. Taback</a>, SS6027C.</li>
+<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. <a href="http://fannychevalier.net">F. Chevalier</a>, BA5226.</li>
+<li>Email instructors: <a href="mailto:jsc270-winter2019@cs.toronto.edu">jsc270-winter2019@cs.toronto.edu</a></li>
+<li>Teaching assistants: Nicole Sultanum and Michael Moon.</li>
+</ul>
+</div>
+<div id="course-office-hours" class="section level2">
+<h2><i class="fa fa-clock-o" aria-hidden="true"></i> Course Office Hours</h2>
+<ul>
+<li>Prof. Taback, <mark>xxx</mark>.</li>
+<li>Prof. Chevalier, <mark>xxx</mark>.<br />
+</li>
+<li>The schedule of the TA office hours will be posted as soon as it is available.</li>
+</ul>
+</div>
+<div id="course-schedule" class="section level2">
+<h2><i class="fa fa-calendar-times-o" aria-hidden="true"></i> Course Schedule</h2>
+<div id="lectures" class="section level3">
+<h3><em>Lectures</em></h3>
+<ul>
+<li>Wednesdays, 12:00-14:00 in <a href="http://map.utoronto.ca/utsg/building/032A">WI523</a>.</li>
+<li>There is no lecture on February 20 (Reading Week)</li>
+</ul>
+</div>
+<div id="tutorials" class="section level3">
+<h3><em>Tutorials</em></h3>
+<ul>
+<li><p>Mondays, 12:00-14:00 in <a href="http://map.utoronto.ca/utsg/building/032A">WI523</a>.</p></li>
+<li>There are no tutorials on the following Mondays:
+<ul>
+<li>January 7. <mark>You should complete the online orientation 1) to R and R Studio, 2) to python and Jupyter notebook, and 3) to github in lieu of this tutorial. </mark></li>
+<li>February 18 (Reading Week)<br />
+</li>
+<li>March 11 (Mid-Term Test)</li>
+</ul></li>
+</ul>
+<div id="preparation" class="section level4">
+<h4><em>Preparation</em></h4>
+<ul>
+<li><strong>In between Wednesdays and Mondays:</strong> <mark>On Wednesdays, you will be provided with work to do in preparation for the next Monday’s tutorial. This may include computational work, readings, and/or practice problems. Often you will be required to submit part of this work before tutorial and to bring part of this completed work to the tutorial.</mark></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="course-description-and-learning-objectives" class="section level2">
+<h2><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description and Learning Objectives</h2>
+<p>Data Science is a relatively new interdisciplinary field that ecompasses statistic methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline. The purpose of this course is to give you a broad introduction to many of the ways analysts learn from data, including statistical reasoning, computation and communication. We will use both python and R programming languages and environments, and tutorials will introduce students to communicating statistical knowledge.</p>
+<p>Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary team.</p>
+<div id="learning-objectives" class="section level4">
+<h4>Learning objectives</h4>
+<p>By the end of this course, you should be able to:</p>
+<ul>
+<li>Seek and acquire data from various sources</li>
+<li>Assess the provenance, relevance and quality of third party data sets</li>
+<li>Understand what you can and you cannot do with third party data sets</li>
+<li><mark> Add more…</mark></li>
+<li>Work collaboratively in a multidisciplinary team</li>
+<li>Appropriately communicate the analytical processes and extracted knowledge to different audiences</li>
+</ul>
+</div>
+</div>
+<div id="topics" class="section level2">
+<h2><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Topics</h2>
+<ul>
+<li>Scraping and cleaning of data</li>
+<li>Data wrangling and summarizing data</li>
+<li>Statistical testing and estimation</li>
+<li>Statistical models for description <mark>and prediction </mark></li>
+<li>Data visualization</li>
+<li>Communicating processes and results</li>
+<li>Ethical issues in data collection and analysis</li>
+</ul>
+</div>
+<div id="course-website" class="section level2">
+<h2>Course Website</h2>
+<p>Class slides, notes, and other important information can be found on the <a href="https://jsc270.github.io/">course website.</a></p>
+</div>
+<div id="optional-course-textbooks" class="section level2">
+<h2><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Optional Course Textbooks</h2>
+<p><a href="https://www.crcpress.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9781498724487">Baumer, B.S., Kaplan, D.T., and Horton, N.J. Modern Data Science with R. 2017. CRC Press</a>.</p>
+<p><a href="https://www.openintro.org/stat/textbook.php?stat_book=isrs">Diez, D. M., Barr, C.D., and Cetinkaya-Rundel, M. Introdcutory Statistics with Randomization and Simulation First Edition</a>. This is a free book.</p>
+<p><a href="https://d1b10bmlvqabco.cloudfront.net/attach/ighbo26t3ua52t/igp9099yy4v10/igz7vp4w5su9/OReilly_HandsOn_Programming_with_R_2014.pdf">Hands-On Programming with R, by Garrett Grolemund</a>. This is a free book.</p>
+<p><a href="http://r4ds.had.co.nz">R for Data Science, by Hadley Wickham and Garrett Grolemund</a> is a wonderful resource. This is a free book.</p>
+</div>
+<div id="computing" class="section level2">
+<h2><i class="fa fa-code" aria-hidden="true"></i> Computing</h2>
+<p>See the different resource sections of the course website: - <a href="R_resources.html">R Resources section</a> - <mark> <a href="Python_resources.html">Python Resources section</a> </mark> - <mark> See the <a href="github_resources.html">github Resources section</a> </mark></p>
+</div>
+<div id="discussion-forum" class="section level2">
+<h2><i class="fa fa-forumbee" aria-hidden="true"></i> Discussion Forum</h2>
+<p>We will be using Piazza as a platform for discussions. You can find our class page at: <a href="https://piazza.com/utoronto.ca/fall2018/sta130h1/home" class="uri">https://piazza.com/utoronto.ca/fall2018/sta130h1/home</a>. Students will be able to post anonymously to classmates, but not instructors.</p>
+<p>Be sure to read Piazza’s <a href="https://piazza.com/legal/privacy">Privacy Policy</a> and <a href="https://piazza.com/legal/terms">Terms of Service</a> carefully. Take time to understand and be comfortable with what they say. They provide for substantial sharing and disclosure of your personal information held by Piazza, which affects your privacy. If you decide to participate in Piazza, only provide content that you are comfortable sharing under the terms of the Privacy Policy and Terms of Use.</p>
+</div>
+<div id="evaluation" class="section level2">
+<h2><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Evaluation</h2>
+<!--```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)
+eval <- read_csv(file = "JSC270-winter2019evaluation.csv",)
+knitr::kable(eval)
+```
+-->
+<div id="important-notes-about-tutorials" class="section level3">
+<h3>Important notes about tutorials</h3>
+<ul>
+<li><mark>Your tutorial grade includes any assigned work that is due before tutorial and any work done during tutorial. Note that if you miss a tutorial, there is no way to make up this component of your mark.</mark></li>
+</ul>
+</div>
+</div>
+<div id="missed-tests-or-assignments" class="section level2">
+<h2><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Tests or Assignments</h2>
+<ul>
+<li>If a test or tutorial work is missed for a valid medical reason, you must submit the University of Toronto Verification of <a href="http://www.illnessverification.utoronto.ca">Student Illness or Injury form</a> within one week of the test. Submit the form to your TA if it is related to missed tutorial work. Submit the form to your instructor if it is related to the test.</li>
+<li>The form will only be accepted as valid if the form is filled out according to the instructions on the form.</li>
+<li>The form must indicate that the degree of incapacitation on academic functioning is moderate, serious, or severe in order to be considered a valid medical reason for missing the term test. If the form indicates that the degree of incapacitation on academic functioning is negligible or mild then this will NOT be considered a valid medical reason.</li>
+<li>If a tutorial is missed for a valid reason then the weight for that tutorial work will be shifted to the remaining tutorials.</li>
+<li>If the term test is missed for a valid reason then the weight for the test will be shifted to the final exam. In other words, the final exam will be worth 57% of your final grade.<br />
+</li>
+<li>Other reasons for missing an assignment, tutorial work, or the term test will require prior approval by your instructor. If prior approval is not received for non-medical reasons then you will receive a grade of zero for the missed assignment, tutorial work, or test.</li>
+</ul>
+</div>
+<div id="marking-concerns" class="section level2">
+<h2><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Marking Concerns</h2>
+<p>Any requests to have your test remarked must contain a written justification for consideration. Remarking requests should be made within one week of receiving your test results. Re-evaluation appeals are at the discretion of the instructors. Note that adjustments in marks will be rare and could equally result in a lowering or raising of the mark. If a re-revaluation is completed by the instructors, the student must accept the resulting mark as the new mark, whether it goes up or down or remains the same. When appealing a re-evaluation decision, the student accepts this condition.</p>
+</div>
+<div id="how-to-communicate-with-your-instructors" class="section level2">
+<h2><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> How to Communicate with Your Instructors</h2>
+<p>Always use your utoronto.ca e-mail account to ensure that your message doesn’t automatically go to a Junk folder and include your full name and student number. Violation to this policy may incur severe response delays. Allow up to 72 hours for a reply.</p>
+<p>Questions about course material or organization, such as,</p>
+<ul>
+<li>What do I change the colour of my plotting symbol?</li>
+<li>How do I do question 3.7 in the textbook?</li>
+<li>What is the difference between supervised and unsupervised learning?</li>
+<li>When is the term test?</li>
+</ul>
+<p><mark>should be posted on the discussion forums on Piazza or asked in person</mark>. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.</p>
+<p>If your communication is private, such as, I missed the test because I was ill, then e-mail both instructors (<a href="mailto:jsc270-winter2019@cs.toronto.edu">jsc270-winter2019@cs.toronto.edu</a>). If you missed a tutorial then e-mail both TAs.</p>
+</div>
+<div id="academic-integrity" class="section level2">
+<h2><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Academic Integrity</h2>
+<p>You are responsible for knowing the content of the <a href="http://www.governingcouncil.utoronto.ca/policies/behaveac.htm">University of Toronto’s Code of Behaviour on Academic Matters</a>.</p>
+<p>As a general rule, we encourage you to discuss course material with each other and ask others for advice. However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in. When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class. For example, “For question 2.1 what R function did you use?” is a fair question; “Please show me your R code for question 2.1” is not.</p>
+<p>If you have any questions about what is or is not permitted in this course, please do not hesitate to contact your instructors (<a href="mailto:fanny.chevalier@utoronto.ca">Prof. Chevalier</a> if your last (family) name starts with A-L and <a href="mailto:nathan.taback@utoronto.ca">Prof. Taback</a> if your last (family) name starts with M-Z).</p>
+</div>
+<div id="accessibility-needs" class="section level2">
+<h2><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs</h2>
+<p>The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have any accessibility concerns about the course, the class room, or course materials, please contact Accessibility Services as soon as possible: <a href="mailto:accessibility.services@utoronto.ca">accessibility.services@utoronto.ca</a> or <a href="http://accessibility.utoronto.ca" class="uri">http://accessibility.utoronto.ca</a></p>
+</div>
+<div id="your-responsibilities" class="section level2">
+<h2><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities</h2>
+<p>The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. <mark>In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings. </mark></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
