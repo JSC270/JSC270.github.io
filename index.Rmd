@@ -13,23 +13,34 @@ output:
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
+<br>
+
 ## Teaching Team
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [N. Taback](http://utstat.toronto.edu/nathan/), SS6027C.
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [F. Chevalier](http://fannychevalier.net), BA5226.
 - <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email instructors: jsc270-winter2019@cs.toronto.edu
 - Teaching assistants: Nicole Sultanum and Michael Moon.
 
+<br>
 
-## <i class="fa fa-clock-o" aria-hidden="true"></i> Office Hours
+******
+
+## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 - Prof. Taback, <mark>xxx</mark>.
 - Prof. Chevalier, <mark>xxx</mark>.  
 - The schedule of the TA office hours will be posted as soon as it is available.
 
-## <i class="fa fa-clock-o" aria-hidden="true"></i> Class Times and Location 
+<br>
+
+******
+
+## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Class Times and Location 
 
 ### _Lectures_
 - Wednesdays, 12:00-14:00 in [WI523](http://map.utoronto.ca/utsg/building/032A).
 - There is no lecture on February 20 (Reading Week)
+
+<br>
 
 ### _Tutorials_
 - Mondays, 12:00-14:00 in [WI523](http://map.utoronto.ca/utsg/building/032A).  
@@ -39,13 +50,19 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
       + February 18 (Reading Week)  
       + March 11 (Mid-Term Test)
 
+<br>
+
+******
+
 ## <span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description and Learning Objectives 
 
 Data Science is a relatively new interdisciplinary field that ecompasses statistic methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline.  The purpose of this course is to give you a broad introduction to many of the ways analysts learn from data, including statistical reasoning, computation and communication. We will use both python and R programming languages and environments, and tutorials will introduce students to communicating statistical knowledge.
 
 Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary team.
 
-#### Learning objectives 
+<br>
+
+### <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives 
 
 By the end of this course, you should be able to:
 
@@ -55,6 +72,10 @@ By the end of this course, you should be able to:
 - <mark> Add more...</mark>
 - Work collaboratively in a multidisciplinary team
 - Appropriately communicate the analytical processes and extracted knowledge to different audiences
+
+<br>
+
+******
 
 ## <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Topics 
 
@@ -66,17 +87,27 @@ By the end of this course, you should be able to:
 - Communicating processes and results
 - Ethical issues in data collection and analysis
 
+<br>
+
+******
+
 ## <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Course Website
 
 Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
 
+<br>
+
+******
 
 ## <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Calendar
 
 Coming soon
 
+<br>
 
-## <i class="fa fa-code" aria-hidden="true"></i> Computing
+******
+
+## <i class="glyphicon glyphicon-console" aria-hidden="true"></i> Computing
 
 See the different resource sections of the course website:
 
@@ -84,32 +115,46 @@ See the different resource sections of the course website:
 - [Python Resources section](Python_resources.html) (coming soon)
 - [github Resources section](github_resources.html) (coming soon)
 
+<br>
+
+******
 
 ## <i class="glyphicon glyphicon-book" aria-hidden="true"></i> Optional Course Textbooks
 
 Coming soon
 
+<br>
+
+******
 
 ## <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation
 
 Coming soon
 
+<br>
+
+******
 
 ## <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policy
 
+<br>
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Tests or Assignments
 
-- If a test or tutorial work is missed for a valid medical reason, you must submit the University of Toronto Verification of [Student Illness or Injury form](http://www.illnessverification.utoronto.ca) within one week of the test.  Submit the form to your TA if it is related to missed tutorial work.  Submit the form to your instructor if it is related to the test.
+- If a test or tutorial work is missed for a valid medical reason, you must submit the University of Toronto Verification of [Student Illness or Injury form](http://www.illnessverification.utoronto.ca) within one week.  Submit the form to your TA if it is related to missed tutorial work.  Submit the form to both of your instructors if it is related to the test.
 - The form will only be accepted as valid if the form is filled out according to the instructions on the form.
 - The form must indicate that the degree of incapacitation on academic functioning is moderate, serious, or severe in order to be considered a valid medical reason for missing the term test. If the form indicates that the degree of incapacitation on academic functioning is negligible or mild then this will NOT be considered a valid medical reason.
 - If a tutorial is missed for a valid reason then the weight for that tutorial work will be shifted to the remaining tutorials.
-- If the term test is missed for a valid reason then the weight for the test will be shifted to the final exam.  In other words, the final exam will be worth 57% of your final grade.  
-- Other reasons for missing an assignment, tutorial work, or the term test will require prior approval by your instructor. If prior approval is not received for non-medical reasons then you will receive a grade of zero for the missed assignment, tutorial work, or test.
+- <mark>If the term test is missed for a valid reason then the weight for the test will be shifted to the final exam.  In other words, the final exam will be worth 57% of your final grade.</mark>
+- Other reasons for missing an assignment, tutorial work, or the term test will require prior approval by your instructors. If prior approval is not received for non-medical reasons then you will receive a grade of zero for the missed assignment, tutorial work, or test.
+
+<br>
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Marking Concerns
 
 Any requests to have your test remarked must contain a written justification for consideration.  Remarking requests should be made within one week of receiving your test results.  Re-evaluation appeals are at the discretion of the instructors.  Note that adjustments in marks will be rare and could equally result in a lowering or raising of the mark.  If a re-revaluation is completed by the instructors, the student must accept the resulting mark as the new mark, whether it goes up or down or remains the same.  When appealing a re-evaluation decision, the student accepts this condition.
+
+<br>
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> How to Communicate with Your Instructors
 
@@ -124,10 +169,9 @@ Questions about course material or organization, such as,
 
 <mark>should be posted on the discussion forums on Piazza or asked in person</mark>. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.
 
-If your communication is private, such as, I missed the test because I was ill, then e-mail both instructors (jsc270-winter2019@cs.toronto.edu).  If you missed a tutorial then e-mail both TAs.
+If your communication is private, such as, I missed the test because I was ill, then e-mail both instructors (jsc270-winter2019@cs.toronto.edu).  If you missed a tutorial then e-mail your TAs.
 
-
-
+<br>
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Academic Integrity
 
@@ -135,17 +179,25 @@ You are responsible for knowing the content of the [University of Toronto’s Co
 
 As a general rule, we encourage you to discuss course material with each other and ask others for advice.  However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in.  When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class.  For example, "For question 2.1 what R function did you use?" is a fair question; "Please show me your R code for question 2.1" is not.
 
-If you have any questions about what is or is not permitted in this course, please do not hesitate to contact your instructors ([Prof. Chevalier](mailto:fanny.chevalier@utoronto.ca) if your last (family) name starts with A-L and [Prof. Taback](mailto:nathan.taback@utoronto.ca) if your last (family) name starts with M-Z).
+If you have any questions about what is or is not permitted in this course, please do not hesitate to contact [your instructors](mailto:jsc270-winter2019@cs.toronto.edu).
+
+<br>
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs
 
 The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have any accessibility concerns about the course, the class room, or course materials, please contact Accessibility Services as soon as possible: <accessibility.services@utoronto.ca> or <http://accessibility.utoronto.ca>
 
-### <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities
+<br>
+
+******
+
+## <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities
 
 The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. <mark>In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings. </mark>
 
 <br>
+
+******
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 

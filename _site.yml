@@ -7,7 +7,7 @@ navbar:
     menu:
     - text: Syllabus
       icon: fas fa-info
-      href: 
+      href: https://jsc270.github.io/index.html
     - text: Course Calendar
       icon: far fa-calendar-alt
       href: 
