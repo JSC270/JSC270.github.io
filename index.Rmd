@@ -13,16 +13,19 @@ output:
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
-## <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Teaching Team
+## Teaching Team
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [N. Taback](http://utstat.toronto.edu/nathan/), SS6027C.
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [F. Chevalier](http://fannychevalier.net), BA5226.
-- Email instructors: jsc270-winter2019@cs.toronto.edu
+- <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email instructors: jsc270-winter2019@cs.toronto.edu
 - Teaching assistants: Nicole Sultanum and Michael Moon.
 
-## <i class="fa fa-clock-o" aria-hidden="true"></i> Course Office Hours 
+
+## <i class="fa fa-clock-o" aria-hidden="true"></i> Office Hours
 - Prof. Taback, <mark>xxx</mark>.
 - Prof. Chevalier, <mark>xxx</mark>.  
 - The schedule of the TA office hours will be posted as soon as it is available.
+
+## <i class="fa fa-clock-o" aria-hidden="true"></i> Class Times and Location 
 
 ### _Lectures_
 - Wednesdays, 12:00-14:00 in [WI523](http://map.utoronto.ca/utsg/building/032A).
@@ -63,30 +66,39 @@ By the end of this course, you should be able to:
 - Communicating processes and results
 - Ethical issues in data collection and analysis
 
-## Course Website
+## <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Course Website
 
 Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
 
 
-## <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Course Calendar
+## <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Calendar
 
 Coming soon
 
-Important course dates can be found in the [course calender]().
 
 ## <i class="fa fa-code" aria-hidden="true"></i> Computing
 
 See the different resource sections of the course website:
-- [R Resources section](R_resources.html)
-- <mark> [Python Resources section](Python_resources.html) </mark>
-- <mark> See the [github Resources section](github_resources.html) </mark>
+
+- [R Resources section](R_resources.html) (coming soon)
+- [Python Resources section](Python_resources.html) (coming soon)
+- [github Resources section](github_resources.html) (coming soon)
 
 
-## <span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Evaluation
+## <i class="glyphicon glyphicon-book" aria-hidden="true"></i> Optional Course Textbooks
 
 Coming soon
 
-## <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Tests or Assignments
+
+## <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation
+
+Coming soon
+
+
+## <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policy
+
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Tests or Assignments
 
 - If a test or tutorial work is missed for a valid medical reason, you must submit the University of Toronto Verification of [Student Illness or Injury form](http://www.illnessverification.utoronto.ca) within one week of the test.  Submit the form to your TA if it is related to missed tutorial work.  Submit the form to your instructor if it is related to the test.
 - The form will only be accepted as valid if the form is filled out according to the instructions on the form.
@@ -95,11 +107,11 @@ Coming soon
 - If the term test is missed for a valid reason then the weight for the test will be shifted to the final exam.  In other words, the final exam will be worth 57% of your final grade.  
 - Other reasons for missing an assignment, tutorial work, or the term test will require prior approval by your instructor. If prior approval is not received for non-medical reasons then you will receive a grade of zero for the missed assignment, tutorial work, or test.
 
-## <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Marking Concerns
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Marking Concerns
 
 Any requests to have your test remarked must contain a written justification for consideration.  Remarking requests should be made within one week of receiving your test results.  Re-evaluation appeals are at the discretion of the instructors.  Note that adjustments in marks will be rare and could equally result in a lowering or raising of the mark.  If a re-revaluation is completed by the instructors, the student must accept the resulting mark as the new mark, whether it goes up or down or remains the same.  When appealing a re-evaluation decision, the student accepts this condition.
 
-## <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> How to Communicate with Your Instructors
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> How to Communicate with Your Instructors
 
 Always use your utoronto.ca e-mail account to ensure that your message doesn’t automatically go to a Junk folder and include your full name and student number. Violation to this policy may incur severe response delays. Allow up to 72 hours for a reply.
 
@@ -117,9 +129,7 @@ If your communication is private, such as, I missed the test because I was ill, 
 
 
 
-
-
-## <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Academic Integrity
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Academic Integrity
 
 You are responsible for knowing the content of the [University of Toronto’s Code of Behaviour on Academic Matters](http://www.governingcouncil.utoronto.ca/policies/behaveac.htm).
 
@@ -127,11 +137,11 @@ As a general rule, we encourage you to discuss course material with each other a
 
 If you have any questions about what is or is not permitted in this course, please do not hesitate to contact your instructors ([Prof. Chevalier](mailto:fanny.chevalier@utoronto.ca) if your last (family) name starts with A-L and [Prof. Taback](mailto:nathan.taback@utoronto.ca) if your last (family) name starts with M-Z).
 
-## <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs
 
 The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have any accessibility concerns about the course, the class room, or course materials, please contact Accessibility Services as soon as possible: <accessibility.services@utoronto.ca> or <http://accessibility.utoronto.ca>
 
-## <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities
+### <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities
 
 The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. <mark>In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings. </mark>
 
