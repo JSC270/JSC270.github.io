@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>R Resources for JSC270</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">JSC270 Winter 2019</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Course Information
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://jsc270.github.io/index.html">
+        <span class="fas fa fas fa-info"></span>
+         
+        Syllabus
+      </a>
+    </li>
+    <li class="dropdown-header">Course Calendar</li>
+    <li class="dropdown-header">Course Content</li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://jsc270.github.io/R_resources.html">
+        <span class="fab fa fab fa-r-project"></span>
+         
+        R Resources
+      </a>
+    </li>
+    <li>
+      <a href="https://jsc270.github.io/Python_resources.html">
+        <span class="fab fa fab fa-python"></span>
+         
+        Python Resources
+      </a>
+    </li>
+    <li>
+      <a href="https://jsc270.github.io/Github_resources.html">
+        <span class="far fa far fa-github"></span>
+         
+        Github Resources
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    External Links
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://piazza.com/class/jpdcniqs4r36rj#">
+        <span class="fas fa fas fa-comments"></span>
+         
+        Piazza Discussion Board
+      </a>
+    </li>
+    <li>
+      <a href="q.utoronto.ca">
+        <span class="fas fa fas fa-quora"></span>
+         
+        Quercus
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">R Resources for JSC270</h1>
+
+</div>
+
+
+<p>There are lots of free resources available for learning R. This page contains some excellent resources, but we certainly can’t list all the excellent resources available.</p>
+<p><br></p>
+<hr />
+<div id="running-r" class="section level1">
+<h1>Running R</h1>
+<p><a href= "https://www.r-project.org"><i class="fab fa-r-project fa-1x"></i></a> is a software environment for statistical computing and graphics that can be freely downloaded at <a href="https://cran.r-project.org">CRAN</a>.</p>
+<p><a href="https://www.rstudio.com">RStudio</a> is a popular integrated development environment for <i class="fab fa-r-project fa-1x"></i> that we will be using throughout the course.</p>
+<p>There are two ways that students can run R using RStudio:</p>
+<ol style="list-style-type: decimal">
+<li><p>Create an account on <a href="https://rstudio.cloud">RStudio Cloud</a>.</p></li>
+<li><p>Install RStudio on your computer. A desktop version is available to <a href="https://www.rstudio.com/products/rstudio/#Desktop">download</a> on to your personal computer for free.</p></li>
+</ol>
+<p><br></p>
+<p class="yourturn">
+<i class="fas fa-puzzle-piece" aria-hidden="true"></i> <strong> Test your setup! </strong><br><br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</p>
+<p><br></p>
+<hr />
+</div>
+<div id="getting-started-with-r" class="section level1">
+<h1>Getting Started with R</h1>
+<ul>
+<li>If you have never programmed before then <a href="https://d1b10bmlvqabco.cloudfront.net/attach/ighbo26t3ua52t/igp9099yy4v10/igz7vp4w5su9/OReilly_HandsOn_Programming_with_R_2014.pdf">Hands-On Programming with R, by Garrett Grolemund</a> is a great place to start.</li>
+<li><a href="http://r4ds.had.co.nz">R for Data Science, by Hadley Wickham and Garrett Grolemund</a> is a wonderful resource.</li>
+<li><a href="https://www.datacamp.com">Datacamp</a> offers a free online <a href="https://www.datacamp.com/courses/free-introduction-to-r">Introduction to R</a>.</li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="r-style-guide" class="section level1">
+<h1>R Style Guide</h1>
+<blockquote>
+<p>Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread. Just as with punctuation, while there are many code styles to choose from, some are more reader-friendly than others. <em>Hadley Wickham, <a href="http://style.tidyverse.org/index.html">Tidyverse Style Guide</a>.</em></p>
+</blockquote>
+<p>When you write code, especially when it will be read by other people (e.g., your TA), refer to the <a href="http://style.tidyverse.org/index.html">Tidyverse Style Guide</a> for best practices.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p><a href="http://rmarkdown.rstudio.com">R Markdown</a> documents can be used to create documents that weave together code and text.</p>
+<p>An R Markdown Cheat Sheet downloaded from <a href="https://www.rstudio.com/resources/cheatsheets/">RStudio</a> is available <a href="rmarkdown-2.0.pdf">here</a>.</p>
+<p>A guide to producing R Markdown documents for class assignments is available <a href="Rmarkdownforclassreports.html">here</a>. This guide also includes a short introduction to <span class="math inline">\(\LaTeX\)</span> for including math in R Markdown.</p>
+<p><br></p>
+<p class="yourturn">
+<i class="fas fa-puzzle-piece" aria-hidden="true"></i> <strong> Test your setup! </strong><br><br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</p>
+<p><br></p>
+<hr />
+</div>
+<div id="getting-help-with-r" class="section level1">
+<h1>Getting Help with R</h1>
+<p>Students can always ask a member of the teaching staff for help during office hours, tutorial, or on the class <a href="https://piazza.com/utoronto.ca/winter2018/sta130h1/home">discussion forum</a>.</p>
+<p><a href="https://stackoverflow.com">stackoverflow</a> is a popular forum for posting and answering questions related to programming. Questions tagged R can be found <a href="https://stackoverflow.com/questions/tagged/r">here</a> and questions tagged RStudio can be found <a href="https://stackoverflow.com/questions/tagged/rstudio">here</a>.</p>
+<p><br></p>
+<hr />
+<p>R Markdown source for this page <a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/R_resources.Rmd"> <i class="fa fa-github fa-2x" aria-hidden="true"></i> </a></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

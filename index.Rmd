@@ -1,6 +1,6 @@
 ---
 title: "JSC270H1S: Data Science I"
-subtitle: "Syllabus - Draft (subject to change before the start of the course)"
+subtitle: "Syllabus - <mark>Draft (subject to change before the start of the course)</mark>"
 date: Winter 2019
 
 output: 
@@ -10,14 +10,14 @@ output:
    theme: flatly
 ---
 
-```{r, include=FALSE}
+```{r setup, include=FALSE}
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
 
 <br>
 
-## Teaching Team
+## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [N. Taback](http://utstat.toronto.edu/nathan/), SS6027C.
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [F. Chevalier](http://fannychevalier.net), BA5226.
 - <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email instructors: jsc270-winter2019@cs.toronto.edu
@@ -38,6 +38,8 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 ## <i class="glyphicon glyphicon-blackboard" aria-hidden="true"></i> Class Times and Location 
 
+<br>
+
 ### _Lectures_
 - Wednesdays, 12:00-14:00 in [WI523](http://map.utoronto.ca/utsg/building/032A).
 - There is no lecture on February 20 (Reading Week)
@@ -48,7 +50,7 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 - Mondays, 12:00-14:00 in [WI523](http://map.utoronto.ca/utsg/building/032A).  
 
 - There are no tutorials on the following Mondays:  
-      + January 7. <mark>You should complete the online orientation 1) to R and R Studio, 2) to python and Jupyter notebook, and 3) to github in lieu of this tutorial. </mark>
+      + January 7. <mark>You should complete the online orientation in lieu of this tutorial. </mark>
       + February 18 (Reading Week)  
       + March 11 (Mid-Term Test)
 
@@ -56,7 +58,7 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 ******
 
-## <span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description and Learning Objectives 
+## <span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description 
 
 Data Science is a relatively new interdisciplinary field that ecompasses statistic methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline.  The purpose of this course is to give you a broad introduction to many of the ways analysts learn from data, including statistical reasoning, computation and communication. We will use both python and R programming languages and environments, and tutorials will introduce students to communicating statistical knowledge.
 
@@ -64,23 +66,18 @@ Through this course, you will gain experience working on data science projects t
 
 <br>
 
-### <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives 
+******
+
+## <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives 
 
 By the end of this course, you should be able to:
 
+- <mark> Revise this list</mark>
 - Seek and acquire data from various sources
 - Assess the provenance, relevance and quality of third party data sets
 - Understand what you can and you cannot do with third party data sets
-- <mark> Add more...</mark>
 - Work collaboratively in a multidisciplinary team
 - Appropriately communicate the analytical processes and extracted knowledge to different audiences
-
-<br>
-
-******
-
-## <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Topics 
-
 - Scraping and cleaning of data
 - Data wrangling and summarizing data
 - Statistical testing and estimation
@@ -93,9 +90,12 @@ By the end of this course, you should be able to:
 
 ******
 
-## <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Course Website
+## <span class="fas fa-globe" aria-hidden="true"></span> Course Website
 
-Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
+- Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
+- Questions and Answers can be posted on the [course discussion board (Piazza)](https://piazza.com/class/jpdcniqs4r36rj#)
+- Assignments are to be submitted on [Quercus](http://q.utoronto.ca)
+
 
 <br>
 
@@ -109,13 +109,15 @@ Coming soon
 
 ******
 
-## <i class="glyphicon glyphicon-console" aria-hidden="true"></i> Computing
+## <i class="fas fa-code" aria-hidden="true"></i> Computing
 
-See the different resource sections of the course website:
+The course will use [python](https://www.python.org/), [R](https://www.r-project.org/) and [R markdown](https://rmarkdown.rstudio.com/) for computing.
 
-- [R Resources section](R_resources.html) (coming soon)
-- [Python Resources section](Python_resources.html) (coming soon)
-- [github Resources section](github_resources.html) (coming soon)
+Before the classes start, you are required to set up your environment on your personal computer and complete the instructions in the following online resources:
+
+- <span class="fab fa-r-project" aria-hidden="true"></span> [R, R Studio and R Markdown Resources section]() (coming soon)
+- <span class="fab fa-python" aria-hidden="true"></span> [Python and Jupyter Notebook Resources section](Python_resources.html) (coming soon)
+- <span class="fa fa-github" aria-hidden="true"></span> [Github Resources section](github_resources.html) (coming soon)
 
 <br>
 
@@ -169,9 +171,9 @@ Questions about course material or organization, such as,
 - What is the difference between supervised and unsupervised learning?
 - When is the term test?
 
-<mark>should be posted on the discussion forums on Piazza or asked in person</mark>. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.
+should be posted on the discussion forums on [Piazza](https://piazza.com/class/jpdcniqs4r36rj#) or asked in person. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.
 
-If your communication is private, such as, I missed the test because I was ill, then e-mail both instructors (jsc270-winter2019@cs.toronto.edu).  If you missed a tutorial then e-mail your TAs.
+If your communication is private, such as, "I missed the test because I was ill"", then e-mail both instructors (jsc270-winter2019@cs.toronto.edu).  If you missed a tutorial then e-mail your TAs.
 
 <br>
 
@@ -195,7 +197,7 @@ The University of Toronto is committed to accessibility. If you require accommod
 
 ## <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities
 
-The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. <mark>In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings. </mark>
+The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings.
 
 <br>
 

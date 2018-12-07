@@ -299,6 +299,59 @@ div.tocify {
     <li class="dropdown-header">Course Content</li>
   </ul>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://jsc270.github.io/R_resources.html">
+        <span class="fab fa fab fa-r-project"></span>
+         
+        R Resources
+      </a>
+    </li>
+    <li>
+      <a href="https://jsc270.github.io/Python_resources.html">
+        <span class="fab fa fab fa-python"></span>
+         
+        Python Resources
+      </a>
+    </li>
+    <li>
+      <a href="https://jsc270.github.io/Github_resources.html">
+        <span class="far fa far fa-github"></span>
+         
+        Github Resources
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    External Links
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://piazza.com/class/jpdcniqs4r36rj#">
+        <span class="fas fa fas fa-comments"></span>
+         
+        Piazza Discussion Board
+      </a>
+    </li>
+    <li>
+      <a href="q.utoronto.ca">
+        <span class="fas fa fas fa-quora"></span>
+         
+        Quercus
+      </a>
+    </li>
+  </ul>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -312,7 +365,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">JSC270H1S: Data Science I</h1>
-<h3 class="subtitle"><em>Syllabus - Draft (subject to change before the start of the course)</em></h3>
+<h3 class="subtitle"><em>Syllabus - <mark>Draft (subject to change before the start of the course)</mark></em></h3>
 <h4 class="date"><em>Winter 2019</em></h4>
 
 </div>
@@ -320,7 +373,7 @@ div.tocify {
 
 <p><br></p>
 <div id="teaching-team" class="section level2">
-<h2>Teaching Team</h2>
+<h2><i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team</h2>
 <ul>
 <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. <a href="http://utstat.toronto.edu/nathan/">N. Taback</a>, SS6027C.</li>
 <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. <a href="http://fannychevalier.net">F. Chevalier</a>, BA5226.</li>
@@ -343,6 +396,7 @@ div.tocify {
 </div>
 <div id="class-times-and-location" class="section level2">
 <h2><i class="glyphicon glyphicon-blackboard" aria-hidden="true"></i> Class Times and Location</h2>
+<p><br></p>
 <div id="lectures" class="section level3">
 <h3><em>Lectures</em></h3>
 <ul>
@@ -357,7 +411,7 @@ div.tocify {
 <li><p>Mondays, 12:00-14:00 in <a href="http://map.utoronto.ca/utsg/building/032A">WI523</a>.</p></li>
 <li>There are no tutorials on the following Mondays:
 <ul>
-<li>January 7. <mark>You should complete the online orientation 1) to R and R Studio, 2) to python and Jupyter notebook, and 3) to github in lieu of this tutorial. </mark></li>
+<li>January 7. <mark>You should complete the online orientation in lieu of this tutorial. </mark></li>
 <li>February 18 (Reading Week)<br />
 </li>
 <li>March 11 (Mid-Term Test)</li>
@@ -367,29 +421,23 @@ div.tocify {
 <hr />
 </div>
 </div>
-<div id="course-description-and-learning-objectives" class="section level2">
-<h2><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description and Learning Objectives</h2>
+<div id="course-description" class="section level2">
+<h2><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description</h2>
 <p>Data Science is a relatively new interdisciplinary field that ecompasses statistic methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline. The purpose of this course is to give you a broad introduction to many of the ways analysts learn from data, including statistical reasoning, computation and communication. We will use both python and R programming languages and environments, and tutorials will introduce students to communicating statistical knowledge.</p>
 <p>Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary team.</p>
 <p><br></p>
-<div id="learning-objectives" class="section level3">
-<h3><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives</h3>
+<hr />
+</div>
+<div id="learning-objectives" class="section level2">
+<h2><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives</h2>
 <p>By the end of this course, you should be able to:</p>
 <ul>
+<li><mark> Revise this list</mark></li>
 <li>Seek and acquire data from various sources</li>
 <li>Assess the provenance, relevance and quality of third party data sets</li>
 <li>Understand what you can and you cannot do with third party data sets</li>
-<li><mark> Add more…</mark></li>
 <li>Work collaboratively in a multidisciplinary team</li>
 <li>Appropriately communicate the analytical processes and extracted knowledge to different audiences</li>
-</ul>
-<p><br></p>
-<hr />
-</div>
-</div>
-<div id="topics" class="section level2">
-<h2><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Topics</h2>
-<ul>
 <li>Scraping and cleaning of data</li>
 <li>Data wrangling and summarizing data</li>
 <li>Statistical testing and estimation</li>
@@ -402,8 +450,12 @@ div.tocify {
 <hr />
 </div>
 <div id="course-website" class="section level2">
-<h2><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Course Website</h2>
-<p>Class slides, notes, and other important information can be found on the <a href="https://jsc270.github.io/">course website.</a></p>
+<h2><span class="fas fa-globe" aria-hidden="true"></span> Course Website</h2>
+<ul>
+<li>Class slides, notes, and other important information can be found on the <a href="https://jsc270.github.io/">course website.</a></li>
+<li>Questions and Answers can be posted on the <a href="https://piazza.com/class/jpdcniqs4r36rj#">course discussion board (Piazza)</a></li>
+<li>Assignments are to be submitted on <a href="http://q.utoronto.ca">Quercus</a></li>
+</ul>
 <p><br></p>
 <hr />
 </div>
@@ -414,12 +466,13 @@ div.tocify {
 <hr />
 </div>
 <div id="computing" class="section level2">
-<h2><i class="glyphicon glyphicon-console" aria-hidden="true"></i> Computing</h2>
-<p>See the different resource sections of the course website:</p>
+<h2><i class="fas fa-code" aria-hidden="true"></i> Computing</h2>
+<p>The course will use <a href="https://www.python.org/">python</a>, <a href="https://www.r-project.org/">R</a> and <a href="https://rmarkdown.rstudio.com/">R markdown</a> for computing.</p>
+<p>Before the classes start, you are required to set up your environment on your personal computer and complete the instructions in the following online resources:</p>
 <ul>
-<li><a href="R_resources.html">R Resources section</a> (coming soon)</li>
-<li><a href="Python_resources.html">Python Resources section</a> (coming soon)</li>
-<li><a href="github_resources.html">github Resources section</a> (coming soon)</li>
+<li><span class="fab fa-r-project" aria-hidden="true"></span> <a href="">R, R Studio and R Markdown Resources section</a> (coming soon)</li>
+<li><span class="fab fa-python" aria-hidden="true"></span> <a href="Python_resources.html">Python and Jupyter Notebook Resources section</a> (coming soon)</li>
+<li><span class="fa fa-github" aria-hidden="true"></span> <a href="github_resources.html">Github Resources section</a> (coming soon)</li>
 </ul>
 <p><br></p>
 <hr />
@@ -466,8 +519,8 @@ div.tocify {
 <li>What is the difference between supervised and unsupervised learning?</li>
 <li>When is the term test?</li>
 </ul>
-<p><mark>should be posted on the discussion forums on Piazza or asked in person</mark>. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.</p>
-<p>If your communication is private, such as, I missed the test because I was ill, then e-mail both instructors (<a href="mailto:jsc270-winter2019@cs.toronto.edu">jsc270-winter2019@cs.toronto.edu</a>). If you missed a tutorial then e-mail your TAs.</p>
+<p>should be posted on the discussion forums on <a href="https://piazza.com/class/jpdcniqs4r36rj#">Piazza</a> or asked in person. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.</p>
+<p>If your communication is private, such as, “I missed the test because I was ill”“, then e-mail both instructors (<a href="mailto:jsc270-winter2019@cs.toronto.edu">jsc270-winter2019@cs.toronto.edu</a>). If you missed a tutorial then e-mail your TAs.</p>
 <p><br></p>
 </div>
 <div id="academic-integrity" class="section level3">
@@ -486,7 +539,7 @@ div.tocify {
 </div>
 <div id="your-responsibilities" class="section level2">
 <h2><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities</h2>
-<p>The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. <mark>In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings. </mark></p>
+<p>The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings.</p>
 <p><br></p>
 <hr />
 <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
