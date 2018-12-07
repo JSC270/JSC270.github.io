@@ -9,9 +9,11 @@ output:
    toc_float: true
    theme: flatly
 ---
+
 ```{r, include=FALSE}
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
+
 
 <br>
 
@@ -27,14 +29,14 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 - Prof. Taback, <mark>xxx</mark>.
-- Prof. Chevalier, <mark>xxx</mark>.  
+- Prof. Chevalier, Tuesdays, 2-4PM.  
 - The schedule of the TA office hours will be posted as soon as it is available.
 
 <br>
 
 ******
 
-## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Class Times and Location 
+## <i class="glyphicon glyphicon-blackboard" aria-hidden="true"></i> Class Times and Location 
 
 ### _Lectures_
 - Wednesdays, 12:00-14:00 in [WI523](http://map.utoronto.ca/utsg/building/032A).
