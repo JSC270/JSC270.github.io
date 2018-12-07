@@ -1,8 +1,12 @@
-p.yourturn {
-  background-color: #DBDBDB;
+div.yourturn {
+  background-color: #F5F5F5;
   padding: 10px;
   border: 1px solid black;
-  margin-left: 25px;
+  margin-left: 10%;
   border-radius: 5px;
-  font-style: italic;
+  width: 70%;
+}
+
+div.indent {
+  margin-left: 20px;
 }

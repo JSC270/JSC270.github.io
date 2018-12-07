@@ -7,7 +7,6 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
@@ -31,11 +30,28 @@ There are two ways that students can run R using RStudio:
 
 <br>
 
-<p class="yourturn">
+<div class="yourturn">
 <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
 <strong> Test your setup! </strong><br><br>
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-</p>
+
+1. Create a new project in RStudio (desktop or cloud version), and create a new R script file
+2. Type and run the following code:
+```    
+    print("Hello World!")
+    n <- c(1,2,3,4)       
+    n
+```
+3. Install the `car` package:
+```  
+    install.packages("car")
+    library("car")
+```
+
+4. One of the data sets in the package, called `Prestige`, contains data on the prestige and other characteristics of 102 Canadian occupations around 1970. Find out what's in the data set by looking at its help page `(?Prestige)`
+
+5. Copy and execute the code [Descriptive analysis and visualization in R using Prestige dataset in the car package](https://rstudio-pubs-static.s3.amazonaws.com/291237_ccac14a9e129479c8d07e1dcfac5a697.html) to familiarize yourself with the language and the R Studio environment.
+
+</div>
 
 <br>
 
