@@ -8,10 +8,18 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 ```
 
 <br>
+
+# Class Schedule
+
+```{r, echo=FALSE}
+library(tidyverse)
+jsc270_classsched <- read_csv("jsc270_class_sched.csv", col_types = cols(Week = col_character()), na = "null")
+knitr::kable(jsc270_classsched)
+```
 
 # Class Documents
 

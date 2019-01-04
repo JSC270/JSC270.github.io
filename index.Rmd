@@ -13,5 +13,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br>
 
-Welcome to the Winter 2019 course website for JSC270.  Course content and resources will be posted on this website.
+Welcome to the Winter 2019 course website for JSC270.  Important information related to this course content will be posted on this website including:
 
+ - [Course syllabus](syllabus.html)
+ 
+ - [Tutorial Documents](tut_docs.html)
+ 
+ - [Class Documents](class_docs.html)
