@@ -172,7 +172,7 @@ knitr::kable(jsc270coursegrading[1:7,])
 
 ******
 
-## <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policy
+## <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policies
 
 <br>
 
