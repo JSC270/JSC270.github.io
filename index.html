@@ -19,15 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -172,101 +166,6 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -289,7 +188,7 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="https://jsc270.github.io/index.html">
+      <a href="syllabus.html">
         <span class="fas fa fas fa-info"></span>
          
         Syllabus
@@ -301,37 +200,7 @@ div.tocify {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Resources
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="https://jsc270.github.io/R_resources.html">
-        <span class="fab fa fab fa-r-project"></span>
-         
-        R Resources
-      </a>
-    </li>
-    <li>
-      <a href="https://jsc270.github.io/Python_resources.html">
-        <span class="fab fa fab fa-python"></span>
-         
-        Python Resources
-      </a>
-    </li>
-    <li>
-      <a href="https://jsc270.github.io/Github_resources.html">
-        <span class="far fa far fa-github"></span>
-         
-        Github Resources
-      </a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    External Links
+    Discussion
      
     <span class="caret"></span>
   </a>
@@ -341,13 +210,6 @@ div.tocify {
         <span class="fas fa fas fa-comments"></span>
          
         Piazza Discussion Board
-      </a>
-    </li>
-    <li>
-      <a href="q.utoronto.ca">
-        <span class="fas fa fas fa-quora"></span>
-         
-        Quercus
       </a>
     </li>
   </ul>
@@ -365,192 +227,16 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">JSC270H1S: Data Science I</h1>
-<h3 class="subtitle"><em>Syllabus - <mark>Draft (subject to change before the start of the course)</mark></em></h3>
-<h4 class="date"><em>Winter 2019</em></h4>
+<h3 class="subtitle"><em>Winter 2019, Course Website</em></h3>
 
 </div>
 
 
 <p><br></p>
-<div id="teaching-team" class="section level2">
-<h2><i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team</h2>
-<ul>
-<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. <a href="http://utstat.toronto.edu/nathan/">N. Taback</a>, SS6027C.</li>
-<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. <a href="http://fannychevalier.net">F. Chevalier</a>, BA5226.</li>
-<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email instructors: <a href="mailto:jsc270-winter2019@cs.toronto.edu">jsc270-winter2019@cs.toronto.edu</a></li>
-<li>Teaching assistants: Nicole Sultanum and Michael Moon.</li>
-</ul>
-<p><br></p>
-<hr />
-</div>
-<div id="office-hours" class="section level2">
-<h2><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours</h2>
-<ul>
-<li>Prof. Taback, <mark>xxx</mark>.</li>
-<li>Prof. Chevalier, Tuesdays, 2-4PM.<br />
-</li>
-<li>The schedule of the TA office hours will be posted as soon as it is available.</li>
-</ul>
-<p><br></p>
-<hr />
-</div>
-<div id="class-times-and-location" class="section level2">
-<h2><i class="glyphicon glyphicon-blackboard" aria-hidden="true"></i> Class Times and Location</h2>
-<p><br></p>
-<div id="lectures" class="section level3">
-<h3><em>Lectures</em></h3>
-<ul>
-<li>Wednesdays, 12:00-14:00 in <a href="http://map.utoronto.ca/utsg/building/032A">WI523</a>.</li>
-<li>There is no lecture on February 20 (Reading Week)</li>
-</ul>
-<p><br></p>
-</div>
-<div id="tutorials" class="section level3">
-<h3><em>Tutorials</em></h3>
-<ul>
-<li><p>Mondays, 12:00-14:00 in <a href="http://map.utoronto.ca/utsg/building/032A">WI523</a>.</p></li>
-<li>There are no tutorials on the following Mondays:
-<ul>
-<li>January 7. <mark>You should complete the online orientation in lieu of this tutorial. </mark></li>
-<li>February 18 (Reading Week)<br />
-</li>
-<li>March 11 (Mid-Term Test)</li>
-</ul></li>
-</ul>
-<p><br></p>
-<hr />
-</div>
-</div>
-<div id="course-description" class="section level2">
-<h2><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description</h2>
-<p>Data Science is a relatively new interdisciplinary field that ecompasses statistic methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline. The purpose of this course is to give you a broad introduction to many of the ways analysts learn from data, including statistical reasoning, computation and communication. We will use both python and R programming languages and environments, and tutorials will introduce students to communicating statistical knowledge.</p>
-<p>Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary team.</p>
-<p><br></p>
-<hr />
-</div>
-<div id="learning-objectives" class="section level2">
-<h2><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives</h2>
-<p>By the end of this course, you should be able to:</p>
-<ul>
-<li><mark> Revise this list</mark></li>
-<li>Seek and acquire data from various sources</li>
-<li>Assess the provenance, relevance and quality of third party data sets</li>
-<li>Understand what you can and you cannot do with third party data sets</li>
-<li>Work collaboratively in a multidisciplinary team</li>
-<li>Appropriately communicate the analytical processes and extracted knowledge to different audiences</li>
-<li>Scraping and cleaning of data</li>
-<li>Data wrangling and summarizing data</li>
-<li>Statistical testing and estimation</li>
-<li>Statistical models for description <mark>and prediction </mark></li>
-<li>Data visualization</li>
-<li>Communicating processes and results</li>
-<li>Ethical issues in data collection and analysis</li>
-</ul>
-<p><br></p>
-<hr />
-</div>
-<div id="course-website" class="section level2">
-<h2><span class="fas fa-globe" aria-hidden="true"></span> Course Website</h2>
-<ul>
-<li>Class slides, notes, and other important information can be found on the <a href="https://jsc270.github.io/">course website.</a></li>
-<li>Questions and Answers can be posted on the <a href="https://piazza.com/class/jpdcniqs4r36rj#">course discussion board (Piazza)</a></li>
-<li>Assignments are to be submitted on <a href="http://q.utoronto.ca">Quercus</a></li>
-</ul>
-<p><br></p>
-<hr />
-</div>
-<div id="course-calendar" class="section level2">
-<h2><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Calendar</h2>
-<p>Coming soon</p>
-<p><br></p>
-<hr />
-</div>
-<div id="computing" class="section level2">
-<h2><i class="fas fa-code" aria-hidden="true"></i> Computing</h2>
-<p>The course will use <a href="https://www.python.org/">python</a>, <a href="https://www.r-project.org/">R</a> and <a href="https://rmarkdown.rstudio.com/">R markdown</a> for computing.</p>
-<p>Before the classes start, you are required to set up your environment on your personal computer and complete the instructions in the following online resources:</p>
-<ul>
-<li><span class="fab fa-r-project" aria-hidden="true"></span> <a href="">R, R Studio and R Markdown Resources section</a> (coming soon)</li>
-<li><span class="fab fa-python" aria-hidden="true"></span> <a href="Python_resources.html">Python and Jupyter Notebook Resources section</a> (coming soon)</li>
-<li><span class="fa fa-github" aria-hidden="true"></span> <a href="github_resources.html">Github Resources section</a> (coming soon)</li>
-</ul>
-<p><br></p>
-<hr />
-</div>
-<div id="optional-course-textbooks" class="section level2">
-<h2><i class="glyphicon glyphicon-book" aria-hidden="true"></i> Optional Course Textbooks</h2>
-<p>Coming soon</p>
-<p><br></p>
-<hr />
-</div>
-<div id="evaluation" class="section level2">
-<h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation</h2>
-<p>Coming soon</p>
-<p><br></p>
-<hr />
-</div>
-<div id="course-policy" class="section level2">
-<h2><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policy</h2>
-<p><br></p>
-<div id="missed-tests-or-assignments" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Tests or Assignments</h3>
-<ul>
-<li>If a test or tutorial work is missed for a valid medical reason, you must submit the University of Toronto Verification of <a href="http://www.illnessverification.utoronto.ca">Student Illness or Injury form</a> within one week. Submit the form to your TA if it is related to missed tutorial work. Submit the form to both of your instructors if it is related to the test.</li>
-<li>The form will only be accepted as valid if the form is filled out according to the instructions on the form.</li>
-<li>The form must indicate that the degree of incapacitation on academic functioning is moderate, serious, or severe in order to be considered a valid medical reason for missing the term test. If the form indicates that the degree of incapacitation on academic functioning is negligible or mild then this will NOT be considered a valid medical reason.</li>
-<li>If a tutorial is missed for a valid reason then the weight for that tutorial work will be shifted to the remaining tutorials.</li>
-<li><mark>If the term test is missed for a valid reason then the weight for the test will be shifted to the final exam. In other words, the final exam will be worth 57% of your final grade.</mark></li>
-<li>Other reasons for missing an assignment, tutorial work, or the term test will require prior approval by your instructors. If prior approval is not received for non-medical reasons then you will receive a grade of zero for the missed assignment, tutorial work, or test.</li>
-</ul>
-<p><br></p>
-</div>
-<div id="marking-concerns" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Marking Concerns</h3>
-<p>Any requests to have your test remarked must contain a written justification for consideration. Remarking requests should be made within one week of receiving your test results. Re-evaluation appeals are at the discretion of the instructors. Note that adjustments in marks will be rare and could equally result in a lowering or raising of the mark. If a re-revaluation is completed by the instructors, the student must accept the resulting mark as the new mark, whether it goes up or down or remains the same. When appealing a re-evaluation decision, the student accepts this condition.</p>
-<p><br></p>
-</div>
-<div id="how-to-communicate-with-your-instructors" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> How to Communicate with Your Instructors</h3>
-<p>Always use your utoronto.ca e-mail account to ensure that your message doesn’t automatically go to a Junk folder and include your full name and student number. Violation to this policy may incur severe response delays. Allow up to 72 hours for a reply.</p>
-<p>Questions about course material or organization, such as,</p>
-<ul>
-<li>What do I change the colour of my plotting symbol?</li>
-<li>How do I do question 3.7 in the textbook?</li>
-<li>What is the difference between supervised and unsupervised learning?</li>
-<li>When is the term test?</li>
-</ul>
-<p>should be posted on the discussion forums on <a href="https://piazza.com/class/jpdcniqs4r36rj#">Piazza</a> or asked in person. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.</p>
-<p>If your communication is private, such as, “I missed the test because I was ill”“, then e-mail both instructors (<a href="mailto:jsc270-winter2019@cs.toronto.edu">jsc270-winter2019@cs.toronto.edu</a>). If you missed a tutorial then e-mail your TAs.</p>
-<p><br></p>
-</div>
-<div id="academic-integrity" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Academic Integrity</h3>
-<p>You are responsible for knowing the content of the <a href="http://www.governingcouncil.utoronto.ca/policies/behaveac.htm">University of Toronto’s Code of Behaviour on Academic Matters</a>.</p>
-<p>As a general rule, we encourage you to discuss course material with each other and ask others for advice. However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in. When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class. For example, “For question 2.1 what R function did you use?” is a fair question; “Please show me your R code for question 2.1” is not.</p>
-<p>If you have any questions about what is or is not permitted in this course, please do not hesitate to contact <a href="mailto:jsc270-winter2019@cs.toronto.edu">your instructors</a>.</p>
-<p><br></p>
-</div>
-<div id="accessibility-needs" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs</h3>
-<p>The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have any accessibility concerns about the course, the class room, or course materials, please contact Accessibility Services as soon as possible: <a href="mailto:accessibility.services@utoronto.ca">accessibility.services@utoronto.ca</a> or <a href="http://accessibility.utoronto.ca" class="uri">http://accessibility.utoronto.ca</a></p>
-<p><br></p>
-<hr />
-</div>
-</div>
-<div id="your-responsibilities" class="section level2">
-<h2><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities</h2>
-<p>The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings.</p>
-<p><br></p>
-<hr />
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
-<p><br></p>
-<p>R Markdown source for this website <a href="https://github.com/JSC270/JSC270.github.io"> <i class="fa fa-github fa-2x" aria-hidden="true"></i> </a></p>
-</div>
+<p>Welcome to the Winter 2019 course website for JSC270. Course content and resources will be posted on this website.</p>
 
 
 
-</div>
-</div>
 
 </div>
 

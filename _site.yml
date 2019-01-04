@@ -7,32 +7,18 @@ navbar:
     menu:
     - text: Syllabus
       icon: fas fa-info
-      href: https://jsc270.github.io/index.html
+      href: syllabus.html
     - text: Course Calendar
       icon: far fa-calendar-alt
       href: 
     - text: Course Content
       icon: fa-slideshare
       href: 
-  - text: Resources
-    menu:
-    - text: R Resources
-      icon: fab fa-r-project
-      href: https://jsc270.github.io/R_resources.html
-    - text: Python Resources
-      icon: fab fa-python
-      href: https://jsc270.github.io/Python_resources.html
-    - text: Github Resources
-      icon: far fa-github
-      href: https://jsc270.github.io/Github_resources.html
-  - text: External Links
+  - text: Discussion
     menu:
     - text: Piazza Discussion Board
       icon: fas fa-comments
       href: https://piazza.com/class/jpdcniqs4r36rj#
-    - text: Quercus
-      icon: fas fa-quora
-      href: q.utoronto.ca
 output:
   html_document:
     lib_dir: site_libs
