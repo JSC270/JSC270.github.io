@@ -1,0 +1,18 @@
+---
+title: "JSC270 - Class Documents"
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+
+# Class Documents
+
+Documents from class will be posted on this page.

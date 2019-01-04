@@ -8,11 +8,14 @@ navbar:
     - text: Syllabus
       icon: fas fa-info
       href: syllabus.html
+    - text: Course Documents
+    - text: Class
+      href: class_docs.html
+    - text: Tutorial
+      href: tut_docs.html
+    - text: "--------------"
     - text: Course Calendar
       icon: far fa-calendar-alt
-      href: 
-    - text: Course Content
-      icon: fa-slideshare
       href: 
   - text: Discussion
     menu:
