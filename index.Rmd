@@ -24,10 +24,13 @@ Important information related to JSC270H1S will be posted on this website includ
  - [Class Documents](class_docs.html) 
  
  ******
+<br>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 <br>
 
 R Markdown source for this website <a href="https://github.com/JSC270/JSC270.github.io">
-<i class="fab fa-github"></i></a>
+<img src="_ionicons_svg_logo-github.svg" width="20" height="10"></a>
+
+
