@@ -30,7 +30,6 @@ Important information related to JSC270H1S will be posted on this website includ
 
 <br>
 
-R Markdown source for this website <a href="https://github.com/JSC270/JSC270.github.io">
-<img src="_ionicons_svg_logo-github.svg" width="20" height="10"></a>
+<a href="https://github.com/JSC270/JSC270.github.io">R Markdown source for this website</a>
 
 
