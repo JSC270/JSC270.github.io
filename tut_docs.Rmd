@@ -8,7 +8,8 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+library(tidyverse)
 ```
 
 <br>
@@ -16,10 +17,21 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 # Tutorial Schedule
 
 ```{r, echo=FALSE}
-library(tidyverse)
 jsc270_tutsched <- read_csv("jsc270_tutsched.csv", col_types = cols(Week = col_character()), na = "null")
 knitr::kable(jsc270_tutsched)
 ```
+
+<br>
+
+
+# Tutorial Grading
+
+```{r}
+tutorial_rubric <- read_csv("rubrics/tutorial_rubric.csv")
+knitr::kable(tutorial_rubric)
+```
+
+<br>
 
 
 # Tutorial Documents

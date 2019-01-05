@@ -3,25 +3,28 @@ output_dir: '.'
 navbar:
   title: JSC270 Winter 2019
   left:
-  - text: Course Information
-    menu:
-    - text: Syllabus
-      icon: fas fa-info
-      href: syllabus.html
     - text: Course Documents
-    - text: Class
-      href: class_docs.html
-    - text: Tutorial
-      href: tut_docs.html
-    - text: "--------------"
-    - text: Course Calendar
-      icon: far fa-calendar-alt
-      href: 
-  - text: Discussion
-    menu:
-    - text: Piazza Discussion Board
-      icon: fas fa-comments
-      href: https://piazza.com/class/jpdcniqs4r36rj#
+      menu:
+        - text: Syllabus
+          icon: fas fa-info
+          href: syllabus.html
+        - text: Course Documents
+        - text: Class
+          href: class_docs.html
+        - text: Tutorial
+          href: tut_docs.html
+        - text: "-----------------"
+        - text: Assignments
+        - text: "-----------------"
+        - text: Assignment 1
+          href: 
+        - text: Assignment Grading
+          href: assignment_rubrics.html
+    - text: Discussion
+      menu:
+        - text: Piazza
+          icon: fas fa-info
+          href: https://piazza.com/class/jpdcniqs4r36rj
 output:
   html_document:
     lib_dir: site_libs

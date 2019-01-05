@@ -1,0 +1,33 @@
+---
+title: 'JSC270H1S - Assignment Grading Rubrics'
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, message = F, warning = F)
+library(tidyverse)
+```
+
+<br>
+
+# Data Analysis Rubric
+
+```{r}
+dataanal_rubric <- read_csv("rubrics/dataanal_rubric.csv")
+knitr::kable(dataanal_rubric)
+```
+
+<br>
+<br>
+
+# Programming Rubric
+
+```{r}
+coding_rubric <- read_csv("rubrics/coding_rubric.csv")
+knitr::kable(coding_rubric)
+```
+
