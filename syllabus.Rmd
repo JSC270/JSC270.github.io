@@ -29,8 +29,8 @@ knitr::opts_chunk$set(warning = F, message = F)
 ******
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
-- Prof. Taback, Tuesday 13:00 - 14:00 (SS6027C).
-- Prof. Chevalier, Tuesdays, 14:00 - 16:00 (BA5226)
+- Prof. Taback, Tuesday 13:00 - 14:00 (SS6027C)
+- Prof. Chevalier, Tuesday, 14:00 - 15:00 (BA5226)
 - The schedule of the TA office hours will be posted as soon as it is available.
 
 <br>
@@ -48,7 +48,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ### _Tutorials_
-- Mondays, 12:00-14:00 in BA3175.  <mark> The location may change within the first week of classes. </mark>
+- Mondays, 12:00-14:00 in BA3175.  
 
 - There are no tutorials on the following Mondays:  
       + February 18 (Reading Week)  
@@ -104,8 +104,6 @@ By the end of this course, you should be able to:
 ******
 
 ## <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Assignment Calendar
-
-<mark> The dates below are tentative and may be revised in the first week of classes </mark>
 
 - Assignment #1: Monday, February 4
 - Assignment #2: Monday, February 25
