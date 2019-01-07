@@ -29,8 +29,10 @@ knitr::opts_chunk$set(warning = F, message = F)
 ******
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
-- Prof. Taback, Tuesday 13:00 - 14:00 (SS6027C)
-- Prof. Chevalier, Tuesday, 14:00 - 15:00 (BA5226)
+
+- Prof. Taback, Tuesday 13:00 - 14:00 (SS6027C).
+- Prof. Chevalier, Tuesdays, 14:00 - 15:00 (BA5226)
+
 - The schedule of the TA office hours will be posted as soon as it is available.
 
 <br>
