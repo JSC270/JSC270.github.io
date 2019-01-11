@@ -24,3 +24,10 @@ knitr::kable(jsc270_classsched)
 # Class Documents
 
 Documents from class will be posted on this page.
+
+[Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1.ipynb)
+
+[Prof. Chevalier's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1-Part2.ipynb)
+
+[Prof. Chevalier's notebook - in-class use case](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1-EDA_OkCupid.ipynb)
+
