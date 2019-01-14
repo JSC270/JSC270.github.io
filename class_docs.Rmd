@@ -13,6 +13,30 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 <br>
 
+
+# Class Documents
+
+Documents from class will be posted on this page.
+
+## Class 1 - Wednesday, January 9
+
+[Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1.ipynb)
+
+[Prof. Chevalier's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1-Part2.ipynb)
+
+[Prof. Chevalier's notebook - in-class use case](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1-EDA_OkCupid.ipynb)
+
+## Class 2 - Monday, January 14
+
+[Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class2/lecture2_slides-posted.ipynb)
+
+### References
+
+- [pandas documentation](http://pandas.pydata.org/pandas-docs/stable/)
+
+- Python Data Analytics: Data Analysis and Science Using Pandas, matplotlib, and the Python Programming Language, by Fabio Nelli. (Chapters 4 - 7) [Electronic copy available from UofT library](http://go.utlib.ca/cat/10190695)
+
+
 # Class Schedule
 
 ```{r, echo=FALSE}
@@ -20,14 +44,4 @@ library(tidyverse)
 jsc270_classsched <- read_csv("jsc270_class_sched.csv", col_types = cols(Week = col_character()), na = "null")
 knitr::kable(jsc270_classsched)
 ```
-
-# Class Documents
-
-Documents from class will be posted on this page.
-
-[Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1.ipynb)
-
-[Prof. Chevalier's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1-Part2.ipynb)
-
-[Prof. Chevalier's notebook - in-class use case](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1-EDA_OkCupid.ipynb)
 

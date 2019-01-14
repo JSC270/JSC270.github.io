@@ -20,14 +20,6 @@ library(tidyverse)
 
 [Questions for Tutorial 0](tutorials/Tutorial0HelloJSC270.html)
 
-<br>
-
-# Tutorial Schedule
-
-```{r, echo=FALSE}
-jsc270_tutsched <- read_csv("jsc270_tutsched.csv", col_types = cols(Week = col_character()), na = "null")
-knitr::kable(jsc270_tutsched)
-```
 
 <br>
 
@@ -39,3 +31,12 @@ tutorial_rubric <- read_csv("rubrics/tutorial_rubric.csv")
 knitr::kable(tutorial_rubric)
 ```
 
+
+<br>
+
+# Tutorial Schedule
+
+```{r, echo=FALSE}
+jsc270_tutsched <- read_csv("jsc270_tutsched.csv", col_types = cols(Week = col_character()), na = "null")
+knitr::kable(jsc270_tutsched)
+```
