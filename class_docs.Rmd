@@ -28,7 +28,7 @@ Documents from class will be posted on this page.
 
 ## Class 2 - Monday, January 14
 
-[Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class2/lecture2_slides-posted.ipynb)
+[Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class2/lecture2_slides_posted2.ipynb)
 
 ### References
 
