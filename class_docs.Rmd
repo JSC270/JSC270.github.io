@@ -30,6 +30,8 @@ Documents from class will be posted on this page.
 
 [Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class2/lecture2_slides_posted2.ipynb)
 
+**NB: If you are installing [`omdb` python library](https://pypi.org/project/omdb/) using Jupyter notebook use the command in a Jupyter code cell: `!pip install --user omdb` (i.e., make sure to include the user flag).  Alternatively, you can run the command from the terminal.**
+
 ### References
 
 - [pandas documentation](http://pandas.pydata.org/pandas-docs/stable/)
