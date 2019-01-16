@@ -16,21 +16,34 @@ library(tidyverse)
 
 # Tutorial Documents
 
-## Tutorial 0 - Monday, January 7
+# Tutorial 0 - Monday, January 7
 
 [Questions for Tutorial 0](tutorials/Tutorial0HelloJSC270.html)
 
 [Answers to Tutorial 0 Questions](tutorials/Tutorial0HelloJSC270-answers-posted.html)
 
-## Tutorial 1 - Wednesday, January 16
+# Tutorial 1 - Wednesday, January 16
 
 Questions for Tutorial 1: [html](tutorials/jsc270_tut1_questions.html); [ipynb](https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut1_questions.ipynb)
 
-### Resources
+## Resources for Tutorial 1
 
 - [Pandas Cheat Sheet](Pandas_Cheat_Sheet.pdf) ([see ref](https://github.com/pandas-dev/pandas))
 
+- [Pandas project](https://pandas.pydata.org)
+
 - [The Truth About Algorithms, Cathy O'Neil](https://youtu.be/heQzqX35c9A)
+
+A few articles on hiring algorithms: 
+
+- [Hiring Algorithms Are Not Neutral - Harvard Business Review](https://hbr.org/2016/12/hiring-algorithms-are-not-neutral)
+
+- [A.I. as Talent Scout: Unorthodox Hires, and Maybe Lower Pay - New York Times](https://www.nytimes.com/2018/12/06/business/economy/artificial-intelligence-hiring.html)
+
+- [Amazon scraps secret AI recruiting tool that showed bias against women - Reuters](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G)
+
+
+
 
 <br>
 
