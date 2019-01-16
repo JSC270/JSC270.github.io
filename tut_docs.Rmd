@@ -20,9 +20,11 @@ library(tidyverse)
 
 [Questions for Tutorial 0](tutorials/Tutorial0HelloJSC270.html)
 
+[Answers to Tutorial 0 Questions](tutorials/Tutorial0HelloJSC270-answers-posted.html)
+
 ## Tutorial 1 - Wednesday, January 16
 
-[Questions for Tutorial 1]
+Questions for Tutorial 1: [html](tutorials/jsc270_tut1_questions.html); [ipynb](https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut1_questions.ipynb)
 
 ### Resources
 
