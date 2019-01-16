@@ -20,6 +20,15 @@ library(tidyverse)
 
 [Questions for Tutorial 0](tutorials/Tutorial0HelloJSC270.html)
 
+## Tutorial 1 - Wednesday, January 16
+
+[Questions for Tutorial 1]
+
+### Resources
+
+- [Pandas Cheat Sheet](Pandas_Cheat_Sheet.pdf) ([see ref](https://github.com/pandas-dev/pandas))
+
+- [The Truth About Algorithms, Cathy O'Neil](https://youtu.be/heQzqX35c9A)
 
 <br>
 
