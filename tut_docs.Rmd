@@ -32,6 +32,8 @@ Questions for Tutorial 1: [html](tutorials/jsc270_tut1_questions.html); [ipynb](
 
 - [Pandas project](https://pandas.pydata.org)
 
+- [git Basics](tutorials/jsc270-git-basics.pdf)
+
 - [The Truth About Algorithms, Cathy O'Neil](https://youtu.be/heQzqX35c9A)
 
 A few articles on hiring algorithms: 
