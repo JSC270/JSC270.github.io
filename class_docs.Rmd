@@ -32,6 +32,16 @@ Documents from class will be posted on this page.
 
 **NB: If you are installing [`omdb` python library](https://pypi.org/project/omdb/) using Jupyter notebook use the command in a Jupyter code cell: `!pip install --user omdb` (i.e., make sure to include the user flag).  Alternatively, you can run the command from the terminal.**
 
+
+## Class 3 - Monday, January 21
+
+[Prof. Chevalier's notebook (student version for class)](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class3/lecture3_slides-students.ipynb)
+
+[Movies dataset](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class3/data/50movies-clean.csv)
+
+[Titanic dataset](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class3/data/titanic.csv)
+
+
 ### References
 
 - [pandas documentation](http://pandas.pydata.org/pandas-docs/stable/)
