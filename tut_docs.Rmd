@@ -45,7 +45,9 @@ A few articles on hiring algorithms:
 - [Amazon scraps secret AI recruiting tool that showed bias against women - Reuters](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G)
 
 
+# Tutorial 2 - Wednesday, January 23
 
+Questions for Tutorial 2: [html](tutorials/jsc270_tut2_student.html); [ipynb]()
 
 <br>
 
