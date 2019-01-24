@@ -25,6 +25,10 @@ navbar:
         - text: Piazza
           icon: fas fa-info
           href: https://piazza.com/class/jpdcniqs4r36rj
+    - text: Resources
+      menu:
+        - text: Data + Science
+          href: resources.html
 output:
   html_document:
     lib_dir: site_libs
