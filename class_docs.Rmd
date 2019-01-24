@@ -3,6 +3,7 @@ title: "JSC270 - Class Documents"
 output: 
   html_document:
    toc: true
+   toc_depth: 3
    toc_float: true
    theme: flatly
 ---
@@ -45,13 +46,22 @@ Datasets used in class 3:
 
 - [Titanic dataset](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class3/data/titanic.csv)
 
+## Class 4 - Monday January 28
 
+
+### Class 4 Reading
+
+[The Surprising Power of Online Experiments](https://hbr.org/2017/09/the-surprising-power-of-online-experiments)
+
+[Why Donald Trump is the political equivalent of a Silicon Valley startup](https://theweek.com/articles/626366/why-donald-trump-political-equivalent-silicon-valley-startup)
+
+[Randomization and Bias in Cancer Clinical Trials](https://www.cancer.gov/about-cancer/treatment/clinical-trials/what-are-trials/randomization)
 
 <br>
 
 ******
 
-# References
+# Python References
 
 
 - [seaborn documentation](https://seaborn.pydata.org/)
