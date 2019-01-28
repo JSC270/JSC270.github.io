@@ -57,6 +57,8 @@ Datasets used in class 3:
 
 [Randomization and Bias in Cancer Clinical Trials](https://www.cancer.gov/about-cancer/treatment/clinical-trials/what-are-trials/randomization)
 
+[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class4)
+
 <br>
 
 ******
