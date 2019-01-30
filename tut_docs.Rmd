@@ -50,6 +50,11 @@ A few articles on hiring algorithms:
 
 Questions for Tutorial 2: [html](tutorials/jsc270_tut2_student.html); [ipynb](https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut2_student.ipynb)
 
+
+# Tutorial 3 - Wednesday, January 30
+
+Questions for Tutorial 3: [html](tutorials/jsc270_tut3_student.html); [ipynb](tutorials/jsc270_tut3_student.ipynb)
+
 <br>
 
 
