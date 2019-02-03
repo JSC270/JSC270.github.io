@@ -14,20 +14,21 @@ library(tidyverse)
 ```
 
 <br>
+<br>
 
-# Tutorial Documents
-
-# Tutorial 0 - Monday, January 7
+# Tutorial 0 - Mon. January 7
 
 [Questions for Tutorial 0](tutorials/Tutorial0HelloJSC270.html)
 
 [Answers to Tutorial 0 Questions](tutorials/Tutorial0HelloJSC270-answers-posted.html)
 
-# Tutorial 1 - Wednesday, January 16
+<br>
+
+# Tutorial 1 - Wed. January 16
 
 Questions for Tutorial 1: [html](tutorials/jsc270_tut1_questions.html); [ipynb](https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut1_questions.ipynb)
 
-## Resources for Tutorial 1
+### Resources for Tutorial 1
 
 - [Pandas Cheat Sheet](Pandas_Cheat_Sheet.pdf) ([see ref](https://github.com/pandas-dev/pandas))
 
@@ -45,17 +46,38 @@ A few articles on hiring algorithms:
 
 - [Amazon scraps secret AI recruiting tool that showed bias against women - Reuters](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G)
 
+<br>
 
-# Tutorial 2 - Wednesday, January 23
+# Tutorial 2 - Wed. January 23
 
 Questions for Tutorial 2: [html](tutorials/jsc270_tut2_student.html); [ipynb](https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut2_student.ipynb)
 
+<br>
 
-# Tutorial 3 - Wednesday, January 30
+# Tutorial 3 - Wed. January 30 
 
 Questions for Tutorial 3: [html](tutorials/jsc270_tut3_student.html); [ipynb](tutorials/jsc270_tut3_student.ipynb)
 
+### Resources for Tutorial 3
+
+- [ipywidgets library](https://ipywidgets.readthedocs.io)
+
+- [Survey Research (in psychology)](https://web.stanford.edu/dept/communication/faculty/krosnick/Survey_Research.pdf)
+
+- [Survey Research in HCI](https://link-springer-com.myaccess.library.utoronto.ca/chapter/10.1007/978-1-4939-0378-8_10)
+
+- [Likert scales: how to (ab)use them](https://pdfs.semanticscholar.org/3ebe/1b5c7e927be0221788348973b17c9de3bf05.pdf)
+
+
 <br>
+
+# Tutorial 4 - Wed. February 13
+
+Homework to be completed for Tutorial 4. (coming soon)
+
+<br>
+
+ ******
 
 
 # Tutorial Grading
@@ -65,6 +87,8 @@ tutorial_rubric <- read_csv("rubrics/tutorial_rubric.csv")
 knitr::kable(tutorial_rubric)
 ```
 
+
+ ******
 
 <br>
 

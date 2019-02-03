@@ -15,11 +15,11 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 <br>
 
 
-# Class Documents
-
 Documents from class will be posted on this page.
 
-## Class 1 - Wednesday, January 9
+<br>
+
+# Class 1 - Wednesday January 9
 
 [Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1.ipynb)
 
@@ -27,14 +27,17 @@ Documents from class will be posted on this page.
 
 [Prof. Chevalier's notebook - in-class use case](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1-EDA_OkCupid.ipynb)
 
-## Class 2 - Monday, January 14
+<br>
+
+# Class 2 - Monday, January 14
 
 [Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class2/lecture2_slides_posted2.ipynb)
 
 **NB: If you are installing [`omdb` python library](https://pypi.org/project/omdb/) using Jupyter notebook use the command in a Jupyter code cell: `!pip install --user omdb` (i.e., make sure to include the user flag).  Alternatively, you can run the command from the terminal.**
 
+<br>
 
-## Class 3 - Monday, January 21
+# Class 3 - Monday, January 21
 
 [Prof. Chevalier's notebook (student version for class)](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class3/lecture3_slides-students.ipynb)
 
@@ -46,8 +49,11 @@ Datasets used in class 3:
 
 - [Titanic dataset](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class3/data/titanic.csv)
 
-## Class 4 - Monday January 28
+<br>
 
+# Class 4 - Monday January 28
+
+[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class4)
 
 ### Class 4 Reading
 
@@ -57,7 +63,11 @@ Datasets used in class 3:
 
 [Randomization and Bias in Cancer Clinical Trials](https://www.cancer.gov/about-cancer/treatment/clinical-trials/what-are-trials/randomization)
 
-[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class4)
+<br>
+
+# Class 5 - Monday February 4
+
+[Class slides (coming soon)]()
 
 <br>
 
