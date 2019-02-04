@@ -67,7 +67,7 @@ Datasets used in class 3:
 
 # Class 5 - Monday February 4
 
-[Class slides (coming soon)]()
+[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class5)
 
 <br>
 
