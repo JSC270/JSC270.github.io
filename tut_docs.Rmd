@@ -73,7 +73,9 @@ Questions for Tutorial 3: [html](tutorials/jsc270_tut3_student.html); [ipynb](tu
 
 # Tutorial 4 - Wed. February 13
 
-Homework to be completed for Tutorial 4. (coming soon)
+Homework to be completed for Tutorial 4:   
+- Part 1: Tell us a story! (Communication exercise): [html](tutorials/jsc270_tut4_part1_questions.html)   
+- Part 2: Statistical inference: [html](tutorials/jsc270_tut4_part2_questions.html), [ipynb](tutorials/jsc270_tut4_part1_questions.ipynb)   
 
 <br>
 
