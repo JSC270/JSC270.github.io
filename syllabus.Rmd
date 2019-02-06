@@ -31,9 +31,9 @@ knitr::opts_chunk$set(warning = F, message = F)
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
 - Prof. Taback, Tuesday 13:00 - 14:00 (SS6027C).
-- Prof. Chevalier, Tuesdays, 14:00 - 15:00 (BA5226)
+- Prof. Chevalier, Tuesday, 14:00 - 15:00 (BA5226)
 
-- The schedule of the TA office hours will be posted as soon as it is available.
+- TA office hours, Friday, 14:00 - 16:00 (BA5287).
 
 <br>
 
@@ -44,17 +44,17 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ### _Lectures_
-- Wednesdays, 12:00-14:00 in [WI523](http://map.utoronto.ca/utsg/building/032A).
-- There is no lecture on February 20 (Reading Week)
+- Mondays, 12:00-14:00 in [WI523](http://map.utoronto.ca/utsg/building/032A).
+- There is no lecture on February 18 (Reading Week)
 
 <br>
 
 ### _Tutorials_
-- Mondays, 12:00-14:00 in BA3175.  
+- Wednesdays, 12:00-14:00 in BA3175.  
 
 - There are no tutorials on the following Mondays:  
-      + February 18 (Reading Week)  
-      + March 11 (Mid-Term Test)
+      + February 20 (Reading Week)  
+      + March 13 (Mid-Term Test)
 
 <br>
 
