@@ -83,9 +83,7 @@ Homework to be completed for Tutorial 4.
 
 ## Part 2: Statistical inference:
 
-- [html](tutorials/jsc270_tut4_part2_questions.html)
-
-- [ipynb](tutorials/jsc270_tut4_part1_questions.ipynb)   
+- [ipynb](https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut4_part2_questions.ipynb) 
 
 <br>
 
