@@ -55,7 +55,7 @@ Datasets used in class 3:
 
 [Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class4)
 
-### Class 4 Reading
+## Class 4 Reading
 
 [The Surprising Power of Online Experiments](https://hbr.org/2017/09/the-surprising-power-of-online-experiments)
 
@@ -70,6 +70,17 @@ Datasets used in class 3:
 [Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class5)
 
 <br>
+
+# Class 6 - Monday February 11
+
+[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class6)
+
+## Class 6 Reading
+
+[An An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/).  The material from today's class is scattered over chapters 2, 3, 4, 5, 6, 8.  
+
+<br>
+
 
 ******
 
