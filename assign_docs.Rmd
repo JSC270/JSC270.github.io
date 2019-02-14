@@ -17,3 +17,7 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 # Assignment #1
 
 [Questions for Assignment #1](jsc270_assignment1_0.2.html)
+
+# Assignment #2
+
+[Questions for Assignment #1](jsc270_assignment2_ver1.html)

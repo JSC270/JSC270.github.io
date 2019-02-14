@@ -15,9 +15,12 @@ navbar:
           href: tut_docs.html
         - text: "-----------------"
         - text: Assignments
+          href: assign_docs.html
         - text: "-----------------"
         - text: Assignment 1
-          href: assign_docs.html
+          href: jsc270_assignment2_ver1.html
+        - text: Assignment 2
+          href: jsc270_assignment2_ver1.html
         - text: Assignment Grading
           href: assignment_rubrics.html
     - text: Discussion
