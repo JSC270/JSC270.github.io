@@ -55,13 +55,13 @@ Datasets used in class 3:
 
 [Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class4)
 
-## Class 4 Reading
+### Readings
 
-[The Surprising Power of Online Experiments](https://hbr.org/2017/09/the-surprising-power-of-online-experiments)
+- [The Surprising Power of Online Experiments](https://hbr.org/2017/09/the-surprising-power-of-online-experiments)
 
-[Why Donald Trump is the political equivalent of a Silicon Valley startup](https://theweek.com/articles/626366/why-donald-trump-political-equivalent-silicon-valley-startup)
+- [Why Donald Trump is the political equivalent of a Silicon Valley startup](https://theweek.com/articles/626366/why-donald-trump-political-equivalent-silicon-valley-startup)
 
-[Randomization and Bias in Cancer Clinical Trials](https://www.cancer.gov/about-cancer/treatment/clinical-trials/what-are-trials/randomization)
+- [Randomization and Bias in Cancer Clinical Trials](https://www.cancer.gov/about-cancer/treatment/clinical-trials/what-are-trials/randomization)
 
 <br>
 
@@ -75,9 +75,24 @@ Datasets used in class 3:
 
 [Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class6)
 
-## Class 6 Reading
+### Reading
 
 [An An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/).  The material from today's class is scattered over chapters 2, 3, 4, 5, 6, 8.  
+
+<br>
+
+# Class 7 - Monday February 25
+
+[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class7/lecture7.pdf)
+
+### Readings
+
+- [Preattentive processing in vision](https://www-sciencedirect-com.myaccess.library.utoronto.ca/science/article/pii/S0734189X85800049) -- Available on UofT network and through UofT library
+
+- [The value of Information Visualization](https://www.win.tue.nl/~vanwijk/infovis_springer.pdf)
+
+- [The good, the bad, and the biased: five ways visualization can mislead](http://interactions.acm.org/archive/view/july-august-2018/the-good-the-bad-and-the-biased)
+
 
 <br>
 

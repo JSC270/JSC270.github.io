@@ -99,9 +99,6 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
-summary {
-  display: list-item;
-}
 </style>
 
 
@@ -116,6 +113,7 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
+
 .section h2 {
   padding-top: 65px;
   margin-top: -65px;
@@ -135,43 +133,6 @@ body {
 .section h6 {
   padding-top: 65px;
   margin-top: -65px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -193,77 +154,18 @@ $(document).ready(function () {
 });
 </script>
 
+
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
 </script>
 
 <!-- code folding -->
+
 
 
 
@@ -488,11 +390,13 @@ div.tocify {
 <div id="class-4---monday-january-28" class="section level1">
 <h1>Class 4 - Monday January 28</h1>
 <p><a href="https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class4">Class slides</a></p>
-<div id="class-4-reading" class="section level2">
-<h2>Class 4 Reading</h2>
-<p><a href="https://hbr.org/2017/09/the-surprising-power-of-online-experiments">The Surprising Power of Online Experiments</a></p>
-<p><a href="https://theweek.com/articles/626366/why-donald-trump-political-equivalent-silicon-valley-startup">Why Donald Trump is the political equivalent of a Silicon Valley startup</a></p>
-<p><a href="https://www.cancer.gov/about-cancer/treatment/clinical-trials/what-are-trials/randomization">Randomization and Bias in Cancer Clinical Trials</a></p>
+<div id="readings" class="section level3">
+<h3>Readings</h3>
+<ul>
+<li><p><a href="https://hbr.org/2017/09/the-surprising-power-of-online-experiments">The Surprising Power of Online Experiments</a></p></li>
+<li><p><a href="https://theweek.com/articles/626366/why-donald-trump-political-equivalent-silicon-valley-startup">Why Donald Trump is the political equivalent of a Silicon Valley startup</a></p></li>
+<li><p><a href="https://www.cancer.gov/about-cancer/treatment/clinical-trials/what-are-trials/randomization">Randomization and Bias in Cancer Clinical Trials</a></p></li>
+</ul>
 <p><br></p>
 </div>
 </div>
@@ -504,9 +408,22 @@ div.tocify {
 <div id="class-6---monday-february-11" class="section level1">
 <h1>Class 6 - Monday February 11</h1>
 <p><a href="https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class6">Class slides</a></p>
-<div id="class-6-reading" class="section level2">
-<h2>Class 6 Reading</h2>
+<div id="reading" class="section level3">
+<h3>Reading</h3>
 <p><a href="http://www-bcf.usc.edu/~gareth/ISL/">An An Introduction to Statistical Learning with Applications in R</a>. The material from today’s class is scattered over chapters 2, 3, 4, 5, 6, 8.</p>
+<p><br></p>
+</div>
+</div>
+<div id="class-7---monday-february-25" class="section level1">
+<h1>Class 7 - Monday February 25</h1>
+<p><a href="https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class7/lecture7.pdf">Class slides</a></p>
+<div id="readings-1" class="section level3">
+<h3>Readings</h3>
+<ul>
+<li><p><a href="https://www-sciencedirect-com.myaccess.library.utoronto.ca/science/article/pii/S0734189X85800049">Preattentive processing in vision</a> – Available on UofT network and through UofT library</p></li>
+<li><p><a href="https://www.win.tue.nl/~vanwijk/infovis_springer.pdf">The value of Information Visualization</a></p></li>
+<li><p><a href="http://interactions.acm.org/archive/view/july-august-2018/the-good-the-bad-and-the-biased">The good, the bad, and the biased: five ways visualization can mislead</a></p></li>
+</ul>
 <p><br></p>
 <hr />
 </div>
