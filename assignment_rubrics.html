@@ -99,9 +99,6 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
-summary {
-  display: list-item;
-}
 </style>
 
 
@@ -116,6 +113,7 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
+
 .section h2 {
   padding-top: 65px;
   margin-top: -65px;
@@ -135,43 +133,6 @@ body {
 .section h6 {
   padding-top: 65px;
   margin-top: -65px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -193,77 +154,18 @@ $(document).ready(function () {
 });
 </script>
 
+
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
 </script>
 
 <!-- code folding -->
+
 
 
 
@@ -538,6 +440,78 @@ div.tocify {
 <td align="left">Generally easy to read, but some comments used inappropriately: either too many, or too few. Some variable names confusing.</td>
 <td align="left">Hard to understand. Poor choice of names and comments do not generally aid understanding.</td>
 <td align="left">Cannot understand code. The reader cannot understand why the code works.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="presentation-rubric" class="section level1">
+<h1>Presentation Rubric</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Category</th>
+<th align="left">5</th>
+<th align="left">3.5</th>
+<th align="left">2.5</th>
+<th align="left">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Organisation (5pts)</td>
+<td align="left">The speaker presents information in a logical and interesting sequence that the audience can follow.</td>
+<td align="left">The speaker presents information in a logical sequence that the audience can follow</td>
+<td align="left">Audience has difficulty following the presentation because the speaker jumps around and only shows minimal organization</td>
+<td align="left">Audience cannot understand presentation because there is no sequence of information</td>
+</tr>
+<tr class="even">
+<td align="left">Research objectives (5pts)</td>
+<td align="left">Research objectives are clearly stated, appropriately repeated and strongly supported throughout the presentation.</td>
+<td align="left">Research objectives of presentation are stated and supported throughout the presentation.</td>
+<td align="left">Research objectives of the presentation are stated, but are only minimally supported throughout the presentation.</td>
+<td align="left">Research objectives of the presentation can be guessed, but are not explicitly stated in the presentation.</td>
+</tr>
+<tr class="odd">
+<td align="left">Language (5pts)</td>
+<td align="left">Language choices are imaginative, memorable, and compelling, and enhance the effectiveness of the presentation. When using technical vocabulary or concepts, the speaker explains it in a way that all members of the class can understand.</td>
+<td align="left">Language choices are thoughtful and generally support the effectiveness of the presentation. The speaker uses technical vocabulary or concepts, but does not explain it in a way that all members of the class can understand.</td>
+<td align="left">Language choices are mundane and commonplace and partially support the effectiveness of the presentation. The speaker occasionally uses technical vocabulary and does not explain it in a way that all members of the class can understand.</td>
+<td align="left">Language choices are unclear and minimally support the effectiveness of the presentation. The speaker does not use technical vocabulary at all.</td>
+</tr>
+<tr class="even">
+<td align="left">Delivery (5pts)</td>
+<td align="left">Delivery techniques (posture, gesture, eye contact, and vocal expressiveness) make the presentation compelling, speaker seems polished and confident, and presentation fits within allocated time.</td>
+<td align="left">Delivery techniques (posture, gesture, eye contact, and vocal expressiveness) make the presentation interesting, speaker seems comfortable and presentation fits within allocated time.</td>
+<td align="left">Delivery techniques (posture, gesture, eye contact, and vocal expressiveness) make the presentation understandable, speaker seems tentative, presentation is slightly over time.</td>
+<td align="left">Delivery techniques (posture, gesture, eye contact, and vocal expressiveness) detract from the understandability of the presentation, speaker seems uncomfortable, presentation clearly over time.</td>
+</tr>
+<tr class="odd">
+<td align="left">Approach to data visualization (5 pts)</td>
+<td align="left">The speaker’s visualization makes appropriate reference to and significantly supports the information being presented.</td>
+<td align="left">The speaker’s visualization makes appropriate reference to and generally support the information being presented.</td>
+<td align="left">The speaker’s visualization occasionally refers to and partially support the information being presented.</td>
+<td align="left">The speaker’s approach minimally refers to and support the information being presented.</td>
+</tr>
+<tr class="even">
+<td align="left">Subject knowledge (5 pts)</td>
+<td align="left">The speaker demonstrates full knowledge of subject by answering all questions with explanations and elaborations.</td>
+<td align="left">The speaker is at ease with expected answers to all questions, but fails to elaborate.</td>
+<td align="left">The speaker is uncomfortable with subject matter and is able to answer only rudimentary questions.</td>
+<td align="left">Group does not have a grasp of the subject matter and cannot answer questions related to the presentation topic.</td>
+</tr>
+<tr class="odd">
+<td align="left">Quality of presentation (10 pts)</td>
+<td align="left">Presentation slides are very clear, well crafted, organized, and compelling.</td>
+<td align="left">Presentation slides are mostly clear, reasonably well crafted and organised.</td>
+<td align="left">Presentation slides are unclear, lack polishing and organisation.</td>
+<td align="left">Presentation slides are confusing, clearly unpolished and disorganized.</td>
+</tr>
+<tr class="even">
+<td align="left">Reasoning/Approach to Data Analysis (10 pts)</td>
+<td align="left">The speaker presents one or two of the most plausible explanations for a given finding, but allows for the audience to make their own judgement. The methods employed are sound. The presenter is self-critical and honestly discusses flaws and limitations in methodology and provide suggestions as to how they could be remedied.</td>
+<td align="left">The methods are sometimes not fully adequate or consistently justified. The speaker is skeptical and self-critical, but not consistently.</td>
+<td align="left">The methods are questionable and not well justified. The speaker hasn’t blinded accepted findings, but hasn’t come up with many ways to check results either.</td>
+<td align="left">The methods are inappropriate and not justified. Leaps of logic without justification. Findings accepted uncritically. Inappropriate methods. The speaker has not thought about how to do better next time</td>
 </tr>
 </tbody>
 </table>

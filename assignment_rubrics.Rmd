@@ -31,3 +31,9 @@ coding_rubric <- read_csv("rubrics/coding_rubric.csv")
 knitr::kable(coding_rubric)
 ```
 
+# Presentation Rubric
+
+```{r}
+coding_rubric <- read_csv("rubrics/presentation_rubric.csv")
+knitr::kable(coding_rubric)
+```
