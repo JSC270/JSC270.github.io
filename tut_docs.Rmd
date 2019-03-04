@@ -87,6 +87,11 @@ Homework to be completed for Tutorial 4.
 
 <br>
 
+
+# Tutorial 6 - Wed. March 6
+
+[Questions](tutorials/tutorial6.html)
+
  ******
 
 
