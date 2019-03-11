@@ -96,6 +96,13 @@ Datasets used in class 3:
 
 <br>
 
+# Class 8 - Monday March 11
+
+[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class8/lecture8.pdf)
+
+
+<br>
+
 
 ******
 

@@ -99,9 +99,6 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
-summary {
-  display: list-item;
-}
 </style>
 
 
@@ -116,6 +113,7 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
+
 .section h2 {
   padding-top: 65px;
   margin-top: -65px;
@@ -135,43 +133,6 @@ body {
 .section h6 {
   padding-top: 65px;
   margin-top: -65px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -193,77 +154,18 @@ $(document).ready(function () {
 });
 </script>
 
+
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
 </script>
 
 <!-- code folding -->
+
 
 
 
@@ -529,8 +431,13 @@ div.tocify {
 <li><p><a href="http://interactions.acm.org/archive/view/july-august-2018/the-good-the-bad-and-the-biased">The good, the bad, and the biased: five ways visualization can mislead</a></p></li>
 </ul>
 <p><br></p>
-<hr />
 </div>
+</div>
+<div id="class-8---monday-march-11" class="section level1">
+<h1>Class 8 - Monday March 11</h1>
+<p><a href="https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class8/lecture8.pdf">Class slides</a></p>
+<p><br></p>
+<hr />
 </div>
 <div id="python-references" class="section level1">
 <h1>Python References</h1>
@@ -602,17 +509,17 @@ div.tocify {
 <tr class="even">
 <td align="left">9</td>
 <td align="left">Monday, March 11</td>
-<td align="left">Multiverse analysis</td>
+<td align="left">Pitfalls in Data Science</td>
 </tr>
 <tr class="odd">
 <td align="left">10</td>
 <td align="left">Monday, March 18</td>
-<td align="left">Human-Computer Interaction and Case studies</td>
+<td align="left">Guest presentation: <a href="https://www.ishtiaque.net/">Prof. Ishtiaque Ahmed</a> + Multiverse analysis (if time)</td>
 </tr>
 <tr class="even">
 <td align="left">11</td>
 <td align="left">Monday, March 25</td>
-<td align="left">Oral presentations for Assignment #3</td>
+<td align="left">In-class interactive activity</td>
 </tr>
 <tr class="odd">
 <td align="left">12</td>
