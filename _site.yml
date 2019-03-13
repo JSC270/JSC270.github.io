@@ -14,7 +14,7 @@ navbar:
         - text: Tutorial
           href: tut_docs.html
         - text: Midterm
-          href: mttest_studentpreview.html
+          href: mttest_full.html
         - text: "-----------------"
         - text: Assignments
           href: assign_docs.html
