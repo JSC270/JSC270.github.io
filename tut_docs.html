@@ -99,9 +99,6 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
-summary {
-  display: list-item;
-}
 </style>
 
 
@@ -116,6 +113,7 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
+
 .section h2 {
   padding-top: 65px;
   margin-top: -65px;
@@ -135,43 +133,6 @@ body {
 .section h6 {
   padding-top: 65px;
   margin-top: -65px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -193,77 +154,18 @@ $(document).ready(function () {
 });
 </script>
 
+
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
 </script>
 
 <!-- code folding -->
+
 
 
 
@@ -398,7 +300,7 @@ div.tocify {
       <a href="tut_docs.html">Tutorial</a>
     </li>
     <li>
-      <a href="mttest_studentpreview.html">Midterm</a>
+      <a href="mttest_full.html">Midterm</a>
     </li>
     <li class="divider"></li>
     <li>
@@ -514,24 +416,33 @@ div.tocify {
 <h1>Tutorial 4 - Wed. February 13</h1>
 <p>Homework to be completed for Tutorial 4.</p>
 <div id="part-1-tell-us-a-story-communication-exercise" class="section level2">
-<h2>Part 1: Tell us a story! (Communication exercise):</h2>
+<h2>Part 1: Tell us a story! (Communication exercise)</h2>
 <ul>
 <li><p><a href="tutorials/jsc270_tut4_part1_questions.html">html</a></p></li>
 <li><p><a href="tutorials/tutorial4-presentation-rubric.pdf">Presentation rubric</a></p></li>
 </ul>
 </div>
 <div id="part-2-statistical-inference" class="section level2">
-<h2>Part 2: Statistical inference:</h2>
+<h2>Part 2: Statistical inference</h2>
 <ul>
 <li><a href="https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut4_part2_questions.ipynb">ipynb</a></li>
 </ul>
 <p><br></p>
 </div>
 </div>
+<div id="tutorial-5---wed.-feb-27" class="section level1">
+<h1>Tutorial 5 - Wed. Feb 27</h1>
+<p>A2 presentations.</p>
+</div>
 <div id="tutorial-6---wed.-march-6" class="section level1">
 <h1>Tutorial 6 - Wed. March 6</h1>
 <p><a href="tutorials/tutorial6.html">Questions</a></p>
-<hr />
+<p><br></p>
+</div>
+<div id="tutorials-7-and-8---march-20-and-march-27" class="section level1">
+<h1>Tutorials 7 and 8 - March 20 and March 27</h1>
+<p><a href="tutorials/tutorial7-8.html">Presentation instructions</a></p>
+<p><br> <br> ******</p>
 </div>
 <div id="tutorial-grading" class="section level1">
 <h1>Tutorial Grading</h1>
@@ -641,37 +552,37 @@ div.tocify {
 <tr class="even">
 <td align="left">7</td>
 <td align="left">Wednesday, February 27</td>
-<td align="left"></td>
+<td align="left">T5: Oral presentations (A2)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left">8</td>
 <td align="left">Wednesday, March 6</td>
-<td align="left"></td>
+<td align="left">T6: What is your question? (A3 project)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left">9</td>
 <td align="left">Wednesday, March 13</td>
-<td align="left"></td>
+<td align="left">Mid-term test</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left">10</td>
 <td align="left">Wednesday, March 20</td>
-<td align="left"></td>
+<td align="left">T7: Project weekly progress</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left">11</td>
 <td align="left">Wednesday, March 27</td>
-<td align="left"></td>
+<td align="left">T8: Project weekly progress</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left">12</td>
 <td align="left">Wednesday, April 3</td>
-<td align="left"></td>
+<td align="left">Final project presentations</td>
 <td align="left"></td>
 </tr>
 </tbody>

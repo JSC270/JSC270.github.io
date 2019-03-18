@@ -75,23 +75,38 @@ Questions for Tutorial 3: [html](tutorials/jsc270_tut3_student.html); [ipynb](tu
 
 Homework to be completed for Tutorial 4.   
 
-## Part 1: Tell us a story! (Communication exercise): 
+## Part 1: Tell us a story! (Communication exercise) 
 
 - [html](tutorials/jsc270_tut4_part1_questions.html)
 
 - [Presentation rubric](tutorials/tutorial4-presentation-rubric.pdf)
 
-## Part 2: Statistical inference:
+## Part 2: Statistical inference
 
 - [ipynb](https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut4_part2_questions.ipynb) 
 
 <br>
 
 
+# Tutorial 5 - Wed. Feb 27
+
+A2 presentations.
+
+<br>
+
 # Tutorial 6 - Wed. March 6
 
 [Questions](tutorials/tutorial6.html)
 
+<br>
+
+
+# Tutorials 7 and 8 - March 20 and March 27
+
+[Presentation instructions](tutorials/tutorial7-8.html)
+
+<br>
+<br>
  ******
 
 
