@@ -1,0 +1,130 @@
+---
+title: "JSC270 - Tutorial Documents"
+output: 
+  html_document:
+   toc: true
+   toc_depth: 3
+   toc_float: true
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+library(tidyverse)
+```
+
+<br>
+<br>
+
+# Tutorial 0 - Mon. January 7
+
+[Questions for Tutorial 0](tutorials/Tutorial0HelloJSC270.html)
+
+[Answers to Tutorial 0 Questions](tutorials/Tutorial0HelloJSC270-answers-posted.html)
+
+<br>
+
+# Tutorial 1 - Wed. January 16
+
+Questions for Tutorial 1: [html](tutorials/jsc270_tut1_questions.html); [ipynb](https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut1_questions.ipynb)
+
+### Resources for Tutorial 1
+
+- [Pandas Cheat Sheet](Pandas_Cheat_Sheet.pdf) ([see ref](https://github.com/pandas-dev/pandas))
+
+- [Pandas project](https://pandas.pydata.org)
+
+- [git Basics](tutorials/jsc270-git-basics.pdf)
+
+- [The Truth About Algorithms, Cathy O'Neil](https://youtu.be/heQzqX35c9A)
+
+A few articles on hiring algorithms: 
+
+- [Hiring Algorithms Are Not Neutral - Harvard Business Review](https://hbr.org/2016/12/hiring-algorithms-are-not-neutral)
+
+- [A.I. as Talent Scout: Unorthodox Hires, and Maybe Lower Pay - New York Times](https://www.nytimes.com/2018/12/06/business/economy/artificial-intelligence-hiring.html)
+
+- [Amazon scraps secret AI recruiting tool that showed bias against women - Reuters](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G)
+
+<br>
+
+# Tutorial 2 - Wed. January 23
+
+Questions for Tutorial 2: [html](tutorials/jsc270_tut2_student.html); [ipynb](https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut2_student.ipynb)
+
+<br>
+
+# Tutorial 3 - Wed. January 30 
+
+Questions for Tutorial 3: [html](tutorials/jsc270_tut3_student.html); [ipynb](tutorials/jsc270_tut3_student.ipynb)
+
+### Resources for Tutorial 3
+
+- [ipywidgets library](https://ipywidgets.readthedocs.io)
+
+- [Survey Research (in psychology)](https://web.stanford.edu/dept/communication/faculty/krosnick/Survey_Research.pdf)
+
+- [Survey Research in HCI](https://link-springer-com.myaccess.library.utoronto.ca/chapter/10.1007/978-1-4939-0378-8_10)
+
+- [Likert scales: how to (ab)use them](https://pdfs.semanticscholar.org/3ebe/1b5c7e927be0221788348973b17c9de3bf05.pdf)
+
+
+<br>
+
+# Tutorial 4 - Wed. February 13
+
+Homework to be completed for Tutorial 4.   
+
+## Part 1: Tell us a story! (Communication exercise) 
+
+- [html](tutorials/jsc270_tut4_part1_questions.html)
+
+- [Presentation rubric](tutorials/tutorial4-presentation-rubric.pdf)
+
+## Part 2: Statistical inference
+
+- [ipynb](https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut4_part2_questions.ipynb) 
+
+<br>
+
+
+# Tutorial 5 - Wed. Feb 27
+
+A2 presentations.
+
+<br>
+
+# Tutorial 6 - Wed. March 6
+
+[Questions](tutorials/tutorial6.html)
+
+<br>
+
+
+# Tutorials 7 and 8 - March 20 and March 27
+
+[Presentation instructions](tutorials/tutorial7-8.html)
+
+<br>
+<br>
+ ******
+
+
+# Tutorial Grading
+
+```{r}
+tutorial_rubric <- read_csv("rubrics/tutorial_rubric.csv")
+knitr::kable(tutorial_rubric)
+```
+
+
+ ******
+
+<br>
+
+# Tutorial Schedule
+
+```{r, echo=FALSE}
+jsc270_tutsched <- read_csv("jsc270_tutsched.csv", col_types = cols(Week = col_character()), na = "null")
+knitr::kable(jsc270_tutsched)
+```

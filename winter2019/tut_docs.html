@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>JSC270 - Tutorial Documents</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">JSC270 Winter 2019</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Course Documents
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="syllabus.html">
+        <span class="fas fa fas fa-info"></span>
+         
+        Syllabus
+      </a>
+    </li>
+    <li class="dropdown-header">Course Documents</li>
+    <li>
+      <a href="class_docs.html">Class</a>
+    </li>
+    <li>
+      <a href="tut_docs.html">Tutorial</a>
+    </li>
+    <li>
+      <a href="mttest_full.html">Midterm</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="assign_docs.html">Assignments</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="jsc270_assignment1_0.2.html">Assignment 1</a>
+    </li>
+    <li>
+      <a href="jsc270_assignment2_ver1.html">Assignment 2</a>
+    </li>
+    <li>
+      <a href="jsc270_assignment3.html">Assignment 3</a>
+    </li>
+    <li>
+      <a href="assignment_rubrics.html">Assignment Grading</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Discussion
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://piazza.com/class/jpdcniqs4r36rj">
+        <span class="fas fa fas fa-info"></span>
+         
+        Piazza
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="resources.html">Data + Science</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">JSC270 - Tutorial Documents</h1>
+
+</div>
+
+
+<p><br> <br></p>
+<div id="tutorial-0---mon.-january-7" class="section level1">
+<h1>Tutorial 0 - Mon. January 7</h1>
+<p><a href="tutorials/Tutorial0HelloJSC270.html">Questions for Tutorial 0</a></p>
+<p><a href="tutorials/Tutorial0HelloJSC270-answers-posted.html">Answers to Tutorial 0 Questions</a></p>
+<p><br></p>
+</div>
+<div id="tutorial-1---wed.-january-16" class="section level1">
+<h1>Tutorial 1 - Wed. January 16</h1>
+<p>Questions for Tutorial 1: <a href="tutorials/jsc270_tut1_questions.html">html</a>; <a href="https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut1_questions.ipynb">ipynb</a></p>
+<div id="resources-for-tutorial-1" class="section level3">
+<h3>Resources for Tutorial 1</h3>
+<ul>
+<li><p><a href="Pandas_Cheat_Sheet.pdf">Pandas Cheat Sheet</a> (<a href="https://github.com/pandas-dev/pandas">see ref</a>)</p></li>
+<li><p><a href="https://pandas.pydata.org">Pandas project</a></p></li>
+<li><p><a href="tutorials/jsc270-git-basics.pdf">git Basics</a></p></li>
+<li><p><a href="https://youtu.be/heQzqX35c9A">The Truth About Algorithms, Cathy O’Neil</a></p></li>
+</ul>
+<p>A few articles on hiring algorithms:</p>
+<ul>
+<li><p><a href="https://hbr.org/2016/12/hiring-algorithms-are-not-neutral">Hiring Algorithms Are Not Neutral - Harvard Business Review</a></p></li>
+<li><p><a href="https://www.nytimes.com/2018/12/06/business/economy/artificial-intelligence-hiring.html">A.I. as Talent Scout: Unorthodox Hires, and Maybe Lower Pay - New York Times</a></p></li>
+<li><p><a href="https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G">Amazon scraps secret AI recruiting tool that showed bias against women - Reuters</a></p></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+<div id="tutorial-2---wed.-january-23" class="section level1">
+<h1>Tutorial 2 - Wed. January 23</h1>
+<p>Questions for Tutorial 2: <a href="tutorials/jsc270_tut2_student.html">html</a>; <a href="https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut2_student.ipynb">ipynb</a></p>
+<p><br></p>
+</div>
+<div id="tutorial-3---wed.-january-30" class="section level1">
+<h1>Tutorial 3 - Wed. January 30</h1>
+<p>Questions for Tutorial 3: <a href="tutorials/jsc270_tut3_student.html">html</a>; <a href="tutorials/jsc270_tut3_student.ipynb">ipynb</a></p>
+<div id="resources-for-tutorial-3" class="section level3">
+<h3>Resources for Tutorial 3</h3>
+<ul>
+<li><p><a href="https://ipywidgets.readthedocs.io">ipywidgets library</a></p></li>
+<li><p><a href="https://web.stanford.edu/dept/communication/faculty/krosnick/Survey_Research.pdf">Survey Research (in psychology)</a></p></li>
+<li><p><a href="https://link-springer-com.myaccess.library.utoronto.ca/chapter/10.1007/978-1-4939-0378-8_10">Survey Research in HCI</a></p></li>
+<li><p><a href="https://pdfs.semanticscholar.org/3ebe/1b5c7e927be0221788348973b17c9de3bf05.pdf">Likert scales: how to (ab)use them</a></p></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+<div id="tutorial-4---wed.-february-13" class="section level1">
+<h1>Tutorial 4 - Wed. February 13</h1>
+<p>Homework to be completed for Tutorial 4.</p>
+<div id="part-1-tell-us-a-story-communication-exercise" class="section level2">
+<h2>Part 1: Tell us a story! (Communication exercise)</h2>
+<ul>
+<li><p><a href="tutorials/jsc270_tut4_part1_questions.html">html</a></p></li>
+<li><p><a href="tutorials/tutorial4-presentation-rubric.pdf">Presentation rubric</a></p></li>
+</ul>
+</div>
+<div id="part-2-statistical-inference" class="section level2">
+<h2>Part 2: Statistical inference</h2>
+<ul>
+<li><a href="https://github.com/JSC270/JSC270.github.io/blob/master/tutorials/jsc270_tut4_part2_questions.ipynb">ipynb</a></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+<div id="tutorial-5---wed.-feb-27" class="section level1">
+<h1>Tutorial 5 - Wed. Feb 27</h1>
+<p>A2 presentations.</p>
+</div>
+<div id="tutorial-6---wed.-march-6" class="section level1">
+<h1>Tutorial 6 - Wed. March 6</h1>
+<p><a href="tutorials/tutorial6.html">Questions</a></p>
+<p><br></p>
+</div>
+<div id="tutorials-7-and-8---march-20-and-march-27" class="section level1">
+<h1>Tutorials 7 and 8 - March 20 and March 27</h1>
+<p><a href="tutorials/tutorial7-8.html">Presentation instructions</a></p>
+<p><br> <br> ******</p>
+</div>
+<div id="tutorial-grading" class="section level1">
+<h1>Tutorial Grading</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Category</th>
+<th align="left">5</th>
+<th align="left">4</th>
+<th align="left">3</th>
+<th align="left">2</th>
+<th align="left">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Planning of code and statistical analysis</td>
+<td align="left">Introductory comment describes overall strategy and gives evidence of preliminary planning. Thoughtful problem decomposition breaks the problem into independent pieces that can be solved easily.</td>
+<td align="left">Evidence of planning before coding, but some flaws in overall strategy.</td>
+<td align="left">More planning needed: overall strategy ok, but have missed some obvious ways of making the code simpler.</td>
+<td align="left">It all hangs together, but planning was absent or rushed.</td>
+<td align="left">No evidence of planning. Strategy deeply flawed.</td>
+</tr>
+<tr class="even">
+<td align="left">Programming execution and reproducibility of results</td>
+<td align="left">Mastery of Python/R vocabulary means that the absolute minimum amount of code is used to get the job done. Code free from duplication. Each function encapsulates a single task, and repeated tasks are performed by functions, not copy and paste</td>
+<td align="left">Workable, but not elegant. Common programming idioms used to reduce code.</td>
+<td align="left">The code works, but copy-paste used often.</td>
+<td align="left">Most of the code works, but some parts do not work. Copy-paste used very often</td>
+<td align="left">Functions used inapproriately, or existing functions reinvented. Extensive use of copy and paste.</td>
+</tr>
+<tr class="odd">
+<td align="left">Programming Clarity</td>
+<td align="left">Code is a pleasure to read, and easy to understand. Code and comments form part of a seamless whole.</td>
+<td align="left">Comments used to discuss the why, and not how of code; to provide insight into complicated algorithms; and to indicate purpose of function (if not obvious from its name). Comment headings used to separate important sections of the code.</td>
+<td align="left">Generally easy to read, but some comments used inappropriately: either too many, or too few. Some variable names confusing.</td>
+<td align="left">Hard to understand. Poor choice of names and comments do not generally aid understanding.</td>
+<td align="left">Cannot understand code. The reader cannot understand why the code works.</td>
+</tr>
+<tr class="even">
+<td align="left">Communication</td>
+<td align="left">Findings very well organised. Clear headings demarcate separate sections. Excellent flow from one section to the next. The paper is easy to scan. Tables and graphics carefully tuned and placed for desired purpose.</td>
+<td align="left">Findings well organised and sections clearly separated, but flow is lacking. Each section has clear purpose. Tables and graphics clear and well chosen</td>
+<td align="left">Generally well organised, but some sections muddled. Tables or graphics appropriate, but some are poorly presented - too many decimal places, poorly chosen aspect ratio etc.</td>
+<td align="left">Sections unclear and no attempt to flow from one topic to the next. Graphics and tables poorly chosen to support questions. Some have fundamental flaws.</td>
+<td align="left">It is hard to read your notebook. There are no headings, figures are far away from where they are referenced in the text. There is no summary or conclusion.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><br></p>
+</div>
+<div id="tutorial-schedule" class="section level1">
+<h1>Tutorial Schedule</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Week</th>
+<th align="left">Date</th>
+<th align="left">Topics</th>
+<th align="left">Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">Monday, January 7</td>
+<td align="left">T0: “Hello World”: Introduction to data analysis and computing</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">Wednesday, January 16</td>
+<td align="left">T1: “Hiring algorithm”: Basic analyses and ethical considerations</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">Wednesday, January 23</td>
+<td align="left">T2: “Influenza Survelliance in Canada”: Exploratory data analysis</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">Wednesday, January 30</td>
+<td align="left">T3: “Design, Conduct and Analyse Survey”: Collecting and working with survey data</td>
+<td align="left">See resources for Tutorial 3</td>
+</tr>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">Wednesday, February 6</td>
+<td align="left">T3: cont’d</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">Wednesday, February 13</td>
+<td align="left">T4: “Tell us a story!”: Introduction to communication</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Wednesday, February 20</td>
+<td align="left">Reading week</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">7</td>
+<td align="left">Wednesday, February 27</td>
+<td align="left">T5: Oral presentations (A2)</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">8</td>
+<td align="left">Wednesday, March 6</td>
+<td align="left">T6: What is your question? (A3 project)</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">9</td>
+<td align="left">Wednesday, March 13</td>
+<td align="left">Mid-term test</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">10</td>
+<td align="left">Wednesday, March 20</td>
+<td align="left">T7: Project weekly progress</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">11</td>
+<td align="left">Wednesday, March 27</td>
+<td align="left">T8: Project weekly progress</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">12</td>
+<td align="left">Wednesday, April 3</td>
+<td align="left">Final project presentations</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

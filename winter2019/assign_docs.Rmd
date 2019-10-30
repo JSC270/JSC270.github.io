@@ -1,0 +1,27 @@
+---
+title: "JSC270 - Assignment Documents"
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
+```
+
+<br>
+
+
+# Assignment #1
+
+[Questions for Assignment #1](jsc270_assignment1_0.2.html)
+
+# Assignment #2
+
+[Questions for Assignment #2](jsc270_assignment2_ver1.html)
+
+# Assignment #3
+
+[Questions for Assignment #3](jsc270_assignment3.html)

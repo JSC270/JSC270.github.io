@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>JSC270H1S: Data Science I</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">JSC270 Winter 2019</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Course Documents
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="syllabus.html">
+        <span class="fas fa fas fa-info"></span>
+         
+        Syllabus
+      </a>
+    </li>
+    <li class="dropdown-header">Course Documents</li>
+    <li>
+      <a href="class_docs.html">Class</a>
+    </li>
+    <li>
+      <a href="tut_docs.html">Tutorial</a>
+    </li>
+    <li>
+      <a href="mttest_studentpreview.html">Midterm</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="assign_docs.html">Assignments</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="jsc270_assignment1_0.2.html">Assignment 1</a>
+    </li>
+    <li>
+      <a href="jsc270_assignment2_ver1.html">Assignment 2</a>
+    </li>
+    <li>
+      <a href="jsc270_assignment3.html">Assignment 3</a>
+    </li>
+    <li>
+      <a href="assignment_rubrics.html">Assignment Grading</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Discussion
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://piazza.com/class/jpdcniqs4r36rj">
+        <span class="fas fa fas fa-info"></span>
+         
+        Piazza
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="resources.html">Data + Science</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">JSC270H1S: Data Science I</h1>
+<h3 class="subtitle"><em>Syllabus</em></h3>
+<h4 class="date"><em>Winter 2019</em></h4>
+
+</div>
+
+
+<p><br></p>
+<div id="teaching-team" class="section level2">
+<h2><i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team</h2>
+<ul>
+<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. <a href="http://utstat.toronto.edu/nathan/">N. Taback</a>, SS6027C.</li>
+<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. <a href="http://fannychevalier.net">F. Chevalier</a>, BA5226.</li>
+<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email instructors: <a href="mailto:jsc270-winter2019@cs.toronto.edu">jsc270-winter2019@cs.toronto.edu</a></li>
+<li>Teaching assistants: Nicole Sultanum and Michael Moon.</li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="office-hours" class="section level2">
+<h2><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours</h2>
+<ul>
+<li>Prof. Taback, Tuesday 13:00 - 14:00 (SS6027C).</li>
+<li><p>Prof. Chevalier, Tuesday, 14:00 - 15:00 (BA5226)</p></li>
+<li><p>TA office hours, Friday, 14:00 - 16:00 (BA5287).</p></li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="class-times-and-location" class="section level2">
+<h2><i class="glyphicon glyphicon-blackboard" aria-hidden="true"></i> Class Times and Location</h2>
+<p><br></p>
+<div id="lectures" class="section level3">
+<h3><em>Lectures</em></h3>
+<ul>
+<li>Mondays, 12:00-14:00 in <a href="http://map.utoronto.ca/utsg/building/032A">WI523</a>.</li>
+<li>There is no lecture on February 18 (Reading Week)</li>
+</ul>
+<p><br></p>
+</div>
+<div id="tutorials" class="section level3">
+<h3><em>Tutorials</em></h3>
+<ul>
+<li><p>Wednesdays, 12:00-14:00 in BA3175.</p></li>
+<li>There are no tutorials on the following Mondays:
+<ul>
+<li>February 20 (Reading Week)<br />
+</li>
+<li>March 13 (Mid-Term Test)</li>
+</ul></li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+</div>
+<div id="course-description" class="section level2">
+<h2><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description</h2>
+<p>Data Science is a relatively new interdisciplinary field that ecompasses statistic methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline. The purpose of this course is to give you a broad introduction to many of the ways data scientists learn from data, including statistical reasoning, computation and communication. We will use both Python and R programming languages. Tutorial labs will give students hands-on experience in executing and communicating data science problems and solutions.</p>
+<p>Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary team.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="learning-objectives" class="section level2">
+<h2><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives</h2>
+<p>By the end of this course, you should be able to:</p>
+<ul>
+<li><p>Apply and evaluate statistical methods and study designs to develop solutions to questions based on real data.</p></li>
+<li><p>Understand current software infrastructure for handling data.</p></li>
+<li><p>Write computer programs to wrangle and analyse data.</p></li>
+<li><p>Understand the fundamental data structures needed for storing and processing data efficiently.</p></li>
+<li><p>Understand ethical issues related to data analysis and software development.</p></li>
+<li><p>Identify and answer questions that involve applying statistical methods or machine learning algorithms to complex data, and communicating the results.</p></li>
+<li><p>Work in a team to solve data science problems.</p></li>
+<li><p>Present the results and limitations of a data analysis at appropriate technical levels for the intended audience.</p></li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="course-websites" class="section level2">
+<h2><span class="fas fa-globe" aria-hidden="true"></span> Course Websites</h2>
+<ul>
+<li><p>Class slides, notes, and other important information can be found on the <a href="https://jsc270.github.io/">course website.</a></p></li>
+<li><p>Questions and Answers can be posted on the <a href="https://piazza.com/class/jpdcniqs4r36rj#">course discussion board (Piazza)</a></p></li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="course-assignment-calendar" class="section level2">
+<h2><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Assignment Calendar</h2>
+<ul>
+<li>Assignment #1: Monday, February 4 (extended February 8)</li>
+<li>Assignment #2: Monday, February 25 (extended March 3)</li>
+<li>Assignment #3: Monday, April 1 (presentation) – Friday, April 5 (report)</li>
+<li>Term test: Wednesday, March 13</li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="computing" class="section level2">
+<h2><i class="fas fa-code" aria-hidden="true"></i> Computing</h2>
+<p>The course will use <a href="https://www.python.org/">Python 3</a>, <a href="https://www.r-project.org/">R</a> and <a href="https://rmarkdown.rstudio.com/">R markdown</a> for computing.</p>
+<p>Jupyter and RStudio are both available on <a href="https://www.teach.cs.toronto.edu" class="uri">https://www.teach.cs.toronto.edu</a>.</p>
+<p><a href="https://jupyter.teach.cs.toronto.edu/hub/login">Click here for Jupyter</a></p>
+<p><a href="https://rstudio.teach.cs.toronto.edu/auth-sign-in">Click here for RStudio</a></p>
+<p><br></p>
+<hr />
+</div>
+<div id="optional-course-textbooks" class="section level2">
+<h2><i class="glyphicon glyphicon-book" aria-hidden="true"></i> Optional Course Textbooks</h2>
+<p><br></p>
+<div id="references-that-use-python" class="section level3">
+<h3>References that use Python</h3>
+<p>Hajba, Gábor László. “Website Scraping with Python.” <a href="http://go.utlib.ca/cat/11936372">Electronic copy is available from the UofT library</a></p>
+<p>Igual, Laura, and Santi Seguí. “Introduction to Data Science.” Introduction to Data Science. Springer, Cham, 2017. <a href="http://go.utlib.ca/cat/11433860">Electronic copy is available from the UofT library</a></p>
+<p>McKinney, Wes. “Python for data analysis: data wrangling with Pandas, NumPy, and IPython.” (2017). <a href="http://wesmckinney.com/pages/book.html" class="uri">http://wesmckinney.com/pages/book.html</a></p>
+<p>Skiena, Steven S. The Data Science Design Manual. Springer, 2017. <a href="http://go.utlib.ca/cat/11634033">Electronic copy is available from the UofT library</a></p>
+<p><br></p>
+</div>
+<div id="references-that-use-r" class="section level3">
+<h3>References that use R</h3>
+<p>Efron, Bradley, and Trevor Hastie. Computer age statistical inference. Vol. 5. Cambridge University Press, 2016. <a href="https://web.stanford.edu/~hastie/CASI/">Available here.</a></p>
+<p>James, Gareth, et al. An introduction to statistical learning. Vol. 112. New York: springer, 2013. <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">Available here.</a></p>
+<p>Wickham, Hadley, and Garrett Grolemund. R for data science: import, tidy, transform, visualize, and model data. &quot; O’Reilly Media, Inc.“, 2016.<a href="https://r4ds.had.co.nz">Available here.</a></p>
+<p><br></p>
+<hr />
+</div>
+</div>
+<div id="evaluation" class="section level2">
+<h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Evaluation</th>
+<th align="left">Percentage of Final Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Assignment 1</td>
+<td align="left">10%</td>
+</tr>
+<tr class="even">
+<td align="left">Assignment 2</td>
+<td align="left">15%</td>
+</tr>
+<tr class="odd">
+<td align="left">Assignment 3</td>
+<td align="left">35%</td>
+</tr>
+<tr class="even">
+<td align="left">Term test</td>
+<td align="left">20%</td>
+</tr>
+<tr class="odd">
+<td align="left">Tutorial Assignments</td>
+<td align="left">10%</td>
+</tr>
+<tr class="even">
+<td align="left">End of course survey/Reflection</td>
+<td align="left">5%</td>
+</tr>
+<tr class="odd">
+<td align="left">Class participation</td>
+<td align="left">5%</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<hr />
+</div>
+<div id="course-policies" class="section level2">
+<h2><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policies</h2>
+<p><br></p>
+<div id="missed-tests-or-assignments" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Tests or Assignments</h3>
+<ul>
+<li>If a test or tutorial work is missed for a valid medical reason, you must submit the University of Toronto Verification of <a href="http://www.illnessverification.utoronto.ca">Student Illness or Injury form</a> within one week. Submit the form to your TA if it is related to missed tutorial work. Submit the form to both of your instructors if it is related to the test.</li>
+<li>The form will only be accepted as valid if the form is filled out according to the instructions on the form.</li>
+<li>The form must indicate that the degree of incapacitation on academic functioning is moderate, serious, or severe in order to be considered a valid medical reason for missing the term test. If the form indicates that the degree of incapacitation on academic functioning is negligible or mild then this will <strong>NOT</strong> be considered a valid medical reason.</li>
+<li><p>If a tutorial is missed for a valid reason then the weight for that in-lab portion of the tutorial will be shifted to the tutorial assignment completion.</p></li>
+<li><p>If the term test is missed then an oral exam may be used as the makeup test.</p></li>
+<li><p>If a group presentation is missed then an individual presentation may be used as makeup presentation.</p></li>
+<li><p>The late penalties for submitting a completed tutorial assignment are: 10% if the assignment is submitted within 24 hours of the due date; 30% if the assignment is submitted within 48 hours of the due date; and 100% if the assignment is submitted after 48 hours.</p></li>
+<li><p>Other reasons for missing an assignment, tutorial work, or the term test will require prior approval by your instructors. If prior approval is not received for non-medical reasons then you will receive a grade of zero for the missed assignment, tutorial work, or test.</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="marking-concerns" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Marking Concerns</h3>
+<p>Any requests to have your work remarked must contain a written justification for consideration. Remarking requests should be made within one week of receiving your marked work. Re-evaluation appeals are at the discretion of the instructors. Note that adjustments in marks will be rare and could equally result in a lowering or raising of the mark. If a re-revaluation is completed by the instructors, the student must accept the resulting mark as the new mark, whether it goes up or down or remains the same. When appealing a re-evaluation decision, the student accepts this condition.</p>
+<p><br></p>
+</div>
+<div id="how-to-communicate-with-your-instructors" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> How to Communicate with Your Instructors</h3>
+<p>Always use your utoronto.ca e-mail account to ensure that your message doesn’t automatically go to a Junk folder and include your full name and student number. Violation to this policy may incur severe response delays. Allow up to 72 hours for a reply.</p>
+<p>Questions about course material or organization, such as,</p>
+<ul>
+<li>What do I change the colour of my plotting symbol?</li>
+<li>What is the difference between supervised and unsupervised learning?</li>
+<li>When is the term test?</li>
+</ul>
+<p>should be posted on the discussion forums on <a href="https://piazza.com/class/jpdcniqs4r36rj#">Piazza</a> or asked in person. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.</p>
+<p>If your communication is private, such as, “I missed the test because I was ill”“, then e-mail both instructors (<a href="mailto:jsc270-winter2019@cs.toronto.edu">jsc270-winter2019@cs.toronto.edu</a>). If you missed a tutorial then e-mail your TAs.</p>
+<p><br></p>
+</div>
+<div id="academic-integrity" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Academic Integrity</h3>
+<p>You are responsible for knowing the content of the <a href="http://www.governingcouncil.utoronto.ca/policies/behaveac.htm">University of Toronto’s Code of Behaviour on Academic Matters</a>.</p>
+<p>As a general rule, we encourage you to discuss course material with each other and ask others for advice. However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in. When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class. For example, “For question 2.1 what R function did you use?” is a fair question; “Please show me your R code for question 2.1” is not.</p>
+<p>If you have any questions about what is or is not permitted in this course, please do not hesitate to contact <a href="mailto:jsc270-winter2019@cs.toronto.edu">your instructors</a>.</p>
+<p><br></p>
+</div>
+<div id="accessibility-needs" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs</h3>
+<p>The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have any accessibility concerns about the course, the class room, or course materials, please contact Accessibility Services as soon as possible: <a href="mailto:accessibility.services@utoronto.ca">accessibility.services@utoronto.ca</a> or <a href="http://accessibility.utoronto.ca" class="uri">http://accessibility.utoronto.ca</a></p>
+<p><br></p>
+<hr />
+</div>
+</div>
+<div id="your-responsibilities" class="section level2">
+<h2><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities</h2>
+<p>The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings.</p>
+<p><br></p>
+<hr />
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<p><br></p>
+<p>R Markdown source for this website <a href="https://github.com/JSC270/JSC270.github.io"> <i class="fa fa-github fa-2x" aria-hidden="true"></i> </a></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
