@@ -1,7 +1,7 @@
 name: jsc270website
 output_dir: '.'
 navbar:
-  title: JSC270 Winter 2019
+  title: JSC270 Winter 2020
   left:
     - text: Course Documents
       menu:

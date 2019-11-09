@@ -1,7 +1,7 @@
 ---
 title: "JSC270H1S: Data Science I"
 subtitle: "Syllabus"
-date: Winter 2019
+date: Winter 2020
 
 output: 
   html_document:
@@ -19,10 +19,9 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
-- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [N. Taback](http://utstat.toronto.edu/nathan/), SS6027C.
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [F. Chevalier](http://fannychevalier.net), BA5226.
-- <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email instructors: jsc270-winter2019@cs.toronto.edu
-- Teaching assistants: Nicole Sultanum and Michael Moon.
+- <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email instructors: jsc270-winter2020@cs.toronto.edu
+- Teaching assistants: TBD.
 
 <br>
 
@@ -30,10 +29,9 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
-- Prof. Taback, Tuesday 13:00 - 14:00 (SS6027C).
-- Prof. Chevalier, Tuesday, 14:00 - 15:00 (BA5226)
+- Prof. Chevalier, TBD (BA5226)
 
-- TA office hours, Friday, 14:00 - 16:00 (BA5287).
+- TA office hours, TBD (TBD).
 
 <br>
 
@@ -44,13 +42,13 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ### _Lectures_
-- Mondays, 12:00-14:00 in [WI523](http://map.utoronto.ca/utsg/building/032A).
+- Mondays, 12:00-14:00 in [BA 3195](http://map.utoronto.ca/utsg/building/080).
 - There is no lecture on February 18 (Reading Week)
 
 <br>
 
 ### _Tutorials_
-- Wednesdays, 12:00-14:00 in BA3175.  
+- Wednesdays, 12:00-14:00 in [BA3175](http://map.utoronto.ca/utsg/building/080).  
 
 - There are no tutorials on the following Mondays:  
       + February 20 (Reading Week)  
@@ -99,7 +97,7 @@ By the end of this course, you should be able to:
 
 - Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
 
-- Questions and Answers can be posted on the [course discussion board (Piazza)](https://piazza.com/class/jpdcniqs4r36rj#)
+- Questions and Answers can be posted on the [course discussion board (Piazza)](TBD)
 
 <br>
 
@@ -201,7 +199,7 @@ Any requests to have your work remarked must contain a written justification for
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> How to Communicate with Your Instructors
 
-Always use your utoronto.ca e-mail account to ensure that your message doesn’t automatically go to a Junk folder and include your full name and student number. Violation to this policy may incur severe response delays. Allow up to 72 hours for a reply.
+Always use your utoronto.ca e-mail account to ensure that your message doesn’t automatically go to a Junk folder and include your full name and student number. Violation to this policy may incur severe response delays. Allow up to 72 buisiness hours for a reply.
 
 Questions about course material or organization, such as,
   
@@ -211,7 +209,7 @@ Questions about course material or organization, such as,
 
 should be posted on the discussion forums on [Piazza](https://piazza.com/class/jpdcniqs4r36rj#) or asked in person. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.
 
-If your communication is private, such as, "I missed the test because I was ill"", then e-mail both instructors (jsc270-winter2019@cs.toronto.edu).  If you missed a tutorial then e-mail your TAs.
+If your communication is private, such as, "I missed the test because I was ill"", then e-mail both instructors (jsc270-winter2020@cs.toronto.edu).  If you missed a tutorial then e-mail your TAs.
 
 <br>
 
@@ -221,8 +219,8 @@ You are responsible for knowing the content of the [University of Toronto’s Co
 
 As a general rule, we encourage you to discuss course material with each other and ask others for advice.  However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in.  When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class.  For example, "For question 2.1 what R function did you use?" is a fair question; "Please show me your R code for question 2.1" is not.
 
-If you have any questions about what is or is not permitted in this course, please do not hesitate to contact [your instructors](mailto:jsc270-winter2019@cs.toronto.edu).
-
+If you have any questions about what is or is not permitted in this course, please do not hesitate to contact [your instructors](mailto:jsc270-winter2020@cs.toronto.edu).
+e
 <br>
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs
