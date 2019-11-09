@@ -19,12 +19,6 @@ navbar:
         - text: Assignments
           href: assign_docs.html
         - text: "-----------------"
-        - text: Assignment 1
-          href: jsc270_assignment1_0.2.html
-        - text: Assignment 2
-          href: jsc270_assignment2_ver1.html
-        - text: Assignment 3
-          href: jsc270_assignment3.html
         - text: Assignment Grading
           href: assignment_rubrics.html
     - text: Discussion

@@ -43,16 +43,13 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ### _Lectures_
 - Mondays, 12:00-14:00 in [BA 3195](http://map.utoronto.ca/utsg/building/080).
-- There is no lecture on February 18 (Reading Week)
+- There is no lecture on February 17 (Reading Week)
 
 <br>
 
 ### _Tutorials_
 - Wednesdays, 12:00-14:00 in [BA3175](http://map.utoronto.ca/utsg/building/080).  
-
-- There are no tutorials on the following Mondays:  
-      + February 20 (Reading Week)  
-      + March 13 (Mid-Term Test)
+- There is no tutorial on February 19 (Reading Week)  
 
 <br>
 
@@ -220,7 +217,7 @@ You are responsible for knowing the content of the [University of Toronto’s Co
 As a general rule, we encourage you to discuss course material with each other and ask others for advice.  However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in.  When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class.  For example, "For question 2.1 what R function did you use?" is a fair question; "Please show me your R code for question 2.1" is not.
 
 If you have any questions about what is or is not permitted in this course, please do not hesitate to contact [your instructors](mailto:jsc270-winter2020@cs.toronto.edu).
-e
+
 <br>
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs

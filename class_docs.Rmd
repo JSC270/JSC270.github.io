@@ -19,100 +19,10 @@ Documents from class will be posted on this page.
 
 <br>
 
-# Class 1 - Wednesday January 9
-
-[Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1.ipynb)
-
-[Prof. Chevalier's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1-Part2.ipynb)
-
-[Prof. Chevalier's notebook - in-class use case](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class1/Class1-EDA_OkCupid.ipynb)
-
-<br>
-
-# Class 2 - Monday, January 14
-
-[Prof. Taback's notebook](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class2/lecture2_slides_posted2.ipynb)
-
-**NB: If you are installing [`omdb` python library](https://pypi.org/project/omdb/) using Jupyter notebook use the command in a Jupyter code cell: `!pip install --user omdb` (i.e., make sure to include the user flag).  Alternatively, you can run the command from the terminal.**
-
-<br>
-
-# Class 3 - Monday, January 21
-
-[Prof. Chevalier's notebook (student version for class)](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class3/lecture3_slides-students.ipynb)
-
-[Prof. Chevalier's notebook (complete version with solutions and comments)](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class3/lecture3_slides-complete.ipynb)
-
-Datasets used in class 3:
-
-- [Movies dataset](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class3/data/50movies-clean.csv)
-
-- [Titanic dataset](https://github.com/JSC270/JSC270.github.io/blob/master/notebooks/class3/data/titanic.csv)
-
-<br>
-
-# Class 4 - Monday January 28
-
-[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class4)
-
-### Readings
-
-- [The Surprising Power of Online Experiments](https://hbr.org/2017/09/the-surprising-power-of-online-experiments)
-
-- [Why Donald Trump is the political equivalent of a Silicon Valley startup](https://theweek.com/articles/626366/why-donald-trump-political-equivalent-silicon-valley-startup)
-
-- [Randomization and Bias in Cancer Clinical Trials](https://www.cancer.gov/about-cancer/treatment/clinical-trials/what-are-trials/randomization)
-
-<br>
-
-# Class 5 - Monday February 4
-
-[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class5)
-
-<br>
-
-# Class 6 - Monday February 11
-
-[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class6)
-
-### Reading
-
-[An An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/).  The material from today's class is scattered over chapters 2, 3, 4, 5, 6, 8.  
-
-<br>
-
-# Class 7 - Monday February 25
-
-[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class7/lecture7.pdf)
-
-### Readings
-
-- [Preattentive processing in vision](https://www-sciencedirect-com.myaccess.library.utoronto.ca/science/article/pii/S0734189X85800049) -- Available on UofT network and through UofT library
-
-- [The value of Information Visualization](https://www.win.tue.nl/~vanwijk/infovis_springer.pdf)
-
-- [The good, the bad, and the biased: five ways visualization can mislead](http://interactions.acm.org/archive/view/july-august-2018/the-good-the-bad-and-the-biased)
+# Class 1 - Monday January 6
 
 
 <br>
-
-# Class 8 - Monday March 11
-
-[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class8/lecture8.pdf)
-
-
-<br>
-
-# Class 9 - Monday March 18
-
-[Prof. Ahmed's slides](https://docs.google.com/presentation/d/1TuDVBKXjULkA7x7pKLt-mdVIzyG5civqwD1rXFmjMtk/edit#slide=id.p)
-
-
-<br>
-
-# Class 10 - Monday March 25
-
-[Class slides](https://github.com/JSC270/JSC270.github.io/tree/master/notebooks/class10/JSC270-Class10.pdf)
 
 
 <br>
@@ -137,9 +47,11 @@ Datasets used in class 3:
 
 # Class Schedule
 
+The following is a tentative schedule, subject to change slightly.
+
 ```{r, echo=FALSE}
 library(tidyverse)
-jsc270_classsched <- read_csv("jsc270_class_sched.csv", col_types = cols(Week = col_character()), na = "null")
+jsc270_classsched <- read_csv("class_sched.csv", col_types = cols(Week = col_character()), na = "null")
 knitr::kable(jsc270_classsched)
 ```
 
