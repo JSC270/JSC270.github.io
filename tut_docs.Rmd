@@ -48,6 +48,12 @@ tutorial_rubric <- read_csv("rubrics/tutorial_rubric.csv")
 knitr::kable(tutorial_rubric)
 ```
 
+# Tutorial Reflections Grading
+
+```{r}
+tutorial_rubric <- read_csv("rubrics/reflections_rubric.csv")
+knitr::kable(tutorial_rubric)
+```
 
  ******
 
