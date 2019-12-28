@@ -43,14 +43,14 @@ library(tidyverse)
  ******
 
 
-# Tutorial In-Lab Progress Grading
+# In-Lab Progress Grading
 
 ```{r}
 tutorial_rubric <- read_csv("rubrics/labprogress_rubric.csv")
 knitr::kable(tutorial_rubric) 
 ```
 
-# Tutorial Assignment Completion Grading
+# Assignment Completion Grading
 
 
 ```{r}
@@ -58,7 +58,7 @@ tutorial_rubric <- read_csv("rubrics/tutorial_rubric.csv")
 knitr::kable(tutorial_rubric) 
 ```
 
-# Tutorial Reflections Grading
+# Reflections Grading
 
 ```{r}
 tutorial_rubric <- read_csv("rubrics/reflections_rubric.csv")
