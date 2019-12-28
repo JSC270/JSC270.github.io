@@ -17,19 +17,21 @@ library(tidyverse)
 <br>
 
 
-# Tutorial 1 - Wed. January 8
+# Tutorial 1
 
-Questions for Tutorial 1: [html](); [ipynb]()  -- Coming soon
-
+* [Tutorial Overview]() 
+    + [Tutorial 1.0: Pre-lab Questions]()  
+    + [Tutorial 1.1: Tutorial Assignment]() 
+    + [Tutorial 1.2: Reflections]() 
 <br> 
 
-### Resources for Tutorial 1
+#### Resources for Tutorial 1
 
-- [Pandas Cheat Sheet](Pandas_Cheat_Sheet.pdf) ([see ref](https://github.com/pandas-dev/pandas))
+- [Pandas Cheat Sheet](docs/Pandas_Cheat_Sheet.pdf) ([see ref](https://github.com/pandas-dev/pandas))
 
 - [Pandas project](https://pandas.pydata.org)
 
-- [git Basics](tutorials/jsc270-git-basics.pdf)
+- [git Basics](docs/jsc270-git-basics.pdf)
 
 
 <br>
@@ -41,11 +43,19 @@ Questions for Tutorial 1: [html](); [ipynb]()  -- Coming soon
  ******
 
 
-# Tutorial Grading
+# Tutorial In-Lab Progress Grading
+
+```{r}
+tutorial_rubric <- read_csv("rubrics/labprogress_rubric.csv")
+knitr::kable(tutorial_rubric) 
+```
+
+# Tutorial Assignment Completion Grading
+
 
 ```{r}
 tutorial_rubric <- read_csv("rubrics/tutorial_rubric.csv")
-knitr::kable(tutorial_rubric)
+knitr::kable(tutorial_rubric) 
 ```
 
 # Tutorial Reflections Grading
