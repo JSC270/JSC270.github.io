@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title>JSC270 - Tutorial Documents</title>
+<title>JSC270 - Laboratories Documents</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -72,9 +72,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -88,7 +86,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -99,40 +96,79 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 60px;
+  padding-top: 52px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
-
 .section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -154,47 +190,66 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -208,6 +263,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -243,8 +304,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -253,6 +312,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -278,7 +347,13 @@ div.tocify {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
+        <li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Course Documents
      
@@ -286,59 +361,26 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="syllabus.html">
-        <span class="fas fa fas fa-info"></span>
-         
-        Syllabus
-      </a>
+      <a href="class_docs.html">Classes</a>
     </li>
-    <li class="dropdown-header">Course Documents</li>
+    <li class="divider"></li>
     <li>
-      <a href="class_docs.html">Class</a>
-    </li>
-    <li>
-      <a href="tut_docs.html">Tutorial</a>
-    </li>
-    <li>
-      <a href="mttest_full.html">Midterm</a>
+      <a href="tut_docs.html">Laboratories</a>
     </li>
     <li class="divider"></li>
     <li>
       <a href="assign_docs.html">Assignments</a>
     </li>
-    <li class="divider"></li>
     <li>
       <a href="assignment_rubrics.html">Assignment Grading</a>
     </li>
   </ul>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Discussion
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="https://piazza.com/class/jpdcniqs4r36rj">
-        <span class="fas fa fas fa-info"></span>
-         
-        Piazza
-      </a>
-    </li>
-  </ul>
+<li>
+  <a href="https://piazza.com/class/k4yuod8xieb32b">Discussion Forum</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Resources
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="resources.html">Data + Science</a>
-    </li>
-  </ul>
+<li>
+  <a href="resources.html">Resources</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -352,222 +394,66 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">JSC270 - Tutorial Documents</h1>
+<h1 class="title toc-ignore">JSC270 - Laboratories Documents</h1>
 
 </div>
 
 
 <p><br> <br></p>
-<div id="tutorial-1" class="section level1">
-<h1>Tutorial 1</h1>
+<div id="laboratory-1" class="section level1">
+<h1>Laboratory #1</h1>
+<p><br></p>
+<div id="overview" class="section level4">
+<h4>Overview</h4>
 <ul>
-<li><a href="">Tutorial Overview</a>
-<ul>
-<li><a href="">Tutorial 1.0: Pre-lab Questions</a><br />
-</li>
-<li><a href="">Tutorial 1.1: Tutorial Assignment</a></li>
-<li><a href="">Tutorial 1.2: Reflections</a> <br></li>
-</ul></li>
+<li><a href="">Lab 1: Overview of the laboratory</a></li>
 </ul>
-<div id="resources-for-tutorial-1" class="section level4">
-<h4>Resources for Tutorial 1</h4>
+<p><br></p>
+</div>
+<div id="questions-and-starter-code" class="section level4">
+<h4>Questions and starter code</h4>
+<ul>
+<li><p><a href="">Lab 1.0: Pre-lab Questions</a></p></li>
+<li><p><a href="">Lab 1.1: Lab Assignment</a> (coming soon)</p></li>
+<li><p><a href="">Lab 1.2: Reflections</a> (coming soon)</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="resources" class="section level4">
+<h4>Resources</h4>
 <ul>
 <li><p><a href="docs/Pandas_Cheat_Sheet.pdf">Pandas Cheat Sheet</a> (<a href="https://github.com/pandas-dev/pandas">see ref</a>)</p></li>
 <li><p><a href="https://pandas.pydata.org">Pandas project</a></p></li>
 <li><p><a href="docs/jsc270-git-basics.pdf">git Basics</a></p></li>
 </ul>
 <p><br></p>
-<p><br> <br> ******</p>
+<!--- <br>
+
+****
+
+# Tutorial Schedule
+
+The following is a tentative schedule, subject to change slightly.
+
+
+Week   Date           Topics                                                    
+-----  -------------  ----------------------------------------------------------
+1      Wed, Jan. 8    T0: Set-up, asking the right question, introduction to A1 
+2      Wed, Jan. 15   T1: TBD                                                   
+3      Wed, Jan. 22   T2: TBD                                                   
+4      Wed, Jan. 29   T3: TBD                                                   
+5      Wed, Feb. 5    T4: TBD                                                   
+6      Wed, Feb. 12   T5: TBD                                                   
+       Wed, Feb. 19   Reading week                                              
+7      Wed, Feb. 26   Guest presentations: A3 Industrial Clients                
+8      Wed, Mar. 4    T6: TBD                                                   
+9      Wed, Mar. 11   T7: Project weekly progress                               
+10     Wed, Mar. 18   T8: Project weekly progress                               
+11     Wed, Mar. 25   T9: Project weekly progress                               
+12     Wed, Apr. 1    Final project presentations                               
+
+--->
 </div>
-</div>
-<div id="in-lab-progress-grading" class="section level1">
-<h1>In-Lab Progress Grading</h1>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Category</th>
-<th align="left">5</th>
-<th align="left">4</th>
-<th align="left">3</th>
-<th align="left">2</th>
-<th align="left">1</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Progress</td>
-<td align="left">Excellent progress. Optimal use of lab time. The team was fully focused on getting the assignment done, and fully engaged.</td>
-<td align="left">Good progress. Good use of lab time. The team was focused on getting the assignment done, and engaged.</td>
-<td align="left">Moderate progress. Used some of the lab time well. There was some focus on getting the assignment done, but the team was occasionnally distracted.</td>
-<td align="left">Insufficient progress. Poor use of lab time. The team was generally distracted, and did not focus much on the assignment.</td>
-<td align="left">Minimal progress. The team did barely use lab time to make progress on the assignment, and was often distracted.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="assignment-completion-grading" class="section level1">
-<h1>Assignment Completion Grading</h1>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Category</th>
-<th align="left">5</th>
-<th align="left">4</th>
-<th align="left">3</th>
-<th align="left">2</th>
-<th align="left">1</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Planning of code and statistical analysis</td>
-<td align="left">Introductory comment describes overall strategy and gives evidence of preliminary planning. Thoughtful problem decomposition breaks the problem into independent pieces that can be solved easily.</td>
-<td align="left">Evidence of planning before coding, but some flaws in overall strategy.</td>
-<td align="left">More planning needed: overall strategy ok, but have missed some obvious ways of making the code simpler.</td>
-<td align="left">It all hangs together, but planning was absent or rushed.</td>
-<td align="left">No evidence of planning. Strategy deeply flawed.</td>
-</tr>
-<tr class="even">
-<td align="left">Programming execution and reproducibility of results</td>
-<td align="left">Mastery of Python/R vocabulary means that the absolute minimum amount of code is used to get the job done. Code free from duplication. Each function encapsulates a single task, and repeated tasks are performed by functions, not copy and paste</td>
-<td align="left">Workable, but not elegant. Common programming idioms used to reduce code.</td>
-<td align="left">The code works, but copy-paste used often.</td>
-<td align="left">Most of the code works, but some parts do not work. Copy-paste used very often</td>
-<td align="left">Functions used inapproriately, or existing functions reinvented. Extensive use of copy and paste.</td>
-</tr>
-<tr class="odd">
-<td align="left">Programming Clarity</td>
-<td align="left">Code is a pleasure to read, and easy to understand. Code and comments form part of a seamless whole.</td>
-<td align="left">Comments used to discuss the why, and not how of code; to provide insight into complicated algorithms; and to indicate purpose of function (if not obvious from its name). Comment headings used to separate important sections of the code.</td>
-<td align="left">Generally easy to read, but some comments used inappropriately: either too many, or too few. Some variable names confusing.</td>
-<td align="left">Hard to understand. Poor choice of names and comments do not generally aid understanding.</td>
-<td align="left">Cannot understand code. The reader cannot understand why the code works.</td>
-</tr>
-<tr class="even">
-<td align="left">Communication</td>
-<td align="left">Findings very well organised. Clear headings demarcate separate sections. Excellent flow from one section to the next. The report is easy to scan. Tables and graphics carefully tuned and placed for desired purpose.</td>
-<td align="left">Findings well organised and sections clearly separated, but flow is lacking. Each section has clear purpose. Tables and graphics clear and well chosen</td>
-<td align="left">Generally well organised, but some sections muddled. Tables or graphics appropriate, but some are poorly presented - too many decimal places, poorly chosen aspect ratio etc.</td>
-<td align="left">Sections unclear and no attempt to flow from one topic to the next. Graphics and tables poorly chosen to support questions. Some have fundamental flaws.</td>
-<td align="left">It is hard to read your notebook. There are no headings, figures are far away from where they are referenced in the text. There is no summary or conclusion.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="reflections-grading" class="section level1">
-<h1>Reflections Grading</h1>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Category</th>
-<th align="left">5</th>
-<th align="left">4</th>
-<th align="left">3</th>
-<th align="left">2</th>
-<th align="left">1</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Depth of reflections</td>
-<td align="left">Response demonstrates an in-depth reflection on, and personalization of, the theories, concepts, and/or strategies presented in the course materials to date. Viewpoints and interpretations are insightful and well supported. Clear, detailed examples are provided, as applicable.</td>
-<td align="left">Response demonstrates a thoughtful reflection on, and personalization of, the theories, concepts, and/or strategies presented in the course materials to date. Viewpoints and interpretations are generally supported. Appropriate examples are genterally provided, as applicable.</td>
-<td align="left">Response demonstrates a limited reflection on, and personalization of, the theories, concepts, and/or strategies presented in the course materials to date. Viewpoints and interpretations are sometimes usupported. Appropriate examples are provided, as applicable.</td>
-<td align="left">Response demonstrates a minimal reflection on, and personalization of, the theories, concepts, and/or strategies presented in the course materials to date. Some viewpoints and interpretations are unsupported or supported with flawed arguments. Some examples, when applicable, are not provided or are irrelevant to the assignment.</td>
-<td align="left">Response demonstrates a lack of reflection on, or personalization of, the theories, concepts, and/or strategies presented in the course materials to date. Viewpoints and interpretations are missing, inappropriate, and/or unsupported. Examples, when applicable, are not provided.</td>
-</tr>
-<tr class="even">
-<td align="left">Writing quality</td>
-<td align="left">Writing is clear, concise, and well organized with excellent sentence/paragraph construction. Thoughts are expressed in a coherent and logical manner. There are no more than three spelling, grammar, or syntax errors.</td>
-<td align="left">Writing is mostly clear, concise, and well organized with good sentence/paragraph construction. Thoughts are expressed in a coherent and logical manner. There are no more than five spelling, grammar, or syntax errors.</td>
-<td align="left">Writing is sometimes unclear and/or disorganized. Thoughts are not always expressed in a logical manner. There are more than five spelling, grammar, or syntax errors.</td>
-<td align="left">Writing is unclear and/or disorganized. Thoughts are not expressed in a logical manner. There are more than five spelling, grammar, or syntax errors.</td>
-<td align="left">Writing is unclear and disorganized. Thoughts ramble and make little sense. There are numerous spelling, grammar, or syntax errors throughout the response.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><br></p>
-</div>
-<div id="tutorial-schedule" class="section level1">
-<h1>Tutorial Schedule</h1>
-<p>The following is a tentative schedule, subject to change slightly.</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Week</th>
-<th align="left">Date</th>
-<th align="left">Topics</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">1</td>
-<td align="left">Wed, Jan. 8</td>
-<td align="left">T0: Set-up, asking the right question, introduction to A1</td>
-</tr>
-<tr class="even">
-<td align="left">2</td>
-<td align="left">Wed, Jan. 15</td>
-<td align="left">T1: TBD</td>
-</tr>
-<tr class="odd">
-<td align="left">3</td>
-<td align="left">Wed, Jan. 22</td>
-<td align="left">T2: TBD</td>
-</tr>
-<tr class="even">
-<td align="left">4</td>
-<td align="left">Wed, Jan. 29</td>
-<td align="left">T3: TBD</td>
-</tr>
-<tr class="odd">
-<td align="left">5</td>
-<td align="left">Wed, Feb. 5</td>
-<td align="left">T4: TBD</td>
-</tr>
-<tr class="even">
-<td align="left">6</td>
-<td align="left">Wed, Feb. 12</td>
-<td align="left">T5: TBD</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Wed, Feb. 19</td>
-<td align="left">Reading week</td>
-</tr>
-<tr class="even">
-<td align="left">7</td>
-<td align="left">Wed, Feb. 26</td>
-<td align="left">Guest presentations: A3 Industrial Clients</td>
-</tr>
-<tr class="odd">
-<td align="left">8</td>
-<td align="left">Wed, Mar. 4</td>
-<td align="left">T6: TBD</td>
-</tr>
-<tr class="even">
-<td align="left">9</td>
-<td align="left">Wed, Mar. 11</td>
-<td align="left">T7: Project weekly progress</td>
-</tr>
-<tr class="odd">
-<td align="left">10</td>
-<td align="left">Wed, Mar. 18</td>
-<td align="left">T8: Project weekly progress</td>
-</tr>
-<tr class="even">
-<td align="left">11</td>
-<td align="left">Wed, Mar. 25</td>
-<td align="left">T9: Project weekly progress</td>
-</tr>
-<tr class="odd">
-<td align="left">12</td>
-<td align="left">Wed, Apr. 1</td>
-<td align="left">Final project presentations</td>
-</tr>
-</tbody>
-</table>
 </div>
 
 
@@ -588,6 +474,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

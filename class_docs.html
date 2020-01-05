@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -72,9 +72,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -88,7 +86,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -99,40 +96,79 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 60px;
+  padding-top: 52px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
-
 .section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -154,47 +190,66 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -208,6 +263,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -243,8 +304,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -253,6 +312,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -278,7 +347,13 @@ div.tocify {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
+        <li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Course Documents
      
@@ -286,59 +361,26 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="syllabus.html">
-        <span class="fas fa fas fa-info"></span>
-         
-        Syllabus
-      </a>
+      <a href="class_docs.html">Classes</a>
     </li>
-    <li class="dropdown-header">Course Documents</li>
+    <li class="divider"></li>
     <li>
-      <a href="class_docs.html">Class</a>
-    </li>
-    <li>
-      <a href="tut_docs.html">Tutorial</a>
-    </li>
-    <li>
-      <a href="mttest_full.html">Midterm</a>
+      <a href="tut_docs.html">Laboratories</a>
     </li>
     <li class="divider"></li>
     <li>
       <a href="assign_docs.html">Assignments</a>
     </li>
-    <li class="divider"></li>
     <li>
       <a href="assignment_rubrics.html">Assignment Grading</a>
     </li>
   </ul>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Discussion
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="https://piazza.com/class/jpdcniqs4r36rj">
-        <span class="fas fa fas fa-info"></span>
-         
-        Piazza
-      </a>
-    </li>
-  </ul>
+<li>
+  <a href="https://piazza.com/class/k4yuod8xieb32b">Discussion Forum</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Resources
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="resources.html">Data + Science</a>
-    </li>
-  </ul>
+<li>
+  <a href="resources.html">Resources</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -360,102 +402,14 @@ div.tocify {
 <p><br></p>
 <p>Documents from class will be posted on this page.</p>
 <p><br></p>
-<div id="class-1---monday-january-6" class="section level1">
-<h1>Class 1 - Monday January 6</h1>
-<p><br></p>
-<p><br></p>
-<hr />
-</div>
-<div id="python-references" class="section level1">
-<h1>Python References</h1>
+<div id="class-1---monday-january-6" class="section level2">
+<h2>Class 1 - Monday January 6</h2>
 <ul>
-<li><p><a href="https://seaborn.pydata.org/">seaborn documentation</a></p></li>
-<li><p><a href="https://matplotlib.org/">matplotlib documentation</a></p></li>
-<li><p><a href="http://pandas.pydata.org/pandas-docs/stable/">pandas documentation</a></p></li>
-<li><p>Python Data Analytics: Data Analysis and Science Using Pandas, matplotlib, and the Python Programming Language, by Fabio Nelli. (Chapters 4 - 7) <a href="http://go.utlib.ca/cat/10190695">Electronic copy available from UofT library</a></p></li>
+<li>Class slides (<a href="">ipybn</a>)</li>
 </ul>
 <p><br></p>
+<p><br></p>
 <hr />
-</div>
-<div id="class-schedule" class="section level1">
-<h1>Class Schedule</h1>
-<p>The following is a tentative schedule, subject to change slightly.</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Week</th>
-<th align="left">Date</th>
-<th align="left">Topics</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">1</td>
-<td align="left">Mon, Jan. 6</td>
-<td align="left">Data Science Worflows: Python for data analysis, Jupyter notebooks, Asking questions with data</td>
-</tr>
-<tr class="even">
-<td align="left">2</td>
-<td align="left">Mon, Jan. 13</td>
-<td align="left">Data: Data types, Data Wrangling, Data Scraping</td>
-</tr>
-<tr class="odd">
-<td align="left">3</td>
-<td align="left">Mon, Jan. 20</td>
-<td align="left">Exploratory Data Analysis: Descriptive statistics, Data visualization</td>
-</tr>
-<tr class="even">
-<td align="left">4</td>
-<td align="left">Mon, Jan. 27</td>
-<td align="left">Data Collection, Data Simulation, Ethics</td>
-</tr>
-<tr class="odd">
-<td align="left">5</td>
-<td align="left">Mon, Feb. 3</td>
-<td align="left">Visualization Principles; Guest presentation</td>
-</tr>
-<tr class="even">
-<td align="left">6</td>
-<td align="left">Mon, Feb. 10</td>
-<td align="left">Data Storytelling, Communication</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Mon, Feb. 17</td>
-<td align="left">No class - reading week</td>
-</tr>
-<tr class="even">
-<td align="left">7</td>
-<td align="left">Mon, Feb. 24</td>
-<td align="left">A2: Group presentations</td>
-</tr>
-<tr class="odd">
-<td align="left">8</td>
-<td align="left">Mon, Mar. 2</td>
-<td align="left">Guest lecture (Prof. Taback): Statistical Methods</td>
-</tr>
-<tr class="even">
-<td align="left">9</td>
-<td align="left">Mon, Mar. 9</td>
-<td align="left">Multiverse Analysis</td>
-</tr>
-<tr class="odd">
-<td align="left">10</td>
-<td align="left">Mon, Mar. 16</td>
-<td align="left">Pitfalls in Data Science</td>
-</tr>
-<tr class="even">
-<td align="left">11</td>
-<td align="left">Mon, Mar. 23</td>
-<td align="left">Guest presentations</td>
-</tr>
-<tr class="odd">
-<td align="left">12</td>
-<td align="left">Mon, Mar. 30</td>
-<td align="left">Wrap-up and discussion</td>
-</tr>
-</tbody>
-</table>
 </div>
 
 
@@ -476,6 +430,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
