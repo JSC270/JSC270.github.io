@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Lab-2</title>
+<title>L2.1</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13078,118 +13078,284 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><em>JSC270, Winter 2020 - Prof. Chevalier</em></p>
-<h1 id="--Laboratory-2---&quot;A-Look-at-Movies-Shot-in-Toronto&quot;-"><center>  Laboratory 2 - "A Look at Movies Shot in Toronto" </center><a class="anchor-link" href="#--Laboratory-2---&quot;A-Look-at-Movies-Shot-in-Toronto&quot;-">&#182;</a></h1><hr>
-<p>Each laboratory is worth 5% of your final grade.
-This laboratory comprises of several parts:</p>
+<h1 id="--Laboratory-2.1---&quot;A-Look-at-Movies-Shot-in-Toronto&quot;--"><center>  Laboratory 2.1 - "A Look at Movies Shot in Toronto"  </center><a class="anchor-link" href="#--Laboratory-2.1---&quot;A-Look-at-Movies-Shot-in-Toronto&quot;--">&#182;</a></h1><h2 id="-Lab-assignment-"><center> Lab assignment </center><a class="anchor-link" href="#-Lab-assignment-">&#182;</a></h2><h3><center> Date: January 15, 12:00 - 14:00, BA3175 <br><br> Due Date: January 20, 12:00pm (noon)</h3>
+<center>  This assignment is a group assignment. <br>Groups will be randomly assigned at the beginning of the lab.</center><hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We are interested in exploring what makes movies shot in Toronto successeful. This lab assignment builds on the L2.0. pre-lab assignment, and will use data scraped from the Wikipedia page on <a href="https://en.wikipedia.org/wiki/List_of_films_shot_in_Toronto">Movies Shot in Toronto</a>, and data pulled from the <a href="https://www.omdb.org/">Open Movie Database (omdb)</a> via its <a href="http://www.omdbapi.com/">API</a>.</p>
+<hr>
+<div style="background-color: #f7f7f7; padding:10px;">
+
+<h3> Objectives </h3>
+
+<ul>
+    <li> more pandas manipulations </li>
+    <li> data cleaning and wrangling: identify sources of errors, and apply strategy to address anomalies</li>
+    <li> explore relatioships between data dimensions </li>
+    <li> data analysis and plotting </li>
+</ul>
+
+<h3> Instructions </h3>
+
+<ul>
+    <li> Make a copy of this notebook: <a href="https://classroom.github.com/g/66LVrJ2z">https://classroom.github.com/g/66LVrJ2z</a> </li>
+    <li> Answer the questions in the cells that indicate where your answers should be placed.  </li>
+     <li> Make sure that you explain your solutions when asked and comment your code for readability. </li>
+    <li> Commit and push changes to the Github classroom repository that has been provided (more details below).</li>
+    <li> Submit a pdf report to Quercus (more details below).</li>
+ </ul>
+
+
+
+</div><hr>
+<p><br></p>
+<h1 id="I.-Data-Cleaning-and-Wrangling">I. Data Cleaning and Wrangling<a class="anchor-link" href="#I.-Data-Cleaning-and-Wrangling">&#182;</a></h1><p>The objective of this step is to understand and address problems when combining data from multiple sources.</p>
+<p><strong>Question 1.</strong> Copy your code from the L2.0. pre-lab assignment to create a dataframe containing the detailed information pulled from <a href="http://www.omdbapi.com/">OMDB</a>, for the movies as found on the <a href="https://en.wikipedia.org/wiki/List_of_films_shot_in_Toronto">Wikipedia page of Movies Shot in Toronto</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## put your code in this cell. You may remove this comment.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 2.</strong> We want all of the movies listed in the Wikipedia page to be represented in our final dataframe. Explain the problems faced when querying the omdb API using the data extracted from Wikipedia. Devise a strategy to address these problems. Explain your strategy, and discuss its limitations, if any. 
+<br>(Do not implement your solution yet).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Write your answer in this cell. You may remove this comment.</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 3.</strong>  Write python code to address the problems identified in Question 2, using your proposed strategy. Use this code to create a new dataframe, that contains all of the individual movies listed on the Wikipedia page, and their information pulled from omdb.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## put your code in this cell. You may remove this comment.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+<h1 id="II.-Data-Analysis">II. Data Analysis<a class="anchor-link" href="#II.-Data-Analysis">&#182;</a></h1><p>Answer the following questions. For each question: Explain your methods and use appropriate plots to present your results; Discuss your results (i.e. what are the implications of your findings); Explain and justify data wrangling operations that you perform in order to make the data amenable to analyses, if any.</p>
+<p><strong>Question 1.</strong> Explore the relationship between the <code>imdb_ratings</code> and the <code>metascore</code> for these movies.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Answer to question 1. Weave together Markdown and Code cells to answer to the question.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 2.</strong> Explore the relationship between the <code>production</code> company, and the <code>boxoffice</code> for these movies.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Answer to question 2. Weave together Markdown and Code cells to answer to the question.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 3.</strong> Are movies of a particular genre more successful, or less successful than others?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Answer to question 3. Weave together Markdown and Code cells to answer to the question.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br>
+ <br></p>
+<h1 id="Submission-and-Grading-"><p style="background-color: #EEEEEE;text-align:center;padding-top: 15px;padding-bottom: 15px;">Submission and Grading </p><a class="anchor-link" href="#Submission-and-Grading-">&#182;</a></h1><h2 id="Submission">Submission<a class="anchor-link" href="#Submission">&#182;</a></h2><p><strong>What should be submitted?</strong></p>
+<ul>
+<li><p>A Jupyter notebook using Python that contains all the data analyses. The flow of the notebook should be Markdown and Code cells weaved together. In addition make sure to comment your code in the code cells.</p>
+</li>
+<li><p>Additional files that your notebook requires to compile properly (e.g. a data file).</p>
+</li>
+<li><p>A report from your Jupyter notebook exported as a html file without the code cells. This can be done using <a href="https://nbconvert.readthedocs.io/en/latest/">nbconvert</a>.</p>
+</li>
+</ul>
+<p><strong>When should it be submitted?</strong></p>
+<ul>
+<li>At the end of the lab session (in-lab progress): Submit your current progress, i.e., <mark><b>before 2:30pm on the day of the laboratory, January 15.</b></mark> (Submit to Github Classroom, and Quercus: "L2.1. In-lab progress")</li>
+<li>Homework (lab assignment completion): Upload your completed lab assignment by the next class, on <mark><b>Monday January 20 at 12:00pm (noon)</b></mark>. (Submit to Github Classroom, and Quercus: "L2.1. Lab Assignment Completed")</li>
+</ul>
+<p><strong>Where should the assignment be submitted?</strong></p>
+<ul>
+<li>Commit your finished notebook (ipynb and html versions), and any other files on the Github Classroom repository.</li>
+<li>Submit a pdf version of this notebook, including code cells (print this notebook to pdf) to Quercus.</li>
+</ul>
+<h2 id="Grading">Grading<a class="anchor-link" href="#Grading">&#182;</a></h2><p>Laboratory 2.1. will be graded according to the following marking scheme.</p>
 <table>
 <thead><tr>
-<th></th>
 <th></th>
 <th>Marks</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><em>Lab 2.0</em></td>
-<td>Pre-lab assignment</td>
-<td>15</td>
-</tr>
-<tr>
-<td><em>Lab 2.1</em></td>
-<td>Lab assignment: in-lab progress</td>
+<td>In-lab progress</td>
 <td>5</td>
 </tr>
 <tr>
-<td><em>Lab 2.1</em></td>
-<td>Lab assignment: completion</td>
+<td>Lab assignment completion</td>
 <td>10</td>
 </tr>
 <tr>
-<td><em>Lab 2.1</em></td>
 <td>Attendance for entire lab</td>
 <td>5</td>
 </tr>
 <tr>
-<td><em>Lab 2.2</em></td>
-<td>Reflection</td>
-<td>15</td>
-</tr>
-<tr>
-<td></td>
 <td><strong>Total</strong></td>
-<td><strong>50</strong></td>
+<td><strong>20</strong></td>
 </tr>
 </tbody>
 </table>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h3 id="Lab-2.0:-Pre-lab-assignment">Lab 2.0: Pre-lab assignment<a class="anchor-link" href="#Lab-2.0:-Pre-lab-assignment">&#182;</a></h3><p><em>Individual assignment</em></p>
-<ul>
-<li><p><strong>Objectives:</strong></p>
-<ul>
-<li>Critique existing data science reports: understand good and bad practices.</li>
-<li>Data scraping from the web.</li>
-<li>Data scraping using an API.</li>
-<li>Formulate research questions.</li>
-</ul>
-</li>
-<li><p><strong>Github classroom link:</strong> <a href="https://classroom.github.com/a/rtfkaXRb">https://classroom.github.com/a/rtfkaXRb</a></p>
-</li>
-<li><strong>Due date:</strong> Wednesday, January 15 at 12:00pm (noon)</li>
-<li><strong>Grading scheme:</strong> See the handout.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h3 id="Lab-2.1:-Lab-assignment">Lab 2.1: Lab assignment<a class="anchor-link" href="#Lab-2.1:-Lab-assignment">&#182;</a></h3><p><em>Group assignment (in pairs)</em></p>
-<ul>
-<li><strong>Objectives:</strong> <ul>
-<li>Cleaning and wrangling of data coming from heterogeneous sources</li>
-<li>Data analysis and plotting</li>
-<li>Reporting and storytelling</li>
-</ul>
-</li>
-<li><strong>Github classrom link:</strong> <a href="https://classroom.github.com/g/66LVrJ2z">https://classroom.github.com/g/66LVrJ2z</a> <mark> Please wait until you know your teammate before create a team on Classroom.</mark></li>
-<li><strong>Due date:</strong> <ul>
-<li>commit your progress at the end of the lab session (Wednesday, January 15 at 2:00pm)</li>
-<li>complete the tutorial assignment by the next class, on Monday, January 20 at 12:00pm (noon)</li>
-</ul>
-</li>
-<li><strong>Grading scheme</strong><ul>
-<li>The in-lab progress rubric is available <a href="https://jsc270.github.io/tut_grading.html#in-lab_progress">here</a>.</li>
-<li>The lab assignment completion component grading rubric is available <a href="https://jsc270.github.io/tut_grading.html#lab_assignment_completion">here</a>.</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h3 id="Lab-2.2:-Reflection">Lab 2.2: Reflection<a class="anchor-link" href="#Lab-2.2:-Reflection">&#182;</a></h3><p><em>Individual assignment</em></p>
-<ul>
-<li><strong>Objective:</strong> reflect on the lessons learned during this laboratory; critical reasoning</li>
-<li><strong>Github classroom link:</strong> <em>Coming soon</em> <a href=""></a></li>
-<li><strong>Due date:</strong> Monday, January 20 at 12:00pm (noon)</li>
-<li><strong>Grading scheme:</strong> <ul>
-<li>The reflection grading rubric is available <a href="https://jsc270.github.io/tut_grading.html#reflection">here</a>.</li>
-</ul>
-</li>
-</ul>
+<p>Note that marks will be deduced for the following reasons: notebook doesn't compile; files are missingl; instructions are not followed.</p>
+<h3 id="In-lab-progress-grading-rubric">In-lab progress grading rubric<a class="anchor-link" href="#In-lab-progress-grading-rubric">&#182;</a></h3><p>In-lab progress rubric is as follows (also available <a href="https://jsc270.github.io/tut_grading.html#in-lab_progress">here</a>):</p>
+<table>
+<thead><tr>
+<th>Category</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Progress (5 pts)</strong></td>
+<td style="text-align:center">Excellent progress. Optimal use of lab time. The team was fully focused on getting the assignment done, and fully engaged. Excellent progress.</td>
+<td style="text-align:center">Good progress. Good use of lab time. The team was focused on getting the assignment done, and engaged.</td>
+<td style="text-align:center">Moderate progress. Used some of the lab time well. There was some focus on getting the assignment done, but the team was occasionnally distracted.</td>
+<td style="text-align:center">Insufficient progress. Poor use of lab time. The team was generally distracted, and did not focus much on the assignment.</td>
+<td style="text-align:center">Minimal progress. The team did barely use lab time to make progress on the assignment, and was often distracted.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h3 id="Lab-assignment-completion-grading-rubric">Lab assignment completion grading rubric<a class="anchor-link" href="#Lab-assignment-completion-grading-rubric">&#182;</a></h3><p>Lab assignment completion grading rubric is as follows (also available <a href="https://jsc270.github.io/tut_grading.html#lab_assignment_completion">here</a>):</p>
+<table>
+<thead><tr>
+<th>Category</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Planning of code and statistical analysis <br> (2.5 pts)</strong></td>
+<td style="text-align:center">Introductory comment describes overall strategy and gives evidence of preliminary planning. Thoughtful problem decomposition breaks the problem into independent pieces that can be solved easily.</td>
+<td style="text-align:center">Evidence of planning before coding, but some flaws in overall strategy.</td>
+<td style="text-align:center">More planning needed: overall strategy ok, but have missed some obvious ways of making the code simpler.</td>
+<td style="text-align:center">It all hangs together, but planning was absent or rushed.</td>
+<td style="text-align:center">No evidence of planning. Strategy deeply flawed.</td>
+</tr>
+<tr>
+<td><strong>Programming execution and reproducibility of results <br> (2.5 pts)</strong></td>
+<td style="text-align:center">Mastery of Python vocabulary means that the absolute minimum amount of code is used to get the job done. Code free from duplication. Each function encapsulates a single task, and repeated tasks are performed by functions, not copy and paste.</td>
+<td style="text-align:center">Workable, but not elegant.  Common programming idioms used to reduce code.</td>
+<td style="text-align:center">The code works, but copy-paste used often.</td>
+<td style="text-align:center">Most of the code works, but some parts do not work. Copy-paste used very often.</td>
+<td style="text-align:center">Functions used inapproriately, or existing functions reinvented. Extensive use of copy and paste.</td>
+</tr>
+<tr>
+<td><strong>Programming Clarity <br> (2.5 pts)</strong></td>
+<td style="text-align:center">Code is a pleasure to read, and easy to understand. Code and comments form part of a seamless whole.</td>
+<td style="text-align:center">Comments used to discuss the why, and not how of code; to provide insight into complicated algorithms; and to indicate purpose of function (if not obvious from its name). Comment headings used to separate important sections of the code.</td>
+<td style="text-align:center">Generally easy to read, but some comments used inappropriately: either too many, or too few. Some variable names confusing.</td>
+<td style="text-align:center">Hard to understand. Poor choice of names and comments do not generally aid understanding.</td>
+<td style="text-align:center">Cannot understand code. The reader cannot understand why the code works.</td>
+</tr>
+<tr>
+<td><strong>Communication <br>(2.5 pts)</strong></td>
+<td style="text-align:center">Findings very well organised. Clear headings demarcate separate sections. Excellent flow from one section to the next. The report is easy to scan.  Tables and graphics carefully tuned and placed for desired purpose.</td>
+<td style="text-align:center">Findings well organised and sections clearly separated, but flow is lacking. Each section has clear purpose.  Tables and graphics clear and well chosen.</td>
+<td style="text-align:center">Generally well organised, but some sections muddled.  Tables or graphics appropriate, but some are poorly presented - e.g. too many decimal places, poorly chosen aspect ratio etc.</td>
+<td style="text-align:center">Sections unclear and no attempt to flow from one topic to the next. Graphics and tables poorly chosen to support questions. Some have fundamental flaws.</td>
+<td style="text-align:center">It is hard to read your notebook. There are no headings, figures are far away from where they are referenced in the text. There is no summary or conclusion.</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
