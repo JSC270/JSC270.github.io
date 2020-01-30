@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>L4</title>
+<title>L4.2</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13078,115 +13078,208 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><em>JSC270, Winter 2020 - Prof. Chevalier</em></p>
-<h1 id="--Laboratory-4---&quot;Hiring-Algorithm&quot;-"><center>  Laboratory 4 - "Hiring Algorithm" </center><a class="anchor-link" href="#--Laboratory-4---&quot;Hiring-Algorithm&quot;-">&#182;</a></h1><hr>
-<p>Each laboratory is worth 5% of your final grade.
-This laboratory comprises of several parts:</p>
+<h1 id="--Laboratory-4.2---&quot;Hiring-Algorithm&quot;--"><center>  Laboratory 4.2 - "Hiring Algorithm"  </center><a class="anchor-link" href="#--Laboratory-4.2---&quot;Hiring-Algorithm&quot;--">&#182;</a></h1><h2 id="-Reflections-"><center> Reflections </center><a class="anchor-link" href="#-Reflections-">&#182;</a></h2><h3 id="-Due-Date:-February-3,-12:00pm-(noon)-"><center> Due Date: February 3, 12:00pm (noon) </center><a class="anchor-link" href="#-Due-Date:-February-3,-12:00pm-(noon)-">&#182;</a></h3><center> This assignment is individual. </center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<div style="background-color: #f7f7f7; padding:10px;">
+
+<h3> Objectives </h3>
+
+Reflect on lessons learned; critical reasoning
+
+<h3> Instructions </h3>
+
+<ul>
+    <li> Make a copy of this notebook: <a href="https://classroom.github.com/a/fQ0iltEv">https://classroom.github.com/a/fQ0iltEv</a></li>
+    <li> Answer the questions in the cells that indicate where your answers should be placed. </li>
+    <li> Commit and push changes to the Github classroom repository (see submission instructions below).</li>
+    <li>Submit a pdf report to Quercus (see submission instructions below).</li>
+</ul>
+
+</div><hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 1.</strong> What are the top three things that you learned, working on Laboratory 4 (4.0 and 4.1)?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Answer to Question 1</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 2.</strong> What challenges did you face completing the assignments of Laboratory 4 (4.0 and 4.1)? How did you overcome these challenges?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Answer to Question 2</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You were asked to create algorithms to select the most promising applicants given their grades in core computer science courses and overall GPA. Let's highlight some of those applicants and reveal the stories between them.</p>
+<blockquote><p><strong>Story 1: Misread the Instructions</strong><br>
+What if an excellent applicant thinks they should put in letter grades?</p>
+<p><code>[‘A’, ‘A’, ‘A’, ‘A’, ‘A’, ‘A’, ‘A’]</code></p>
+<p>… or how about their grades on 4-point scale?</p>
+<p><code>[4, 3.9, 4, 4, 3.95, 4, 3.9]</code></p>
+<p><strong>Story 2: Bad Assumptions</strong><br>
+What if one of your applicants skipped Intro to Computer Science? When they saw your form, they froze, and decided that putting -1 in the input field would make it obvious…</p>
+<p><code>[-1, 95, 99, 94, 96, 98, 95]</code></p>
+<p><strong>Story 3: Mistake in the Input</strong><br>
+What if one of your applicants accidentally put in a number &gt; 100?</p>
+<p><code>[681, 68, 73, 70, 81, 91, 59]</code></p>
+<p>That might seem easy enough for a program to catch, but what if they accidentally dropped a 0?</p>
+<p><code>[100, 100, 100, 100, 100, 100, 10]</code></p>
+<p>A person would catch that mistake easily, does your algorithm?</p>
+<p><strong>Story 4: The Awful Semester</strong><br>
+What if your applicant had a medical emergency one semester? Or a personal tragedy?</p>
+<p><code>[95, 93, 50, 91, 98, 90, 90]</code></p>
+<p><strong>Story 5: Inverse Trajectories</strong><br>
+What if one of your applicants came from an underprivileged background and really struggled at the beginning of college… but showed extraordinary growth by the end?</p>
+<p><code>[65, 75, 85, 95, 100, 100, 80]</code></p>
+<p>What if one of your applicants came to college with extraordinary potential? They easily aced their first few classes and then gradually grew apathetic about their education - getting nothing but barely-passing grades by the time they were a senior?</p>
+<p><code>[100, 100, 95, 85, 75, 65, 80]</code></p>
+<p>Does your algorithm treat them equally?</p>
+</blockquote>
+<p><br></p>
+<p><strong>Question 3</strong>  For each of the above stories, reflect on whether you think that your algorithm (L4.1, Part I Q.4) does the right thing. If not, how could you improve it? Explain what you would change in a few sentences, so as to account for each of the above stories.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Answer to Question 3</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 4.</strong> Currently, the fillable form (see below) forces applicants to enter data for every core CS course, and the GPA. Discuss the pros and cons of the form, and how you may re-design it to collect data of greater quality. Discuss implications for your algorithms.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Answer to Question 4</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 5.</strong> Are profiling/selection algorithms ethical? Discuss the dangers of such approach in a real setting.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Answer to Question 5</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Open comments.</strong> Feel free to share any other comments with your instructors regarding this laboratory (or beyond).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Add here your open comments, if any.</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Submission-and-Grading-"><p style="background-color: #EEEEEE;text-align:center;padding-top: 15px;padding-bottom: 15px;">Submission and Grading </p><a class="anchor-link" href="#Submission-and-Grading-">&#182;</a></h1><h2 id="Submission">Submission<a class="anchor-link" href="#Submission">&#182;</a></h2><p><strong>What should be submitted to Github Classroom?</strong></p>
+<p>Commit and push your files on the Github Classroom repository, including:</p>
+<ul>
+<li><p>A Jupyter notebook with your answers.</p>
+</li>
+<li><p>Additional files that your notebook requires to compile properly (e.g. an image file).</p>
+</li>
+<li><p>A report from your Jupyter notebook exported as an html file. This can be done using <a href="https://nbconvert.readthedocs.io/">nbconvert</a>.</p>
+</li>
+</ul>
+<p><strong>What should be submitted to Quercus?</strong></p>
+<ul>
+<li>A pdf version of your Jupyter notebook (print this notebook to pdf directly from your browser).</li>
+</ul>
+<p><strong>When should it be submitted?</strong></p>
+<ul>
+<li>Upload your completed assignment by 12:00pm (noon), on January 20.</li>
+</ul>
+<h2 id="Grading">Grading<a class="anchor-link" href="#Grading">&#182;</a></h2><p>Laboratory 1.2. grading rubric is as follows (also available <a href="https://jsc270.github.io/tut_grading.html#reflection">here</a>).</p>
+<p>Note that marks will be deduced for the following reasons: notebook doesn't compile; files are missingl; instructions are not followed.</p>
 <table>
 <thead><tr>
-<th></th>
-<th></th>
-<th>Marks</th>
+<th>Category</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">1</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><em>Lab 4.0</em></td>
-<td>Pre-lab assignment</td>
-<td>15</td>
+<td><strong>Depth of reflections <br> (10 pts)</strong></td>
+<td style="text-align:center">Response demonstrates an in-depth reflection on, and personalization of, the theories, concepts, and/or strategies presented in the course materials to date. Viewpoints and interpretations are insightful and well supported. Clear, detailed examples are provided, as applicable.</td>
+<td style="text-align:center">Response demonstrates a thoughtful reflection on, and personalization of, the theories, concepts, and/or strategies presented in the course materials to date. Viewpoints and interpretations are generally supported.  Appropriate examples are genterally provided, as applicable.</td>
+<td style="text-align:center">Response demonstrates a limited reflection on, and personalization of, the theories, concepts, and/or strategies presented in the course materials to date. Viewpoints and interpretations are sometimes usupported.  Appropriate examples are provided, as applicable.</td>
+<td style="text-align:center">Response demonstrates a minimal reflection on, and personalization of, the theories, concepts, and/or strategies presented in the course materials to date. Some viewpoints and interpretations are unsupported or supported with flawed arguments. Some examples, when applicable, are not provided or are irrelevant to the assignment.</td>
+<td style="text-align:center">Response demonstrates a lack of reflection on, or personalization of, the theories, concepts, and/or strategies presented in the course materials to date. Viewpoints and interpretations are missing, inappropriate, and/or unsupported. Examples, when applicable, are not provided.</td>
 </tr>
 <tr>
-<td><em>Lab 4.1</em></td>
-<td>Lab assignment: in-lab progress</td>
-<td>5</td>
-</tr>
-<tr>
-<td><em>Lab 4.1</em></td>
-<td>Lab assignment: completion</td>
-<td>10</td>
-</tr>
-<tr>
-<td><em>Lab 4.1</em></td>
-<td>Attendance for entire lab</td>
-<td>5</td>
-</tr>
-<tr>
-<td><em>Lab 4.2</em></td>
-<td>Reflection</td>
-<td>15</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Total</strong></td>
-<td><strong>50</strong></td>
+<td><strong>Writing quality <br> (5 pts)</strong></td>
+<td style="text-align:center">Writing is clear, concise, and well organized with excellent sentence/paragraph construction. Thoughts are expressed in a coherent and logical manner. There are no more than three spelling, grammar, or syntax errors.</td>
+<td style="text-align:center">Writing is mostly clear, concise, and well organized with good sentence/paragraph construction. Thoughts are expressed in a coherent and logical manner. There are no more than five spelling, grammar, or syntax errors.</td>
+<td style="text-align:center">Writing is sometimes unclear and/or disorganized. Thoughts are not always expressed in a logical manner. There are more than five spelling, grammar, or syntax errors.</td>
+<td style="text-align:center">Writing is unclear and/or disorganized. Thoughts are not expressed in a logical manner. There are more than five spelling, grammar, or syntax errors.</td>
+<td style="text-align:center">Writing is unclear and disorganized. Thoughts ramble and make little sense. There are numerous spelling, grammar, or syntax errors throughout the response.</td>
 </tr>
 </tbody>
 </table>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h3 id="Lab-4.0:-Pre-lab-assignment">Lab 4.0: Pre-lab assignment<a class="anchor-link" href="#Lab-4.0:-Pre-lab-assignment">&#182;</a></h3><p><em>Individual assignment</em></p>
-<ul>
-<li><p><strong>Objectives:</strong></p>
-<ul>
-<li>Perform basic data simulations</li>
-</ul>
-</li>
-<li><p><strong>Github classroom link:</strong> <a href="https://classroom.github.com/a/KwclNPas">https://classroom.github.com/a/KwclNPas</a></p>
-</li>
-<li><strong>Due date:</strong> Wednesday, January 29 at 12:00pm (noon)</li>
-<li><strong>Grading scheme:</strong> See the handout.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h3 id="Lab-4.1:-Lab-assignment">Lab 4.1: Lab assignment<a class="anchor-link" href="#Lab-4.1:-Lab-assignment">&#182;</a></h3><p><em>Group assignment (in pairs - you get to pick your teammate)</em></p>
-<ul>
-<li><strong>Objectives:</strong> <ul>
-<li>Create statistically meaningful solutions to selection</li>
-<li>Generate a synthetic dataset from given probability distribution functions</li>
-<li>Reflect on implications of automated methods to data selection</li>
-</ul>
-</li>
-<li><strong>Github classrom link:</strong> <a href="https://classroom.github.com/g/tYM64E9P">https://classroom.github.com/g/tYM64E9P</a> <mark> You may create a team on Classroom with the teammate of your choice.</mark></li>
-<li><strong>Due date:</strong> <ul>
-<li>commit your progress at the end of the lab session (Wednesday, January 29 by 2:30pm)</li>
-<li>complete the tutorial assignment by the next class, on Monday, Feburary 3 by 12:00pm (noon)</li>
-</ul>
-</li>
-<li><strong>Grading scheme</strong><ul>
-<li>The in-lab progress rubric is available <a href="https://jsc270.github.io/tut_grading.html#in-lab_progress">here</a>.</li>
-<li>The lab assignment completion component grading rubric is available <a href="https://jsc270.github.io/tut_grading.html#lab_assignment_completion">here</a>.</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h3 id="Lab-4.2:-Reflections">Lab 4.2: Reflections<a class="anchor-link" href="#Lab-4.2:-Reflections">&#182;</a></h3><p><em>Individual assignment</em></p>
-<ul>
-<li><strong>Objective:</strong> reflect on the lessons learned during this laboratory; critical reasoning</li>
-<li><strong>Github classroom link:</strong> <a href="https://classroom.github.com/a/fQ0iltEv">https://classroom.github.com/a/fQ0iltEv</a></li>
-<li><strong>Due date:</strong> Monday, February 3 at 12:00pm (noon)</li>
-<li><strong>Grading scheme:</strong> <ul>
-<li>The reflection grading rubric is available <a href="https://jsc270.github.io/tut_grading.html#reflection">here</a>.</li>
-</ul>
-</li>
-</ul>
 
 </div>
 </div>
