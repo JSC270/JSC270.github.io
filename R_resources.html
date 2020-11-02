@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
 <title>R Resources for JSC270</title>
 
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -72,9 +73,7 @@ h6 {
 
 <link rel="stylesheet" href="custom.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -88,7 +87,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -108,33 +106,33 @@ summary {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 60px;
+  padding-top: 45px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .dropdown-submenu {
   position: relative;
@@ -193,8 +191,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -239,6 +235,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -251,20 +248,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -277,11 +271,17 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">JSC270 Winter 2019</a>
+      <a class="navbar-brand" href="index.html">JSC270 Winter 2021</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
+        <li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Course Documents
      
@@ -289,68 +289,29 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="syllabus.html">
-        <span class="fas fa fas fa-info"></span>
-         
-        Syllabus
-      </a>
+      <a href="class_docs.html">Classes</a>
     </li>
-    <li class="dropdown-header">Course Documents</li>
+    <li class="divider"></li>
     <li>
-      <a href="class_docs.html">Class</a>
+      <a href="tut_docs.html">Laboratories</a>
     </li>
     <li>
-      <a href="tut_docs.html">Tutorial</a>
-    </li>
-    <li>
-      <a href="mttest_studentpreview.html">Midterm</a>
+      <a href="tut_grading.html">Laboratories Grading</a>
     </li>
     <li class="divider"></li>
     <li>
       <a href="assign_docs.html">Assignments</a>
-    </li>
-    <li class="divider"></li>
-    <li>
-      <a href="jsc270_assignment1_0.2.html">Assignment 1</a>
-    </li>
-    <li>
-      <a href="jsc270_assignment2_ver1.html">Assignment 2</a>
-    </li>
-    <li>
-      <a href="jsc270_assignment3.html">Assignment 3</a>
     </li>
     <li>
       <a href="assignment_rubrics.html">Assignment Grading</a>
     </li>
   </ul>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Discussion
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="https://piazza.com/class/jpdcniqs4r36rj">
-        <span class="fas fa fas fa-info"></span>
-         
-        Piazza
-      </a>
-    </li>
-  </ul>
+<li>
+  <a href="XXXXXTO-UPDATEXXX">Discussion Forum</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Resources
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="resources.html">Data + Science</a>
-    </li>
-  </ul>
+<li>
+  <a href="resources.html">Resources</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -386,13 +347,17 @@ $(document).ready(function () {
 <p><i class="fas fa-puzzle-piece" aria-hidden="true"></i> <strong> Test your setup! </strong><br><br></p>
 <ol style="list-style-type: decimal">
 <li>Create a new project in RStudio (desktop or cloud version), and create a new R script file</li>
-<li><p>Type and run the following code:</p>
-<pre><code>print(&quot;Hello World!&quot;)
-n &lt;- c(1,2,3,4)       
-n</code></pre></li>
-<li><p>Install the <code>car</code> package:</p>
-<pre><code>install.packages(&quot;car&quot;)
-library(&quot;car&quot;)</code></pre></li>
+<li>Type and run the following code:</li>
+</ol>
+<pre><code>    print(&quot;Hello World!&quot;)
+    n &lt;- c(1,2,3,4)       
+    n</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Install the <code>car</code> package:</li>
+</ol>
+<pre><code>    install.packages(&quot;car&quot;)
+    library(&quot;car&quot;)</code></pre>
+<ol start="4" style="list-style-type: decimal">
 <li><p>One of the data sets in the package, called <code>Prestige</code>, contains data on the prestige and other characteristics of 102 Canadian occupations around 1970. Find out what’s in the data set by looking at its help page <code>(?Prestige)</code></p></li>
 <li><p>Copy and execute the code <a href="https://rstudio-pubs-static.s3.amazonaws.com/291237_ccac14a9e129479c8d07e1dcfac5a697.html">Descriptive analysis and visualization in R using Prestige dataset in the car package</a> to familiarize yourself with the language and the R Studio environment.</p></li>
 </ol>
@@ -457,6 +422,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

@@ -5,7 +5,7 @@ output:
    toc: true
    toc_depth: 3
    toc_float: true
-   theme: flatly
+   theme: yeti
 ---
 
 ```{r setup, include=FALSE}
@@ -19,39 +19,12 @@ Documents from class will be posted on this page.
 
 <br>
 
-# Class 1 - Monday January 6
+## Class 1 - DATE
 
+* Class slides: [html](https://jsc270.github.io/class-notebooks/class-01/your-class-slides.html)
 
-<br>
-
-
-<br>
 
 
 ******
 
-# Python References
-
-
-- [seaborn documentation](https://seaborn.pydata.org/)
-
-- [matplotlib documentation](https://matplotlib.org/)
-
-- [pandas documentation](http://pandas.pydata.org/pandas-docs/stable/)
-
-- Python Data Analytics: Data Analysis and Science Using Pandas, matplotlib, and the Python Programming Language, by Fabio Nelli. (Chapters 4 - 7) [Electronic copy available from UofT library](http://go.utlib.ca/cat/10190695)
-
-<br>
-
-******
-
-# Class Schedule
-
-The following is a tentative schedule, subject to change slightly.
-
-```{r, echo=FALSE}
-library(tidyverse)
-jsc270_classsched <- read_csv("class_sched.csv", col_types = cols(Week = col_character()), na = "null")
-knitr::kable(jsc270_classsched)
-```
 

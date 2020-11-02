@@ -1,13 +1,13 @@
 ---
 title: "JSC270H1S: Data Science I"
 subtitle: "Syllabus"
-date: Winter 2020
+date: Winter 2021
 
 output: 
   html_document:
    toc: true
    toc_float: true
-   theme: flatly
+   theme: yeti
 ---
 
 ```{r setup, include=FALSE}
@@ -19,9 +19,10 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
-- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [F. Chevalier](http://fannychevalier.net), BA5226.
-- <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email instructors: jsc270-winter2020@cs.toronto.edu
-- Teaching assistants: TBD.
+- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [xxx](xxx).
+- <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching assistants: xx, xx.
+- <span class="fas fa-question" aria-hidden="true"></span> Course questions can be posted to [Piazza](xxx), or in person.  
+- <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> If you need to contact the instructor and/or TA's for personal matters, use [Quercus](https://q.utoronto.ca/) only. No emails. 
 
 <br>
 
@@ -29,10 +30,11 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
-- Prof. Chevalier, TBD (BA5226)
+- Prof. xxx, by appointment (xxx)
 
-- TA office hours, TBD (TBD).
-
+- TA office hours 
+  - xxx
+ 
 <br>
 
 ******
@@ -42,14 +44,12 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ### _Lectures_
-- Mondays, 12:00-14:00 in [BA 3195](http://map.utoronto.ca/utsg/building/080).
-- There is no lecture on February 17 (Reading Week)
+- xxx
 
 <br>
 
-### _Tutorials_
-- Wednesdays, 12:00-14:00 in [BA3175](http://map.utoronto.ca/utsg/building/080).  
-- There is no tutorial on February 19 (Reading Week)  
+### _Laboratory Sessions_
+- xxx 
 
 <br>
 
@@ -94,18 +94,8 @@ By the end of this course, you should be able to:
 
 - Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
 
-- Questions and Answers can be posted on the [course discussion board (Piazza)](TBD)
+- Questions and Answers can be posted on the [course discussion board (Piazza)](https://piazza.com/class/k4yuod8xieb32b)
 
-<br>
-
-******
-
-## <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Assignment Calendar
-
-- Assignment #1: Monday, February 4 (extended February 8)
-- Assignment #2: Monday, February 25 (extended March 3)
-- Assignment #3: Monday, April 1 (presentation) -- Friday, April 5 (report)
-- Term test: Wednesday, March 13
 
 <br>
 
@@ -113,26 +103,24 @@ By the end of this course, you should be able to:
 
 ## <i class="fas fa-code" aria-hidden="true"></i> Computing
 
-The course will use [Python 3](https://www.python.org/), [R](https://www.r-project.org/) and [R markdown](https://rmarkdown.rstudio.com/) for computing.
+The course will use [Python 3](https://www.python.org/) for computing.
 
-Jupyter and RStudio are both available on <https://www.teach.cs.toronto.edu>.
+Jupyter is available on <https://www.teach.cs.toronto.edu>.
 
-[Click here for Jupyter](https://jupyter.teach.cs.toronto.edu/hub/login)
-
-[Click here for RStudio](https://rstudio.teach.cs.toronto.edu/auth-sign-in)
+[Click here for direct access to Jupyter](https://jupyter.teach.cs.toronto.edu/hub/login) on teach.cs.
 
 
 <br>
 
 ******
 
-## <i class="glyphicon glyphicon-book" aria-hidden="true"></i> Optional Course Textbooks
+## <i class="glyphicon glyphicon-book" aria-hidden="true"></i> Optional Textbooks
 
 <br>
 
 ### References that use Python
 
-Hajba, Gábor László. "Website Scraping with Python." [Electronic copy is available from the UofT library](http://go.utlib.ca/cat/11936372)
+Hajba, Gábor László. "Website Scraping with Python." [Electronic copy is available from the UofT library](https://search.library.utoronto.ca/details?12031742)
 
 Igual, Laura, and Santi Seguí. "Introduction to Data Science." Introduction to Data Science. Springer, Cham, 2017. [Electronic copy is available from the UofT library](http://go.utlib.ca/cat/11433860)
 
@@ -142,24 +130,17 @@ Skiena, Steven S. The Data Science Design Manual. Springer, 2017. [Electronic co
 
 <br>
 
-### References that use R
-
-Efron, Bradley, and Trevor Hastie. Computer age statistical inference. Vol. 5. Cambridge University Press, 2016.  [Available here.](https://web.stanford.edu/~hastie/CASI/) 
-
-James, Gareth, et al. An introduction to statistical learning. Vol. 112. New York: springer, 2013. [Available here.](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf)
-
-Wickham, Hadley, and Garrett Grolemund. R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.", 2016.[Available here.](https://r4ds.had.co.nz)
-
-<br>
 
 ******
 
 ## <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation
 
+Students will be evaluated according to [University Assessment and Grading Practices Policy](https://governingcouncil.utoronto.ca/secretariat/policies/grading-practices-policy-university-assessment-and-january-26-2012). The table below shows the weight of each assessment. 
+
 ```{r, echo=FALSE}
 library(tidyverse)
 jsc270coursegrading <- read_csv("jsc270coursegrading.csv")
-knitr::kable(jsc270coursegrading[1:7,])
+knitr::kable(jsc270coursegrading[1:6,])
 ```
 
 
@@ -171,20 +152,42 @@ knitr::kable(jsc270coursegrading[1:7,])
 
 <br>
 
-### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Tests or Assignments
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Work Policy {#missed_work}
 
-- If a test or tutorial work is missed for a valid medical reason, you must submit the University of Toronto Verification of [Student Illness or Injury form](http://www.illnessverification.utoronto.ca) within one week.  Submit the form to your TA if it is related to missed tutorial work.  Submit the form to both of your instructors if it is related to the test.
-- The form will only be accepted as valid if the form is filled out according to the instructions on the form.
-- The form must indicate that the degree of incapacitation on academic functioning is moderate, serious, or severe in order to be considered a valid medical reason for missing the term test. If the form indicates that the degree of incapacitation on academic functioning is negligible or mild then this will **NOT** be considered a valid medical reason.
-- If a tutorial is missed for a valid reason then the weight for that in-lab portion of the tutorial will be shifted to the tutorial assignment completion.
+Valid reasons for missing an assessment include: illness; injury; or other relevant personal issues. Any of the following types of documentation will be accepted to verify a student’s reason for missing an assessment:
 
-- If the term test is missed then an oral exam may be used as the makeup test.  
+* [University of Toronto Verification of Student Illness or Injury form](http://www.illnessverification.utoronto.ca/index.php). The form must indicate that the degree of incapacitation on academic functioning is moderate, serious, or severe in order to be considered a valid medical reason for missing.
 
-- If a group presentation is missed then an individual presentation may be used as makeup presentation.  
+* Student Health or Disability Related Certificate.
 
-- The late penalties for submitting a completed tutorial assignment are: 10% if the assignment is submitted within 24 hours of the due date; 30% if the assignment is submitted within 48 hours of the due date; and 100% if the assignment is submitted after 48 hours.
+* A College Registrar’s Letter.
 
-- Other reasons for missing an assignment, tutorial work, or the term test will require prior approval by your instructors. If prior approval is not received for non-medical reasons then you will receive a grade of zero for the missed assignment, tutorial work, or test.
+* Accessibility Services Letter.
+
+If an assignment due date is missed for a valid reason then your assignment will not be subject to a late penalty.
+
+Other reasons for missing an assignment due date, without documentation, will require prior approval by your instructor. If prior approval is not received and an assessment is not submitted on time then your assessment will be subject to a late penalty (see [Late Penalty](#late_penalty)).
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>  Missed Oral Presentation
+If an oral presentation is missed for a valid reason (see [Missed Work Policy](#missed_work)) then you may be given another opportunity to give your oral presentation (even if you were part of a group) provided that class or lab time is available, otherwise you will be required to submit a video of your presentation within one week of the presentation date. If an oral presentation is missed and you do not contact the professor with a reason, then a late penalty (see [Late Penalty](#late_penalty)) will be applied, and you will be required to submit a video of your oral presentation within one week of the missed due date.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Due Date for Written Report
+If a written report due date is missed for a valid reason (see [Missed Work Policy](#missed_work)) then you will be required to submit the written report within one week of the missed due date. If a due date is missed and no reason is given then a late penalty (see [Late Penalty](#late_penalty)) will be applied.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Lab or Class
+If a lab or class is missed for a valid reason (see [Missed Work Policy](#missed_work)) then the the weight of the in-lab component will be shifted to the subsequent lab components. If a lab or class is missed and no reason is given then you will recieve a grade of zero.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Late Penalty {#late_penalty}
+The late penalty for a missed due date is 20% per day (i.e., 24 hours). For example, if the work is submitted after 5 days (including weekend days and holidays) then you will receive a grade of zero for the missed work.
+
 
 <br>
 
@@ -194,19 +197,32 @@ Any requests to have your work remarked must contain a written justification for
 
 <br>
 
-### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> How to Communicate with Your Instructors
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Getting Help
 
-Always use your utoronto.ca e-mail account to ensure that your message doesn’t automatically go to a Junk folder and include your full name and student number. Violation to this policy may incur severe response delays. Allow up to 72 buisiness hours for a reply.
+This term you will have the option to use Piazza for class discussion. If you decide not to use Piazza it will not disadvantage you in any way, and will not affect official University outcomes (e.g., grades and learning opportunities). If you choose not to opt-into Piazza then you can ask questions or discuss course material with the instructor or TAs during office hours.
+
+Be sure to read [Piazza’s Privacy Policy](https://piazza.com/legal/privacy) and [Terms of Use](https://piazza.com/legal/terms) carefully. Take time to understand and be comfortable with what they say. They provide for substantial sharing and disclosure of your personal information held by Piazza, which affects your privacy. If you decide to participate in Piazza, only provide content that you are comfortable sharing under the terms of the Privacy Policy and Terms of Use.
+
+To sign up for the discussion forum click on the link: [https://piazza.com/class/k4yuod8xieb32b](https://piazza.com/class/k4yuod8xieb32b)
+
+You can also visit your instructor or the teaching assistants during their office hours.
+
+E-mails will not be answered. Direct communication via Quercus should only be used for emergencies or personal matters (see [Communicating With the Professor](#communicating))
+
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Communicating with The Professor {#communicating}
 
 Questions about course material or organization, such as,
   
-- What do I change the colour of my plotting symbol?
-- What is the difference between supervised and unsupervised learning?
-- When is the term test?
+- Is it appropriate to use this statistical method?
+- How do I get rid of this error message?
+- What is the due date?
 
-should be posted on the discussion forums on [Piazza](https://piazza.com/class/jpdcniqs4r36rj#) or asked in person. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.
+can be posted on the discussion forums. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.
 
-If your communication is private, such as, "I missed the test because I was ill"", then e-mail both instructors (jsc270-winter2020@cs.toronto.edu).  If you missed a tutorial then e-mail your TAs.
+If your communication is private, such as, "I missed the test because I was ill"", then contact your instructor.
+
+Always use the direct messaging functionality on [Quercus](https://q.utoronto.ca/) to ensure that your message reaches out the instructor and/or TA's. Allow up to 72 business hours for a reply. Regular emails will not be answered. 
 
 <br>
 
@@ -216,15 +232,32 @@ You are responsible for knowing the content of the [University of Toronto’s Co
 
 As a general rule, we encourage you to discuss course material with each other and ask others for advice.  However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in.  When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class.  For example, "For question 2.1 what R function did you use?" is a fair question; "Please show me your R code for question 2.1" is not.
 
-If you have any questions about what is or is not permitted in this course, please do not hesitate to contact [your instructors](mailto:jsc270-winter2020@cs.toronto.edu).
+If you have any questions about what is or is not permitted in this course, please do not hesitate to contact [the Professor via Quercus](https://q.utoronto.ca/).
 
 <br>
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs
 
-The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have any accessibility concerns about the course, the class room, or course materials, please contact Accessibility Services as soon as possible: <accessibility.services@utoronto.ca> or <http://accessibility.utoronto.ca>
+Students with diverse learning styles and needs are welcome in this course. If you have an acute or ongoing disability issue or accommodation need, you should register with Accessibility Services (AS) at the beginning of the academic year by visiting [http://www.studentlife.utoronto.ca/as/new-registration](http://www.studentlife.utoronto.ca/as/new-registration). Without registration, you will not be able to verify your situation with your instructors, and instructors will not be advised about your accommodation needs. AS will assess your situation, develop an accommodation plan with you, and support you in requesting accommodation for your course work. Remember that the process of accommodation is private: AS will not share details of your needs or condition with any instructor, and your instructors will not reveal that you are registered with AS
 
 <br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Religious Accomodations
+
+As a student at the University of Toronto, you are part of a diverse community that welcomes and includes students and faculty from a wide range of cultural and religious traditions. For my part, I will make every reasonable effort to avoid scheduling tests, examinations, or other compulsory activities on religious holy days not captured by statutory holidays. Further to University Policy, if you anticipate being absent from class or missing a major course activity (such as a test or in-class assignment) due to a religious observance, please let me know as early in the course as possible, and with sufficient notice (at least two to three weeks), so that we can work together to make alternate arrangements.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Specific Medical Circumstances
+
+If you become ill and it affects your ability to do your academic work, consult me right away. Normally, I will ask you for medical documentation in support of your specific medical circumstances. The University’s Verification of Student Illness or Injury (VOI) form is recommended because it indicates the impact and severity of the illness, while protecting your privacy about the details of the nature of the illness. You can submit a different form (like a letter from a doctor), as long as it is an original document, and it contains the same information as the VOI. For more information, please see [http://www.illnessverification.utoronto.ca](http://www.illnessverification.utoronto.ca) If you get a concussion, break your hand, or suffer some other acute injury, you should register with Accessibility Services as soon as possible.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accommodation for Personal Reasons
+There may be times when you are unable to complete course work on time due to non-medical reasons. If you have concerns, speak to me or to an advisor in your College Registrar’s office; they can help you to decide if you want to request an extension or accommodation. They may be able to provide you with a College Registrar’s letter of support to give to your instructors, and importantly, connect you with other resources on campus for help with your situation.
+
+
 
 ******
 
@@ -236,10 +269,13 @@ The course is designed to actively engage you in the course material. We hope yo
 
 ******
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+## <i class="fas fa-user-plus" aria-hidden="true"></i> Acknowledgements
+
+The following people have contributed to the design of the course materials and website: Prof. Fanny Chevalier (2019-2020), Prof. Nathan Taback (2019), Nicole Sultanum (2019).
 
 <br>
 
-R Markdown source for this website <a href="https://github.com/JSC270/JSC270.github.io">
-<i class="fa fa-github fa-2x" aria-hidden="true"></i>
-</a>
+****** 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+

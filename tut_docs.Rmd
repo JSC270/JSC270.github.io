@@ -1,11 +1,11 @@
 ---
-title: "JSC270 - Tutorial Documents"
+title: "JSC270 - Laboratories Documents"
 output: 
   html_document:
    toc: true
    toc_depth: 3
    toc_float: true
-   theme: flatly
+   theme: yeti
 ---
 
 ```{r setup, include=FALSE}
@@ -17,57 +17,17 @@ library(tidyverse)
 <br>
 
 
-# Tutorial 1
+# Laboratory \#1
 
-* [Tutorial Overview]() 
-    + [Tutorial 1.0: Pre-lab Questions]()  
-    + [Tutorial 1.1: Tutorial Assignment]() 
-    + [Tutorial 1.2: Reflections]() 
 <br> 
 
-#### Resources for Tutorial 1
+#### Overview
 
-- [Pandas Cheat Sheet](docs/Pandas_Cheat_Sheet.pdf) ([see ref](https://github.com/pandas-dev/pandas))
+- xxx
 
-- [Pandas project](https://pandas.pydata.org)
+<!--- <br>
 
-- [git Basics](docs/jsc270-git-basics.pdf)
-
-
-<br>
-
-
-
-<br>
-<br>
- ******
-
-
-# In-Lab Progress Grading
-
-```{r}
-tutorial_rubric <- read_csv("rubrics/labprogress_rubric.csv")
-knitr::kable(tutorial_rubric) 
-```
-
-# Assignment Completion Grading
-
-
-```{r}
-tutorial_rubric <- read_csv("rubrics/tutorial_rubric.csv")
-knitr::kable(tutorial_rubric) 
-```
-
-# Reflections Grading
-
-```{r}
-tutorial_rubric <- read_csv("rubrics/reflections_rubric.csv")
-knitr::kable(tutorial_rubric)
-```
-
- ******
-
-<br>
+****
 
 # Tutorial Schedule
 
@@ -77,3 +37,5 @@ The following is a tentative schedule, subject to change slightly.
 jsc270_tutsched <- read_csv("tut_sched.csv", col_types = cols(Week = col_character()), na = "null")
 knitr::kable(jsc270_tutsched)
 ```
+
+--->

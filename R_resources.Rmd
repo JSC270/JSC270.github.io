@@ -2,7 +2,7 @@
 title: "R Resources for JSC270"
 output: 
   html_document:
-    theme: flatly
+    theme: yeti
     css: custom.css
 ---
 

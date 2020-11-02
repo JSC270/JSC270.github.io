@@ -1,10 +1,10 @@
 ---
 title: "JSC270H1S: Data Science I"
-subtitle: "Winter 2020, Course Website"
+subtitle: "Winter 2021, Course Website"
 
 output: 
   html_document:
-   theme: flatly
+   theme: yeti
 ---
 
 ```{r setup, include=FALSE}
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br>
 
-Welcome to the Winter 2020 course website for Data Science I (JSC270H1S), [University of Toronto](https://www.utoronto.ca), Departments of [Computer Science](http://web.cs.toronto.edu) and [Statistical Sciences](http://utstat.toronto.edu).  
+Welcome to the Winter 2021 course website for Data Science I (JSC270H1S), [University of Toronto](https://www.utoronto.ca), Departments of [Computer Science](http://web.cs.toronto.edu) and [Statistical Sciences](http://utstat.toronto.edu).  
 
 Important information related to JSC270H1S will be posted on this website including:
 

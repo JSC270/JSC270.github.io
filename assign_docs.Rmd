@@ -4,7 +4,7 @@ output:
   html_document:
    toc: true
    toc_float: true
-   theme: flatly
+   theme: yeti
 ---
 
 ```{r setup, include=FALSE}
@@ -15,7 +15,11 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 Assignment handouts will be posted on this page
 
+<br>
+
 # Assignment #1
 
-[Questions for Assignment #1]() -- Coming soon
+<br>
+
+[Questions for Assignment #1](https://jsc270.github.io/yourlinktoquestions.html)
 
