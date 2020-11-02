@@ -1,0 +1,44 @@
+---
+title: "JSC270 - Assignment Documents"
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: spacelab
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
+```
+
+<br>
+
+Assignment handouts will be posted on this page
+
+<br>
+
+# Assignment #1
+
+<br>
+
+[Questions for Assignment #1](https://jsc270.github.io/assignment-notebooks/A1.html)
+
+
+<br>
+
+# Assignment #2
+
+<br>
+
+[Questions for Assignment #2](https://jsc270.github.io/assignment-notebooks/A2.html)
+
+
+<br>
+
+# Assignment #3
+
+<br>
+
+Getting Started for Assignment #3 [(html)](https://jsc270.github.io/assignment-notebooks/A3-Getting_started.html) [(ipynb)](https://jsc270.github.io/assignment-notebooks/A3-Getting_started.zip)
+
+[Questions for Assignment #3](https://jsc270.github.io/assignment-notebooks/A3.html)

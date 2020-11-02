@@ -1,0 +1,196 @@
+---
+title: "JSC270 - Laboratories Documents"
+output: 
+  html_document:
+   toc: true
+   toc_depth: 3
+   toc_float: true
+   theme: spacelab
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+library(tidyverse)
+```
+
+<br>
+<br>
+
+
+# Laboratory \#1
+
+<br> 
+
+#### Overview
+
+- [Lab 1: Overview of the laboratory](https://jsc270.github.io/labs/L1.html)
+
+<br>
+
+#### Questions and starter code
+
+- [Lab 1.0: Pre-lab Questions](https://jsc270.github.io/labs/L1.0.html)  
+
+- [Lab 1.1: Lab Assignment](https://jsc270.github.io/labs/L1.1.html) 
+
+- [Lab 1.2: Reflections](https://jsc270.github.io/labs/L1.2.html) 
+
+<br> 
+
+#### Resources 
+
+- [Pandas Cheat Sheet](docs/Pandas_Cheat_Sheet.pdf) ([see ref](https://github.com/pandas-dev/pandas))
+
+- [Pandas project](https://pandas.pydata.org)
+
+- [git Basics](docs/jsc270-git-basics.pdf)
+
+
+<br>
+
+# Laboratory \#2
+
+<br> 
+
+#### Overview
+
+- [Lab 2: Overview of the laboratory](https://jsc270.github.io/labs/L2.html)
+
+<br>
+
+#### Questions and starter code
+
+- [Lab 2.0: Pre-lab Questions](https://jsc270.github.io/labs/L2.0.html)  
+
+- [Lab 2.1: Lab Assignment](https://jsc270.github.io/labs/L2.1.html) 
+
+- [Lab 2.2: Reflections](https://jsc270.github.io/labs/L2.2.html) 
+
+<br> 
+
+# Laboratory \#3
+
+<br> 
+
+#### Overview
+
+- [Lab 3: Overview of the laboratory](https://jsc270.github.io/labs/L3.html)
+
+<br>
+
+#### Questions and starter code
+
+- [Lab 3.0: Pre-lab Questions](https://jsc270.github.io/labs/L3.0.html)  
+
+- [Lab 3.1: Lab Assignment](https://jsc270.github.io/labs/L3.1.html) 
+
+- [Lab 3.2: Reflections](https://jsc270.github.io/labs/L3.2.html) 
+
+
+<br> 
+
+# Laboratory \#4
+
+<br> 
+
+#### Overview
+
+- [Lab 4: Overview of the laboratory](https://jsc270.github.io/labs/L4.html)
+
+<br>
+
+#### Questions and starter code
+
+- [Lab 4.0: Pre-lab Questions](https://jsc270.github.io/labs/L4.0.html) 
+
+- [Lab 4.1: Lab Assignment](https://jsc270.github.io/labs/L4.1.html) 
+
+- [Lab 4.2: Reflections](https://jsc270.github.io/labs/L4.2.html) 
+
+
+<br> 
+
+# Laboratory \#5
+
+<br> 
+
+#### Overview
+
+- [Lab 5: Overview of the laboratory](https://jsc270.github.io/labs/L5.html)
+
+<br>
+
+#### Questions 
+
+- [Lab 5.0: Pre-lab Assignment](https://jsc270.github.io/labs/L5.0.html) 
+
+- [Lab 5.1: In-lab Presentation](https://jsc270.github.io/labs/L5.1.html) 
+
+- [Lab 5.2: Reflections](https://jsc270.github.io/labs/L5.2.html) 
+
+
+<br> 
+
+# Laboratory \#6
+
+<br> 
+
+#### Overview
+
+- [Lab 6: Overview of the laboratory](https://jsc270.github.io/labs/L6.html)
+
+<br>
+
+#### Questions 
+
+- [Lab 6.0: Pre-lab Assignment](https://jsc270.github.io/labs/L6.0.html) 
+
+- [Lab 6.1: In-lab Assignment](https://jsc270.github.io/labs/L6.1.html) 
+
+- [Lab 6.2: Reflections](https://jsc270.github.io/labs/L6.2.html)
+
+
+<br> 
+
+
+# Laboratory \#7
+
+<br> 
+
+
+#### Questions 
+
+- [Lab 7.0: Pre-lab Assignment](https://jsc270.github.io/labs/L7.0.html) 
+
+- [Lab 7.1: In-lab Assignment](https://jsc270.github.io/labs/L7.1.html) 
+
+- [Lab 7.2: Reflections](https://jsc270.github.io/labs/L7.2.html) 
+
+
+
+<br> 
+
+
+# Practice Laboratory (A3)
+
+
+<br> 
+
+- [A3 sandbox notebook](https://jsc270.github.io/labs/A3-sandbox.html) 
+
+
+
+<!--- <br>
+
+****
+
+# Tutorial Schedule
+
+The following is a tentative schedule, subject to change slightly.
+
+```{r, echo=FALSE}
+jsc270_tutsched <- read_csv("tut_sched.csv", col_types = cols(Week = col_character()), na = "null")
+knitr::kable(jsc270_tutsched)
+```
+
+--->

@@ -1,0 +1,284 @@
+---
+title: "JSC270H1S: Data Science I"
+subtitle: "Syllabus"
+date: Winter 2020
+
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: spacelab
+---
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+knitr::opts_chunk$set(warning = F, message = F)
+```
+
+
+<br>
+
+## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
+- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [F. Chevalier](http://fannychevalier.net), BA5226.
+- <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching assistants: Michael Moon, Cait Harrigan.
+- <span class="fas fa-question" aria-hidden="true"></span> Course questions can be posted to [Piazza](https://piazza.com/class/k4yuod8xieb32b), or in person.  
+- <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> If you need to contact the instructor and/or TA's for personal matters, use [Quercus](https://q.utoronto.ca/) only. No emails. 
+
+<br>
+
+******
+
+## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
+
+- Prof. Chevalier, by appointment (BA5226)
+
+- TA office hours 
+  - Thursdays 4-5pm, in BA3201
+  - Fridays 4-5pm, in the open space on the 3rd floor of the PHS building (155 College Street). There is a door numbered 381 and the stat aid centre area is just inside the door. 
+
+<br>
+
+******
+
+## <i class="glyphicon glyphicon-blackboard" aria-hidden="true"></i> Class Times and Location 
+
+<br>
+
+### _Lectures_
+- Mondays, 12:00-14:00 in [BA 3195](http://map.utoronto.ca/utsg/building/080).
+- There is no lecture on February 17 (Reading Week)
+
+<br>
+
+### _Laboratory Sessions_
+- Wednesdays, 12:00-14:00 in [BA3175](http://map.utoronto.ca/utsg/building/080).  
+- There is no laboratory session on February 19 (Reading Week)  
+
+<br>
+
+******
+
+## <span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description 
+
+Data Science is a relatively new interdisciplinary field that ecompasses statistic methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline.  The purpose of this course is to give you a broad introduction to many of the ways data scientists learn from data, including statistical reasoning, computation and communication. We will use both Python and R programming languages.  Tutorial labs will give students hands-on experience in executing and communicating data science problems and solutions.
+
+Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary team.
+
+<br>
+
+******
+
+## <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives 
+
+By the end of this course, you should be able to:
+
+- Apply and evaluate statistical methods and study designs to develop solutions to questions based on real data.
+
+- Understand current software infrastructure for handling data.
+
+- Write computer programs to wrangle and analyse data.
+
+- Understand the fundamental data structures needed for storing and processing data efficiently.
+
+- Understand ethical issues related to data analysis and software development.
+
+- Identify and answer questions that involve applying statistical methods or machine learning algorithms to complex data, and communicating the results.
+
+- Work in a team to solve data science problems.
+
+- Present the results and limitations of a data analysis at appropriate technical levels for the intended audience.
+
+
+<br>
+
+******
+
+## <span class="fas fa-globe" aria-hidden="true"></span> Course Websites
+
+- Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
+
+- Questions and Answers can be posted on the [course discussion board (Piazza)](https://piazza.com/class/k4yuod8xieb32b)
+
+
+<br>
+
+******
+
+## <i class="fas fa-code" aria-hidden="true"></i> Computing
+
+The course will use [Python 3](https://www.python.org/) for computing.
+
+Jupyter is available on <https://www.teach.cs.toronto.edu>.
+
+[Click here for direct access to Jupyter](https://jupyter.teach.cs.toronto.edu/hub/login) on teach.cs.
+
+
+<br>
+
+******
+
+## <i class="glyphicon glyphicon-book" aria-hidden="true"></i> Optional Textbooks
+
+<br>
+
+### References that use Python
+
+Hajba, Gábor László. "Website Scraping with Python." [Electronic copy is available from the UofT library](https://search.library.utoronto.ca/details?12031742)
+
+Igual, Laura, and Santi Seguí. "Introduction to Data Science." Introduction to Data Science. Springer, Cham, 2017. [Electronic copy is available from the UofT library](http://go.utlib.ca/cat/11433860)
+
+McKinney, Wes. "Python for data analysis: data wrangling with Pandas, NumPy, and IPython." (2017). <http://wesmckinney.com/pages/book.html>
+
+Skiena, Steven S. The Data Science Design Manual. Springer, 2017. [Electronic copy is available from the UofT library](http://go.utlib.ca/cat/11634033)
+
+<br>
+
+
+******
+
+## <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation
+
+Students will be evaluated according to [University Assessment and Grading Practices Policy](https://governingcouncil.utoronto.ca/secretariat/policies/grading-practices-policy-university-assessment-and-january-26-2012). The table below shows the weight of each assessment. 
+
+```{r, echo=FALSE}
+library(tidyverse)
+jsc270coursegrading <- read_csv("jsc270coursegrading.csv")
+knitr::kable(jsc270coursegrading[1:6,])
+```
+
+
+<br>
+
+******
+
+## <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policies
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Work Policy {#missed_work}
+
+Valid reasons for missing an assessment include: illness; injury; or other relevant personal issues. Any of the following types of documentation will be accepted to verify a student’s reason for missing an assessment:
+
+* [University of Toronto Verification of Student Illness or Injury form](http://www.illnessverification.utoronto.ca/index.php). The form must indicate that the degree of incapacitation on academic functioning is moderate, serious, or severe in order to be considered a valid medical reason for missing.
+
+* Student Health or Disability Related Certificate.
+
+* A College Registrar’s Letter.
+
+* Accessibility Services Letter.
+
+If an assignment due date is missed for a valid reason then your assignment will not be subject to a late penalty.
+
+Other reasons for missing an assignment due date, without documentation, will require prior approval by your instructor. If prior approval is not received and an assessment is not submitted on time then your assessment will be subject to a late penalty (see [Late Penalty](#late_penalty)).
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>  Missed Oral Presentation
+If an oral presentation is missed for a valid reason (see [Missed Work Policy](#missed_work)) then you may be given another opportunity to give your oral presentation (even if you were part of a group) provided that class or lab time is available, otherwise you will be required to submit a video of your presentation within one week of the presentation date. If an oral presentation is missed and you do not contact the professor with a reason, then a late penalty (see [Late Penalty](#late_penalty)) will be applied, and you will be required to submit a video of your oral presentation within one week of the missed due date.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Due Date for Written Report
+If a written report due date is missed for a valid reason (see [Missed Work Policy](#missed_work)) then you will be required to submit the written report within one week of the missed due date. If a due date is missed and no reason is given then a late penalty (see [Late Penalty](#late_penalty)) will be applied.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Lab or Class
+If a lab or class is missed for a valid reason (see [Missed Work Policy](#missed_work)) then the the weight of the in-lab component will be shifted to the subsequent lab components. If a lab or class is missed and no reason is given then you will recieve a grade of zero.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Late Penalty {#late_penalty}
+The late penalty for a missed due date is 20% per day (i.e., 24 hours). For example, if the work is submitted after 5 days (including weekend days and holidays) then you will receive a grade of zero for the missed work.
+
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Marking Concerns
+
+Any requests to have your work remarked must contain a written justification for consideration.  Remarking requests should be made within one week of receiving your marked work.  Re-evaluation appeals are at the discretion of the instructors.  Note that adjustments in marks will be rare and could equally result in a lowering or raising of the mark.  If a re-revaluation is completed by the instructors, the student must accept the resulting mark as the new mark, whether it goes up or down or remains the same.  When appealing a re-evaluation decision, the student accepts this condition.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Getting Help
+
+This term you will have the option to use Piazza for class discussion. If you decide not to use Piazza it will not disadvantage you in any way, and will not affect official University outcomes (e.g., grades and learning opportunities). If you choose not to opt-into Piazza then you can ask questions or discuss course material with the instructor or TAs during office hours.
+
+Be sure to read [Piazza’s Privacy Policy](https://piazza.com/legal/privacy) and [Terms of Use](https://piazza.com/legal/terms) carefully. Take time to understand and be comfortable with what they say. They provide for substantial sharing and disclosure of your personal information held by Piazza, which affects your privacy. If you decide to participate in Piazza, only provide content that you are comfortable sharing under the terms of the Privacy Policy and Terms of Use.
+
+To sign up for the discussion forum click on the link: [https://piazza.com/class/k4yuod8xieb32b](https://piazza.com/class/k4yuod8xieb32b)
+
+You can also visit your instructor or the teaching assistants during their office hours.
+
+E-mails will not be answered. Direct communication via Quercus should only be used for emergencies or personal matters (see [Communicating With the Professor](#communicating))
+
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Communicating with The Professor {#communicating}
+
+Questions about course material or organization, such as,
+  
+- Is it appropriate to use this statistical method?
+- How do I get rid of this error message?
+- What is the due date?
+
+can be posted on the discussion forums. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.
+
+If your communication is private, such as, "I missed the test because I was ill"", then contact your instructor.
+
+Always use the direct messaging functionality on [Quercus](https://q.utoronto.ca/) to ensure that your message reaches out the instructor and/or TA's. Allow up to 72 business hours for a reply. Regular emails will not be answered. 
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Academic Integrity
+
+You are responsible for knowing the content of the [University of Toronto’s Code of Behaviour on Academic Matters](http://www.governingcouncil.utoronto.ca/policies/behaveac.htm).
+
+As a general rule, we encourage you to discuss course material with each other and ask others for advice.  However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in.  When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class.  For example, "For question 2.1 what R function did you use?" is a fair question; "Please show me your R code for question 2.1" is not.
+
+If you have any questions about what is or is not permitted in this course, please do not hesitate to contact [the Professor via Quercus](https://q.utoronto.ca/).
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs
+
+Students with diverse learning styles and needs are welcome in this course. If you have an acute or ongoing disability issue or accommodation need, you should register with Accessibility Services (AS) at the beginning of the academic year by visiting [http://www.studentlife.utoronto.ca/as/new-registration](http://www.studentlife.utoronto.ca/as/new-registration). Without registration, you will not be able to verify your situation with your instructors, and instructors will not be advised about your accommodation needs. AS will assess your situation, develop an accommodation plan with you, and support you in requesting accommodation for your course work. Remember that the process of accommodation is private: AS will not share details of your needs or condition with any instructor, and your instructors will not reveal that you are registered with AS
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Religious Accomodations
+
+As a student at the University of Toronto, you are part of a diverse community that welcomes and includes students and faculty from a wide range of cultural and religious traditions. For my part, I will make every reasonable effort to avoid scheduling tests, examinations, or other compulsory activities on religious holy days not captured by statutory holidays. Further to University Policy, if you anticipate being absent from class or missing a major course activity (such as a test or in-class assignment) due to a religious observance, please let me know as early in the course as possible, and with sufficient notice (at least two to three weeks), so that we can work together to make alternate arrangements.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Specific Medical Circumstances
+
+If you become ill and it affects your ability to do your academic work, consult me right away. Normally, I will ask you for medical documentation in support of your specific medical circumstances. The University’s Verification of Student Illness or Injury (VOI) form is recommended because it indicates the impact and severity of the illness, while protecting your privacy about the details of the nature of the illness. You can submit a different form (like a letter from a doctor), as long as it is an original document, and it contains the same information as the VOI. For more information, please see [http://www.illnessverification.utoronto.ca](http://www.illnessverification.utoronto.ca) If you get a concussion, break your hand, or suffer some other acute injury, you should register with Accessibility Services as soon as possible.
+
+<br>
+
+### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accommodation for Personal Reasons
+There may be times when you are unable to complete course work on time due to non-medical reasons. If you have concerns, speak to me or to an advisor in your College Registrar’s office; they can help you to decide if you want to request an extension or accommodation. They may be able to provide you with a College Registrar’s letter of support to give to your instructors, and importantly, connect you with other resources on campus for help with your situation.
+
+
+
+******
+
+## <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities
+
+The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings.
+
+<br>
+
+******
+
+## <i class="fas fa-user-plus" aria-hidden="true"></i> Acknowledgements
+
+The following people have contributed to the design of the course materials: Prof. Nathan Taback, Nicole Sultanum.
+
+<br>
+
+****** 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+

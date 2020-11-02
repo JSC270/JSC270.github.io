@@ -1,0 +1,35 @@
+---
+title: "Schedule"
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: spacelab
+---
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+knitr::opts_chunk$set(warning = F, message = F)
+```
+
+
+<br>
+
+# <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Schedule
+
+```{r, echo=FALSE}
+library(tidyverse)
+jsc270courseschedule <- read_csv("JSC270-winter2020-Schedule.csv")
+knitr::kable(jsc270courseschedule[1:26,])
+```
+
+******
+
+# <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Assignments Calendar
+
+
+```{r, echo=FALSE}
+library(tidyverse)
+jsc270courseassschedule <- read_csv("JSC270-winter2020-assignments-schedule.csv")
+knitr::kable(jsc270courseassschedule[1:27,])
+```

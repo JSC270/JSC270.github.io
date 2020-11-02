@@ -1,0 +1,35 @@
+---
+title: "JSC270H1S: Data Science I"
+subtitle: "Winter 2020, Course Website"
+
+output: 
+  html_document:
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+
+Welcome to the Winter 2020 course website for Data Science I (JSC270H1S), [University of Toronto](https://www.utoronto.ca), Departments of [Computer Science](http://web.cs.toronto.edu) and [Statistical Sciences](http://utstat.toronto.edu).  
+
+Important information related to JSC270H1S will be posted on this website including:
+
+ - [Course syllabus](syllabus.html)
+ 
+ - [Tutorial Documents](tut_docs.html)
+ 
+ - [Class Documents](class_docs.html) 
+ 
+ ******
+<br>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+<br>
+
+<a href="https://github.com/JSC270/JSC270.github.io">R Markdown source for this website</a>
+
+

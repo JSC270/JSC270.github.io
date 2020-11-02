@@ -1,0 +1,31 @@
+name: jsc270website
+output_dir: '.'
+navbar:
+  title: JSC270 Winter 2020
+  left:
+    - text: Syllabus
+      href: syllabus.html
+    - text: Schedule
+      href: schedule.html
+    - text: Course Documents
+      menu:
+        - text: Classes
+          href: class_docs.html
+        - text: "-----------------"
+        - text: Laboratories
+          href: tut_docs.html
+        - text: Laboratories Grading
+          href: tut_grading.html
+        - text: "-----------------"
+        - text: Assignments
+          href: assign_docs.html
+        - text: Assignment Grading
+          href: assignment_rubrics.html
+    - text: Discussion Forum
+      href: https://piazza.com/class/k4yuod8xieb32b
+    - text: Resources
+      href: resources.html
+output:
+  html_document:
+    lib_dir: site_libs
+    self_contained: no
