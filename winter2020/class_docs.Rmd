@@ -21,7 +21,7 @@ Documents from class will be posted on this page.
 
 ## Class 1 - Monday January 6
 
-* Class slides: [html](https://jsc270.github.io/class-notebooks/class-01/Class1-slides.html)
+* Class slides: [html](class-notebooks/class-01/Class1-slides.html)
 * Data Science Report Examples: 
   * [Home Mortgage Disclosure Act](docs/report-mortgage.pdf)
   * [Nike Shoes](docs/report-nike.pdf)
@@ -30,33 +30,33 @@ Documents from class will be posted on this page.
 
 ## Class 2 - Monday January 13
 
-* Class slides: in-class workbook [ipynb](https://jsc270.github.io/class-notebooks/class-02/Class2-workbook.ipynb), [all files](https://jsc270.github.io/class-notebooks/class-02/class-02-files.zip)
+* Class slides: in-class workbook [ipynb](class-notebooks/class-02/Class2-workbook.ipynb), [all files](class-notebooks/class-02/class-02-files.zip)
 
 * Class slides: post-class (with answers)
-[html](https://jsc270.github.io/class-notebooks/class-02/Class2-slides.html)
+[html](class-notebooks/class-02/Class2-slides.html)
 
 <br>
 
 ## Class 3 - Monday January 20
 
-* Class slides: in-class workbook [ipynb](https://jsc270.github.io/class-notebooks/class-03/class-03-workbook.ipynb), [all files](https://jsc270.github.io/class-notebooks/class-03/class-03-files.zip)
+* Class slides: in-class workbook [ipynb](class-notebooks/class-03/class-03-workbook.ipynb), [all files](class-notebooks/class-03/class-03-files.zip)
 
 * Class slides: post-class (with answers)
-[html](https://jsc270.github.io/class-notebooks/class-03/class-03-slides.html), [all files](https://jsc270.github.io/class-notebooks/class-03/class-03-slides.zip)
+[html](class-notebooks/class-03/class-03-slides.html), [all files](class-notebooks/class-03/class-03-slides.zip)
 
 <br>
 
 ## Class 4 - Monday January 27
 
 * Class slides: 
-[html](https://jsc270.github.io/class-notebooks/class-04/class4.html), [pdf (types of questions)](https://jsc270.github.io/class-notebooks/class-04/JSC270-surveys.pdf), [all files](https://jsc270.github.io/class-notebooks/class-04/class-04-slides.zip)
+[html](class-notebooks/class-04/class4.html), [pdf (types of questions)](class-notebooks/class-04/JSC270-surveys.pdf), [all files](class-notebooks/class-04/class-04-slides.zip)
 
 <br>
 
 ## Class/Lab 5 - Wed. February 5
 
 * Slides on oral presentations: 
-[pdf](https://jsc270.github.io/class-notebooks/class-05/JSC270-Class5.pdf)
+[pdf](class-notebooks/class-05/JSC270-Class5.pdf)
 
 <br>
 
@@ -64,7 +64,7 @@ Documents from class will be posted on this page.
 ## Class 6 - Monday February 10
 
 * Class slides: 
-[pdf](https://jsc270.github.io/class-notebooks/class-06/JSC270-Class6.pdf)
+[pdf](class-notebooks/class-06/JSC270-Class6.pdf)
 
 <br>
 
@@ -72,22 +72,22 @@ Documents from class will be posted on this page.
 ## Class 7 - Monday March 2
 
 * Class slides: in-class workbook
-[all files](https://jsc270.github.io/class-notebooks/class-07/class07-slides.zip)
+[all files](class-notebooks/class-07/class07-slides.zip)
 
 * Class slides: post-class (with answers)
-[html](https://jsc270.github.io/class-notebooks/class-07/class-07-full.html), [all files](https://jsc270.github.io/class-notebooks/class-07/class-07-full-slides.zip)
+[html](class-notebooks/class-07/class-07-full.html), [all files](class-notebooks/class-07/class-07-full-slides.zip)
 
 <br>
 
 ## Class 8 - (Covid-19: video)
 
-* Class slides: [pdf](https://jsc270.github.io/class-notebooks/class-08/class08-slides.pdf)
+* Class slides: [pdf](class-notebooks/class-08/class08-slides.pdf)
 
 <br>
 
 ## Class 9 - (Covid-19: video)
 
-* Class slides: [pdf](https://jsc270.github.io/class-notebooks/class-09/class09-slides.pdf)
+* Class slides: [pdf](class-notebooks/class-09/class09-slides.pdf)
 
 <br>
 

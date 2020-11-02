@@ -13,6 +13,7 @@
 
 <title>JSC270 - Assignment Documents</title>
 
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
@@ -408,20 +409,20 @@ div.tocify {
 <div id="assignment-1" class="section level1">
 <h1>Assignment #1</h1>
 <p><br></p>
-<p><a href="https://jsc270.github.io/assignment-notebooks/A1.html">Questions for Assignment #1</a></p>
+<p><a href="assignment-notebooks/A1.html">Questions for Assignment #1</a></p>
 <p><br></p>
 </div>
 <div id="assignment-2" class="section level1">
 <h1>Assignment #2</h1>
 <p><br></p>
-<p><a href="https://jsc270.github.io/assignment-notebooks/A2.html">Questions for Assignment #2</a></p>
+<p><a href="assignment-notebooks/A2.html">Questions for Assignment #2</a></p>
 <p><br></p>
 </div>
 <div id="assignment-3" class="section level1">
 <h1>Assignment #3</h1>
 <p><br></p>
-<p>Getting Started for Assignment #3 <a href="https://jsc270.github.io/assignment-notebooks/A3-Getting_started.html">(html)</a> <a href="https://jsc270.github.io/assignment-notebooks/A3-Getting_started.zip">(ipynb)</a></p>
-<p><a href="https://jsc270.github.io/assignment-notebooks/A3.html">Questions for Assignment #3</a></p>
+<p>Getting Started for Assignment #3 <a href="assignment-notebooks/A3-Getting_started.html">(html)</a> <a href="assignment-notebooks/A3-Getting_started.zip">(ipynb)</a></p>
+<p><a href="assignment-notebooks/A3.html">Questions for Assignment #3</a></p>
 </div>
 
 
@@ -474,7 +475,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

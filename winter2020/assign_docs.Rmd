@@ -21,7 +21,7 @@ Assignment handouts will be posted on this page
 
 <br>
 
-[Questions for Assignment #1](https://jsc270.github.io/assignment-notebooks/A1.html)
+[Questions for Assignment #1](assignment-notebooks/A1.html)
 
 
 <br>
@@ -30,7 +30,7 @@ Assignment handouts will be posted on this page
 
 <br>
 
-[Questions for Assignment #2](https://jsc270.github.io/assignment-notebooks/A2.html)
+[Questions for Assignment #2](assignment-notebooks/A2.html)
 
 
 <br>
@@ -39,6 +39,6 @@ Assignment handouts will be posted on this page
 
 <br>
 
-Getting Started for Assignment #3 [(html)](https://jsc270.github.io/assignment-notebooks/A3-Getting_started.html) [(ipynb)](https://jsc270.github.io/assignment-notebooks/A3-Getting_started.zip)
+Getting Started for Assignment #3 [(html)](assignment-notebooks/A3-Getting_started.html) [(ipynb)](assignment-notebooks/A3-Getting_started.zip)
 
-[Questions for Assignment #3](https://jsc270.github.io/assignment-notebooks/A3.html)
+[Questions for Assignment #3](assignment-notebooks/A3.html)
