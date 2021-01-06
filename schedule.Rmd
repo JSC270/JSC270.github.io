@@ -20,7 +20,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 ```{r, echo=FALSE}
 library(tidyverse)
 jsc270courseschedule <- read_csv("JSC270-winter2021-Schedule.csv")
-knitr::kable(jsc270courseschedule[1:2,])
+knitr::kable(jsc270courseschedule[1:27,])
 ```
 
 ******
