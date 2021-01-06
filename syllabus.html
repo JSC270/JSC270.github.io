@@ -13,7 +13,6 @@
 
 <title>JSC270H1S: Data Science I</title>
 
-<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -26,8 +25,19 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -411,11 +421,16 @@ div.tocify {
 <div id="teaching-team" class="section level2">
 <h2><i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team</h2>
 <ul>
-<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. <a href="xxx">xxx</a>.</li>
-<li><span class="fas fa-user-friends" aria-hidden="true"></span> Teaching assistants: xx, xx.</li>
-<li><span class="fas fa-question" aria-hidden="true"></span> Course questions can be posted to <a href="xxx">Piazza</a>, or in person.<br />
-</li>
-<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> If you need to contact the instructor and/or TA’s for personal matters, use <a href="https://q.utoronto.ca/">Quercus</a> only. No emails.</li>
+<li><p><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: <a href="xxx">Anna Goldenberg</a> (<a href="mailto:annagoldenberg@utoronto.ca">annagoldenberg@utoronto.ca</a>).</p></li>
+<li><p><span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistants: </br>        Lauren Erdman (<a href="mailto:lee2@cs.toronto.edu">lee2@cs.toronto.edu</a>) </br>        Matthew Edwards (<a href="mailto:mr.edwards@utoronto.ca">mr.edwards@utoronto.ca</a>).</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="course-communication" class="section level2">
+<h2>Course Communication</h2>
+<ul>
+<li><p><span class="fas fa-question" aria-hidden="true"></span> The communication forum we will use for this course is <a href="#">Piazza</a>. For general questions relating to course administration or content, please use a public post so the entire class can benefit from the response. If your question involves your own solution to an assignment (or your group's solution), please post a private Piazza message to ensure academic integrity. The instructor or one of the TAs will try to answer promptly.</p></li>
+<li><p><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don't think your question is appropriate for Piazza, please reach out to the teaching team using the emails listed above. Your message should be sent from your official university email account. Please also include 'JSC270' in the email subject line, and include your full name, student ID number, and UTOR ID in the body of the email.</p></li>
 </ul>
 <p><br></p>
 <hr />
@@ -423,10 +438,10 @@ div.tocify {
 <div id="office-hours" class="section level2">
 <h2><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours</h2>
 <ul>
-<li><p>Prof. xxx, by appointment (xxx)</p></li>
-<li><p>TA office hours</p>
+<li><p>Professor: Mondays 2-3pm, or by appointment</p></li>
+<li>TA office hours
 <ul>
-<li>xxx</li>
+<li>A survey will be sent during the first lecture to optimize office hour scheduling.</li>
 </ul></li>
 </ul>
 <p><br></p>
@@ -438,14 +453,19 @@ div.tocify {
 <div id="lectures" class="section level3">
 <h3><em>Lectures</em></h3>
 <ul>
-<li>xxx</li>
+<li>Monday, 1-3pm EST</li>
+<li>Lectures will be held via Zoom. The link is provided <a href="https://utoronto.zoom.us/j/87851358931">here</a>. The password is <code>JSC_270</code>.</li>
+<li>The first hour will be dedicated to teaching new material, while the second hour will be used to address student questions.</li>
+<li>All lecture slides will be posted to the course website once the lecture is finished.</li>
 </ul>
 <p><br></p>
 </div>
 <div id="laboratory-sessions" class="section level3">
 <h3><em>Laboratory Sessions</em></h3>
 <ul>
-<li>xxx</li>
+<li>Wednesday, 12-2pm EST</li>
+<li>Lab Sessions will also be held via Zoom. The link is provided <a href="https://utoronto.zoom.us/j/86368512792">here</a>. The password is <code>JSC270_Lab</code></li>
+<li>All code will be posted to the course website once the lab is finished.</li>
 </ul>
 <p><br></p>
 <hr />
@@ -453,8 +473,8 @@ div.tocify {
 </div>
 <div id="course-description" class="section level2">
 <h2><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description</h2>
-<p>Data Science is a relatively new interdisciplinary field that ecompasses statistic methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline. The purpose of this course is to give you a broad introduction to many of the ways data scientists learn from data, including statistical reasoning, computation and communication. We will use both Python and R programming languages. Tutorial labs will give students hands-on experience in executing and communicating data science problems and solutions.</p>
-<p>Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary team.</p>
+<p>Data Science is a relatively new interdisciplinary field that encompasses statistical methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline. The purpose of this course is to give you a broad introduction to many of the ways data scientists learn from data, including statistical reasoning, computation and communication. We will use the Python programming language. Tutorial labs will give students hands-on experience in executing and communicating data science problems and solutions.</p>
+<p>Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary teams.</p>
 <p><br></p>
 <hr />
 </div>
@@ -462,12 +482,11 @@ div.tocify {
 <h2><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives</h2>
 <p>By the end of this course, you should be able to:</p>
 <ul>
-<li><p>Apply and evaluate statistical methods and study designs to develop solutions to questions based on real data.</p></li>
-<li><p>Understand current software infrastructure for handling data.</p></li>
+<li><p>Apply and evaluate statistical methods to develop solutions to questions based on real data.</p></li>
+<li><p>Become proficient in state-of-the-art software packages for handling data.</p></li>
 <li><p>Write computer programs to wrangle and analyse data.</p></li>
-<li><p>Understand the fundamental data structures needed for storing and processing data efficiently.</p></li>
 <li><p>Understand ethical issues related to data analysis and software development.</p></li>
-<li><p>Identify and answer questions that involve applying statistical methods or machine learning algorithms to complex data, and communicating the results.</p></li>
+<li><p>Identify and answer questions that involve applying statistical methods or machine learning algorithms to complex data.</p></li>
 <li><p>Work in a team to solve data science problems.</p></li>
 <li><p>Present the results and limitations of a data analysis at appropriate technical levels for the intended audience.</p></li>
 </ul>
@@ -486,7 +505,8 @@ div.tocify {
 <div id="computing" class="section level2">
 <h2><i class="fas fa-code" aria-hidden="true"></i> Computing</h2>
 <p>The course will use <a href="https://www.python.org/">Python 3</a> for computing.</p>
-<p>Jupyter is available on <a href="https://www.teach.cs.toronto.edu" class="uri">https://www.teach.cs.toronto.edu</a>.</p>
+<p>Assignments and Labs will use <a href="https://colab.research.google.com/notebooks/intro.ipynb">Google Colab</a>, an interactive coding environment that is completely self-contained.</p>
+<p>A similar sytem called Jupyter is available on <a href="https://www.teach.cs.toronto.edu" class="uri">https://www.teach.cs.toronto.edu</a>.</p>
 <p><a href="https://jupyter.teach.cs.toronto.edu/hub/login">Click here for direct access to Jupyter</a> on teach.cs.</p>
 <p><br></p>
 <hr />
@@ -494,15 +514,12 @@ div.tocify {
 <div id="optional-textbooks" class="section level2">
 <h2><i class="glyphicon glyphicon-book" aria-hidden="true"></i> Optional Textbooks</h2>
 <p><br></p>
-<div id="references-that-use-python" class="section level3">
-<h3>References that use Python</h3>
-<p>Hajba, Gábor László. “Website Scraping with Python.” <a href="https://search.library.utoronto.ca/details?12031742">Electronic copy is available from the UofT library</a></p>
-<p>Igual, Laura, and Santi Seguí. “Introduction to Data Science.” Introduction to Data Science. Springer, Cham, 2017. <a href="http://go.utlib.ca/cat/11433860">Electronic copy is available from the UofT library</a></p>
-<p>McKinney, Wes. “Python for data analysis: data wrangling with Pandas, NumPy, and IPython.” (2017). <a href="http://wesmckinney.com/pages/book.html" class="uri">http://wesmckinney.com/pages/book.html</a></p>
+<p>Hajba, Gábor László. &quot;Website Scraping with Python.&quot; <a href="https://search.library.utoronto.ca/details?12031742">Electronic copy is available from the UofT library</a></p>
+<p>Igual, Laura, and Santi Seguí. &quot;Introduction to Data Science.&quot; Introduction to Data Science. Springer, Cham, 2017. <a href="http://go.utlib.ca/cat/11433860">Electronic copy is available from the UofT library</a></p>
+<p>McKinney, Wes. &quot;Python for data analysis: data wrangling with Pandas, NumPy, and IPython.&quot; (2017). <a href="http://wesmckinney.com/pages/book.html" class="uri">http://wesmckinney.com/pages/book.html</a></p>
 <p>Skiena, Steven S. The Data Science Design Manual. Springer, 2017. <a href="http://go.utlib.ca/cat/11634033">Electronic copy is available from the UofT library</a></p>
 <p><br></p>
 <hr />
-</div>
 </div>
 <div id="evaluation" class="section level2">
 <h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation</h2>
@@ -525,19 +542,31 @@ div.tocify {
 </tr>
 <tr class="odd">
 <td align="left">Assignment 3</td>
-<td align="left">30%</td>
+<td align="left">20%</td>
 </tr>
 <tr class="even">
-<td align="left">Lab attendance, assignments, reflections</td>
-<td align="left">35%</td>
+<td align="left">Assignment 4</td>
+<td align="left">20%</td>
 </tr>
 <tr class="odd">
+<td align="left">Perusal Papers (6)</td>
+<td align="left">12%</td>
+</tr>
+<tr class="even">
+<td align="left">Reflection Quizzes (6)</td>
+<td align="left">12%</td>
+</tr>
+<tr class="odd">
+<td align="left">Group Presentations (2)</td>
+<td align="left">10%</td>
+</tr>
+<tr class="even">
 <td align="left">In-class attendance and participation</td>
 <td align="left">5%</td>
 </tr>
-<tr class="even">
-<td align="left">End of course reflection/survey</td>
-<td align="left">5%</td>
+<tr class="odd">
+<td align="left">Bonus</td>
+<td align="left">1%</td>
 </tr>
 </tbody>
 </table>
@@ -589,7 +618,7 @@ div.tocify {
 <h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Getting Help</h3>
 <p>This term you will have the option to use Piazza for class discussion. If you decide not to use Piazza it will not disadvantage you in any way, and will not affect official University outcomes (e.g., grades and learning opportunities). If you choose not to opt-into Piazza then you can ask questions or discuss course material with the instructor or TAs during office hours.</p>
 <p>Be sure to read <a href="https://piazza.com/legal/privacy">Piazza’s Privacy Policy</a> and <a href="https://piazza.com/legal/terms">Terms of Use</a> carefully. Take time to understand and be comfortable with what they say. They provide for substantial sharing and disclosure of your personal information held by Piazza, which affects your privacy. If you decide to participate in Piazza, only provide content that you are comfortable sharing under the terms of the Privacy Policy and Terms of Use.</p>
-<p>To sign up for the discussion forum click on the link: <a href="https://piazza.com/class/k4yuod8xieb32b">https://piazza.com/class/k4yuod8xieb32b</a></p>
+<p>To sign up for the discussion forum click on the link: <a href="https://piazza.com/class/k4yuod8xieb32b" class="uri">https://piazza.com/class/k4yuod8xieb32b</a></p>
 <p>You can also visit your instructor or the teaching assistants during their office hours.</p>
 <p>E-mails will not be answered. Direct communication via Quercus should only be used for emergencies or personal matters (see <a href="#communicating">Communicating With the Professor</a>)</p>
 </div>
@@ -602,20 +631,20 @@ div.tocify {
 <li>What is the due date?</li>
 </ul>
 <p>can be posted on the discussion forums. Questions can be posted anonymously (so that the author is anonymous to other students but not to the instructors), if desired.</p>
-<p>If your communication is private, such as, “I missed the test because I was ill”", then contact your instructor.</p>
-<p>Always use the direct messaging functionality on <a href="https://q.utoronto.ca/">Quercus</a> to ensure that your message reaches out the instructor and/or TA’s. Allow up to 72 business hours for a reply. Regular emails will not be answered.</p>
+<p>If your communication is private, such as, &quot;I missed the test because I was ill&quot;&quot;, then contact your instructor.</p>
+<p>Always use the direct messaging functionality on <a href="https://q.utoronto.ca/">Quercus</a> to ensure that your message reaches out the instructor and/or TA's. Allow up to 72 business hours for a reply. Regular emails will not be answered.</p>
 <p><br></p>
 </div>
 <div id="academic-integrity" class="section level3">
 <h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Academic Integrity</h3>
 <p>You are responsible for knowing the content of the <a href="http://www.governingcouncil.utoronto.ca/policies/behaveac.htm">University of Toronto’s Code of Behaviour on Academic Matters</a>.</p>
-<p>As a general rule, we encourage you to discuss course material with each other and ask others for advice. However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in. When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class. For example, “For question 2.1 what R function did you use?” is a fair question; “Please show me your R code for question 2.1” is not.</p>
+<p>As a general rule, we encourage you to discuss course material with each other and ask others for advice. However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in. When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class. For example, &quot;For question 2.1 what pandas function did you use?&quot; is a fair question; &quot;Please show me your code for question 2.1&quot; is not.</p>
 <p>If you have any questions about what is or is not permitted in this course, please do not hesitate to contact <a href="https://q.utoronto.ca/">the Professor via Quercus</a>.</p>
 <p><br></p>
 </div>
 <div id="accessibility-needs" class="section level3">
 <h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs</h3>
-<p>Students with diverse learning styles and needs are welcome in this course. If you have an acute or ongoing disability issue or accommodation need, you should register with Accessibility Services (AS) at the beginning of the academic year by visiting <a href="http://www.studentlife.utoronto.ca/as/new-registration">http://www.studentlife.utoronto.ca/as/new-registration</a>. Without registration, you will not be able to verify your situation with your instructors, and instructors will not be advised about your accommodation needs. AS will assess your situation, develop an accommodation plan with you, and support you in requesting accommodation for your course work. Remember that the process of accommodation is private: AS will not share details of your needs or condition with any instructor, and your instructors will not reveal that you are registered with AS</p>
+<p>Students with diverse learning styles and needs are welcome in this course. If you have an acute or ongoing disability issue or accommodation need, you should register with Accessibility Services (AS) at the beginning of the academic year by visiting <a href="http://www.studentlife.utoronto.ca/as/new-registration" class="uri">http://www.studentlife.utoronto.ca/as/new-registration</a>. Without registration, you will not be able to verify your situation with your instructors, and instructors will not be advised about your accommodation needs. AS will assess your situation, develop an accommodation plan with you, and support you in requesting accommodation for your course work. Remember that the process of accommodation is private: AS will not share details of your needs or condition with any instructor, and your instructors will not reveal that you are registered with AS</p>
 <p><br></p>
 </div>
 <div id="religious-accomodations" class="section level3">
@@ -625,25 +654,19 @@ div.tocify {
 </div>
 <div id="specific-medical-circumstances" class="section level3">
 <h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Specific Medical Circumstances</h3>
-<p>If you become ill and it affects your ability to do your academic work, consult me right away. Normally, I will ask you for medical documentation in support of your specific medical circumstances. The University’s Verification of Student Illness or Injury (VOI) form is recommended because it indicates the impact and severity of the illness, while protecting your privacy about the details of the nature of the illness. You can submit a different form (like a letter from a doctor), as long as it is an original document, and it contains the same information as the VOI. For more information, please see <a href="http://www.illnessverification.utoronto.ca">http://www.illnessverification.utoronto.ca</a> If you get a concussion, break your hand, or suffer some other acute injury, you should register with Accessibility Services as soon as possible.</p>
+<p>If you become ill and it affects your ability to do your academic work, consult me right away. Normally, I will ask you for medical documentation in support of your specific medical circumstances. The University’s Verification of Student Illness or Injury (VOI) form is recommended because it indicates the impact and severity of the illness, while protecting your privacy about the details of the nature of the illness. You can submit a different form (like a letter from a doctor), as long as it is an original document, and it contains the same information as the VOI. For more information, please see <a href="http://www.illnessverification.utoronto.ca" class="uri">http://www.illnessverification.utoronto.ca</a> If you get a concussion, break your hand, or suffer some other acute injury, you should register with Accessibility Services as soon as possible.</p>
 <p><br></p>
 </div>
 <div id="accommodation-for-personal-reasons" class="section level3">
 <h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accommodation for Personal Reasons</h3>
 <p>There may be times when you are unable to complete course work on time due to non-medical reasons. If you have concerns, speak to me or to an advisor in your College Registrar’s office; they can help you to decide if you want to request an extension or accommodation. They may be able to provide you with a College Registrar’s letter of support to give to your instructors, and importantly, connect you with other resources on campus for help with your situation.</p>
-<hr />
-</div>
-</div>
-<div id="your-responsibilities" class="section level2">
-<h2><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities</h2>
-<p>The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings.</p>
 <p><br></p>
 <hr />
+</div>
 </div>
 <div id="acknowledgements" class="section level2">
 <h2><i class="fas fa-user-plus" aria-hidden="true"></i> Acknowledgements</h2>
-<p>The following people have contributed to the design of the course materials and website: Prof. Fanny Chevalier (2019-2020), Prof. Nathan Taback (2019), Nicole Sultanum (2019).</p>
-<p><br></p>
+<p>The following people have contributed to the design of the course materials and website: Prof. Fanny Chevalier (2019-2020), Prof. Nathan Taback (2019), Nicole Sultanum (2019), Prof. Anna Goldenberg (2021), Lauren Erdman (2021), Matthew Edwards (2021). <br></p>
 <hr />
 <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 </div>
@@ -659,7 +682,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

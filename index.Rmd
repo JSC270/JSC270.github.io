@@ -13,7 +13,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br>
 
-Welcome to the Winter 2021 course website for Data Science I (JSC270H1S), [University of Toronto](https://www.utoronto.ca), Departments of [Computer Science](http://web.cs.toronto.edu) and [Statistical Sciences](http://utstat.toronto.edu).  
+  Welcome to the Winter 2021 course website for __JSC270H1S__ (Data Science I). This course is offered jointly by the departments of [Computer Science](https://www.utoronto.ca) and [Statistical Sciences](http://utstat.toronto.edu), and is the first of three canonical data science courses designed for students in the Data Science Specialist Program. 
+
+__Prerequisites__
+
+- STA257 (Introductory Probability and Statistics)
+- CSC207 (Introductory Software Design)
+
+__Corequisites__
+
+- STA261 (Intermediate Probability and Statistics)
+- MAT237/MAT257 (Multivariable Calculus) 
+- CSC236 / CSC240 (Intro to Theory of Computation)
+
+__Overview__
+
+  This course will focus on introducing students to the fundamentals of data science, including data cleaning and exploration, visualization, and statistical reasoning. The course will also emphasize professional skills, such as oral/ written communication, end-to-end workflows, teamwork, and state-of-the-art computer programming tools. The practical applications of these skills will be demonstrated through guest lectures with experts from academia and industry, across a variety of disciplines. Students will be evaluated using several different techniques, including programming assignments, written reflections, and oral presentations.
+
 
 Important information related to JSC270H1S will be posted on this website including:
 

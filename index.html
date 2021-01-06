@@ -13,7 +13,6 @@
 
 <title>JSC270H1S: Data Science I</title>
 
-<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -23,6 +22,17 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -329,7 +339,20 @@ $(document).ready(function () {
 
 
 <p><br></p>
-<p>Welcome to the Winter 2021 course website for Data Science I (JSC270H1S), <a href="https://www.utoronto.ca">University of Toronto</a>, Departments of <a href="http://web.cs.toronto.edu">Computer Science</a> and <a href="http://utstat.toronto.edu">Statistical Sciences</a>.</p>
+<p>Welcome to the Winter 2021 course website for <strong>JSC270H1S</strong> (Data Science I). This course is offered jointly by the departments of <a href="https://www.utoronto.ca">Computer Science</a> and <a href="http://utstat.toronto.edu">Statistical Sciences</a>, and is the first of three canonical data science courses designed for students in the Data Science Specialist Program.</p>
+<p><strong>Prerequisites</strong></p>
+<ul>
+<li>STA257 (Introductory Probability and Statistics)</li>
+<li>CSC207 (Introductory Software Design)</li>
+</ul>
+<p><strong>Corequisites</strong></p>
+<ul>
+<li>STA261 (Intermediate Probability and Statistics)</li>
+<li>MAT237/MAT257 (Multivariable Calculus)</li>
+<li>CSC236 / CSC240 (Intro to Theory of Computation)</li>
+</ul>
+<p><strong>Overview</strong></p>
+<p>This course will focus on introducing students to the fundamentals of data science, including data cleaning and exploration, visualization, and statistical reasoning. The course will also emphasize professional skills, such as oral/ written communication, end-to-end workflows, teamwork, and state-of-the-art computer programming tools. The practical applications of these skills will be demonstrated through guest lectures with experts from academia and industry, across a variety of disciplines. Students will be evaluated using several different techniques, including programming assignments, written reflections, and oral presentations.</p>
 <p>Important information related to JSC270H1S will be posted on this website including:</p>
 <ul>
 <li><p><a href="syllabus.html">Course syllabus</a></p></li>
@@ -351,7 +374,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

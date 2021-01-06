@@ -19,10 +19,19 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
-- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Prof. [xxx](xxx).
-- <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching assistants: xx, xx.
-- <span class="fas fa-question" aria-hidden="true"></span> Course questions can be posted to [Piazza](xxx), or in person.  
-- <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> If you need to contact the instructor and/or TA's for personal matters, use [Quercus](https://q.utoronto.ca/) only. No emails. 
+- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Anna Goldenberg](xxx) (annagoldenberg@utoronto.ca).
+
+- <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistants: </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lauren Erdman (lee2@cs.toronto.edu) </br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matthew Edwards (mr.edwards@utoronto.ca).
+
+<br>
+
+## Course Communication
+
+- <span class="fas fa-question" aria-hidden="true"></span> The communication forum we will use for this course is [Piazza](#). For general questions relating to course administration or content, please use a public post so the entire class can benefit from the response. If your question involves your own solution to an assignment (or your group's solution), please post a private Piazza message to ensure academic integrity. The instructor or one of the TAs will try to answer promptly.
+
+- <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don't think your question is appropriate for Piazza, please reach out to the teaching team using the emails listed above. Your message should be sent from your official university email account. Please also include 'JSC270' in the email subject line, and include your full name, student ID number, and UTOR ID in the body of the email.
 
 <br>
 
@@ -30,10 +39,10 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
-- Prof. xxx, by appointment (xxx)
+- Professor: Mondays 2-3pm, or by appointment 
 
 - TA office hours 
-  - xxx
+    - A survey will be sent during the first lecture to optimize office hour scheduling.
  
 <br>
 
@@ -44,12 +53,18 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ### _Lectures_
-- xxx
+- Monday, 1-3pm EST
+- Lectures will be held via Zoom. The link is provided [here](https://utoronto.zoom.us/j/87851358931). The password is `JSC_270`.
+- The first hour will be dedicated to teaching new material, while the second hour
+will be used to address student questions.
+- All lecture slides will be posted to the course website once the lecture is finished.
 
 <br>
 
 ### _Laboratory Sessions_
-- xxx 
+- Wednesday, 12-2pm EST 
+- Lab Sessions will also be held via Zoom. The link is provided [here](https://utoronto.zoom.us/j/86368512792). The password is `JSC270_Lab`
+- All code will be posted to the course website once the lab is finished.
 
 <br>
 
@@ -57,9 +72,9 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description 
 
-Data Science is a relatively new interdisciplinary field that ecompasses statistic methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline.  The purpose of this course is to give you a broad introduction to many of the ways data scientists learn from data, including statistical reasoning, computation and communication. We will use both Python and R programming languages.  Tutorial labs will give students hands-on experience in executing and communicating data science problems and solutions.
+Data Science is a relatively new interdisciplinary field that encompasses statistical methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline.  The purpose of this course is to give you a broad introduction to many of the ways data scientists learn from data, including statistical reasoning, computation and communication. We will use the Python programming language.  Tutorial labs will give students hands-on experience in executing and communicating data science problems and solutions.
 
-Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary team.
+Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary teams.
 
 <br>
 
@@ -69,17 +84,15 @@ Through this course, you will gain experience working on data science projects t
 
 By the end of this course, you should be able to:
 
-- Apply and evaluate statistical methods and study designs to develop solutions to questions based on real data.
+- Apply and evaluate statistical methods to develop solutions to questions based on real data.
 
-- Understand current software infrastructure for handling data.
+- Become proficient in state-of-the-art software packages for handling data.
 
 - Write computer programs to wrangle and analyse data.
 
-- Understand the fundamental data structures needed for storing and processing data efficiently.
-
 - Understand ethical issues related to data analysis and software development.
 
-- Identify and answer questions that involve applying statistical methods or machine learning algorithms to complex data, and communicating the results.
+- Identify and answer questions that involve applying statistical methods or machine learning algorithms to complex data.
 
 - Work in a team to solve data science problems.
 
@@ -105,7 +118,9 @@ By the end of this course, you should be able to:
 
 The course will use [Python 3](https://www.python.org/) for computing.
 
-Jupyter is available on <https://www.teach.cs.toronto.edu>.
+Assignments and Labs will use [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb), an interactive coding environment that is completely self-contained. 
+
+A similar sytem called Jupyter is available on <https://www.teach.cs.toronto.edu>.
 
 [Click here for direct access to Jupyter](https://jupyter.teach.cs.toronto.edu/hub/login) on teach.cs.
 
@@ -117,8 +132,6 @@ Jupyter is available on <https://www.teach.cs.toronto.edu>.
 ## <i class="glyphicon glyphicon-book" aria-hidden="true"></i> Optional Textbooks
 
 <br>
-
-### References that use Python
 
 Hajba, Gábor László. "Website Scraping with Python." [Electronic copy is available from the UofT library](https://search.library.utoronto.ca/details?12031742)
 
@@ -140,7 +153,7 @@ Students will be evaluated according to [University Assessment and Grading Pract
 ```{r, echo=FALSE}
 library(tidyverse)
 jsc270coursegrading <- read_csv("jsc270coursegrading.csv")
-knitr::kable(jsc270coursegrading[1:6,])
+knitr::kable(jsc270coursegrading[1:9,])
 ```
 
 
@@ -230,7 +243,7 @@ Always use the direct messaging functionality on [Quercus](https://q.utoronto.ca
 
 You are responsible for knowing the content of the [University of Toronto’s Code of Behaviour on Academic Matters](http://www.governingcouncil.utoronto.ca/policies/behaveac.htm).
 
-As a general rule, we encourage you to discuss course material with each other and ask others for advice.  However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in.  When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class.  For example, "For question 2.1 what R function did you use?" is a fair question; "Please show me your R code for question 2.1" is not.
+As a general rule, we encourage you to discuss course material with each other and ask others for advice.  However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in.  When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class.  For example, "For question 2.1 what pandas function did you use?" is a fair question; "Please show me your code for question 2.1" is not.
 
 If you have any questions about what is or is not permitted in this course, please do not hesitate to contact [the Professor via Quercus](https://q.utoronto.ca/).
 
@@ -257,22 +270,13 @@ If you become ill and it affects your ability to do your academic work, consult 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accommodation for Personal Reasons
 There may be times when you are unable to complete course work on time due to non-medical reasons. If you have concerns, speak to me or to an advisor in your College Registrar’s office; they can help you to decide if you want to request an extension or accommodation. They may be able to provide you with a College Registrar’s letter of support to give to your instructors, and importantly, connect you with other resources on campus for help with your situation.
 
-
-
-******
-
-## <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Your Responsibilities
-
-The course is designed to actively engage you in the course material. We hope you’ll find the methods of data science interesting, challenging, and fun. In order for classroom sessions and tutorials to be effective, prepare by learning about the week’s concepts through completing the recommended problems and readings.
-
 <br>
 
 ******
 
 ## <i class="fas fa-user-plus" aria-hidden="true"></i> Acknowledgements
 
-The following people have contributed to the design of the course materials and website: Prof. Fanny Chevalier (2019-2020), Prof. Nathan Taback (2019), Nicole Sultanum (2019).
-
+The following people have contributed to the design of the course materials and website: Prof. Fanny Chevalier (2019-2020), Prof. Nathan Taback (2019), Nicole Sultanum (2019), Prof. Anna Goldenberg (2021), Lauren Erdman (2021), Matthew Edwards (2021).
 <br>
 
 ****** 
