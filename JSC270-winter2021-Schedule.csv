@@ -2,16 +2,16 @@ Date,Session,Description
 Mon. Jan 11,Lecture 1,Course Introduction
 Wed. Jan 13,Lab 1,Data Collection and Cleaning (Intro to python/pandas)
 Mon. Jan 18,Lecture 2,Exploratory Data Analysis/Visualization (Guest Lecture: Dr. Fanny Chevalier)
-Wed. Jan 20,Lab 2,xx
-Mon. Jan 25,Lecture 3,xx
+Wed. Jan 20,Lab 2,Exploring Python Data (NumPy and Scikit-Learn)
+Mon. Jan 25,Lecture 3,Correlation vs Causation/ Model Fitting
 Wed. Jan 27,Lab 3,xx
-Mon. Feb 1,Lecture 4,xx
-Wed. Feb 3,Lab 4,xx
-Mon. Feb 8,Lecture 5,xx
+Mon. Feb 1,Lecture 4,Making and Evaluating Predictions
+Wed. Feb 3,Lab 4,Version Control: Git/GitHub/Bash
+Mon. Feb 8,Lecture 5,Data Simulation/ Hypothesis Testing and P-values
 Wed. Feb 10,Lab 5,xx
 Mon. Feb 15,READING WEEK,xx
 Wed. Feb 17,READING WEEK,xx
-Mon. Feb 22,Lecture 6,xx
+Mon. Feb 22,Lecture 6,Data Generation and Imputation
 Wed. Feb 24,Lab 6,xx
 Mon. Mar 1,Lecture 7,xx
 Wed. Mar 3,Lab 7,xx
