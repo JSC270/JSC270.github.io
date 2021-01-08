@@ -17,13 +17,15 @@ library(tidyverse)
 <br>
 
 
-# Laboratory \#1
+## Lab 1 - Jan 13
+
+## Lab 2 - Jan 20
+
+## Lab 3 - Jan 27
+
+## Lab 4 - Feb 3
 
 <br> 
-
-#### Overview
-
-- xxx
 
 <!--- <br>
 

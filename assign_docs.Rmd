@@ -13,13 +13,15 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 <br>
 
-Assignment handouts will be posted on this page
+Assignments for this course will be programming exercises, and most of the content will be related to data analysis. Please refer to the Assignment Schedule for the release and submission dates. Assignments are to be completed using the Python programming language.
+
+- Assignments will be distributed as notebooks for [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb), an interative programming environment that automatically comes with most standard Python packages
+
+- Note: Even though some assignments may appear short, they may take longer than expected to complete. Please do not leave things until the last minute.
+
+
+## Assignment #1
 
 <br>
 
-# Assignment #1
-
-<br>
-
-[Questions for Assignment #1](https://jsc270.github.io/yourlinktoquestions.html)
 

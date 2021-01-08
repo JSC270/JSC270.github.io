@@ -13,7 +13,6 @@
 
 <title>JSC270 - Class Documents</title>
 
-<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -26,6 +25,17 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -364,14 +374,9 @@ div.tocify {
     <li>
       <a href="class_docs.html">Classes</a>
     </li>
-    <li class="divider"></li>
     <li>
       <a href="tut_docs.html">Laboratories</a>
     </li>
-    <li>
-      <a href="tut_grading.html">Laboratories Grading</a>
-    </li>
-    <li class="divider"></li>
     <li>
       <a href="assign_docs.html">Assignments</a>
     </li>
@@ -406,11 +411,17 @@ div.tocify {
 <p><br></p>
 <p>Documents from class will be posted on this page.</p>
 <p><br></p>
-<div id="class-1---date" class="section level2">
-<h2>Class 1 - DATE</h2>
-<ul>
-<li>Class slides: <a href="https://jsc270.github.io/class-notebooks/class-01/your-class-slides.html">html</a></li>
-</ul>
+<div id="lecture-1---jan-11" class="section level2">
+<h2>Lecture 1 - Jan 11</h2>
+</div>
+<div id="lecture-2---jan-18" class="section level2">
+<h2>Lecture 2 - Jan 18</h2>
+</div>
+<div id="lecture-3---jan-25" class="section level2">
+<h2>Lecture 3 - Jan 25</h2>
+</div>
+<div id="lecture-4---feb-4" class="section level2">
+<h2>Lecture 4 - Feb 4</h2>
 <hr />
 </div>
 
@@ -425,7 +436,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

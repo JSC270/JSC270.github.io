@@ -13,7 +13,6 @@
 
 <title>JSC270H1S - Assignment Grading Rubrics</title>
 
-<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -26,6 +25,17 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -364,14 +374,9 @@ div.tocify {
     <li>
       <a href="class_docs.html">Classes</a>
     </li>
-    <li class="divider"></li>
     <li>
       <a href="tut_docs.html">Laboratories</a>
     </li>
-    <li>
-      <a href="tut_grading.html">Laboratories Grading</a>
-    </li>
-    <li class="divider"></li>
     <li>
       <a href="assign_docs.html">Assignments</a>
     </li>
@@ -406,9 +411,9 @@ div.tocify {
 <p><br></p>
 <div id="data-analysis-rubric" class="section level1">
 <h1>Data Analysis Rubric</h1>
-<table>
+<table style="width:100%;">
 <colgroup>
-<col width="1%" />
+<col width="2%" />
 <col width="42%" />
 <col width="11%" />
 <col width="17%" />
@@ -436,9 +441,9 @@ div.tocify {
 </tr>
 <tr class="even">
 <td align="left">Reasoning about data</td>
-<td align="left">You suggest multiple explanations for a given finding, and use multiple tools to explore surprising results. You present one or two as the most plausible, but have allowed for the possibility that you are wrong. You are self-critical: What did I do well? What did I do poorly? What have I missed? How could I do better next time? You identify flaws in methodology and provide suggestions as to how they could be remedied. You don’t blindly accept perceived wisdom, but challenge preconceived notions and come up with interesting new ways of testing them.</td>
+<td align="left">You suggest multiple explanations for a given finding, and use multiple tools to explore surprising results. You present one or two as the most plausible, but have allowed for the possibility that you are wrong. You are self-critical: What did I do well? What did I do poorly? What have I missed? How could I do better next time? You identify flaws in methodology and provide suggestions as to how they could be remedied. You don't blindly accept perceived wisdom, but challenge preconceived notions and come up with interesting new ways of testing them.</td>
 <td align="left">You are sceptical and self-critical, but not consistently. There is some critical analysis, and some use of multiple techniques to answer the same question.</td>
-<td align="left">You haven’t blinded accepted findings, but you haven’t come up with many ways to check your results either. There is little self-criticism and little evidence to suggest you have thought about how to do better in the future.</td>
+<td align="left">You haven't blinded accepted findings, but you haven't come up with many ways to check your results either. There is little self-criticism and little evidence to suggest you have thought about how to do better in the future.</td>
 <td align="left">Some findings accepted without question. Self- criticism weak.</td>
 <td align="left">Findings accepted uncritically. Leaps of logic without justification. You have not thought about how to do better next time.</td>
 </tr>
@@ -460,7 +465,7 @@ div.tocify {
 <colgroup>
 <col width="6%" />
 <col width="28%" />
-<col width="28%" />
+<col width="27%" />
 <col width="14%" />
 <col width="10%" />
 <col width="11%" />
@@ -594,7 +599,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

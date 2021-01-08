@@ -13,7 +13,6 @@
 
 <title>R Resources for JSC270</title>
 
-<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -23,8 +22,19 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -291,14 +301,9 @@ $(document).ready(function () {
     <li>
       <a href="class_docs.html">Classes</a>
     </li>
-    <li class="divider"></li>
     <li>
       <a href="tut_docs.html">Laboratories</a>
     </li>
-    <li>
-      <a href="tut_grading.html">Laboratories Grading</a>
-    </li>
-    <li class="divider"></li>
     <li>
       <a href="assign_docs.html">Assignments</a>
     </li>
@@ -330,7 +335,7 @@ $(document).ready(function () {
 </div>
 
 
-<p>There are lots of free resources available for learning R. This page contains some excellent resources, but we certainly can’t list all the excellent resources available.</p>
+<p>There are lots of free resources available for learning R. This page contains some excellent resources, but we certainly can't list all the excellent resources available.</p>
 <p><br></p>
 <hr />
 <div id="running-r" class="section level1">
@@ -347,18 +352,14 @@ $(document).ready(function () {
 <p><i class="fas fa-puzzle-piece" aria-hidden="true"></i> <strong> Test your setup! </strong><br><br></p>
 <ol style="list-style-type: decimal">
 <li>Create a new project in RStudio (desktop or cloud version), and create a new R script file</li>
-<li>Type and run the following code:</li>
-</ol>
-<pre><code>    print(&quot;Hello World!&quot;)
-    n &lt;- c(1,2,3,4)       
-    n</code></pre>
-<ol start="3" style="list-style-type: decimal">
-<li>Install the <code>car</code> package:</li>
-</ol>
-<pre><code>    install.packages(&quot;car&quot;)
-    library(&quot;car&quot;)</code></pre>
-<ol start="4" style="list-style-type: decimal">
-<li><p>One of the data sets in the package, called <code>Prestige</code>, contains data on the prestige and other characteristics of 102 Canadian occupations around 1970. Find out what’s in the data set by looking at its help page <code>(?Prestige)</code></p></li>
+<li><p>Type and run the following code:</p>
+<pre><code>print(&quot;Hello World!&quot;)
+n &lt;- c(1,2,3,4)       
+n</code></pre></li>
+<li><p>Install the <code>car</code> package:</p>
+<pre><code>install.packages(&quot;car&quot;)
+library(&quot;car&quot;)</code></pre></li>
+<li><p>One of the data sets in the package, called <code>Prestige</code>, contains data on the prestige and other characteristics of 102 Canadian occupations around 1970. Find out what's in the data set by looking at its help page <code>(?Prestige)</code></p></li>
 <li><p>Copy and execute the code <a href="https://rstudio-pubs-static.s3.amazonaws.com/291237_ccac14a9e129479c8d07e1dcfac5a697.html">Descriptive analysis and visualization in R using Prestige dataset in the car package</a> to familiarize yourself with the language and the R Studio environment.</p></li>
 </ol>
 </div>
@@ -414,7 +415,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
