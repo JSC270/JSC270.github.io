@@ -13,23 +13,27 @@ knitr::opts_chunk$set(warning = F, message = F)
 ```
 
 
-<br>
-
-# <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Schedule
-
-```{r, echo=FALSE}
-library(tidyverse)
-jsc270courseschedule <- read_csv("JSC270-winter2021-Schedule.csv")
-knitr::kable(jsc270courseschedule[1:27,])
-```
-
-******
-
 # <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Assignments Calendar
-
+Assignments are to be submitted via Quercus (please see the assignments section). The deadline for submission of assignments is 12:59pm on Mondays (right before class starts).
 
 ```{r, echo=FALSE}
 library(tidyverse)
 jsc270courseassschedule <- read_csv("JSC270-winter2021-assignments-schedule.csv")
-knitr::kable(jsc270courseassschedule[1:2,])
+knitr::kable(jsc270courseassschedule[1:4,])
 ```
+
+<br>
+
+# <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Schedule
+
+Here is our tentative schedule, which may change as the course progresses.
+
+```{r, echo=FALSE}
+library(tidyverse)
+jsc270courseschedule <- read_csv("JSC270-winter2021-Schedule.csv")
+knitr::kable(jsc270courseschedule[1:26,])
+```
+
+******
+
+

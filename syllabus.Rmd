@@ -29,9 +29,9 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## Course Communication
 
-- <span class="fas fa-question" aria-hidden="true"></span> The communication forum we will use for this course is [Piazza](#). For general questions relating to course administration or content, please use a public post so the entire class can benefit from the response. If your question involves your own solution to an assignment (or your group's solution), please post a private Piazza message to ensure academic integrity. The instructor or one of the TAs will try to answer promptly.
+- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the [class discussion board](), which will be constructed by the department by the end of Week 1. For general questions relating to course administration or content, please use a public post so the entire class can benefit from the response. If your question involves your own solution to an assignment (or your group's solution), please post a private message to ensure academic integrity. The instructor or one of the TAs will try to answer promptly.
 
-- <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don't think your question is appropriate for Piazza, please reach out to the teaching team using the emails listed above. Your message should be sent from your official university email account. Please also include 'JSC270' in the email subject line, and include your full name, student ID number, and UTOR ID in the body of the email.
+- <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don't think your question is appropriate for the class discussion board, please reach out to the teaching team using the emails listed above. Your message should be sent from your official university email account. Please also include 'JSC270' in the email subject line, and include your full name, student ID number, and UTOR ID in the body of the email.
 
 <br>
 
@@ -54,7 +54,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ### _Lectures_
 - Monday, 1-3pm EST
-- Lectures will be held via Zoom. The link is provided [here](https://utoronto.zoom.us/j/87851358931). The password is `JSC_270`.
+- Lectures will be held via Zoom. The link is provided on [Quercus]()
 - The first hour will be dedicated to teaching new material, while the second hour
 will be used to address student questions.
 - All lecture slides will be posted to the course website once the lecture is finished.
@@ -63,7 +63,7 @@ will be used to address student questions.
 
 ### _Laboratory Sessions_
 - Wednesday, 12-2pm EST 
-- Lab Sessions will also be held via Zoom. The link is provided [here](https://utoronto.zoom.us/j/86368512792). The password is `JSC270_Lab`
+- Lab Sessions will also be held via Zoom. The link is provided on [Quercus]()
 - All code will be posted to the course website once the lab is finished.
 
 <br>
@@ -103,16 +103,33 @@ By the end of this course, you should be able to:
 
 ******
 
-## <span class="fas fa-globe" aria-hidden="true"></span> Course Websites
 
-- Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
+## <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation
 
-- Questions and Answers can be posted on the [course discussion board (Piazza)](https://piazza.com/class/k4yuod8xieb32b)
+Students will be evaluated according to [University Assessment and Grading Practices Policy](https://governingcouncil.utoronto.ca/secretariat/policies/grading-practices-policy-university-assessment-and-january-26-2012). The table below shows the weight of each assessment. 
+
+```{r, echo=FALSE}
+library(tidyverse)
+jsc270coursegrading <- read_csv("jsc270coursegrading.csv")
+knitr::kable(jsc270coursegrading[1:8,])
+```
 
 
 <br>
 
 ******
+
+## <span class="fas fa-globe" aria-hidden="true"></span> Course Websites
+
+- Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
+
+- Questions and Answers can be posted on the [course discussion board](https://piazza.com/class/k4yuod8xieb32b)
+
+
+<br>
+
+******
+
 
 ## <i class="fas fa-code" aria-hidden="true"></i> Computing
 
@@ -127,36 +144,19 @@ A similar sytem called Jupyter is available on <https://www.teach.cs.toronto.edu
 
 <br>
 
-******
-
-## <i class="glyphicon glyphicon-book" aria-hidden="true"></i> Optional Textbooks
-
-<br>
-
-Hajba, Gábor László. "Website Scraping with Python." [Electronic copy is available from the UofT library](https://search.library.utoronto.ca/details?12031742)
-
-Igual, Laura, and Santi Seguí. "Introduction to Data Science." Introduction to Data Science. Springer, Cham, 2017. [Electronic copy is available from the UofT library](http://go.utlib.ca/cat/11433860)
-
-McKinney, Wes. "Python for data analysis: data wrangling with Pandas, NumPy, and IPython." (2017). <http://wesmckinney.com/pages/book.html>
-
-Skiena, Steven S. The Data Science Design Manual. Springer, 2017. [Electronic copy is available from the UofT library](http://go.utlib.ca/cat/11634033)
-
-<br>
-
 
 ******
 
-## <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation
+## <i class="glyphicon glyphicon-edit" aria-hidden="true"></i> Perusall
 
-Students will be evaluated according to [University Assessment and Grading Practices Policy](https://governingcouncil.utoronto.ca/secretariat/policies/grading-practices-policy-university-assessment-and-january-26-2012). The table below shows the weight of each assessment. 
+Perusall is an online tool that allows students to read and annotate course content. To get access to Perusall, please use the following link:
 
-```{r, echo=FALSE}
-library(tidyverse)
-jsc270coursegrading <- read_csv("jsc270coursegrading.csv")
-knitr::kable(jsc270coursegrading[1:9,])
-```
+Perusall: https://app.perusall.com/home
 
+You will need to sign up for a free account. Once your account is confirmed, you can enrol in this class using the course code: `GOLDENBERG-D6NLQ`. 
 
+Throughout the semester, several (6) foundational papers will be posted for students to read and analyze. 
+ 
 <br>
 
 ******

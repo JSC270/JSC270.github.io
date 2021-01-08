@@ -11,12 +11,12 @@ navbar:
       menu:
         - text: Classes
           href: class_docs.html
-        - text: "-----------------"
+#        - text: "-----------------"
         - text: Laboratories
           href: tut_docs.html
-        - text: Laboratories Grading
-          href: tut_grading.html
-        - text: "-----------------"
+#        - text: Laboratories Grading
+#          href: tut_grading.html
+#        - text: "-----------------"
         - text: Assignments
           href: assign_docs.html
         - text: Assignment Grading
