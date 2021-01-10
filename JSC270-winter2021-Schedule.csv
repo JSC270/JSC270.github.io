@@ -4,24 +4,24 @@ Wed. Jan 13,Lab 1,Data Collection and Cleaning (Intro to python/pandas)
 Mon. Jan 18,Lecture 2,Exploratory Data Analysis/Visualization (Guest Lecture: Dr. Fanny Chevalier)
 Wed. Jan 20,Lab 2,Exploring and Visualizing Python Data (NumPy and Matplotlib)
 Mon. Jan 25,Lecture 3,Regression: Modelling/Fit/Regularization
-Wed. Jan 27,Lab 3,Modelling with Sci-kit Learn
+Wed. Jan 27,Lab 3,Scikit Learn I
 Mon. Feb 1,Lecture 4,Data Simulation
 Wed. Feb 3,Lab 4,Version Control: Git/GitHub/Bash
 Mon. Feb 8,Lecture 5,Other Classifiers/ Reproducibility (Guest Lecture: Benjamin Haibe-Kains)
-Wed. Feb 10,Lab 5,Beyond Regression in Scikit-Learn
+Wed. Feb 10,Lab 5,Scikit-Learn II/Simulation
 Mon. Feb 15,READING WEEK,xx
 Wed. Feb 17,READING WEEK,xx
 Mon. Feb 22,Lecture 6,Making and Evaluating Predictions
-Wed. Feb 24,Lab 6,xx
-Mon. Mar 1,Lecture 7,xx
-Wed. Mar 3,Lab 7,xx
-Mon. Mar 8,Lecture 8,Natural Language Processing (Guest Lecture: Alistair Johnson)
+Wed. Feb 24,Lab 6,Prediction Metrics
+Mon. Mar 1,Lecture 7,Unsupervised Learning/ Clustering
+Wed. Mar 3,Lab 7,Unsupervised Learning in Python
+Mon. Mar 8,Lecture 8,NLP I(Guest Lecture: Alistair Johnson)
 Wed. Mar 10,Lab 8,Twitter API/ Text Preprocessing
-Mon. Mar 15,Lecture 9,NLP (Cont'd)
+Mon. Mar 15,Lecture 9,NLP II: Embedding 
 Wed. Mar 17,Lab 9,Bag-of-words Representation/ Naive Bayes Classification
-Mon. Mar 22,Lecture 10,xx
+Mon. Mar 22,Lecture 10,Guest Lecture: TBD
 Wed. Mar 24,Lab 10,xx
-Mon. Mar 29,Lecture 11,xx
+Mon. Mar 29,Lecture 11,Explainability/Interpretability/Ethics
 Wed. Mar 31,Lab 11,xx
-Mon. Apr 5,Lecture 12,xx
-Wed. Apr 7,Lab 12,xx
+Mon. Apr 5,Lecture 12,Assignment 4 Presentations
+Wed. Apr 7,Lab 12,Assignment 4 Presentations

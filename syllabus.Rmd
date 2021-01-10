@@ -29,7 +29,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## Course Communication
 
-- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the [class discussion board](), which will be constructed by the department by the end of Week 1. For general questions relating to course administration or content, please use a public post so the entire class can benefit from the response. If your question involves your own solution to an assignment (or your group's solution), please post a private message to ensure academic integrity. The instructor or one of the TAs will try to answer promptly.
+- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the [Discourse class discussion board](https://bb-2021-01.teach.cs.toronto.edu/c/jsc270), which students can access by logging in with their UTORID. For general questions relating to course administration or content, please use a public post so the entire class can benefit from the response. If your question involves your own solution to an assignment (or your group's solution), please post a private message to ensure academic integrity. The instructor or one of the TAs will try to answer promptly. You also have the option to communicate using the Quercus discussion section. 
 
 - <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don't think your question is appropriate for the class discussion board, please reach out to the teaching team using the emails listed above. Your message should be sent from your official university email account. Please also include 'JSC270' in the email subject line, and include your full name, student ID number, and UTOR ID in the body of the email.
 
@@ -54,7 +54,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ### _Lectures_
 - Monday, 1-3pm EST
-- Lectures will be held via Zoom. The link is provided on [Quercus]()
+- Lectures will be held via Zoom. The link is provided on [Quercus](https://q.utoronto.ca/courses/201532)
 - The first hour will be dedicated to teaching new material, while the second hour
 will be used to address student questions.
 - All lecture slides will be posted to the course website once the lecture is finished.
@@ -63,7 +63,7 @@ will be used to address student questions.
 
 ### _Laboratory Sessions_
 - Wednesday, 12-2pm EST 
-- Lab Sessions will also be held via Zoom. The link is provided on [Quercus]()
+- Lab Sessions will also be held via Zoom. The link is provided on [Quercus](https://q.utoronto.ca/courses/201532)
 - All code will be posted to the course website once the lab is finished.
 
 <br>
@@ -123,7 +123,7 @@ knitr::kable(jsc270coursegrading[1:8,])
 
 - Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
 
-- Questions and Answers can be posted on the [course discussion board](https://piazza.com/class/k4yuod8xieb32b)
+- Questions and Answers can be posted on the [course discussion board](https://bb-2021-01.teach.cs.toronto.edu/c/jsc270)
 
 
 <br>
@@ -183,20 +183,20 @@ Other reasons for missing an assignment due date, without documentation, will re
 
 <br>
 
-### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>  Missed Oral Presentation
-If an oral presentation is missed for a valid reason (see [Missed Work Policy](#missed_work)) then you may be given another opportunity to give your oral presentation (even if you were part of a group) provided that class or lab time is available, otherwise you will be required to submit a video of your presentation within one week of the presentation date. If an oral presentation is missed and you do not contact the professor with a reason, then a late penalty (see [Late Penalty](#late_penalty)) will be applied, and you will be required to submit a video of your oral presentation within one week of the missed due date.
+<!-- ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>  Missed Oral Presentation -->
+<!-- If an oral presentation is missed for a valid reason (see [Missed Work Policy](#missed_work)) then you may be given another opportunity to give your oral presentation (even if you were part of a group) provided that class or lab time is available, otherwise you will be required to submit a video of your presentation within one week of the presentation date. If an oral presentation is missed and you do not contact the professor with a reason, then a late penalty (see [Late Penalty](#late_penalty)) will be applied, and you will be required to submit a video of your oral presentation within one week of the missed due date. -->
 
-<br>
+<!-- <br> -->
 
-### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Due Date for Written Report
-If a written report due date is missed for a valid reason (see [Missed Work Policy](#missed_work)) then you will be required to submit the written report within one week of the missed due date. If a due date is missed and no reason is given then a late penalty (see [Late Penalty](#late_penalty)) will be applied.
+<!-- ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Due Date for Written Report -->
+<!-- If a written report due date is missed for a valid reason (see [Missed Work Policy](#missed_work)) then you will be required to submit the written report within one week of the missed due date. If a due date is missed and no reason is given then a late penalty (see [Late Penalty](#late_penalty)) will be applied. -->
 
-<br>
+<!-- <br> -->
 
-### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Lab or Class
-If a lab or class is missed for a valid reason (see [Missed Work Policy](#missed_work)) then the the weight of the in-lab component will be shifted to the subsequent lab components. If a lab or class is missed and no reason is given then you will recieve a grade of zero.
+<!-- ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Lab or Class -->
+<!-- If a lab or class is missed for a valid reason (see [Missed Work Policy](#missed_work)) then the the weight of the in-lab component will be shifted to the subsequent lab components. If a lab or class is missed and no reason is given then you will recieve a grade of zero. -->
 
-<br>
+<!-- <br> -->
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Late Penalty {#late_penalty}
 The late penalty for a missed due date is 20% per day (i.e., 24 hours). For example, if the work is submitted after 5 days (including weekend days and holidays) then you will receive a grade of zero for the missed work.
@@ -212,15 +212,11 @@ Any requests to have your work remarked must contain a written justification for
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Getting Help
 
-This term you will have the option to use Piazza for class discussion. If you decide not to use Piazza it will not disadvantage you in any way, and will not affect official University outcomes (e.g., grades and learning opportunities). If you choose not to opt-into Piazza then you can ask questions or discuss course material with the instructor or TAs during office hours.
+This term you will have the option to use Discourse for class discussion. If you decide not to use Discourse it will not disadvantage you in any way, and will not affect official University outcomes (e.g., grades and learning opportunities). If you choose not to opt-into Discourse then you can ask questions or discuss course material with the instructor or TAs during office hours.
 
-Be sure to read [Piazza’s Privacy Policy](https://piazza.com/legal/privacy) and [Terms of Use](https://piazza.com/legal/terms) carefully. Take time to understand and be comfortable with what they say. They provide for substantial sharing and disclosure of your personal information held by Piazza, which affects your privacy. If you decide to participate in Piazza, only provide content that you are comfortable sharing under the terms of the Privacy Policy and Terms of Use.
-
-To sign up for the discussion forum click on the link: [https://piazza.com/class/k4yuod8xieb32b](https://piazza.com/class/k4yuod8xieb32b)
+Be sure to read [Discourse's Privacy Policy](https://www.discourse.org/privacy) and [Terms of Use](https://meta.discourse.org/tos) carefully. Take time to understand and be comfortable with what they say. They provide for substantial sharing and disclosure of your personal information held by Discourse, which affects your privacy. If you decide to participate in Discourse, only provide content that you are comfortable sharing under the terms of the Privacy Policy and Terms of Use.
 
 You can also visit your instructor or the teaching assistants during their office hours.
-
-E-mails will not be answered. Direct communication via Quercus should only be used for emergencies or personal matters (see [Communicating With the Professor](#communicating))
 
 
 ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Communicating with The Professor {#communicating}
