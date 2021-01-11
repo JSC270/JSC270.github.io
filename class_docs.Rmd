@@ -21,6 +21,11 @@ Documents from class will be posted on this page.
 
 ## Lecture 1 - Jan 11
 
+Lecture Slides: <a href="JSC270.github.io/docs/JSC270-Lecture-1.pdf" target="_blank">PDF</a>
+
+
+</br>
+
 ## Lecture 2 - Jan 18
 
 ## Lecture 3 - Jan 25
