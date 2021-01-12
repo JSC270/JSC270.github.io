@@ -19,7 +19,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
-- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Anna Goldenberg](xxx) (annagoldenberg@utoronto.ca).
+- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Anna Goldenberg](xxx) (anna.goldenberg@utoronto.ca).
 
 - <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistants: </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lauren Erdman (lee2@cs.toronto.edu) </br> 
