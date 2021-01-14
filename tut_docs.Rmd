@@ -20,6 +20,8 @@ This is the section for Tutorial Labs. These labs will be held on Wednesdays, fr
 
 ## Lab 1 - Jan 13
 
+Here is the code for Tutorial 1: <a href="https://colab.research.google.com/drive/1pMK5-wncxvKDsuFQCTPJjdixYK5MVjdM?usp=sharing">Colab Notebook</a>.
+
 ## Lab 2 - Jan 20
 
 ## Lab 3 - Jan 27
