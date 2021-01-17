@@ -26,7 +26,7 @@ This is the recording for Tutorial 1: <a href="https://drive.google.com/file/d/1
 
 ## Lab 2 - Jan 20
 
-Here is the Cars dataset for Tutorial 2: <a href="./datasets/automobile_data.csv">CSV File</a>.
+Here is the Cars dataset for Tutorial 2: <a href="./datasets/Automobile_data.csv">CSV File</a>.
 
 ## Lab 3 - Jan 27
 
