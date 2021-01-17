@@ -24,6 +24,8 @@ Here is the code for Tutorial 1: <a href="https://colab.research.google.com/driv
 
 ## Lab 2 - Jan 20
 
+Here is the Cars dataset for Tutorial 2: <a href="./datasets/automobile_data.csv">CSV File</a>.
+
 ## Lab 3 - Jan 27
 
 ## Lab 4 - Feb 3
