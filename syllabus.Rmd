@@ -42,9 +42,13 @@ knitr::opts_chunk$set(warning = F, message = F)
 - Professor: Mondays 2-3pm, or by appointment 
 
 - TA office hours 
-    - A survey will be sent during the first lecture to optimize office hour scheduling.
- 
-<br>
+
+    - Lauren: Thurs, 4pm-5pm EST
+    - Matt: Tues, 9am-10am EST
+    
+Instructor Office hours will be held on the Lecture Zoom link.
+
+TA Office hours will be held on the Lab Zoom link (both links are posted on Quercus).
 
 ******
 
