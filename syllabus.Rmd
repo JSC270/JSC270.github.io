@@ -43,12 +43,11 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 - TA office hours 
 
-    - Lauren: Thurs, 4pm-5pm EST
-    - Matt: Tues, 9am-10am EST
+    - Lauren: Thurs, 4pm-5pm EST (Zoom link [here](https://utoronto.zoom.us/j/82810516377#success))
+    - Matt: Tues, 9am-10am EST (Zoom link [here](https://zoom.us/j/97179918913?pwd=ays3TUFUZXo3YlMvYlV0VzZQcFhvUT09))
     
 Instructor Office hours will be held on the Lecture Zoom link.
 
-TA Office hours will be held on the Lab Zoom link (both links are posted on Quercus).
 
 ******
 
@@ -165,6 +164,16 @@ Throughout the semester, several (6) foundational papers will be posted for stud
 
 ******
 
+## <i class="glyphicon glyphicon-edit" aria-hidden="true"></i> Reflection Quizzes
+
+These are short answer quizzes designed to test your understanding of the material,
+and to make you think critically about concepts learned in lecture.
+
+These quizzes will be held every other week (opposite the Perusal papers), and will be completed and submitted in Quercus, under the `Assignments` tab (See this [link](https://q.utoronto.ca/courses/201532/assignments)). These assignments are to be completed individually.
+
+<br>
+
+*******
 ## <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policies
 
 <br>

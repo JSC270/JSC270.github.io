@@ -23,6 +23,9 @@ Documents from class will be posted on this page.
 
 Lecture Slides: <a href="JSC270.github.io/docs/JSC270-Lecture-1.pdf" target="_blank">PDF</a>
 
+Lecture Recording: <a href="https://utoronto.zoom.us/rec/play/9HYlTiqoHD2oFHIIWRlZn67W37lm4JmRJacbfA2K43mQ6B-kJqWr7pGbH-29dVBu2wrbOPEU7Y39jLRM.RvJhuwvQnelcqqdT" target="_blank">Link</a>
+
+The password for the recording is: `JSC270_Lecture1`.
 
 </br>
 
