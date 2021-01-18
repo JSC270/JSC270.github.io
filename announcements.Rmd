@@ -1,0 +1,34 @@
+---
+title: "JSC270 - Announcements"
+output: 
+  html_document:
+   toc: true
+   toc_depth: 3
+   toc_float: true
+   theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
+```
+
+</br>
+
+### __Jan 18th, 2021__
+
+Just a reminder about the guest lecture for JSC370:
+
+Speaker: __Ben Allison, Principal Machine Learning Scientist at Amazon.__
+
+Date & Time: __Tuesday, Jan 19, 2021, 3:10pm - 4:00pm EST__
+
+Meeting Link: <a href = "https://utoronto.zoom.us/j/89713225921" target = "_blank">Zoom</a> 
+
+Meeting ID: 897 1322 5921
+
+You're also welcome to stay for the lecture afterwards.
+
+- Also, slides for Lecture 2 are posted.
+
+
+******

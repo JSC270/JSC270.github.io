@@ -3,6 +3,8 @@ output_dir: '.'
 navbar:
   title: JSC270 Winter 2021
   left:
+    - text: Announcements
+      href: announcements.html
     - text: Syllabus
       href: syllabus.html
     - text: Schedule

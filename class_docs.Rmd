@@ -31,6 +31,8 @@ The password for the recording is: `JSC270_Lecture1`.
 
 ## Lecture 2 - Jan 18
 
+Lecture Slides: <a href="JSC270.github.io/docs/JSC270-Lecture-2.pdf" target="_blank">PDF</a>
+
 ## Lecture 3 - Jan 25
 
 ## Lecture 4 - Feb 4
