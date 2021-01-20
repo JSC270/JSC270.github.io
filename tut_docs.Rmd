@@ -28,6 +28,8 @@ This is the recording for Tutorial 1: <a href="https://drive.google.com/file/d/1
 
 Here is the Cars dataset for Tutorial 2: <a href="./datasets/archive.zip">CSV File</a>.
 
+Here is the code: <a href ="https://colab.research.google.com/drive/1SCp5yXNc7rhhDmcLMmsEBPTcB7arMNYw?usp=sharing" target="_blank">Colab Notebook</a>
+
 ## Lab 3 - Jan 27
 
 ## Lab 4 - Feb 3
