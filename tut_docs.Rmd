@@ -30,6 +30,8 @@ Here is the Cars dataset for Tutorial 2: <a href="./datasets/archive.zip">CSV Fi
 
 Here is the code: <a href ="https://colab.research.google.com/drive/1SCp5yXNc7rhhDmcLMmsEBPTcB7arMNYw?usp=sharing" target="_blank">Colab Notebook</a>
 
+This is the recording: <a href="https://drive.google.com/file/d/1EH_OREaBRUZTfMzwFF65ZxL1mkrAJ487/view?usp=sharing" target="_blank">MP4 File</a>
+
 ## Lab 3 - Jan 27
 
 ## Lab 4 - Feb 3
