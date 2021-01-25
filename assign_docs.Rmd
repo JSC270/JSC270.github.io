@@ -36,3 +36,5 @@ Here is the website describing the DELVE dataset: <a href="https://rs-delve.gith
 <br>
 
 ## Assignment 2: Exploring Income - Due Feb 8th
+
+Here is the instruction file for Assignment 2: <a href="JSC270.github.io/docs/assign2-instructions.pdf" target="_blank">PDF Instructions</a>

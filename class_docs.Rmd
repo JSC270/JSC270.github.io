@@ -19,7 +19,7 @@ Documents from class will be posted on this page.
 
 <br>
 
-## Lecture 1 - Jan 11
+## Lecture 1: Introduction - Jan 11
 
 Lecture Slides: <a href="JSC270.github.io/docs/JSC270-Lecture-1.pdf" target="_blank">PDF</a>
 
@@ -29,17 +29,25 @@ The password for the recording is: `JSC270_Lecture1`.
 
 </br>
 
-## Lecture 2 - Jan 18
+## Lecture 2: Exploratory Analysis - Jan 18
 
 Lecture Slides: <a href="JSC270.github.io/docs/JSC270-Lecture-2.pdf" target="_blank">PDF</a>
 
 Lecture Recording: <a href="https://drive.google.com/file/d/1Hn_Bb2_hD5f7D-vgKDGP9Zm1ln81IgJz/view?usp=sharing" target="_blank">Link</a>
 
+This is an additional paper on outlier detection (please log in with your UTORID): <a href="https://dl-acm-org.myaccess.library.utoronto.ca/doi/pdf/10.1145/3381028" target="_blank">Paper</a> 
+
 <br>
 
-## Lecture 3 - Jan 25
+## Lecture 3: Regression, Model Fitting, Regularization - Jan 25
 
 Lecture Slides: <a href="JSC270.github.io/docs/JSC270-Lecture-3.pdf" target="_blank">PDF</a>
+
+Lecture Recording: <a href="https://drive.google.com/file/d/1AVqOrxFdwsNPNv4JwpQVoGxumGW6sUpa/view?usp=sharing" target="_blank">Link</a>
+
+_Elements of Statistical Learning_ is one of the best texts in the field of ML. You'll likely use it in later courses (recommended, but not required for this course): <a href="https://web.stanford.edu/~hastie/Papers/ESLII.pdf" target="_blank">PDF</a>
+
+<br>
 
 ## Lecture 4 - Feb 4
 
