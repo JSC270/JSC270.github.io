@@ -14,7 +14,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 
 # <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Evaluation Calendar
-Written assignments are to be submitted via Quercus (please see the assignments section). The deadline for submission of assignments is 12:59pm on Mondays (right before class starts).
+Written assignments are to be submitted via Quercus (please see the assignments section). The deadline for submission of assignments is 11:59am EST on Mondays (1 hour before class starts).
 
 ```{r, echo=FALSE}
 library(tidyverse)
