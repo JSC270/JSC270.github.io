@@ -14,6 +14,26 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 </br>
 
+### __Feb 2nd, 2021__
+
+Sorry for the late notice everyone,
+
+On __Tuesday, Feb 2nd, from 3:10pm to 4:00pm__, JSC370 will be hosting __Farah Bastien, Manager of Data Science for Maple Leaf Sports and Entertainment__ (who own the Leafs and the raptors), along with a junior data scientist from her team.
+
+Farah will be talking about her experience with data science in industry, including how she got there, what's valued, what's typically used, what's expected, what's missing, how their analyses get used, etc.  Her team member is also going to walk us through some example analyses using publicly-available data:
+https://github.com/statsbomb/open-data
+Such as player role classification, rewarding narrow misses, and estimating ball speed.
+
+The zoom link is here:
+https://utoronto.zoom.us/j/89713225921
+
+Meeting ID: 897 1322 5921
+
+<br>
+
+******
+
+
 ### __Jan 18th, 2021__
 
 Just a reminder about the guest lecture for JSC370:
