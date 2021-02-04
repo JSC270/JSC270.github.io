@@ -49,6 +49,7 @@ Here is the recording: <a href="https://drive.google.com/file/d/11mOQPW8hSae_sRj
 ## Lab 4 - Feb 3
 Here are today's slides on Git and Bash:  <a href="JSC270.github.io/docs/git-bash-slides.pdf" target="_blank">PDF</a>
 
+Here is the recording: <a href="https://drive.google.com/file/d/1wB55_DgI7NkisGPsX379tdUWlA1PhiH3/view?usp=sharing" target="_blank">MP4 File</a>
 <br> 
 
 <!--- <br>
