@@ -14,6 +14,16 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 </br>
 
+### __Feb 8th, 2021__
+
+Hello everyone,
+
+As we approach the half-way point of this class, we'd like to hear your feedback on this course. With this in mind, we've designed a short survey to gather your feedback. Please note that this survey is completely anonymous, and will not impact your grade in this course.
+
+You can complete the survey by following  <a href="https://forms.gle/wYGYuSaCgNDbQgBv8" target="_blank"> this link </a>.
+
+</br>
+
 ### __Feb 2nd, 2021__
 
 Sorry for the late notice everyone,
