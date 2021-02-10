@@ -11,6 +11,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+_Elements of Statistical Learning_ is one of the best texts in the field of ML. You'll likely use it in later courses (recommended, but not required for this course): <a href="https://web.stanford.edu/~hastie/Papers/ESLII.pdf" target="_blank">PDF</a>
+
 <br>
 
 # Articles/Posts 
