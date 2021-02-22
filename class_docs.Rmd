@@ -71,6 +71,11 @@ Recording Part 2 (guest speaker): <a href="https://drive.google.com/file/d/1y9r7
 
 Guest speaker slides: <a href="https://docs.google.com/presentation/d/1Ucd4IqjPyshQ1LS1-JQssLQRUAKrXyOfGOOKH_yYldQ/edit?usp=sharing" target="_blank">Link</a>
 
+<br>
+
+## Lecture 6 - Evaluating Predictions - Feb 22
+
+Lecture Slides: <a href="JSC270.github.io/docs/JSC270-Lecture-6.pdf" target="_blank">PDF</a>
 
 ******
 
