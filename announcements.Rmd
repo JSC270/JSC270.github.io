@@ -14,6 +14,24 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 </br>
 
+### __Feb 23rd, 2021__
+
+Although this is late notice, we wanted to let you know that the JSC370 class has another guest lecture:
+
+__Speaker__: Wanying Zhao, Ontario Trillium Foundation
+
+__Topic__: Measuring the impact of charitable intervations
+
+__Date/Time__: Feb 23rd, 2021, 3:10-4:00pm EST
+
+__Zoom Info__: https://utoronto.zoom.us/j/89713225921
+
+Meeting ID: 897 1322 5921
+
+We hope to see you there.
+
+<br>
+
 ### __Feb 20th, 2021__
 
 Join us for the February installment of the Data Science Speaker Series at U of T.
