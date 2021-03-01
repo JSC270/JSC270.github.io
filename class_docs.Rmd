@@ -79,6 +79,12 @@ Lecture Slides: <a href="JSC270.github.io/docs/JSC270-Lecture-6.pdf" target="_bl
 
 Lecture Recording: <a href="https://drive.google.com/file/d/1uZA2_BkUJhtKC7iiwwB6H1rwWqEtOaSU/view?usp=sharing">Link</a>
 
+<br>
+
+## Lecture 7 - Clustering - March 1st
+
+Lecture Slides (no annotation): <a href="JSC270.github.io/docs/JSC270-pre-Lecture-7.pdf" target="_blank">PDF</a>
+
 ******
 
 
