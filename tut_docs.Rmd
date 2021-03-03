@@ -73,6 +73,14 @@ Here is the recording: <a href="https://drive.google.com/file/d/1gai970OsKv1FfGv
 
 <br>
 
+## Lab 7 - Mar 3rd
+
+Here is a link to the git repo for this lab: <a href="https://github.com/larunerdman/JSC270_Lab7" target="_blank">GitHub</a>
+
+Here is the recording: <a href="https://drive.google.com/file/d/1clctHp933PCeP5VBRUG9-6ggEsBC9FZj/view?usp=sharing" target="_blank">MP4 File</a>
+
+<br>
+
 <!--- <br>
 
 ****
