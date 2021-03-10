@@ -81,6 +81,14 @@ Here is the recording: <a href="https://drive.google.com/file/d/1clctHp933PCeP5V
 
 <br>
 
+# Lab 8 - Mar 10th
+
+Here is the NLP notebook (part I): <a href="https://colab.research.google.com/drive/15VzAybbRK2qmXfA3_PFeL22NpGyYNfik?usp=sharing" target="_blank">Colab Notebook</a>
+
+Here is the spam dataset for Part I: <a href="./datasets/spam.csv">CSV File</a>.
+
+Here is the notebook on the Twitter API (part II): <a href="https://colab.research.google.com/drive/1zSlUQbrysSnibrumNIPK5Ul7H0aa8oeF?usp=sharing" target="_blank">Colab Notebook</a>
+
 <!--- <br>
 
 ****
