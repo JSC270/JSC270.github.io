@@ -99,6 +99,13 @@ Here is the recording: <a href="https://drive.google.com/file/d/1_IGQdtiGbZha2EH
 
 <br>
 
+# Lab 10 - March 24th
+
+Here is the Bias Assessment notebook: <a href="https://colab.research.google.com/drive/1jA7E8W-A9gRu83B_dvEzoncL2IR1O574?usp=sharing" target="_blank">Colab Notebook</a>
+
+Here is the recording: <a href="https://drive.google.com/file/d/1cA0kFsFvBmLLi1lyZWVrl2LsRhV_JgUg/view?usp=sharing" target="_blank">MP4 File</a>
+
+
 <!--- <br>
 
 ****
