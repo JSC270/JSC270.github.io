@@ -105,6 +105,12 @@ Here is the Bias Assessment notebook: <a href="https://colab.research.google.com
 
 Here is the recording: <a href="https://drive.google.com/file/d/1cA0kFsFvBmLLi1lyZWVrl2LsRhV_JgUg/view?usp=sharing" target="_blank">MP4 File</a>
 
+# Lab 11 - March 31st
+
+Here is the notebook: <a href="https://colab.research.google.com/drive/12USwE_Rtd3eetnA3oiJcWDm3dt1i55lu?usp=sharing">Colab Notebook</a>
+
+Here is the dataset: <a href="./datasets/adult.csv">CSV File</a>.
+
 
 <!--- <br>
 
