@@ -26,7 +26,7 @@ Two of the assignments (assignments 2 and 4) have __presentation components__. O
 ## Assignment 1 (Covid DELVE Dataset) - Due Jan 25th
 
 
-Here is the instruction file for Assignment 1: <a href="JSC270.github.io/docs/assign1-instructions.pdf" target="_blank">PDF Instructions</a>
+Here is the instruction file for Assignment 1: <a href="./docs/assign1-instructions.pdf" target="_blank">PDF Instructions</a>
 
 Here is the Colab notebook for the assignment (same link is listed in the instructions):
 <a href="https://colab.research.google.com/drive/1sZkAPhz_sHKP8XOmyf16aUT8fIlN_FPz?usp=sharing" target="_blank">Python Notebook</a>
@@ -37,23 +37,23 @@ Here is the website describing the DELVE dataset: <a href="https://rs-delve.gith
 
 ## Assignment 2: Exploring Income - Due Feb 8th
 
-Here is the instruction file for Assignment 2: <a href="JSC270.github.io/docs/assign2-instructions.pdf" target="_blank">PDF Instructions</a>
+Here is the instruction file for Assignment 2: <a href="./docs/assign2-instructions.pdf" target="_blank">PDF Instructions</a>
 
 <br>
 
 ## Assignment 3: Simulation - Due Mar 8th
 
-Here is the instruction file for Assignment 3: <a href="JSC270.github.io/docs/assign3-instructions.pdf" target="_blank">PDF Instructions</a>
+Here is the instruction file for Assignment 3: <a href="./docs/assign3-instructions.pdf" target="_blank">PDF Instructions</a>
 
 <br>
 
 ## Assignment 4: NLP - Due April 9th
 
-Here is the instruction file for Assignment 4: <a href="JSC270.github.io/docs/assign4-instructions.pdf" target="_blank">PDF Instructions</a>
+Here is the instruction file for Assignment 4: <a href="./docs/assign4-instructions.pdf" target="_blank">PDF Instructions</a>
 
 Here are the Q1 datasets: 
-<a href="JSC270.github.io/datasets/covid-tweets-train.csv" target="_blank">training</a> | 
-<a href="JSC270.github.io/datasets/covid-tweets-test.csv" target="_blank">testing</a>
+<a href="./datasets/covid-tweets-train.csv" target="_blank">training</a> | 
+<a href="./datasets/covid-tweets-test.csv" target="_blank">testing</a>
 
 
 <br>
