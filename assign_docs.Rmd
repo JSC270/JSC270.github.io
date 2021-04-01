@@ -49,11 +49,11 @@ Here is the instruction file for Assignment 3: <a href="./docs/assign3-instructi
 
 ## Assignment 4: NLP - Due April 9th
 
-Here is the instruction file for Assignment 4: <a href="./docs/assign4-instructions.pdf" target="_blank">PDF Instructions</a>
+Here is the instruction file for Assignment 4: <a href="https://drive.google.com/file/d/1hVhjHI67pE_ugP-A_S_Ijd6JPVEyhBLJ/view?usp=sharing" target="_blank">PDF Instructions</a>
 
 Here are the Q1 datasets: 
-<a href="./datasets/covid-tweets-train.csv" target="_blank">training</a> | 
-<a href="./datasets/covid-tweets-test.csv" target="_blank">testing</a>
+<a href="https://drive.google.com/file/d/1im09d8Opyat9wAmLu35sxIEhAlpiGQSY/view?usp=sharing" target="_blank">training</a> | 
+<a href="https://drive.google.com/file/d/10WF_uYMRvsDP_P7WZWC7ZQ2HTMu7LcR4/view?usp=sharing" target="_blank">testing</a>
 
 
 <br>
