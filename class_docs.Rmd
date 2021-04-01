@@ -1,11 +1,14 @@
 ---
 title: "JSC270 - Class Documents"
-output: 
+output:
   html_document:
-   toc: true
-   toc_depth: 3
-   toc_float: true
-   theme: yeti
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+    theme: yeti
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
 ---
 
 ```{r setup, include=FALSE}
@@ -122,7 +125,7 @@ Lecture Recording: <a href="https://drive.google.com/file/d/1NceDgZKUWPLSoj0UvNs
 
 Lecture Recording: <a href="https://drive.google.com/file/d/1VyPTidGZ0LL2Y9GCvKlhjDVJI83ZT3FU/view?usp=sharing">Link</a>
 
-Lecture Slides: <a href="JSC270.github.io/docs/slides-ethics.pdf" target="_blank">PDF</a>
+Lecture Slides: <a href="./docs/slides-ethics.pdf" target="_blank">PDF</a>
 
 <br>
 
