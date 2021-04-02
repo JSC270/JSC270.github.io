@@ -85,7 +85,7 @@ Here is the recording: <a href="https://drive.google.com/file/d/1clctHp933PCeP5V
 
 Here is the NLP notebook (part I): <a href="https://colab.research.google.com/drive/15VzAybbRK2qmXfA3_PFeL22NpGyYNfik?usp=sharing" target="_blank">Colab Notebook</a>
 
-Here is the spam dataset for Part I: <a href="./datasets/spam.csv">CSV File</a>.
+Here is the spam dataset for Part I: <a href="https://drive.google.com/file/d/10vSo6HaJDVqCgti07q87KkpCMYzdJf6v/view?usp=sharing">CSV File</a>.
 
 Here is the notebook on the Twitter API (part II): <a href="https://colab.research.google.com/drive/1zSlUQbrysSnibrumNIPK5Ul7H0aa8oeF?usp=sharing" target="_blank">Colab Notebook</a>
 
@@ -109,7 +109,7 @@ Here is the recording: <a href="https://drive.google.com/file/d/1cA0kFsFvBmLLi1l
 
 Here is the notebook: <a href="https://colab.research.google.com/drive/12USwE_Rtd3eetnA3oiJcWDm3dt1i55lu?usp=sharing">Colab Notebook</a>
 
-Here is the dataset: <a href="./datasets/adult.csv">CSV File</a>.
+Here is the dataset: <a href="https://drive.google.com/file/d/1jNnUP8Q1hqRb-K3mLAADko1AlV2ITHwo/view?usp=sharing">CSV File</a>.
 
 Here is the recording: <a href="https://drive.google.com/file/d/11m9W9aXWqdqPDCWqkB17Gv077fwUsyCX/view?usp=sharing">MP4 File</a>
 
