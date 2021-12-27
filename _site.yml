@@ -21,12 +21,12 @@ navbar:
 #        - text: "-----------------"
         - text: Assignments
           href: assign_docs.html
-        - text: Assignment Grading
-          href: assignment_rubrics.html
-    - text: Discussion Forum
+#        - text: Assignment Grading
+#          href: assignment_rubrics.html
+#    - text: Discussion Forum
       href: XXXXXTO-UPDATEXXX
-    - text: Resources
-      href: resources.html
+#    - text: Resources
+#      href: resources.html
 output:
   html_document:
     lib_dir: site_libs
