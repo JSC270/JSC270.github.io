@@ -1,6 +1,6 @@
 ---
 title: "JSC270H1S: Data Science I"
-subtitle: "Winter 2021, Course Website"
+subtitle: "Winter 2022, Course Website"
 
 output: 
   html_document:
