@@ -19,11 +19,11 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
-- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Jesse Gronsbell](xxx) (j.gronsbell@utoronto.ca).
+- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Jesse Gronsbell](https://sites.google.com/view/jgronsbell/home?authuser=0) (j.gronsbell@utoronto.ca).
 
 - <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistants: </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Emma Holmes (Stats) </br> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leili Goli (CS).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leili Goli (CS)
 
 <br>
 
@@ -39,12 +39,12 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
-- Professor: Mondays 2-3pm, or by appointment 
+- Professor: Mondays
 
 - TA office hours 
 
-    - Lauren: Thurs, 4pm-5pm EST (Zoom link [here](https://utoronto.zoom.us/j/82810516377#success))
-    - Matt: Tues, 9am-10am EST (Zoom link [here](https://zoom.us/j/97179918913?pwd=ays3TUFUZXo3YlMvYlV0VzZQcFhvUT09))
+    - Emma TBD (Zoom link [here](https://utoronto.zoom.us/j/82810516377#success))
+    - Leili: TBD (Zoom link [here](https://zoom.us/j/97179918913?pwd=ays3TUFUZXo3YlMvYlV0VzZQcFhvUT09))
     
 Instructor Office hours will be held on the Lecture Zoom link.
 
@@ -56,17 +56,17 @@ Instructor Office hours will be held on the Lecture Zoom link.
 <br>
 
 ### _Lectures_
-- Monday, 1-3pm EST
-- Lectures will be held via Zoom. The link is provided on [Quercus](https://q.utoronto.ca/courses/201532)
+- Monday, 12-2pm EST
+- Lectures through January 24 will be held via Zoom. The link is provided on [Quercus](https://q.utoronto.ca/courses/201532)
 - The first hour will be dedicated to teaching new material, while the second hour
-will be used to address student questions.
+will be used to address student questions or for a guest lecture.
 - All lecture slides will be posted to the course website once the lecture is finished.
 
 <br>
 
 ### _Laboratory Sessions_
 - Wednesday, 12-2pm EST 
-- Lab Sessions will also be held via Zoom. The link is provided on [Quercus](https://q.utoronto.ca/courses/201532)
+- Lab Sessions will also be held via Zoom through January 26. The link is provided on [Quercus](https://q.utoronto.ca/courses/201532)
 - All code will be posted to the course website once the lab is finished.
 
 <br>
@@ -156,7 +156,7 @@ Perusall is an online tool that allows students to read and annotate course cont
 
 Perusall: https://app.perusall.com/home
 
-You will need to sign up for a free account. Once your account is confirmed, you can enrol in this class using the course code: `GOLDENBERG-D6NLQ`. 
+You will need to sign up for a free account. Once your account is confirmed, you can enrol in this class using the course code: `GRONSBELL-EYZ9A `. 
 
 Throughout the semester, several (6) foundational papers will be posted for students to read and analyze. 
  
