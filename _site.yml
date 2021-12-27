@@ -3,8 +3,6 @@ output_dir: '.'
 navbar:
   title: JSC270 Winter 2022
   left:
-    - text: Announcements
-      href: announcements.html
     - text: Syllabus
       href: syllabus.html
     - text: Schedule
@@ -27,6 +25,8 @@ navbar:
       href: XXXXXTO-UPDATEXXX
 #    - text: Resources
 #      href: resources.html
+    - text: Announcements
+      href: announcements.html
 output:
   html_document:
     lib_dir: site_libs
