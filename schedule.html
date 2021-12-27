@@ -13,13 +13,21 @@
 
 <title>Schedule</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -39,11 +47,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -56,32 +59,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
 
@@ -92,10 +69,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -112,40 +85,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 45px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h2 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h3 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h4 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h5 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h6 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -173,7 +119,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -185,7 +131,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -196,10 +142,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -211,7 +170,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -337,7 +295,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -356,7 +314,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">JSC270 Winter 2021</a>
+      <a class="navbar-brand" href="index.html">JSC270 Winter 2022</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -404,7 +362,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -415,66 +373,13 @@ div.tocify {
 
 <div id="evaluation-calendar" class="section level1">
 <h1><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Evaluation Calendar</h1>
-<p>Written assignments are to be submitted via Quercus (please see the assignments section). The deadline for submission of assignments is 11:59am EST on Mondays (1 hour before class starts).</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Number</th>
-<th align="left">Topic</th>
-<th align="left">Date Posted</th>
-<th align="left">Due Date</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Assignment 1</td>
-<td align="left">Data Analysis with the COVID DELVE Dataset</td>
-<td align="left">Jan 11</td>
-<td align="left">Jan 25</td>
-</tr>
-<tr class="even">
-<td align="left">Assignment 2</td>
-<td align="left">Exploring Income and its Correlated Factors</td>
-<td align="left">Jan 25</td>
-<td align="left">Feb 8</td>
-</tr>
-<tr class="odd">
-<td align="left">A2 Presentation</td>
-<td align="left">xx</td>
-<td align="left">Jan 27</td>
-<td align="left">Feb 11</td>
-</tr>
-<tr class="even">
-<td align="left">Assignment 3</td>
-<td align="left">Modelling with Simulated Data</td>
-<td align="left">Feb 12</td>
-<td align="left">Mar 8</td>
-</tr>
-<tr class="odd">
-<td align="left">Assignment 4</td>
-<td align="left">NLP with the Twitter API</td>
-<td align="left">Mar 8</td>
-<td align="left">Apr 9</td>
-</tr>
-<tr class="even">
-<td align="left">A4 Presentation</td>
-<td align="left">xx</td>
-<td align="left">Mar 8</td>
-<td align="left">Apr 5/7</td>
-</tr>
-</tbody>
-</table>
+<p>Written assignments are to be submitted via Quercus (please see the assignments section). The deadline for submission of assignments is 10:59am EST on Mondays (1 hour before class starts).</p>
 <p><br></p>
 </div>
 <div id="course-schedule" class="section level1">
 <h1><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Schedule</h1>
 <p>Here is our tentative schedule, which may change as the course progresses.</p>
 <table>
-<colgroup>
-<col width="11%" />
-<col width="12%" />
-<col width="76%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Date</th>
@@ -484,134 +389,14 @@ div.tocify {
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Mon. Jan 11</td>
+<td align="left">Mon. Jan 10</td>
 <td align="left">Lecture 1</td>
 <td align="left">Course Introduction - What is Data Science?</td>
 </tr>
 <tr class="even">
-<td align="left">Wed. Jan 13</td>
+<td align="left">Wed. Jan 12</td>
 <td align="left">Lab 1</td>
 <td align="left">Data Collection and Cleaning (Intro to python/pandas)</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Jan 18</td>
-<td align="left">Lecture 2</td>
-<td align="left">Exploratory Data Analysis/Visualization</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Jan 20</td>
-<td align="left">Lab 2</td>
-<td align="left">Exploring and Visualizing Python Data (NumPy and Matplotlib)</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Jan 25</td>
-<td align="left">Lecture 3</td>
-<td align="left">Regression: Modelling/Fit/Regularization</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Jan 27</td>
-<td align="left">Lab 3</td>
-<td align="left">Scikit Learn I</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Feb 1</td>
-<td align="left">Lecture 4</td>
-<td align="left">Data Simulation (2-3pm Guest Lecture: Dr. Fanny Chevalier)</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Feb 3</td>
-<td align="left">Lab 4</td>
-<td align="left">Version Control: Git/GitHub/Bash</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Feb 8</td>
-<td align="left">Lecture 5</td>
-<td align="left">Classifiers/ Reproducibility (2-3pm Guest Lecture: Benjamin Haibe-Kains)</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Feb 10</td>
-<td align="left">Lab 5</td>
-<td align="left">Scikit-Learn II/Simulation</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Feb 15</td>
-<td align="left">READING WEEK</td>
-<td align="left">xx</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Feb 17</td>
-<td align="left">READING WEEK</td>
-<td align="left">xx</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Feb 22</td>
-<td align="left">Lecture 6</td>
-<td align="left">Making and Evaluating Predictions</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Feb 24</td>
-<td align="left">Lab 6</td>
-<td align="left">Prediction Metrics</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Mar 1</td>
-<td align="left">Lecture 7</td>
-<td align="left">Unsupervised Learning/ Clustering</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Mar 3</td>
-<td align="left">Lab 7</td>
-<td align="left">Unsupervised Learning in Python</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Mar 8</td>
-<td align="left">Lecture 8</td>
-<td align="left">NLP (Guest Lecture: Alistair Johnson)</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Mar 10</td>
-<td align="left">Lab 8</td>
-<td align="left">Twitter API/ Text Preprocessing</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Mar 15</td>
-<td align="left">Lecture 9</td>
-<td align="left">Embedding / Dimensionality Reduction</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Mar 17</td>
-<td align="left">Lab 9</td>
-<td align="left">Dimensionality Reduction and Visualization</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Mar 22</td>
-<td align="left">Lecture 10</td>
-<td align="left">AI in Healthcare (Guest Lecture: Dr. Devin Singh)</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Mar 24</td>
-<td align="left">Lab 10</td>
-<td align="left">Model Bias Assessment</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Mar 29</td>
-<td align="left">Lecture 11</td>
-<td align="left">Ethical Considerations in Data Analysis and AI (Guest Lecture: Melissa McCradden)</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Mar 31</td>
-<td align="left">Lab 11</td>
-<td align="left">Analyzing Feature Importance</td>
-</tr>
-<tr class="odd">
-<td align="left">Mon. Apr 5</td>
-<td align="left">Lecture 12</td>
-<td align="left">Assignment 4 Presentations</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Apr 7</td>
-<td align="left">Lab 12</td>
-<td align="left">Assignment 4 Presentations</td>
 </tr>
 </tbody>
 </table>
@@ -647,7 +432,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -656,6 +441,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

@@ -14,12 +14,12 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 
 # <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Evaluation Calendar
-Written assignments are to be submitted via Quercus (please see the assignments section). The deadline for submission of assignments is 11:59am EST on Mondays (1 hour before class starts).
+Written assignments are to be submitted via Quercus (please see the assignments section). The deadline for submission of assignments is 10:59am EST on Mondays (1 hour before class starts).
 
 ```{r, echo=FALSE}
 library(tidyverse)
-jsc270courseassschedule <- read_csv("JSC270-winter2021-assignments-schedule.csv")
-knitr::kable(jsc270courseassschedule[1:6,])
+#jsc270courseassschedule <- read_csv("JSC270-winter2021-assignments-schedule.csv")
+#knitr::kable(jsc270courseassschedule[1:6,])
 ```
 
 <br>
@@ -30,8 +30,8 @@ Here is our tentative schedule, which may change as the course progresses.
 
 ```{r, echo=FALSE}
 library(tidyverse)
-jsc270courseschedule <- read_csv("JSC270-winter2021-Schedule.csv")
-knitr::kable(jsc270courseschedule[1:26,])
+jsc270courseschedule <- read_csv("Winter2022_schedule.csv")
+knitr::kable(jsc270courseschedule[1:2,])
 ```
 
 ******
