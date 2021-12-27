@@ -1,7 +1,7 @@
 name: jsc270website
 output_dir: '.'
 navbar:
-  title: JSC270 Winter 2021
+  title: JSC270 Winter 2022
   left:
     - text: Announcements
       href: announcements.html
