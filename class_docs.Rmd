@@ -24,11 +24,6 @@ Documents from class will be posted on this page.
 
 ## Lecture 1: Introduction - Jan 10
 
-******
-
-
-
-
 Lecture Slides:<a href="https://docs.google.com/presentation/d/1hntffG7EprQ5xPWtCzLbOkjwoliQKOQrDgC-QC86OUk/edit?usp=sharing" target="_blank">Link</a>
 
 Lecture Recording: <a href="https://utoronto.zoom.us/rec/play/9HYlTiqoHD2oFHIIWRlZn67W37lm4JmRJacbfA2K43mQ6B-kJqWr7pGbH-29dVBu2wrbOPEU7Y39jLRM.RvJhuwvQnelcqqdT" target="_blank">Link</a>
@@ -133,3 +128,5 @@ Lecture Recording: <a href="https://drive.google.com/file/d/1VyPTidGZ0LL2Y9GCvKl
 Lecture Slides: <a href="https://drive.google.com/file/d/1byQ_1NzyajGETJFqEWqDKuEEmM99fGBo/view?usp=sharing" target="_blank">Link</a>
 
 <br>
+
+******
