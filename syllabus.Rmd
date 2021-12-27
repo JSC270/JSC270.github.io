@@ -1,7 +1,7 @@
 ---
 title: "JSC270H1S: Data Science I"
 subtitle: "Syllabus"
-date: Winter 2021
+date: Winter 2022
 
 output: 
   html_document:
@@ -19,11 +19,11 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
-- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Anna Goldenberg](xxx) (anna.goldenberg@utoronto.ca).
+- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Jesse Gronsbell](xxx) (j.gronsbell@utoronto.ca).
 
 - <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistants: </br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lauren Erdman (lee2@cs.toronto.edu) </br> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matthew Edwards (mr.edwards@utoronto.ca).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Emma Holmes (Stats) </br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leili Goli (CS).
 
 <br>
 
