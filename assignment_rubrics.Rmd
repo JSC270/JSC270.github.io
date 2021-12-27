@@ -14,26 +14,26 @@ library(tidyverse)
 
 <br>
 
-# Data Analysis Rubric
+<!-- # Data Analysis Rubric -->
 
-```{r}
-dataanal_rubric <- read_csv("rubrics/dataanal_rubric.csv")
-knitr::kable(dataanal_rubric)
-```
+<!-- ```{r} -->
+<!-- dataanal_rubric <- read_csv("rubrics/dataanal_rubric.csv") -->
+<!-- knitr::kable(dataanal_rubric) -->
+<!-- ``` -->
 
-<br>
-<br>
+<!-- <br> -->
+<!-- <br> -->
 
-# Programming Rubric
+<!-- # Programming Rubric -->
 
-```{r}
-coding_rubric <- read_csv("rubrics/coding_rubric.csv")
-knitr::kable(coding_rubric)
-```
+<!-- ```{r} -->
+<!-- coding_rubric <- read_csv("rubrics/coding_rubric.csv") -->
+<!-- knitr::kable(coding_rubric) -->
+<!-- ``` -->
 
-# Presentation Rubric
+<!-- # Presentation Rubric -->
 
-```{r}
-coding_rubric <- read_csv("rubrics/presentation_rubric.csv")
-knitr::kable(coding_rubric)
-```
+<!-- ```{r} -->
+<!-- coding_rubric <- read_csv("rubrics/presentation_rubric.csv") -->
+<!-- knitr::kable(coding_rubric) -->
+<!-- ``` -->
