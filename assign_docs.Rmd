@@ -1,5 +1,5 @@
 ---
-title: "JSC270 - Assignment Documents"
+title: "Assignment Documents"
 output: 
   html_document:
    toc: true
@@ -10,8 +10,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 ```
-
-<br>
+******
 
 Assignments for this course will be programming exercises, and most of the content will be related to data analysis. Please refer to the Assignment Schedule for the release and submission dates. Assignments are to be completed using the Python programming language. All assignments will be posted to this section approximately 2 weeks before they are due, and will be submitted through Quercus (more detail on this will be included in the assigment files).
 

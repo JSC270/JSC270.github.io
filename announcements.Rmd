@@ -12,10 +12,10 @@ output:
 knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 ```
 
-</br>
+******
 
 ## December 27, 2021
-Data Science Seminars at University of Toronto:
+Data science seminars at the University of Toronto
 
 * [Data Science Applied Research and Education Seminar](https://canssiontario.utoronto.ca/events/ares/)
 * [Data Science Speaker Series](https://canssiontario.utoronto.ca/events/dsssuoft/)

@@ -113,8 +113,8 @@ Students will be evaluated according to [University Assessment and Grading Pract
 
 ```{r, echo=FALSE}
 library(tidyverse)
-jsc270coursegrading <- read_csv("jsc270coursegrading.csv")
-knitr::kable(jsc270coursegrading[1:8,])
+#jsc270coursegrading <- read_csv("jsc270coursegrading.csv")
+#knitr::kable(jsc270coursegrading[1:8,])
 ```
 
 

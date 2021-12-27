@@ -1,5 +1,5 @@
 ---
-title: "JSC270 - Laboratories Documents"
+title: "Laboratories Documents"
 output: 
   html_document:
    toc: true
@@ -13,11 +13,13 @@ knitr::opts_chunk$set(echo = F, warning = F, message = F)
 library(tidyverse)
 ```
 
-<br>
-<br>
-This is the section for Tutorial Labs. These labs will be held on Wednesdays, from 12-2pm on Zoom. The link and password can be found on Quercus. The goal of these Labs is to teach students how to implement the theory they learn in lecture. After each lab, the code (and any other relevant files) will be posted below. See the class schedule for a tentative list of the Lab topics. 
+******
 
-## Lab 1 - Jan 12
+Documents from tutorials will be posted on this page.
+
+<br>
+
+## Lab 1: Introduction to Colab + Python - Jan 12
 
 
 <!-- ## Lab 1 - Jan 13 -->
@@ -133,4 +135,5 @@ jsc270_tutsched <- read_csv("tut_sched.csv", col_types = cols(Week = col_charact
 knitr::kable(jsc270_tutsched)
 ```
 
+This is the section for Tutorial Labs. These labs will be held on Wednesdays, from 12-2pm on Zoom. The link and password can be found on Quercus. The goal of these Labs is to teach students how to implement the theory they learn in lecture. After each lab, the code (and any other relevant files) will be posted below. See the class schedule for a tentative list of the Lab topics. 
 --->

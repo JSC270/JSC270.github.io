@@ -11,7 +11,7 @@ output:
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 knitr::opts_chunk$set(warning = F, message = F)
 ```
-
+<br>
 
 # <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Evaluation Calendar
 Written assignments are to be submitted via Quercus (please see the assignments section). The deadline for submission of assignments is 10:59am EST on Mondays (1 hour before class starts).
