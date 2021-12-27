@@ -14,166 +14,168 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 </br>
 
-### __Mar 8, 2021__
+<!-- ### __Content from 2021__ -->
 
-Tomorrow (Tuesday) from 3:10 - 4:30pm, Alp Kucukelbir, a U of Toronto and Columbia alum, now c-founder of an ML-based startup, will be talking about "Industrial ML".
+<!-- ### __Mar 8, 2021__ -->
 
-The talk will be geared towards a non-ML audience, with plenty of time for Q&A.
+<!-- Tomorrow (Tuesday) from 3:10 - 4:30pm, Alp Kucukelbir, a U of Toronto and Columbia alum, now c-founder of an ML-based startup, will be talking about "Industrial ML". -->
 
+<!-- The talk will be geared towards a non-ML audience, with plenty of time for Q&A. -->
 
-Here is the Zoom link:
 
+<!-- Here is the Zoom link: -->
 
-https://utoronto.zoom.us/j/89713225921
 
-<br>
+<!-- https://utoronto.zoom.us/j/89713225921 -->
 
-Due to technical difficulties, we're using a different Zoom call today: <a href='https://vectorinstitute.zoom.us/j/98405655848?pwd=VENrVDhVQWdqbDgvZS9LamMxTy9BZz09
-'>Zoom Link</a> 
+<!-- <br> -->
 
-<br>
+<!-- Due to technical difficulties, we're using a different Zoom call today: <a href='https://vectorinstitute.zoom.us/j/98405655848?pwd=VENrVDhVQWdqbDgvZS9LamMxTy9BZz09 -->
+<!-- '>Zoom Link</a>  -->
 
-### __Feb 23rd, 2021__
+<!-- <br> -->
 
-Although this is late notice, we wanted to let you know that the JSC370 class has another guest lecture:
+<!-- ### __Feb 23rd, 2021__ -->
 
-__Speaker__: Wanying Zhao, Ontario Trillium Foundation
+<!-- Although this is late notice, we wanted to let you know that the JSC370 class has another guest lecture: -->
 
-__Topic__: Measuring the impact of charitable intervations
+<!-- __Speaker__: Wanying Zhao, Ontario Trillium Foundation -->
 
-__Date/Time__: Feb 23rd, 2021, 3:10-4:00pm EST
+<!-- __Topic__: Measuring the impact of charitable intervations -->
 
-__Zoom Info__: https://utoronto.zoom.us/j/89713225921
+<!-- __Date/Time__: Feb 23rd, 2021, 3:10-4:00pm EST -->
 
-Meeting ID: 897 1322 5921
+<!-- __Zoom Info__: https://utoronto.zoom.us/j/89713225921 -->
 
-We hope to see you there.
+<!-- Meeting ID: 897 1322 5921 -->
 
-<br>
+<!-- We hope to see you there. -->
 
-### __Feb 20th, 2021__
+<!-- <br> -->
 
-Join us for the February installment of the Data Science Speaker Series at U of T.
- 
-Speaker:
+<!-- ### __Feb 20th, 2021__ -->
 
-Dr. Tom Wright,
+<!-- Join us for the February installment of the Data Science Speaker Series at U of T. -->
 
-Research Scientist, Kensington Vision Research Centre
+<!-- Speaker: -->
 
-Assistant Professor, Department of Ophthalmology and Vision Science, University of Toronto
- 
-Talk Title: __From mosquitos to flying saucers: Modelling in an imperfect world__
- 
-Date & Time: Monday, Feb 22, 2021 | 5:15-6:15 pm ET
- 
-Location: Online
- 
-Free Event | All Welcome | [Register Here](https://canssiontario.utoronto.ca/event/dsss_tom-wright/)
- 
-__Abstract:__
+<!-- Dr. Tom Wright, -->
 
-Modern technologies for measuring the function of the in-vivo visual system produce a wealth of data which is not completely understood. Current analysis techniques are often subjective, relying on interpretation by trained specialists and often rely on information reduction to enable the use of traditional inferential statistics. Using the example of Hydroxychloroquine, a newly (in) famous disease modifying anti-rheumatic drug (DMARD), we will examine the problems and advantages of applying machine learning to the interpretation of medical tests.
- 
-__Profile:__
+<!-- Research Scientist, Kensington Vision Research Centre -->
 
-Dr. Wright is an assistant professor in the Department of Ophthalmology and Vision Sciences at the University of Toronto. He established the only visual electrophysiology diagnostic service providing routine adult testing in Southern Ontario. His research interests involve using visual electrophysiology and high resolution retinal imaging to describe the phenotypic effects of disease and other insults on the human visual system. By applying a partial least squares analysis, originally developed for fMRI analysis, to the multifocal Electroretinogram he identified deficits in the retinal function of adolescents with Type 1 diabetes before the onset of clinical retinopathy. His recent work has focused on describing retinal phenotypes of patients with inherited retinal disease.
+<!-- Assistant Professor, Department of Ophthalmology and Vision Science, University of Toronto -->
 
-</br>
+<!-- Talk Title: __From mosquitos to flying saucers: Modelling in an imperfect world__ -->
 
-### __Feb 19th, 2021__
+<!-- Date & Time: Monday, Feb 22, 2021 | 5:15-6:15 pm ET -->
 
-Hello everyone,
+<!-- Location: Online -->
 
-The departments of Statistical Sciences and Computer Science are announcing the following events:
+<!-- Free Event | All Welcome | [Register Here](https://canssiontario.utoronto.ca/event/dsss_tom-wright/) -->
 
-__Program Exploration Days__
+<!-- __Abstract:__ -->
 
-February 23, 24 & 25, 2021
- 
-[Join us on Zoom for Arts & Science Program Exploration Days](https://sidneysmithcommons.artsci.utoronto.ca/program/program-exploration-days/). Connect with faculty, staff and upper-year students to learn about the various academic programs of study available to you, including specialist, majors and minors. You can also hear what students love about their programs!
- 
-__Math, Physical Sciences & Computer Sciences Programs__
+<!-- Modern technologies for measuring the function of the in-vivo visual system produce a wealth of data which is not completely understood. Current analysis techniques are often subjective, relying on interpretation by trained specialists and often rely on information reduction to enable the use of traditional inferential statistics. Using the example of Hydroxychloroquine, a newly (in) famous disease modifying anti-rheumatic drug (DMARD), we will examine the problems and advantages of applying machine learning to the interpretation of medical tests. -->
 
-Tuesday, February 23, 2021
+<!-- __Profile:__ -->
 
-9:00 am – 11:00 am (EST)
+<!-- Dr. Wright is an assistant professor in the Department of Ophthalmology and Vision Sciences at the University of Toronto. He established the only visual electrophysiology diagnostic service providing routine adult testing in Southern Ontario. His research interests involve using visual electrophysiology and high resolution retinal imaging to describe the phenotypic effects of disease and other insults on the human visual system. By applying a partial least squares analysis, originally developed for fMRI analysis, to the multifocal Electroretinogram he identified deficits in the retinal function of adolescents with Type 1 diabetes before the onset of clinical retinopathy. His recent work has focused on describing retinal phenotypes of patients with inherited retinal disease. -->
 
-2:00 pm – 4:00 pm (EST)
+<!-- </br> -->
 
-__Life Sciences Programs__
+<!-- ### __Feb 19th, 2021__ -->
 
-Wednesday, February 24, 2021
+<!-- Hello everyone, -->
 
-9:00 am – 11:00 am (EST)
+<!-- The departments of Statistical Sciences and Computer Science are announcing the following events: -->
 
-2:00 pm – 4:00 pm (EST)
- 
-__Social Sciences, Humanities & Rotman Programs__
+<!-- __Program Exploration Days__ -->
 
-Thursday, February 25, 2021
+<!-- February 23, 24 & 25, 2021 -->
 
-9:00 am – 11:00 am (EST) 
+<!-- [Join us on Zoom for Arts & Science Program Exploration Days](https://sidneysmithcommons.artsci.utoronto.ca/program/program-exploration-days/). Connect with faculty, staff and upper-year students to learn about the various academic programs of study available to you, including specialist, majors and minors. You can also hear what students love about their programs! -->
 
-3:00 pm – 5:00 pm (EST)
-  
-[Register to attend Program Exploration Days](https://sidneysmithcommons.artsci.utoronto.ca/program/program-exploration-days/) to receive your Zoom link.
- 
-Before program enrolment begins on March 1, 2021, take the time to browse the Program Toolkit to:
+<!-- __Math, Physical Sciences & Computer Sciences Programs__ -->
 
-- Learn [how to apply](https://sidneysmithcommons.artsci.utoronto.ca/program/apply-for-programs/) for your program
-- See a [complete list of programs](https://sidneysmithcommons.artsci.utoronto.ca/program/list-of-programs/)
-- Explore the new [program showcase](https://sidneysmithcommons.artsci.utoronto.ca/program/program-showcase/)
-- Watch [student videos](https://artsci-programs.capsule.video/) sharing their experience
+<!-- Tuesday, February 23, 2021 -->
 
+<!-- 9:00 am – 11:00 am (EST) -->
 
-</br>
+<!-- 2:00 pm – 4:00 pm (EST) -->
 
-### __Feb 8th, 2021__
+<!-- __Life Sciences Programs__ -->
 
-Hello everyone,
+<!-- Wednesday, February 24, 2021 -->
 
-As we approach the half-way point of this class, we'd like to hear your feedback on this course. With this in mind, we've designed a short survey to gather your feedback. Please note that this survey is completely anonymous, and will not impact your grade in this course.
+<!-- 9:00 am – 11:00 am (EST) -->
 
-You can complete the survey by following  <a href="https://forms.gle/wYGYuSaCgNDbQgBv8" target="_blank"> this link </a>.
+<!-- 2:00 pm – 4:00 pm (EST) -->
 
-</br>
+<!-- __Social Sciences, Humanities & Rotman Programs__ -->
 
-### __Feb 2nd, 2021__
+<!-- Thursday, February 25, 2021 -->
 
-Sorry for the late notice everyone,
+<!-- 9:00 am – 11:00 am (EST)  -->
 
-On __Tuesday, Feb 2nd, from 3:10pm to 4:00pm__, JSC370 will be hosting __Farah Bastien, Manager of Data Science for Maple Leaf Sports and Entertainment__ (who own the Leafs and the raptors), along with a junior data scientist from her team.
+<!-- 3:00 pm – 5:00 pm (EST) -->
 
-Farah will be talking about her experience with data science in industry, including how she got there, what's valued, what's typically used, what's expected, what's missing, how their analyses get used, etc.  Her team member is also going to walk us through some example analyses using publicly-available data:
-https://github.com/statsbomb/open-data
-Such as player role classification, rewarding narrow misses, and estimating ball speed.
+<!-- [Register to attend Program Exploration Days](https://sidneysmithcommons.artsci.utoronto.ca/program/program-exploration-days/) to receive your Zoom link. -->
 
-The zoom link is here:
-https://utoronto.zoom.us/j/89713225921
+<!-- Before program enrolment begins on March 1, 2021, take the time to browse the Program Toolkit to: -->
 
-Meeting ID: 897 1322 5921
+<!-- - Learn [how to apply](https://sidneysmithcommons.artsci.utoronto.ca/program/apply-for-programs/) for your program -->
+<!-- - See a [complete list of programs](https://sidneysmithcommons.artsci.utoronto.ca/program/list-of-programs/) -->
+<!-- - Explore the new [program showcase](https://sidneysmithcommons.artsci.utoronto.ca/program/program-showcase/) -->
+<!-- - Watch [student videos](https://artsci-programs.capsule.video/) sharing their experience -->
 
-<br>
 
-******
+<!-- </br> -->
 
+<!-- ### __Feb 8th, 2021__ -->
 
-### __Jan 18th, 2021__
+<!-- Hello everyone, -->
 
-Just a reminder about the guest lecture for JSC370:
+<!-- As we approach the half-way point of this class, we'd like to hear your feedback on this course. With this in mind, we've designed a short survey to gather your feedback. Please note that this survey is completely anonymous, and will not impact your grade in this course. -->
 
-Speaker: __Ben Allison, Principal Machine Learning Scientist at Amazon.__
+<!-- You can complete the survey by following  <a href="https://forms.gle/wYGYuSaCgNDbQgBv8" target="_blank"> this link </a>. -->
 
-Date & Time: __Tuesday, Jan 19, 2021, 3:10pm - 4:00pm EST__
+<!-- </br> -->
 
-Meeting Link: <a href = "https://utoronto.zoom.us/j/89713225921" target = "_blank">Zoom</a> 
+<!-- ### __Feb 2nd, 2021__ -->
 
-Meeting ID: 897 1322 5921
+<!-- Sorry for the late notice everyone, -->
 
-You're also welcome to stay for the lecture afterwards.
+<!-- On __Tuesday, Feb 2nd, from 3:10pm to 4:00pm__, JSC370 will be hosting __Farah Bastien, Manager of Data Science for Maple Leaf Sports and Entertainment__ (who own the Leafs and the raptors), along with a junior data scientist from her team. -->
 
-- Also, slides for Lecture 2 are posted.
+<!-- Farah will be talking about her experience with data science in industry, including how she got there, what's valued, what's typically used, what's expected, what's missing, how their analyses get used, etc.  Her team member is also going to walk us through some example analyses using publicly-available data: -->
+<!-- https://github.com/statsbomb/open-data -->
+<!-- Such as player role classification, rewarding narrow misses, and estimating ball speed. -->
 
+<!-- The zoom link is here: -->
+<!-- https://utoronto.zoom.us/j/89713225921 -->
 
-******
+<!-- Meeting ID: 897 1322 5921 -->
+
+<!-- <br> -->
+
+<!-- ****** -->
+
+
+<!-- ### __Jan 18th, 2021__ -->
+
+<!-- Just a reminder about the guest lecture for JSC370: -->
+
+<!-- Speaker: __Ben Allison, Principal Machine Learning Scientist at Amazon.__ -->
+
+<!-- Date & Time: __Tuesday, Jan 19, 2021, 3:10pm - 4:00pm EST__ -->
+
+<!-- Meeting Link: <a href = "https://utoronto.zoom.us/j/89713225921" target = "_blank">Zoom</a>  -->
+
+<!-- Meeting ID: 897 1322 5921 -->
+
+<!-- You're also welcome to stay for the lecture afterwards. -->
+
+<!-- - Also, slides for Lecture 2 are posted. -->
+
+
+<!-- ****** -->

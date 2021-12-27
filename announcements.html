@@ -13,13 +13,21 @@
 
 <title>JSC270 - Announcements</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -37,11 +45,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -54,32 +57,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
 
@@ -90,10 +67,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -110,40 +83,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 45px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h2 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h3 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h4 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h5 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h6 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -171,7 +117,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -183,7 +129,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -194,10 +140,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -209,7 +168,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -335,7 +293,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -402,7 +360,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -412,104 +370,90 @@ div.tocify {
 
 
 <p></br></p>
-<div id="mar-8-2021" class="section level3">
-<h3><strong>Mar 8, 2021</strong></h3>
-<p>Tomorrow (Tuesday) from 3:10 - 4:30pm, Alp Kucukelbir, a U of Toronto and Columbia alum, now c-founder of an ML-based startup, will be talking about “Industrial ML”.</p>
-<p>The talk will be geared towards a non-ML audience, with plenty of time for Q&amp;A.</p>
-<p>Here is the Zoom link:</p>
-<p><a href="https://utoronto.zoom.us/j/89713225921" class="uri">https://utoronto.zoom.us/j/89713225921</a></p>
-<p><br></p>
-<p>Due to technical difficulties, we’re using a different Zoom call today: <a href='https://vectorinstitute.zoom.us/j/98405655848?pwd=VENrVDhVQWdqbDgvZS9LamMxTy9BZz09
-'>Zoom Link</a></p>
-<p><br></p>
-</div>
-<div id="feb-23rd-2021" class="section level3">
-<h3><strong>Feb 23rd, 2021</strong></h3>
-<p>Although this is late notice, we wanted to let you know that the JSC370 class has another guest lecture:</p>
-<p><strong>Speaker</strong>: Wanying Zhao, Ontario Trillium Foundation</p>
-<p><strong>Topic</strong>: Measuring the impact of charitable intervations</p>
-<p><strong>Date/Time</strong>: Feb 23rd, 2021, 3:10-4:00pm EST</p>
-<p><strong>Zoom Info</strong>: <a href="https://utoronto.zoom.us/j/89713225921" class="uri">https://utoronto.zoom.us/j/89713225921</a></p>
-<p>Meeting ID: 897 1322 5921</p>
-<p>We hope to see you there.</p>
-<p><br></p>
-</div>
-<div id="feb-20th-2021" class="section level3">
-<h3><strong>Feb 20th, 2021</strong></h3>
-<p>Join us for the February installment of the Data Science Speaker Series at U of T.</p>
-<p>Speaker:</p>
-<p>Dr. Tom Wright,</p>
-<p>Research Scientist, Kensington Vision Research Centre</p>
-<p>Assistant Professor, Department of Ophthalmology and Vision Science, University of Toronto</p>
-<p>Talk Title: <strong>From mosquitos to flying saucers: Modelling in an imperfect world</strong></p>
-<p>Date &amp; Time: Monday, Feb 22, 2021 | 5:15-6:15 pm ET</p>
-<p>Location: Online</p>
-<p>Free Event | All Welcome | <a href="https://canssiontario.utoronto.ca/event/dsss_tom-wright/">Register Here</a></p>
-<p><strong>Abstract:</strong></p>
-<p>Modern technologies for measuring the function of the in-vivo visual system produce a wealth of data which is not completely understood. Current analysis techniques are often subjective, relying on interpretation by trained specialists and often rely on information reduction to enable the use of traditional inferential statistics. Using the example of Hydroxychloroquine, a newly (in) famous disease modifying anti-rheumatic drug (DMARD), we will examine the problems and advantages of applying machine learning to the interpretation of medical tests.</p>
-<p><strong>Profile:</strong></p>
-<p>Dr. Wright is an assistant professor in the Department of Ophthalmology and Vision Sciences at the University of Toronto. He established the only visual electrophysiology diagnostic service providing routine adult testing in Southern Ontario. His research interests involve using visual electrophysiology and high resolution retinal imaging to describe the phenotypic effects of disease and other insults on the human visual system. By applying a partial least squares analysis, originally developed for fMRI analysis, to the multifocal Electroretinogram he identified deficits in the retinal function of adolescents with Type 1 diabetes before the onset of clinical retinopathy. His recent work has focused on describing retinal phenotypes of patients with inherited retinal disease.</p>
-<p></br></p>
-</div>
-<div id="feb-19th-2021" class="section level3">
-<h3><strong>Feb 19th, 2021</strong></h3>
-<p>Hello everyone,</p>
-<p>The departments of Statistical Sciences and Computer Science are announcing the following events:</p>
-<p><strong>Program Exploration Days</strong></p>
-<p>February 23, 24 &amp; 25, 2021</p>
-<p><a href="https://sidneysmithcommons.artsci.utoronto.ca/program/program-exploration-days/">Join us on Zoom for Arts &amp; Science Program Exploration Days</a>. Connect with faculty, staff and upper-year students to learn about the various academic programs of study available to you, including specialist, majors and minors. You can also hear what students love about their programs!</p>
-<p><strong>Math, Physical Sciences &amp; Computer Sciences Programs</strong></p>
-<p>Tuesday, February 23, 2021</p>
-<p>9:00 am – 11:00 am (EST)</p>
-<p>2:00 pm – 4:00 pm (EST)</p>
-<p><strong>Life Sciences Programs</strong></p>
-<p>Wednesday, February 24, 2021</p>
-<p>9:00 am – 11:00 am (EST)</p>
-<p>2:00 pm – 4:00 pm (EST)</p>
-<p><strong>Social Sciences, Humanities &amp; Rotman Programs</strong></p>
-<p>Thursday, February 25, 2021</p>
-<p>9:00 am – 11:00 am (EST)</p>
-<p>3:00 pm – 5:00 pm (EST)</p>
-<p><a href="https://sidneysmithcommons.artsci.utoronto.ca/program/program-exploration-days/">Register to attend Program Exploration Days</a> to receive your Zoom link.</p>
-<p>Before program enrolment begins on March 1, 2021, take the time to browse the Program Toolkit to:</p>
-<ul>
-<li>Learn <a href="https://sidneysmithcommons.artsci.utoronto.ca/program/apply-for-programs/">how to apply</a> for your program</li>
-<li>See a <a href="https://sidneysmithcommons.artsci.utoronto.ca/program/list-of-programs/">complete list of programs</a></li>
-<li>Explore the new <a href="https://sidneysmithcommons.artsci.utoronto.ca/program/program-showcase/">program showcase</a></li>
-<li>Watch <a href="https://artsci-programs.capsule.video/">student videos</a> sharing their experience</li>
-</ul>
-<p></br></p>
-</div>
-<div id="feb-8th-2021" class="section level3">
-<h3><strong>Feb 8th, 2021</strong></h3>
-<p>Hello everyone,</p>
-<p>As we approach the half-way point of this class, we’d like to hear your feedback on this course. With this in mind, we’ve designed a short survey to gather your feedback. Please note that this survey is completely anonymous, and will not impact your grade in this course.</p>
-<p>You can complete the survey by following <a href="https://forms.gle/wYGYuSaCgNDbQgBv8" target="_blank"> this link </a>.</p>
-<p></br></p>
-</div>
-<div id="feb-2nd-2021" class="section level3">
-<h3><strong>Feb 2nd, 2021</strong></h3>
-<p>Sorry for the late notice everyone,</p>
-<p>On <strong>Tuesday, Feb 2nd, from 3:10pm to 4:00pm</strong>, JSC370 will be hosting <strong>Farah Bastien, Manager of Data Science for Maple Leaf Sports and Entertainment</strong> (who own the Leafs and the raptors), along with a junior data scientist from her team.</p>
-<p>Farah will be talking about her experience with data science in industry, including how she got there, what’s valued, what’s typically used, what’s expected, what’s missing, how their analyses get used, etc. Her team member is also going to walk us through some example analyses using publicly-available data: <a href="https://github.com/statsbomb/open-data" class="uri">https://github.com/statsbomb/open-data</a> Such as player role classification, rewarding narrow misses, and estimating ball speed.</p>
-<p>The zoom link is here: <a href="https://utoronto.zoom.us/j/89713225921" class="uri">https://utoronto.zoom.us/j/89713225921</a></p>
-<p>Meeting ID: 897 1322 5921</p>
-<p><br></p>
-<hr />
-</div>
-<div id="jan-18th-2021" class="section level3">
-<h3><strong>Jan 18th, 2021</strong></h3>
-<p>Just a reminder about the guest lecture for JSC370:</p>
-<p>Speaker: <strong>Ben Allison, Principal Machine Learning Scientist at Amazon.</strong></p>
-<p>Date &amp; Time: <strong>Tuesday, Jan 19, 2021, 3:10pm - 4:00pm EST</strong></p>
-<p>Meeting Link: <a href = "https://utoronto.zoom.us/j/89713225921" target = "_blank">Zoom</a></p>
-<p>Meeting ID: 897 1322 5921</p>
-<p>You’re also welcome to stay for the lecture afterwards.</p>
-<ul>
-<li>Also, slides for Lecture 2 are posted.</li>
-</ul>
-<hr />
-</div>
+<!-- ### __Content from 2021__ -->
+<!-- ### __Mar 8, 2021__ -->
+<!-- Tomorrow (Tuesday) from 3:10 - 4:30pm, Alp Kucukelbir, a U of Toronto and Columbia alum, now c-founder of an ML-based startup, will be talking about "Industrial ML". -->
+<!-- The talk will be geared towards a non-ML audience, with plenty of time for Q&A. -->
+<!-- Here is the Zoom link: -->
+<!-- https://utoronto.zoom.us/j/89713225921 -->
+<!-- <br> -->
+<!-- Due to technical difficulties, we're using a different Zoom call today: <a href='https://vectorinstitute.zoom.us/j/98405655848?pwd=VENrVDhVQWdqbDgvZS9LamMxTy9BZz09 -->
+<!-- '>Zoom Link</a>  -->
+<!-- <br> -->
+<!-- ### __Feb 23rd, 2021__ -->
+<!-- Although this is late notice, we wanted to let you know that the JSC370 class has another guest lecture: -->
+<!-- __Speaker__: Wanying Zhao, Ontario Trillium Foundation -->
+<!-- __Topic__: Measuring the impact of charitable intervations -->
+<!-- __Date/Time__: Feb 23rd, 2021, 3:10-4:00pm EST -->
+<!-- __Zoom Info__: https://utoronto.zoom.us/j/89713225921 -->
+<!-- Meeting ID: 897 1322 5921 -->
+<!-- We hope to see you there. -->
+<!-- <br> -->
+<!-- ### __Feb 20th, 2021__ -->
+<!-- Join us for the February installment of the Data Science Speaker Series at U of T. -->
+<!-- Speaker: -->
+<!-- Dr. Tom Wright, -->
+<!-- Research Scientist, Kensington Vision Research Centre -->
+<!-- Assistant Professor, Department of Ophthalmology and Vision Science, University of Toronto -->
+<!-- Talk Title: __From mosquitos to flying saucers: Modelling in an imperfect world__ -->
+<!-- Date & Time: Monday, Feb 22, 2021 | 5:15-6:15 pm ET -->
+<!-- Location: Online -->
+<!-- Free Event | All Welcome | [Register Here](https://canssiontario.utoronto.ca/event/dsss_tom-wright/) -->
+<!-- __Abstract:__ -->
+<!-- Modern technologies for measuring the function of the in-vivo visual system produce a wealth of data which is not completely understood. Current analysis techniques are often subjective, relying on interpretation by trained specialists and often rely on information reduction to enable the use of traditional inferential statistics. Using the example of Hydroxychloroquine, a newly (in) famous disease modifying anti-rheumatic drug (DMARD), we will examine the problems and advantages of applying machine learning to the interpretation of medical tests. -->
+<!-- __Profile:__ -->
+<!-- Dr. Wright is an assistant professor in the Department of Ophthalmology and Vision Sciences at the University of Toronto. He established the only visual electrophysiology diagnostic service providing routine adult testing in Southern Ontario. His research interests involve using visual electrophysiology and high resolution retinal imaging to describe the phenotypic effects of disease and other insults on the human visual system. By applying a partial least squares analysis, originally developed for fMRI analysis, to the multifocal Electroretinogram he identified deficits in the retinal function of adolescents with Type 1 diabetes before the onset of clinical retinopathy. His recent work has focused on describing retinal phenotypes of patients with inherited retinal disease. -->
+<!-- </br> -->
+<!-- ### __Feb 19th, 2021__ -->
+<!-- Hello everyone, -->
+<!-- The departments of Statistical Sciences and Computer Science are announcing the following events: -->
+<!-- __Program Exploration Days__ -->
+<!-- February 23, 24 & 25, 2021 -->
+<!-- [Join us on Zoom for Arts & Science Program Exploration Days](https://sidneysmithcommons.artsci.utoronto.ca/program/program-exploration-days/). Connect with faculty, staff and upper-year students to learn about the various academic programs of study available to you, including specialist, majors and minors. You can also hear what students love about their programs! -->
+<!-- __Math, Physical Sciences & Computer Sciences Programs__ -->
+<!-- Tuesday, February 23, 2021 -->
+<!-- 9:00 am – 11:00 am (EST) -->
+<!-- 2:00 pm – 4:00 pm (EST) -->
+<!-- __Life Sciences Programs__ -->
+<!-- Wednesday, February 24, 2021 -->
+<!-- 9:00 am – 11:00 am (EST) -->
+<!-- 2:00 pm – 4:00 pm (EST) -->
+<!-- __Social Sciences, Humanities & Rotman Programs__ -->
+<!-- Thursday, February 25, 2021 -->
+<!-- 9:00 am – 11:00 am (EST)  -->
+<!-- 3:00 pm – 5:00 pm (EST) -->
+<!-- [Register to attend Program Exploration Days](https://sidneysmithcommons.artsci.utoronto.ca/program/program-exploration-days/) to receive your Zoom link. -->
+<!-- Before program enrolment begins on March 1, 2021, take the time to browse the Program Toolkit to: -->
+<!-- - Learn [how to apply](https://sidneysmithcommons.artsci.utoronto.ca/program/apply-for-programs/) for your program -->
+<!-- - See a [complete list of programs](https://sidneysmithcommons.artsci.utoronto.ca/program/list-of-programs/) -->
+<!-- - Explore the new [program showcase](https://sidneysmithcommons.artsci.utoronto.ca/program/program-showcase/) -->
+<!-- - Watch [student videos](https://artsci-programs.capsule.video/) sharing their experience -->
+<!-- </br> -->
+<!-- ### __Feb 8th, 2021__ -->
+<!-- Hello everyone, -->
+<!-- As we approach the half-way point of this class, we'd like to hear your feedback on this course. With this in mind, we've designed a short survey to gather your feedback. Please note that this survey is completely anonymous, and will not impact your grade in this course. -->
+<!-- You can complete the survey by following  <a href="https://forms.gle/wYGYuSaCgNDbQgBv8" target="_blank"> this link </a>. -->
+<!-- </br> -->
+<!-- ### __Feb 2nd, 2021__ -->
+<!-- Sorry for the late notice everyone, -->
+<!-- On __Tuesday, Feb 2nd, from 3:10pm to 4:00pm__, JSC370 will be hosting __Farah Bastien, Manager of Data Science for Maple Leaf Sports and Entertainment__ (who own the Leafs and the raptors), along with a junior data scientist from her team. -->
+<!-- Farah will be talking about her experience with data science in industry, including how she got there, what's valued, what's typically used, what's expected, what's missing, how their analyses get used, etc.  Her team member is also going to walk us through some example analyses using publicly-available data: -->
+<!-- https://github.com/statsbomb/open-data -->
+<!-- Such as player role classification, rewarding narrow misses, and estimating ball speed. -->
+<!-- The zoom link is here: -->
+<!-- https://utoronto.zoom.us/j/89713225921 -->
+<!-- Meeting ID: 897 1322 5921 -->
+<!-- <br> -->
+<!-- ****** -->
+<!-- ### __Jan 18th, 2021__ -->
+<!-- Just a reminder about the guest lecture for JSC370: -->
+<!-- Speaker: __Ben Allison, Principal Machine Learning Scientist at Amazon.__ -->
+<!-- Date & Time: __Tuesday, Jan 19, 2021, 3:10pm - 4:00pm EST__ -->
+<!-- Meeting Link: <a href = "https://utoronto.zoom.us/j/89713225921" target = "_blank">Zoom</a>  -->
+<!-- Meeting ID: 897 1322 5921 -->
+<!-- You're also welcome to stay for the lecture afterwards. -->
+<!-- - Also, slides for Lecture 2 are posted. -->
+<!-- ****** -->
 
 
 
@@ -540,7 +484,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -549,6 +493,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
