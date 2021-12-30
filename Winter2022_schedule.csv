@@ -1,3 +1,38 @@
 Date,Session,Description
-Mon. Jan 10,Lecture 1,Course Introduction - What is Data Science?
-Wed. Jan 12,Lab 1,Data Collection and Cleaning (Intro to python/pandas)
+Mon. Jan 10,Lecture 1,Course Introduction + What is Data Science?
+Wed. Jan 12,Lab 1,Intro to Python + pandas
+Mon. Jan 17,Lecture 2,Exploratory Data Analysis (EDA)
+Tues. Jan 18,Guest Lecture 1,"Life as a Data Scientist, Aaron Sonabend (Google)"
+Wed. Jan 19,Lab 2,EDA with NumPy and Matplotlib
+Mon. Jan 24,Lecture 3,Statistical Models
+Tues. Jan 25,Guest Lecture 2,"Life as a Data Scientist, Stefanie Nickels (Verily)"
+Wed. Jan 26,Lab 3,Assignment 1 Presentations 
+Mon. Jan 31,Lecture 4,Regression I
+Mon. Jan 31,Guest Lecture 3,"Life as a Data Scientist, Kathy Evans (NBA)"
+Wed. Feb 2,Lab4,Git + Regression with Scikit Learn
+Mon. Feb 7,Lecture 5,Communication
+Tues. Feb 8,Guest Lecture 4,"Life as a Grad Student, Yanbo Tang, Robert Zimmerman, Siyue Yang (DoSS)"
+Wed. Feb 9,Lab5,Version Control: Git/Github/Bash
+Mon. Feb 14,READING WEEK,
+Wed. Feb 16,READING WEEK,
+Mon. Feb 21,Lecture 6,Simulation
+Mon. Feb 21,Guest Lecture 5,"Being an Effective Data Scientist, Paul Varghese (Verily)"
+Wed. Feb 23,Lab 6,Simulation with Scikit learn 
+Mon. Feb 28,Lecture 7,Classifiers
+Tues. Mar 1,Guest Lecture 6,"Genomic Data Science, Lisa Strug (U of T)"
+Wed. Mar 2,Lab 7,Classification with Scikit learn
+Mon. Mar 7,Lecture 8,Regression II
+Mon. Mar 7,Guest Lecture 7,"Natural Language Processing, Alistair Johnson (Sick Kids)"
+Wed. Mar 9,Lab 8,Twitter API + Natural Language Processing
+Mon. Mar 14,Lecture 9,Evaluating Predictions
+Tues. Mar 15,Guest Lecture 8,"Applications of Hidden Markov Models, TBD"
+Wed. Mar 16,Lab 9,Prediction Metrics
+Mon. Mar 21,Lecture 10,Dimension Reduction
+Mon. Mar 22,Guest Lecture 9,TBD
+Wed. Mar 23,Lab 10,Dimension Reduction
+Mon. Mar 28,Lecture 11,Clustering
+Tues. Mar 29,Guest Lecture 10,TBD
+Wed. Mar 30,Lab 11,Clustering
+Mon. April 4,Lecture 12,Final Presentations
+Mon. April 4,Guest Lecture 11,"A Statistical Perspective of Data Science, Radu Craiu (U of T)"
+Wed. April 6,Lab 12,Final Presentations

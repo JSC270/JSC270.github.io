@@ -31,7 +31,7 @@ Here is our tentative schedule, which may change as the course progresses.
 ```{r, echo=FALSE}
 library(tidyverse)
 jsc270courseschedule <- read_csv("Winter2022_schedule.csv")
-knitr::kable(jsc270courseschedule[1:2,])
+knitr::kable(jsc270courseschedule[1:37,])
 ```
 
 ******
