@@ -36,6 +36,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -371,204 +373,515 @@ div.tocify {
 <div id="course-schedule" class="section level1">
 <h1><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Schedule</h1>
 <p>Here is our tentative schedule, which may change as the course progresses.</p>
-<table>
-<colgroup>
-<col width="12%" />
-<col width="16%" />
-<col width="70%" />
-</colgroup>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="left">Date</th>
-<th align="left">Session</th>
-<th align="left">Description</th>
+<tr>
+<th style="text-align:right;">
+Week
+</th>
+<th style="text-align:left;">
+Date
+</th>
+<th style="text-align:left;">
+Session
+</th>
+<th style="text-align:left;">
+Description
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">Mon. Jan 10</td>
-<td align="left">Lecture 1</td>
-<td align="left">Course Introduction + What is Data Science?</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+1
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Jan 10
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 1
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Course Introduction + What is Data Science?
+</td>
 </tr>
-<tr class="even">
-<td align="left">Wed. Jan 12</td>
-<td align="left">Lab 1</td>
-<td align="left">Intro to Python + pandas</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Jan 12
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 1
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Intro to Python + pandas
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Mon. Jan 17</td>
-<td align="left">Lecture 2</td>
-<td align="left">Exploratory Data Analysis (EDA)</td>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+Mon. Jan 17
+</td>
+<td style="text-align:left;">
+Lecture 2
+</td>
+<td style="text-align:left;">
+Exploratory Data Analysis (EDA)
+</td>
 </tr>
-<tr class="even">
-<td align="left">Tues. Jan 18</td>
-<td align="left">Guest Lecture 1</td>
-<td align="left">Life as a Data Scientist, Aaron Sonabend (Google)</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Tues. Jan 18
+</td>
+<td style="text-align:left;">
+Guest Lecture 1
+</td>
+<td style="text-align:left;">
+Life as a Data Scientist, Aaron Sonabend (Google)
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Wed. Jan 19</td>
-<td align="left">Lab 2</td>
-<td align="left">EDA with NumPy and Matplotlib</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Jan 19
+</td>
+<td style="text-align:left;">
+Lab 2
+</td>
+<td style="text-align:left;">
+EDA with NumPy and Matplotlib
+</td>
 </tr>
-<tr class="even">
-<td align="left">Mon. Jan 24</td>
-<td align="left">Lecture 3</td>
-<td align="left">Statistical Models</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+3
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Jan 24
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 3
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Statistical Models
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Tues. Jan 25</td>
-<td align="left">Guest Lecture 2</td>
-<td align="left">Life as a Data Scientist, Stefanie Nickels (Verily)</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Tues. Jan 25
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 2
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Life as a Data Scientist, Stefanie Nickels (Verily)
+</td>
 </tr>
-<tr class="even">
-<td align="left">Wed. Jan 26</td>
-<td align="left">Lab 3</td>
-<td align="left">Assignment 1 Presentations</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Jan 26
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 3
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Assignment 1 Presentations
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Mon. Jan 31</td>
-<td align="left">Lecture 4</td>
-<td align="left">Regression I</td>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+Mon. Jan 31
+</td>
+<td style="text-align:left;">
+Lecture 4
+</td>
+<td style="text-align:left;">
+Regression I
+</td>
 </tr>
-<tr class="even">
-<td align="left">Mon. Jan 31</td>
-<td align="left">Guest Lecture 3</td>
-<td align="left">Life as a Data Scientist, Kathy Evans (NBA)</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Mon. Jan 31
+</td>
+<td style="text-align:left;">
+Guest Lecture 3
+</td>
+<td style="text-align:left;">
+Life as a Data Scientist, Kathy Evans (NBA)
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Wed. Feb 2</td>
-<td align="left">Lab4</td>
-<td align="left">Git + Regression with Scikit Learn</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Feb 2
+</td>
+<td style="text-align:left;">
+Lab 4
+</td>
+<td style="text-align:left;">
+Git + Regression with Scikit Learn
+</td>
 </tr>
-<tr class="even">
-<td align="left">Mon. Feb 7</td>
-<td align="left">Lecture 5</td>
-<td align="left">Communication</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+5
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Feb 7
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 5
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Communication
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Tues. Feb 8</td>
-<td align="left">Guest Lecture 4</td>
-<td align="left">Life as a Grad Student, Yanbo Tang, Robert Zimmerman, Siyue Yang (DoSS)</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Tues. Feb 8
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 4
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Life as a Grad Student, Yanbo Tang, Robert Zimmerman, Siyue Yang (DoSS)
+</td>
 </tr>
-<tr class="even">
-<td align="left">Wed. Feb 9</td>
-<td align="left">Lab5</td>
-<td align="left">Version Control: Git/Github/Bash</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Feb 9
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 5
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Version Control: Git/Github/Bash
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Mon. Feb 14</td>
-<td align="left">READING WEEK</td>
-<td align="left">NA</td>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+Mon. Feb 14
+</td>
+<td style="text-align:left;">
+READING WEEK
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">Wed. Feb 16</td>
-<td align="left">READING WEEK</td>
-<td align="left">NA</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Feb 16
+</td>
+<td style="text-align:left;">
+READING WEEK
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Mon. Feb 21</td>
-<td align="left">Lecture 6</td>
-<td align="left">Simulation</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+7
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Feb 21
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 6
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Simulation
+</td>
 </tr>
-<tr class="even">
-<td align="left">Mon. Feb 21</td>
-<td align="left">Guest Lecture 5</td>
-<td align="left">Being an Effective Data Scientist, Paul Varghese (Verily)</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Feb 21
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 5
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Being an Effective Data Scientist, Paul Varghese (Verily)
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Wed. Feb 23</td>
-<td align="left">Lab 6</td>
-<td align="left">Simulation with Scikit learn</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Feb 23
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 6
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Simulation with Scikit learn
+</td>
 </tr>
-<tr class="even">
-<td align="left">Mon. Feb 28</td>
-<td align="left">Lecture 7</td>
-<td align="left">Classifiers</td>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+Mon. Feb 28
+</td>
+<td style="text-align:left;">
+Lecture 7
+</td>
+<td style="text-align:left;">
+Classifiers
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Tues. Mar 1</td>
-<td align="left">Guest Lecture 6</td>
-<td align="left">Genomic Data Science, Lisa Strug (U of T)</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Tues. Mar 1
+</td>
+<td style="text-align:left;">
+Guest Lecture 6
+</td>
+<td style="text-align:left;">
+Genomic Data Science, Lisa Strug (U of T)
+</td>
 </tr>
-<tr class="even">
-<td align="left">Wed. Mar 2</td>
-<td align="left">Lab 7</td>
-<td align="left">Classification with Scikit learn</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Mar 2
+</td>
+<td style="text-align:left;">
+Lab 7
+</td>
+<td style="text-align:left;">
+Classification with Scikit learn
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Mon. Mar 7</td>
-<td align="left">Lecture 8</td>
-<td align="left">Regression II</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+9
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Mar 7
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 8
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Regression II
+</td>
 </tr>
-<tr class="even">
-<td align="left">Mon. Mar 7</td>
-<td align="left">Guest Lecture 7</td>
-<td align="left">Natural Language Processing, Alistair Johnson (Sick Kids)</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Mar 7
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 7
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Natural Language Processing, Alistair Johnson (Sick Kids)
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Wed. Mar 9</td>
-<td align="left">Lab 8</td>
-<td align="left">Twitter API + Natural Language Processing</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Mar 9
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 8
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Twitter API + Natural Language Processing
+</td>
 </tr>
-<tr class="even">
-<td align="left">Mon. Mar 14</td>
-<td align="left">Lecture 9</td>
-<td align="left">Evaluating Predictions</td>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+Mon. Mar 14
+</td>
+<td style="text-align:left;">
+Lecture 9
+</td>
+<td style="text-align:left;">
+Evaluating Predictions
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Tues. Mar 15</td>
-<td align="left">Guest Lecture 8</td>
-<td align="left">Applications of Hidden Markov Models, TBD</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Tues. Mar 15
+</td>
+<td style="text-align:left;">
+Guest Lecture 8
+</td>
+<td style="text-align:left;">
+Applications of Hidden Markov Models, TBD
+</td>
 </tr>
-<tr class="even">
-<td align="left">Wed. Mar 16</td>
-<td align="left">Lab 9</td>
-<td align="left">Prediction Metrics</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Mar 16
+</td>
+<td style="text-align:left;">
+Lab 9
+</td>
+<td style="text-align:left;">
+Prediction Metrics
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Mon. Mar 21</td>
-<td align="left">Lecture 10</td>
-<td align="left">Dimension Reduction</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+11
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Mar 21
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 10
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Dimension Reduction
+</td>
 </tr>
-<tr class="even">
-<td align="left">Mon. Mar 22</td>
-<td align="left">Guest Lecture 9</td>
-<td align="left">TBD</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Mar 22
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 9
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+TBD
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Wed. Mar 23</td>
-<td align="left">Lab 10</td>
-<td align="left">Dimension Reduction</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Mar 23
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 10
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Dimension Reduction
+</td>
 </tr>
-<tr class="even">
-<td align="left">Mon. Mar 28</td>
-<td align="left">Lecture 11</td>
-<td align="left">Clustering</td>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+Mon. Mar 28
+</td>
+<td style="text-align:left;">
+Lecture 11
+</td>
+<td style="text-align:left;">
+Clustering
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Tues. Mar 29</td>
-<td align="left">Guest Lecture 10</td>
-<td align="left">TBD</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Tues. Mar 29
+</td>
+<td style="text-align:left;">
+Guest Lecture 10
+</td>
+<td style="text-align:left;">
+TBD
+</td>
 </tr>
-<tr class="even">
-<td align="left">Wed. Mar 30</td>
-<td align="left">Lab 11</td>
-<td align="left">Clustering</td>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Mar 30
+</td>
+<td style="text-align:left;">
+Lab 11
+</td>
+<td style="text-align:left;">
+Clustering
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Mon. April 4</td>
-<td align="left">Lecture 12</td>
-<td align="left">Final Presentations</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+13
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. April 4
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 12
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Final Presentations
+</td>
 </tr>
-<tr class="even">
-<td align="left">Mon. April 4</td>
-<td align="left">Guest Lecture 11</td>
-<td align="left">A Statistical Perspective of Data Science, Radu Craiu (U of T)</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. April 4
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 11
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+A Statistical Perspective of Data Science, Radu Craiu (U of T)
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Wed. April 6</td>
-<td align="left">Lab 12</td>
-<td align="left">Final Presentations</td>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. April 6
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 12
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Final Presentations
+</td>
 </tr>
 </tbody>
 </table>
