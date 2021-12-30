@@ -35,7 +35,7 @@ options(knitr.kable.NA = '')
 my_backgrounds <- colorRampPalette(c("white", "gray"))(5)
 jsc270courseschedule <- read_csv("Winter2022_schedule.csv")
 knitr::kable(jsc270courseschedule[1:37,]) %>%  
-  kable_styling(full_width = F)   %>%   
+  kable_styling(full_width = T, position = "float_left")   %>%   
   row_spec(c(1:2, 6:8, 12:14, 17:19, 23:25, 29:31, 35:37),background = my_backgrounds[2]) 
 ```
 
