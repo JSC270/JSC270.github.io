@@ -1,0 +1,57 @@
+---
+title: "Schedule"
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: yeti
+---
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+knitr::opts_chunk$set(warning = F, message = F)
+```
+<br>
+
+# <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Evaluation Calendar
+<!-- Assignments and reflection quizzes are to be submitted via Quercus.  Perusall papers are completed within the Perusall application.  -->
+
+<!-- The deadline for submission is for assignments, Perusall papers, and reflection quizzes is always 10:59am EST on the due date (1 hour before class starts).   -->
+
+<!-- # ```{r, echo=FALSE} -->
+<!-- # library(tidyverse) -->
+<!-- # library(kableExtra) -->
+<!-- # options(knitr.kable.NA = '') -->
+<!-- #  -->
+<!-- # my_backgrounds <- colorRampPalette(c("white", "gray"))(5) -->
+<!-- # k = 6  -->
+<!-- # row_nums <-c(rbind(1+4*(0:k), 2+4*(0:k))) -->
+<!-- #  -->
+<!-- # jsc270courseassschedule <- read_csv("Winter2022_assignment_schedule.csv") -->
+<!-- # knitr::kable(jsc270courseassschedule[1:26,])  %>%  -->
+<!-- #    kable_styling(full_width = T, position = "float_left")   %>%  -->
+<!-- #   row_spec(row_nums,background = my_backgrounds[2])  -->
+<!-- # ``` -->
+
+<!-- <br> -->
+
+# <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Course Schedule
+
+Here is our tentative schedule, which may change as the course progresses.
+
+```{r, echo=FALSE}
+library(tidyverse)
+library(kableExtra)
+options(knitr.kable.NA = '')
+
+my_backgrounds <- colorRampPalette(c("white", "gray"))(5)
+
+jsc270courseschedule <- read_csv("Winter2022_schedule - Website Schedule.csv")
+knitr::kable(jsc270courseschedule[1:37,]) %>%  
+  kable_styling(full_width = T, position = "float_left")   %>%   
+  row_spec(c(1:2, 6:8, 12:14, 17:19, 23:25, 29:31, 35:37),background = my_backgrounds[2]) 
+```
+
+******
+
+

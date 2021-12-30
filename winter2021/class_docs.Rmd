@@ -1,0 +1,27 @@
+---
+title: "Class Documents"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+    theme: yeti
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
+```
+
+******
+
+Documents from class will be posted on this page.
+
+<br>
+
+## Lecture 1: Introduction - Jan 10
+
+
+
