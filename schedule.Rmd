@@ -22,11 +22,13 @@ library(kableExtra)
 options(knitr.kable.NA = '')
 
 my_backgrounds <- colorRampPalette(c("white", "gray"))(5)
+k <- 9
+row_nums <-sort(c(seq(1,39,6), seq(2,39,6), seq(3,39,6)))
 
 jsc270courseschedule <- read_csv("Winter2022_schedule - Website Schedule.csv")
-knitr::kable(jsc270courseschedule[1:37,]) %>%  
+knitr::kable(jsc270courseschedule[1:39,]) %>%  
   kable_styling(full_width = T, position = "float_left")   %>%   
-  row_spec(c(1:2, 6:8, 12:14, 17:19, 23:25, 29:31, 35:37),background = my_backgrounds[2]) 
+  row_spec(row_nums ,background = my_backgrounds[2]) 
 ```
 
 <br>
