@@ -19,7 +19,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 <br>
 
 ## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
-- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Jesse Gronsbell](https://sites.google.com/view/jgronsbell/home?authuser=0) (j.gronsbell@utoronto.ca).
+- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Jesse Gronsbell](https://sites.google.com/view/jgronsbell/home?authuser=0)
 
 - <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistants: </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Emma Kroell (Stats) </br> 
@@ -42,8 +42,8 @@ knitr::opts_chunk$set(warning = F, message = F)
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
 - Professor: 
-  - In-person from 2-3pm when guest lectures are on Tuesdays (see course schedule [here](schedule.html))
-  - Virtual from 2:30-3:30pm when guest lectures are on Mondays (Zoom link [here](https://q.utoronto.ca/courses/256475))
+  - In-person from 2-3pm when guest lectures are on Tuesdays (see course schedule [here](schedule.html)).
+  - Virtual from 2:30-3:30pm when guest lectures are on Mondays (Zoom link [here](https://q.utoronto.ca/courses/256475)).
 
 - Teaching Assistants: TBD 
 
@@ -66,7 +66,7 @@ will be used to address student questions or for a guest lecture.
 
 ### _Laboratory Sessions_
 - Wednesday, 12-2pm EST 
-- Lab Sessions will also be held via Zoom through January 26. The link is provided on [Quercus](https://q.utoronto.ca/courses/256475).
+- Lab Sessions through January 26 will be held via Zoom . The link will be provided on [Quercus](https://q.utoronto.ca/courses/256475).
 - All code will be posted to the course website once the lab is finished.
 
 <br>
@@ -124,7 +124,7 @@ knitr::kable(jsc270coursegrading[1:8,])
 
 ## <span class="fas fa-globe" aria-hidden="true"></span> Course Websites
 
-- Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/).
+- Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
 
 - Questions and Answers can be posted on the [Piazza discussion board](https://q.utoronto.ca/courses/256475).
 
@@ -158,7 +158,7 @@ Perusall: https://app.perusall.com/home
 
 You will need to sign up for a free account. Once your account is confirmed, you can enroll in this class using the course code: `GRONSBELL-EYZ9A `. 
 
-Throughout the semester, several foundational papers will be posted for students to read and analyze. 
+Throughout the semester several foundational papers will be posted for students to read and analyze. 
  
 <br>
 
@@ -169,7 +169,7 @@ Throughout the semester, several foundational papers will be posted for students
 These are short answer quizzes designed to test your understanding of the material,
 and to make you think critically about concepts learned in lecture.
 
-These quizzes (4) will be held throughout the course and will be completed and submitted in Quercus, under the `Assignments` tab (See this [link](https://q.utoronto.ca/courses/201532/assignments)). These assignments are to be completed individually.
+These quizzes will be held throughout the course and will be completed and submitted in [Quercus]((https://q.utoronto.ca/courses/256475)), under the `Assignments` tab. These assignments are to be completed individually.
 
 <br>
 
@@ -242,7 +242,7 @@ Questions about course material or organization, such as,
 
 should be posted on the Quercus discussion board. 
 
-If your communication is private, such as, "I missed the test because I was ill"", then contact your instructor.
+If your communication is private, such as, "I missed the test because I was ill", then contact your instructor.
 
 Always use the direct messaging functionality on [Quercus](https://q.utoronto.ca/) to ensure that your message reaches out the instructor and/or TA's. Allow up to 72 business hours for a reply. Regular emails will not be answered. 
 
