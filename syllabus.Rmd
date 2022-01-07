@@ -31,7 +31,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-comment" aria-hidden="true"></i> Course Communication
 
-- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the [Quercus discussion board](https://q.utoronto.ca/courses/201532), which students can access by logging in with their UTORID.  One of the TAs will try to answer promptly.  Please see the Course Policies section for more detail. 
+- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the [Piazza discussion board](https://q.utoronto.ca/courses/256475) integrated within Quercus, which students can access by logging in with their UTORID.  One of the TAs will try to answer promptly.  Please see the Course Policies section for more detail. 
 
 - <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don't think your question is appropriate for the class discussion board (e.g.\ it is not related to course content or logistics), please reach out to the teaching team using the direct message functionality on Quercus.  Allow up to 72 business hours for a reply. Regular emails will not be answered. 
 
@@ -43,9 +43,9 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 - Professor: 
   - In-person from 2-3pm when guest lectures are on Tuesdays (see course schedule [here](schedule.html))
-  - Virtual from 2:30-3:30pm when guest lectures are on Mondays (Zoom link [here](https://q.utoronto.ca/courses/201532))
+  - Virtual from 2:30-3:30pm when guest lectures are on Mondays (Zoom link [here](https://q.utoronto.ca/courses/256475))
 
-- Teaching Assistants: TBD (Zoom link [here](https://q.utoronto.ca/courses/201532))
+- Teaching Assistants: TBD 
 
 <br>
 
@@ -57,7 +57,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ### _Lectures_
 - Monday, 12-2pm EST
-- Lectures through January 24 will be held via Zoom. The link is provided on [Quercus](https://q.utoronto.ca/courses/201532).
+- Lectures through January 24 will be held via Zoom. The link is provided on [Quercus](https://q.utoronto.ca/courses/256475).
 - The first hour will be dedicated to teaching new material, while the second hour
 will be used to address student questions or for a guest lecture.
 - All lecture slides will be posted to the course website once the lecture is finished.
@@ -66,7 +66,7 @@ will be used to address student questions or for a guest lecture.
 
 ### _Laboratory Sessions_
 - Wednesday, 12-2pm EST 
-- Lab Sessions will also be held via Zoom through January 26. The link is provided on [Quercus](https://q.utoronto.ca/courses/201532).
+- Lab Sessions will also be held via Zoom through January 26. The link is provided on [Quercus](https://q.utoronto.ca/courses/256475).
 - All code will be posted to the course website once the lab is finished.
 
 <br>
@@ -126,7 +126,7 @@ knitr::kable(jsc270coursegrading[1:8,])
 
 - Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/).
 
-- Questions and Answers can be posted on the [Quercus discussion board](https://q.utoronto.ca/courses/201532).
+- Questions and Answers can be posted on the [Piazza discussion board](https://q.utoronto.ca/courses/256475).
 
 
 <br>
@@ -140,7 +140,7 @@ The course will use [Python 3](https://www.python.org/) for computing.
 
 Assignments and Labs will use [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb), an interactive coding environment that is completely self-contained. 
 
-A similar sytem called Jupyter is available on <https://www.teach.cs.toronto.edu>.
+A similar system called Jupyter is available on <https://www.teach.cs.toronto.edu>.
 
 [Click here for direct access to Jupyter](https://jupyter.teach.cs.toronto.edu/hub/login) on teach.cs.
 
@@ -158,7 +158,7 @@ Perusall: https://app.perusall.com/home
 
 You will need to sign up for a free account. Once your account is confirmed, you can enroll in this class using the course code: `GRONSBELL-EYZ9A `. 
 
-Throughout the semester, several (6) foundational papers will be posted for students to read and analyze. 
+Throughout the semester, several foundational papers will be posted for students to read and analyze. 
  
 <br>
 
