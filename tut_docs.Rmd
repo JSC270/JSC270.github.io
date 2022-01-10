@@ -19,7 +19,7 @@ Documents from tutorials will be posted on this page.
 
 <br>
 
-## Lab 1: Introduction to Colab + Python - Jan 12
+## Lab 1: Introduction to Colab + Python - Jan 19
 
 
 <!-- ## Lab 1 - Jan 13 -->
