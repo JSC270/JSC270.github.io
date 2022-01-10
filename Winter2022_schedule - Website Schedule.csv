@@ -1,38 +1,40 @@
-Week,Date,Session,Description,Assignment,Perusall,Reflection 
-1,Mon. Jan 10,Lecture 1,Course Introduction + What is Data Science?,Assignment 1 Posted,Paper 1 Posted,
-,Wed. Jan 12,Lab 1,Intro to Python + pandas,,,
-2,Mon. Jan 17,Lecture 2,Exploratory Data Analysis (EDA),,,
-,Mon. Jan 17,Guest Lecture 1,"Life as a Data Scientist, Aaron Sonabend (Google)",,,
-,Wed. Jan 19,Lab 2,EDA with NumPy and Matplotlib,,Paper 1 Due,Reflection 1 Posted
-3,Mon. Jan 24,Lecture 3,Statistical Models,Assignment 1 Due,Paper 2 Posted,
-,Tues. Jan 25,Guest Lecture 2,"Life as a Data Scientist, Stefanie Nickels (Verily)",,,
-,Wed. Jan 26,Lab 3,Assignment 1 Presentations ,,,Reflection 1 Due
-4,Mon. Jan 31,Lecture 4,Regression I,Assignment 2 Posted,,
-,Mon. Jan 31,Guest Lecture 3,"Life as a Data Scientist, Kathy Evans (NBA)",,Paper 2 Due,
-,Wed. Feb 2,Lab 4,Git + Regression with Scikit Learn,,Paper 3 Posted,
+Week,Date,Session,Description,Assignment,Perusall,Reflection
+1,Mon. Jan 10,Lecture 1,Course Introduction + What is Data Science?,,,
+,Mon. Jan 10,Guest Lecture 1,xx,,,
+,Wed. Jan 12,Lab 1,xx,,Paper 1 Posted,
+2,Mon. Jan 17,Lecture 2,Exploratory Data Analysis (EDA),Assignment 1 Posted,,
+,Mon. Jan 17,Guest Lecture 2,"Life as a Data Scientist, Aaron Sonabend (Google)",,,
+,Wed. Jan 19,Lab 2,Intro to Python + pandas,,,Reflection 1 Posted
+3,Mon. Jan 24,Lecture 3,Statistical Models,,Paper 1 Due,
+,Tues. Jan 25,Guest Lecture 3,"Life as a Data Scientist, Stefanie Nickels (Verily)",,,
+,Wed. Jan 26,Lab 3,EDA with NumPy and Matplotlib,,,Reflection 1 Due
+4,Mon. Jan 31,Lecture 4,Regression I,"Assignment 1 Due, Assignment 2 Posted",Paper 2 Posted,
+,Mon. Jan 31,Guest Lecture 4,"Life as a Data Scientist, Kathy Evans (NBA)",,,
+,Wed. Feb 2,Lab 4,Git + Regression with Scikit Learn,,,
 5,Mon. Feb 7,Lecture 5,Communication,,,
-,Tues. Feb 8,Guest Lecture 4,"Life as a Grad Student, Yanbo Tang, Robert Zimmerman, Siyue Yang (DoSS)",,,Reflection 2 Posted
-,Wed. Feb 9,Lab 5,Version Control: Git/Github/Bash,,,
-6,Mon. Feb 14,READING WEEK,xx,Assignment 2 Due,,
-,Wed. Feb 16,READING WEEK,xx,,,
-7,Mon. Feb 21,Lecture 6,Simulation,Assignment 3 Posted,Paper 3 Due,
-,Mon. Feb 21,Guest Lecture 5,"Being an Effective Data Scientist, Paul Varghese (Verily)",,Paper 4 Posted,Reflection 2 Due
-,Wed. Feb 23,Lab 6,Simulation with Scikit learn ,,,
+,Tues. Feb 8,Guest Lecture 5,"Life as a Grad Student, Yanbo Tang, Robert Zimmerman, Siyue Yang (DoSS)",,,Reflection 2 Posted
+,Wed. Feb 9,Lab 5,Version Control: Git/Github/Bash,,Paper 2 Due,
+6,Mon. Feb 14,Lecture 6,Simulation,"Assignment 2 Due, Assignment 3 Posted",,
+,Mon. Feb 14,Guest Lecture 6,"Being an Effective Data Scientist, Paul Varghese (Verily)",,,Reflection 2 Due
+,Wed. Feb 16,Lab 6,Simulation with Scikit learn ,,,
+7,Mon. Feb 21,READING WEEK,xx,,Paper 3 Posted,
+,Mon. Feb 21,READING WEEK,xx,,,
+,Wed. Feb 23,READING WEEK,xx,,,
 8,Mon. Feb 28,Lecture 7,Classifiers,,,
-,Tues. Mar 1,Guest Lecture 6,"Genomic Data Science, Lisa Strug (U of T)",,,
-,Wed. Mar 2,Lab 7,Classification with Scikit learn,,Paper 4 Due,
-9,Mon. Mar 7,Lecture 8,Regression II,Assignment 3 Due,Paper 5 Posted,Reflection 3 Posted
-,Mon. Mar 7,Guest Lecture 7,"Natural Language Processing, Alistair Johnson (Sick Kids)",,,
+,Tues. Mar 1,Guest Lecture 7,"Genomic Data Science, Lisa Strug (U of T)",,,
+,Wed. Mar 2,Lab 7,Classification with Scikit learn,,Paper 3 Due,
+9,Mon. Mar 7,Lecture 8,Regression II,"Assignment 3 Due, Assignment 4 Posted",,Reflection 3 Posted
+,Mon. Mar 7,Guest Lecture 8,"Natural Language Processing, Alistair Johnson (Sick Kids)",,,
 ,Wed. Mar 9,Lab 8,Twitter API + Natural Language Processing,,,
-10,Mon. Mar 14,Lecture 9,Evaluating Predictions,Assignment 4 Posted,,Reflection 3 Due
-,Tues. Mar 15,Guest Lecture 8,"Applications of Hidden Markov Models, TBD",,Paper 5 Due,
-,Wed. Mar 16,Lab 9,Prediction Metrics,,Paper 6 Posted,
+10,Mon. Mar 14,Lecture 9,Evaluating Predictions,,Paper 4 Posted,Reflection 3 Due
+,Tues. Mar 15,Guest Lecture 9,"Applications of Hidden Markov Models, TBD",,,
+,Wed. Mar 16,Lab 9,Prediction Metrics,,,
 11,Mon. Mar 21,Lecture 10,Dimension Reduction,,,
-,Mon. Mar 22,Guest Lecture 9,TBD,,,
-,Wed. Mar 23,Lab 10,Dimension Reduction,,,Reflection 4 Posted
-12,Mon. Mar 28,Lecture 11,Clustering,,Paper 6 Due,
-,Tues. Mar 29,Guest Lecture 10,TBD,,,
+,Mon. Mar 22,Guest Lecture 10,TBD,,,
+,Wed. Mar 23,Lab 10,Dimension Reduction,,Paper 4 Due,Reflection 4 Posted
+12,Mon. Mar 28,Lecture 11,Clustering,,,
+,Tues. Mar 29,Guest Lecture 11,TBD,,,
 ,Wed. Mar 30,Lab 11,Clustering,,,Reflection 4 Due
 13,Mon. Apr 4,Lecture 12,Final Presentations,,,
-,Mon. Apr 4,Guest Lecture 11,"A Statistical Perspective of Data Science, Radu Craiu (U of T)",,,
+,Mon. Apr 4,Guest Lecture 12,"A Statistical Perspective of Data Science, Radu Craiu (U of T)",,,
 ,Wed. Apr 6,Lab 12,Final Presentations,Assignment 4 Due,,
