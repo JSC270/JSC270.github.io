@@ -20,7 +20,7 @@ Summer undergraduate data science opportunities:
 * [T-CAIREM AI in Medicine Summer Student Research Program](https://tcairem.utoronto.ca/call-student-researchers)
 
 ## December 27, 2021
-Data science seminars at the University of Toronto
+Data science seminars at the University of Toronto:
 
 * [Data Science Applied Research and Education Seminar](https://canssiontario.utoronto.ca/events/ares/)
 * [Data Science Speaker Series](https://canssiontario.utoronto.ca/events/dsssuoft/)
