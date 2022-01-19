@@ -21,12 +21,10 @@ Documents from tutorials will be posted on this page.
 
 ## Lab 1: Introduction to Colab + Python - Jan 19
 
+* <a href="https://colab.research.google.com/drive/1YQyO7FlVK11sHRpIFzdaty8ZuWqCf2bn?usp=sharing" target="_blank">Code for tutorial 1 (without exercise solutions)</a>
 
-<!-- ## Lab 1 - Jan 13 -->
+* <a href="https://colab.research.google.com/drive/1xQL80y4bgtwOrH6SGXRLe6KBewQm7th6?usp=sharing" target="_blank">Code for tutorial 1 (with exercise solutions)</a>
 
-<!-- Here is the code for Tutorial 1: <a href="https://colab.research.google.com/drive/1pMK5-wncxvKDsuFQCTPJjdixYK5MVjdM?usp=sharing" target="_blank">Colab Notebook</a>. -->
-
-<!-- This is the recording for Tutorial 1: <a href="https://drive.google.com/file/d/1bFC1mGL-qa7K2HAjM_HResnjXZp6u-r3/view" target="_blank">MP4 File</a>. -->
 
 <!-- <br> -->
 
