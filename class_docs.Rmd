@@ -43,8 +43,11 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 
 * <a href="https://drive.google.com/file/d/1i0ychQST504tpkFzGxqF9hU8p_zerU94/view?usp=sharing" target="_blank">Why the (n-1) is the sample variance? (Optional)</a>
 
+## Lecture 3: Modeling - Jan 24
 
+* <a href="https://drive.google.com/file/d/1tBWGAIyENXXhgsf7K2gbok423Es3WQrb/view?usp=sharing" target="_blank">Slides</a>
 
+* <a href="https://utoronto.zoom.us/rec/share/g72AG4H12lpCTcxl0r3SyfRXWfCnA8p_POBSpjXRXCJBZAlJN4a7Lad2p5TrYGNL.rn6iagrOsyPnj8Dp?startTime=1643044384000" target="_blank">Recording</a>
 
 
 
