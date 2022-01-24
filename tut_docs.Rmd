@@ -29,6 +29,13 @@ Documents from tutorials will be posted on this page.
 
 The password for the lab recordings is the same as for the lectures.
 
+
+## Lab 2: EDA - Jan 26
+
+* <a href="https://drive.google.com/file/d/16gacBqZuRAEh7CJvKe8d4RM8CARvzQbe/view?usp=sharing" target="_blank">Cars dataset</a>
+
+
+
 <!-- <br> -->
 
 <!-- ## Lab 2 - Jan 20 -->
