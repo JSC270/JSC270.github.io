@@ -1,5 +1,5 @@
 ---
-title: 'JSC270H1S - Assignment Grading Rubrics'
+title: 'Rubrics'
 output: 
   html_document:
    toc: true
@@ -14,22 +14,24 @@ library(tidyverse)
 
 <br>
 
-<!-- # Data Analysis Rubric -->
+# Assignment Rubric
 
-<!-- ```{r} -->
-<!-- dataanal_rubric <- read_csv("rubrics/dataanal_rubric.csv") -->
-<!-- knitr::kable(dataanal_rubric) -->
-<!-- ``` -->
+```{r}
+dataanal_rubric <- read_csv("rubrics/new_assignments_rubric.csv")
+knitr::kable(dataanal_rubric)
+```
 
-<!-- <br> -->
-<!-- <br> -->
+*These are general categories that will be used for assignments. Some categories may not apply to a given assignment.  This rubric is meant as a guide for you.
 
-<!-- # Programming Rubric -->
+<br>
+<br>
 
-<!-- ```{r} -->
-<!-- coding_rubric <- read_csv("rubrics/coding_rubric.csv") -->
-<!-- knitr::kable(coding_rubric) -->
-<!-- ``` -->
+# Reflection Rubric
+
+```{r}
+coding_rubric <- read_csv("rubrics/new_reflections_rubric.csv")
+knitr::kable(coding_rubric)
+```
 
 <!-- # Presentation Rubric -->
 

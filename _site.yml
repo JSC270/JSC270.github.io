@@ -19,8 +19,8 @@ navbar:
 #        - text: "-----------------"
         - text: Assignments
           href: assign_docs.html
-#        - text: Assignment Grading
-#          href: assignment_rubrics.html
+        - text: Rubrics
+          href: assignment_rubrics.html
 #    - text: Discussion Forum
 #      href: XXXXXTO-UPDATEXXX
 #    - text: Resources
