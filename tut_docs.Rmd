@@ -19,7 +19,7 @@ Documents from tutorials will be posted on this page.
 
 <br>
 
-## Lab 1: Introduction to Colab + Python - Jan 19
+## Lab 1: Introduction - Jan 19
 
 * <a href="https://colab.research.google.com/drive/1YQyO7FlVK11sHRpIFzdaty8ZuWqCf2bn?usp=sharing" target="_blank">Code for lab 1 (without exercise solutions)</a>
 
