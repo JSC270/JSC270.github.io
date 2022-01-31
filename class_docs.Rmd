@@ -55,7 +55,15 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 
 * <a href="https://drive.google.com/file/d/1LDnCWphKwoNgBjWARHzgFTG0xCXuqz4Q/view?usp=sharing" target="_blank">Slides</a>
 
-Recording + colab coming soon!
+* <a href="https://utoronto.zoom.us/rec/share/IGIxuzWmJrwZ9mV1L-6oTMI3dZf99Nw1WM7wq9lyJ4pABDLg04_2HOeIJ61S-lY4.UvNggpJe2fvvHEPo?startTime=1643649071000" target="_blank">Recording</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/IGIxuzWmJrwZ9mV1L-6oTMI3dZf99Nw1WM7wq9lyJ4pABDLg04_2HOeIJ61S-lY4.UvNggpJe2fvvHEPo?startTime=1643652178000" target="_blank">Guest Lecture Recording </a>
+
+* <a href="https://github.com/jlgrons/JSC270_Lecture4/blob/main/Palmer_Penguins_Regression.ipynb">Colab</a> : Click the `Open in Colab` button if you want to run it yourself
+
+
+
+
 
 
 
