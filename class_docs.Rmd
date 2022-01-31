@@ -50,6 +50,11 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 * <a href="https://utoronto.zoom.us/rec/share/g72AG4H12lpCTcxl0r3SyfRXWfCnA8p_POBSpjXRXCJBZAlJN4a7Lad2p5TrYGNL.rn6iagrOsyPnj8Dp?startTime=1643044384000" target="_blank">Recording</a>
 
 * <a href="https://utoronto.zoom.us/rec/share/dGgFUFaMyGj3lGlhRTqcyh8h6CeSk0QLl7yI9K49kedToHKPkrrFNYcXBil6SFs-.ffIkfaA1VgF2kUp-?startTime=1643144474000" target="_blank">Guest Lecture Recording </a> (Password: `r&o9atYm@1`) 
+## Lecture 4: Linear Regression - Jan 31
+
+* <a href="https://drive.google.com/file/d/1LDnCWphKwoNgBjWARHzgFTG0xCXuqz4Q/view?usp=sharing" target="_blank">Slides</a>
+
+Recording + colab coming soon!
 
 
 
