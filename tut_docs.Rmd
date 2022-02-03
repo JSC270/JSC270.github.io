@@ -32,13 +32,27 @@ The password for the lab recordings is the same as for the lectures.
 
 ## Lab 2: EDA - Jan 26
 
+* <a href="https://drive.google.com/file/d/16gacBqZuRAEh7CJvKe8d4RM8CARvzQbe/view?usp=sharing" target="_blank">Cars dataset</a>
+
 * <a href="https://colab.research.google.com/drive/1UxCxsdlqs80gST1AapO2mL2vJZca4rlB?usp=sharing" target="_blank">Code for lab 2 (without exercise solutions)</a>
 
 * <a href="https://colab.research.google.com/drive/1495z7o4psw1Zl22e72pL2Y1Tf9eo638P?usp=sharing" target="_blank">Code for lab 2 (with exercise solutions)</a>
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/BUTX6N48Ipy2_jXZ5ekhloy9Me6IDKE2X-DrIIksJNODJLdgzdznUW96scaUHHzq.iNyxaWus5_EYQnNE" target="_blank">Recording</a> -->
+* <a href="https://utoronto.zoom.us/rec/share/vEgSQ73fbfbDr5H5ELyoXiWW51pdoGtxpEZyI3YV4HFHk8v0EvYidoc1jHQm8ze4.vdVWq23rY5t9VRQ7?startTime=1643216943000" target="_blank">Recording</a> 
 
-* <a href="https://drive.google.com/file/d/16gacBqZuRAEh7CJvKe8d4RM8CARvzQbe/view?usp=sharing" target="_blank">Cars dataset</a>
+
+## Lab 3: GitHub and Linear Regression - Feb 2
+
+* <a href="https://github.com/jlgrons/JSC270_Lab3" target="_blank">GitHub repo for Lab 3</a>
+
+* <a href="https://colab.research.google.com/drive/1PZ9sQyQui8Ngw2uvKyxjzDWdI7ImMc0v?usp=sharing" target="_blank">Code for lab 3 (without exercise solutions)</a>
+
+* <a href="https://drive.google.com/file/d/1LLMOnobfj4hSCD0rSqEKTRV0JZv-4idm/view?usp=sharing" target="_blank">Code for lab 3 (with exercise solutions)</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/1plVkjbJXYHrc90zJG_FMEI0fpEgdGPuu9Ygwaf7SSlU0Wgq8G7BDRInleUZRZNt.JdkHGholgmBAHpf4" target="_blank">Recording</a>
+
+
+
 
 
 
