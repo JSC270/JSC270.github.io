@@ -62,6 +62,9 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 * <a href="https://github.com/jlgrons/JSC270_Lecture4/blob/main/Palmer_Penguins_Regression.ipynb">Colab</a> : Click the `Open in Colab` button if you want to run it yourself
 
 
+## Lecture 5: Communication - Feb 7
+
+* <a href="https://drive.google.com/file/d/1AZuV1fIV-j0LVjWs6TdapQAkgyx09M08/view?usp=sharing" target="_blank">Slides</a>
 
 
 
