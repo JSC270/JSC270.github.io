@@ -22,7 +22,7 @@ Assignments for this course will be programming exercises, and most of the conte
 
 <br>
 
-## Assignment 1 (COVID-19 Data Visualization)
+## Assignment 1 (Data Visualization)
 
 <a href="https://docs.google.com/document/d/16NySq9dhDo5U8p5zqa5O3XOPAJWH3BGjiViBdfKi2p0/edit?usp=sharing">Instructions</a>
 
@@ -34,7 +34,7 @@ Due Jan 31st at 10:59am
 
 Due Feb 2nd at 10:59am
 
-## Homework 2 (Exploring Income)
+## Homework 2 (Linear Regression)
 
 <a href="https://docs.google.com/document/d/1Wrt17KHvpQUTLjbDHUBMBroHm0H95j7mnbXjrU-6j1Q/edit?usp=sharing">Instructions</a>
 
