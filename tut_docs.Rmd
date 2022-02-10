@@ -51,6 +51,12 @@ The password for the lab recordings is the same as for the lectures.
 
 * <a href="https://utoronto.zoom.us/rec/share/1plVkjbJXYHrc90zJG_FMEI0fpEgdGPuu9Ygwaf7SSlU0Wgq8G7BDRInleUZRZNt.JdkHGholgmBAHpf4" target="_blank">Recording</a>
 
+## Lab 4: Introduction to Git Bash - Feb 9
+
+* <a href="https://docs.google.com/presentation/d/1FUkpVRdCFq4gTeT21yI8dRwzyTwqmQf-/edit?usp=sharing&ouid=109675889642089730351&rtpof=true&sd=true" target="_blank">Slides</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/tMWBVf4keIiXUG5FqLmaRpUI0Mw_-pk72YCirmj-K85e4yietf1gjsUSd5G2HvWp.Zjop6azsV-WESp4f" target="_blank">Recording</a>
+
 
 
 
