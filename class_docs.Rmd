@@ -68,7 +68,6 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 
 * <a href="https://utoronto.zoom.us/rec/share/BGGY4deCcK_h3C10xyzOsxQ1Fhw5lDpGbxZZEJJCJZ0AJVF_HZESp3rWtoEGKYZ5.GzUxbKC0aU4RfRWY" target="_blank">Recording</a>
 
-
-
+* <a href="https://utoronto.zoom.us/rec/share/r9TFlXGbeKM5q4vHuG5jiu-HAU75RpKuV0ktuAsfEkT4L6a1XFfSDvTR-oKAXzEs.EtcE1PINCx6PD_0U?startTime=1644353990000" target="_blank">Guest Lecture Recording</a> (Password: `4T1nKw#3KM`)
 
 
