@@ -14,10 +14,10 @@ Week,Date,Session,Description,Assignment,Perusall,Reflection
 5,Mon. Feb 7,Lecture 5,Communication,,,
 ,Tues. Feb 8,Guest Lecture 5,"Life as a Grad Student, Yanbo Tang, Robert Zimmerman, Siyue Yang (DoSS)",,,
 ,Wed. Feb 9,Lab 5,Version Control: Git/Github/Bash,,Paper 2 Due,Reflection 2 Posted
-6,Mon. Feb 14,Lecture 6,Simulation,"Assignment 2 Due, Assignment 3 Posted",,
+6,Mon. Feb 14,Lecture 6,Simulation,"Assignment 2 Due",,
 ,Mon. Feb 14,Guest Lecture 6,"Being an Effective Data Scientist, Paul Varghese (Verily)",,,
-,Wed. Feb 16,Lab 6,Simulation with Scikit learn ,,,Reflection 2 Due
-7,Mon. Feb 21,READING WEEK,xx,,Paper 3 Posted,
+,Wed. Feb 16,Lab 6,Simulation with Scikit learn ,Assignment 3 Posted,Paper 3 Posted,Reflection 2 Due
+7,Mon. Feb 21,READING WEEK,xx,,,
 ,Mon. Feb 21,READING WEEK,xx,,,
 ,Wed. Feb 23,READING WEEK,xx,,,
 8,Mon. Feb 28,Lecture 7,Classifiers,,,
