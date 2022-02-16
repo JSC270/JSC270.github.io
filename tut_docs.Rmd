@@ -58,7 +58,13 @@ The password for the lab recordings is the same as for the lectures.
 * <a href="https://utoronto.zoom.us/rec/share/tMWBVf4keIiXUG5FqLmaRpUI0Mw_-pk72YCirmj-K85e4yietf1gjsUSd5G2HvWp.Zjop6azsV-WESp4f" target="_blank">Recording</a>
 
 
+## Lab 5: Simulation - Feb 16
 
+* <a href="https://colab.research.google.com/drive/1BgGut3hG3K-fP021PXywhPrXBnp6ysze?usp=sharing" target="_blank">Code for lab 5 (without exercise solutions)</a>
+
+* <a href="https://colab.research.google.com/drive/1si4FZIlYnztR7C-q7XuqzOIg_pSWH_D8?usp=sharing" target="_blank">Code for lab 5 (with exercise solutions)</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/k2XiEhiBV1KQ18GxC8uGL_HnySbPtEpBPxsD_wv6mCXh6Mws0Mk7o07KOlk9z7l2.Vcd8GlnaR37RrQxB" target="_blank">Recording</a>
 
 
 
