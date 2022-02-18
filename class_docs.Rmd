@@ -79,6 +79,9 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 
 * <a href="https://utoronto.zoom.us/rec/share/8YkjMDw2efKlE44j0Bxj8vpC1zSAMHTjUf7Rm1r7W5wMCXTb32zALfMaX3FVQSmk.Hh3ayie1nTcPMz0i?startTime=1644861769000" target="_blank">Guest Lecture Recording</a>
 
-* Colab coming soon
+* <a href="https://github.com/jlgrons/JSC270_Lecture6">Colab</a> 
+
+
+
 
 
