@@ -81,7 +81,9 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 
 * <a href="https://github.com/jlgrons/JSC270_Lecture6">Colab</a> 
 
+## Lecture 7: Classification - Feb 28
 
 
+* <a href="https://drive.google.com/file/d/13nvf1QVEtSyrrB_19O1lsNEaGI0FxkOy/view?usp=sharing">Slides</a>
 
 
