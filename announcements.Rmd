@@ -13,6 +13,11 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 ```
 
 ******
+## March 1, 2022
+
+* [CARTE Seminar on Mar 10: "Oil and Water or Vinaigrette? The Forklift Industry and Data Science"](https://carte.utoronto.ca/event/oil-and-water-or-vinaigrette-the-forklift-industry-and-data-science/)
+* [CARTE Seminar on Mar 25: "Lumos ML: Unilever’s AI-driven Decision Support Systems"](https://carte.utoronto.ca/event/lumos-ml-unilevers-ai-driven-decision-support-systems/)
+
 ## January 20, 2022
 * [MScAC Seminar on Jan 27: ``Hi, How Can I Help You?: Intelligent Robots as a Part of our Everyday Lives
 ''](ashttps://www.eventbrite.ca/e/hi-how-can-i-help-you-intelligent-robots-as-a-part-of-our-everyday-lives-tickets-243954413217)
