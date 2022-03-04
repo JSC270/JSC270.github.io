@@ -67,7 +67,7 @@ The password for the lab recordings is the same as for the lectures.
 * <a href="https://utoronto.zoom.us/rec/share/k2XiEhiBV1KQ18GxC8uGL_HnySbPtEpBPxsD_wv6mCXh6Mws0Mk7o07KOlk9z7l2.Vcd8GlnaR37RrQxB" target="_blank">Recording</a>
 
 
-## Lab 6: Introduction to Numpy and Scikit-Learn - March 2
+## Lab 6: Numpy and Scikit-Learn - March 2
 
 * <a href="https://github.com/jlgrons/JSC270_Lab6" target="_blank">GitHub repo for Lab 6</a>
 
