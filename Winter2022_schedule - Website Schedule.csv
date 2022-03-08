@@ -23,12 +23,12 @@ Week,Date,Session,Description,Assignment,Perusall,Reflection
 8,Mon. Feb 28,Lecture 7,Classifiers,,,
 ,Tues. Mar 1,Guest Lecture 7,"Genomic Data Science, Lisa Strug (U of T)",,,
 ,Wed. Mar 2,Lab 7,Classification with Scikit learn,,Paper 3 Due,
-9,Mon. Mar 7,Lecture 8,Regression II,"Assignment 3 Due, Assignment 4 Posted",,Reflection 3 Posted
+9,Mon. Mar 7,Lecture 8,Regression II,"Assignment 3 Due, Assignment 4 Posted",,
 ,Mon. Mar 7,Guest Lecture 8,"Natural Language Processing, Alistair Johnson (Sick Kids)",,,
-,Wed. Mar 9,Lab 8,Twitter API + Natural Language Processing,,,
-10,Mon. Mar 14,Lecture 9,Evaluating Predictions,,Paper 4 Posted,Reflection 3 Due
+,Wed. Mar 9,Lab 8,Twitter API + Natural Language Processing,,Reflection 3 Posted
+10,Mon. Mar 14,Lecture 9,Evaluating Predictions,,Paper 4 Posted,
 ,Tues. Mar 15,Guest Lecture 9,"Life as Data Scientist, Ellen Stephenson (U of T)",,,
-,Wed. Mar 16,Lab 9,Prediction Metrics,,,
+,Wed. Mar 16,Lab 9,Prediction Metrics,,,Reflection 3 Due
 11,Mon. Mar 21,Lecture 10,Dimension Reduction,,,
 ,Mon. Mar 21,Guest Lecture 10,"Life as Data Scientist, Amy Braverman (NASA/JPL)",,,
 ,Wed. Mar 23,Lab 10,Dimension Reduction,,Paper 4 Due,Reflection 4 Posted
