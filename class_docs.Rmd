@@ -99,6 +99,9 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 
 * <a href="https://github.com/alistairewj/lecture-intro-to-nlp" target="_blank">Guest Lecture Slides + Repo </a> 
 
+* <a href="https://utoronto.zoom.us/rec/share/ng8f0DFFzVt9wAr6qYQ4raEM5QdwBfczGR6nx0-_-AExhKvmrbzCuEg6E-n-KLhF.0118VJZT5B-SsSbK?startTime=1646676686000">Guest Lecture Recording </a> 
+
+
 
 
 
