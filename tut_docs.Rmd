@@ -75,6 +75,14 @@ The password for the lab recordings is the same as for the lectures.
 
 * <a href="https://colab.research.google.com/drive/1GeY3AXTtfbr20bMDVFDAFj9uIPWZVSBd?usp=sharing" target="_blank">Code with solutions (Scikit-Learn)</a>
 
+## Lab 7: Numpy and Scikit-Learn - March 10
+
+* <a href="https://github.com/jlgrons/JSC270_Lab7" target="_blank">GitHub repo for Lab 6</a>
+
+* <a href="https://colab.research.google.com/drive/1TJYSFV9jAeXYKrDWukiLoJqmbX3VaLtb?usp=sharing" target="_blank">Code with solutions for NLP intro</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/Oi1R1sqzAKIaoQv_5_ClHboOYNUeJ2Zln8rUPxIyGVvPncho-mq2T_s0D4BjKYJN.-DrZk6O3agHpzUOl?startTime=1646845660000" target="_blank">Recording</a>
+
 
 <!-- <br> -->
 
