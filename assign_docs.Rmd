@@ -57,7 +57,11 @@ Due Mar 11th at 10:59am
 Add your group members to this <a href="https://docs.google.com/spreadsheets/d/1oWl-F-bzaX_JBENypwXafLoSKBcJa-rY5pDUygLzoqI/edit?usp=sharing">sheet</a>
 by 10:59am on Mar 14th. Worth 5 pts.
 
-The full assignment will be posted the week of the 14th.
+<a href="https://docs.google.com/document/d/1yYb3ocfX3GfpDC_V0S6ha-rDtRa8674axuLJ-I5dN6M/edit?usp=sharing">Instructions</a>
+
+Here are the Part I datasets:
+<a href="https://drive.google.com/file/d/1im09d8Opyat9wAmLu35sxIEhAlpiGQSY/view?usp=sharing" target="_blank">training</a> |
+<a href="https://drive.google.com/file/d/10WF_uYMRvsDP_P7WZWC7ZQ2HTMu7LcR4/view?usp=sharing" target="_blank">testing</a>
 
 ## Reflection 3 
 
