@@ -109,5 +109,10 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 * <a href="https://utoronto.zoom.us/rec/share/3h5ircwZcEskGDH5ciPcl38o_vx89gi16ALj8sowMbtgRlWtIt9_aa6eviY5s1-W.p3I5yEKgecMLRfmv?startTime=1647375092000" target="_blank">Guest Lecture Recording</a> (Password: `^P+.1dVci=`)
 
 
+## Lecture 10: Clustering - Mar 21
+
+* <a href="https://drive.google.com/file/d/1FtaFHWxXtwj5nvrkWXj7cKcLKcW5N40S/view?usp=sharing">Slides</a>
+
+
 
 
