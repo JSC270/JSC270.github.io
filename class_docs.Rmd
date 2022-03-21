@@ -91,7 +91,7 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 * <a href=https://drive.google.com/file/d/1SMIu_gNdB5y3i1ST5CBu82iQuCrkY7P9/view?usp=sharing" target="_blank">Guest Lecture Slides</a> 
 
 
-## Lecture 8: More Classification - March 7
+## Lecture 8: More Classification - Mar 7
 
 * <a href="https://drive.google.com/file/d/1Nm1NPDLwTpFVsGAUoobWxGDbyalKuHOP/view?usp=sharing">Slides</a>
 
@@ -102,7 +102,11 @@ The password that will be used for all recordings is on the [Quercus](https://q.
 * <a href="https://utoronto.zoom.us/rec/share/ng8f0DFFzVt9wAr6qYQ4raEM5QdwBfczGR6nx0-_-AExhKvmrbzCuEg6E-n-KLhF.0118VJZT5B-SsSbK?startTime=1646676686000">Guest Lecture Recording </a> 
 
 
+## Lecture 9: Predictive Performance - Mar 14
 
+* <a href="https://drive.google.com/file/d/1tMRAFP3tOr5VVKpxD0_VimjH9UMsfy4t/view?usp=sharing">Slides</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/3h5ircwZcEskGDH5ciPcl38o_vx89gi16ALj8sowMbtgRlWtIt9_aa6eviY5s1-W.p3I5yEKgecMLRfmv?startTime=1647375092000" target="_blank">Guest Lecture Recording</a> (Password: `^P+.1dVci=`)
 
 
 

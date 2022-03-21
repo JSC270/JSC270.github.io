@@ -32,16 +32,16 @@ Week,Date,Session,Description,Assignment,Perusall,Reflection
 11,Mon. Mar 21,Lecture 10,Data Science Workflow,,Paper 4 Posted,
 9,Mon. Mar 7,Lecture 8,Regression II,"Assignment 3 Due, Assignment 4 Posted",,
 ,Mon. Mar 7,Guest Lecture 8,"Natural Language Processing, Alistair Johnson (Sick Kids)",,,
-,Wed. Mar 9,Lab 8,Twitter API + Natural Language Processing,,Reflection 3 Posted
-10,Mon. Mar 14,Lecture 9,Evaluating Predictions,,Paper 4 Posted,
+,Wed. Mar 9,Lab 8,Twitter API + Natural Language Processing,,,Reflection 3 Posted
+10,Mon. Mar 14,Lecture 9,Evaluating Predictions,,,
 ,Tues. Mar 15,Guest Lecture 9,"Life as Data Scientist, Ellen Stephenson (U of T)",,,
 ,Wed. Mar 16,Lab 9,Prediction Metrics,,,Reflection 3 Due
-11,Mon. Mar 21,Lecture 10,Dimension Reduction,,,
+11,Mon. Mar 21,Lecture 10,Dimension Reduction,,Paper 4 Posted,
 ,Mon. Mar 21,Guest Lecture 10,"Life as Data Scientist, Amy Braverman (NASA/JPL)",,,
-,Wed. Mar 23,Lab 10,Dimension Reduction,,Paper 4 Due,Reflection 4 Posted
-12,Mon. Mar 28,Lecture 11,Clustering,,,
+,Wed. Mar 23,Lab 10,Dimension Reduction,,,Reflection 4 Posted
+12,Mon. Mar 28,Lecture 11,Clustering,,Paper 4 Due,
 ,Tues. Mar 29,Guest Lecture 11,"Applications of Hidden Markov Models, Sofia Ruiz (National University of Rosario) and Yunyi Shen (U Wisconsin-Madison)",,,
 ,Wed. Mar 30,Lab 11,Clustering,,,Reflection 4 Due
 13,Mon. Apr 4,Lecture 12,Final Presentations,,,
 ,Mon. Apr 4,Guest Lecture 12,"A Statistical Perspective of Data Science, Radu Craiu (U of T)",,,
-,Wed. Apr 6,Lab 12,Final Presentations,Assignment 4 Due,,
+,Wed. Apr 6,Lab 12,Final Presentations,Assignment 4 Due (4/8),,
