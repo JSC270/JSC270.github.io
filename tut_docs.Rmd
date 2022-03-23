@@ -75,13 +75,33 @@ The password for the lab recordings is the same as for the lectures.
 
 * <a href="https://colab.research.google.com/drive/1GeY3AXTtfbr20bMDVFDAFj9uIPWZVSBd?usp=sharing" target="_blank">Code with solutions (Scikit-Learn)</a>
 
-## Lab 7: Numpy and Scikit-Learn - March 9
+## Lab 7: NLP intro and Twitter API - March 9
 
 * <a href="https://github.com/jlgrons/JSC270_Lab7" target="_blank">GitHub repo for Lab 7</a>
 
 * <a href="https://colab.research.google.com/drive/1TJYSFV9jAeXYKrDWukiLoJqmbX3VaLtb?usp=sharing" target="_blank">Code with solutions for NLP intro</a>
 
 * <a href="https://utoronto.zoom.us/rec/share/Oi1R1sqzAKIaoQv_5_ClHboOYNUeJ2Zln8rUPxIyGVvPncho-mq2T_s0D4BjKYJN.-DrZk6O3agHpzUOl?startTime=1646845660000" target="_blank">Recording</a>
+
+
+## Lab 8: Evaluating Classification Performance - March 16
+
+* <a href="https://github.com/jlgrons/JSC270_Lab8" target="_blank">GitHub repo for Lab 8</a>
+
+* <a href="https://colab.research.google.com/drive/1gJlrWvp8uxlykIki9oNz1IAd7KT44XGW?usp=sharing">Code for lab 8</a>
+
+* <a href="https://colab.research.google.com/drive/1jYd8MU3fPYCKuzTQSmFLkXkJcMXAXgBk?usp=sharing">Code for lab 8 with solutions</a>
+
+
+## Lab 9: Clustering - March 23
+
+* <a href="https://docs.google.com/presentation/d/18wECwhN9EHl1AIV23-xtKWLOcbONVQxWXnlgq0vX8PE/edit?usp=sharing" target="_blank">Slides (k-means clustering)</a>
+
+* <a href="https://github.com/jlgrons/JSC270_Lab9" target="_blank">GitHub repo for Lab 9</a>
+
+* <a href="https://colab.research.google.com/drive/14pwIf4_WwLEwgySSwrXqDuhG7RcaoNfD?usp=sharing">Code for lab 9</a>
+
+* <a href="https://colab.research.google.com/drive/1RfaIzI7-otBvA1UPe77huQPyWA1iIAoO?usp=sharing" target="_blank">Code for lab 9 with solutions</a>
 
 
 <!-- <br> -->
