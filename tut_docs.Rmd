@@ -84,7 +84,7 @@ The password for the lab recordings is the same as for the lectures.
 * <a href="https://utoronto.zoom.us/rec/share/Oi1R1sqzAKIaoQv_5_ClHboOYNUeJ2Zln8rUPxIyGVvPncho-mq2T_s0D4BjKYJN.-DrZk6O3agHpzUOl?startTime=1646845660000" target="_blank">Recording</a>
 
 
-## Lab 8: Evaluating Classification Performance - March 16
+## Lab 8: Predictive Performance - March 16
 
 * <a href="https://github.com/jlgrons/JSC270_Lab8" target="_blank">GitHub repo for Lab 8</a>
 
