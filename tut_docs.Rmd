@@ -92,6 +92,8 @@ The password for the lab recordings is the same as for the lectures.
 
 * <a href="https://colab.research.google.com/drive/1jYd8MU3fPYCKuzTQSmFLkXkJcMXAXgBk?usp=sharing">Code for lab 8 with solutions</a>
 
+* <a href="https://utoronto.zoom.us/rec/share/Gc7BazhTd7sxzmOW98jm19j4LWMxD5RAgWXofgmG71AEzhGjVrBt6xP-7SW6cE_y.1Sp2-N10cXFuCRNw?startTime=1647447621000">Recording</a>
+
 
 ## Lab 9: Clustering - March 23
 
