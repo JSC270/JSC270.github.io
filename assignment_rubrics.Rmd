@@ -12,26 +12,26 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F)
 library(tidyverse)
 ```
 
-<br>
+<!-- <br> -->
 
-# Assignment Rubric
+<!-- # Assignment Rubric -->
 
-```{r}
-dataanal_rubric <- read_csv("rubrics/new_assignments_rubric.csv")
-knitr::kable(dataanal_rubric)
-```
+<!-- ```{r} -->
+<!-- dataanal_rubric <- read_csv("rubrics/new_assignments_rubric.csv") -->
+<!-- knitr::kable(dataanal_rubric) -->
+<!-- ``` -->
 
-*These are general categories that will be used for marking assignments. Some categories may not apply to a given assignment.  This rubric is only meant as a guide for you.
+<!-- *These are general categories that will be used for marking assignments. Some categories may not apply to a given assignment.  This rubric is only meant as a guide for you. -->
 
-<br>
-<br>
+<!-- <br> -->
+<!-- <br> -->
 
-# Reflection Rubric
+<!-- # Reflection Rubric -->
 
-```{r}
-coding_rubric <- read_csv("rubrics/new_reflections_rubric.csv")
-knitr::kable(coding_rubric)
-```
+<!-- ```{r} -->
+<!-- coding_rubric <- read_csv("rubrics/new_reflections_rubric.csv") -->
+<!-- knitr::kable(coding_rubric) -->
+<!-- ``` -->
 
 <!-- # Presentation Rubric -->
 
