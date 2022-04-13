@@ -15,95 +15,95 @@ library(tidyverse)
 
 ******
 
-Documents from tutorials will be posted on this page.
+<!-- Documents from tutorials will be posted on this page. -->
 
-<br>
+<!-- <br> -->
 
-## Lab 1: Introduction - Jan 19
+<!-- ## Lab 1: Introduction - Jan 19 -->
 
-* <a href="https://colab.research.google.com/drive/1YQyO7FlVK11sHRpIFzdaty8ZuWqCf2bn?usp=sharing" target="_blank">Code for lab 1 (without exercise solutions)</a>
+<!-- * <a href="https://colab.research.google.com/drive/1YQyO7FlVK11sHRpIFzdaty8ZuWqCf2bn?usp=sharing" target="_blank">Code for lab 1 (without exercise solutions)</a> -->
 
-* <a href="https://colab.research.google.com/drive/1xQL80y4bgtwOrH6SGXRLe6KBewQm7th6?usp=sharing" target="_blank">Code for lab 1 (with exercise solutions)</a>
+<!-- * <a href="https://colab.research.google.com/drive/1xQL80y4bgtwOrH6SGXRLe6KBewQm7th6?usp=sharing" target="_blank">Code for lab 1 (with exercise solutions)</a> -->
 
-* <a href="https://utoronto.zoom.us/rec/share/BUTX6N48Ipy2_jXZ5ekhloy9Me6IDKE2X-DrIIksJNODJLdgzdznUW96scaUHHzq.iNyxaWus5_EYQnNE" target="_blank">Recording</a>
+<!-- * <a href="https://utoronto.zoom.us/rec/share/BUTX6N48Ipy2_jXZ5ekhloy9Me6IDKE2X-DrIIksJNODJLdgzdznUW96scaUHHzq.iNyxaWus5_EYQnNE" target="_blank">Recording</a> -->
 
-The password for the lab recordings is the same as for the lectures.
-
-
-## Lab 2: EDA - Jan 26
-
-* <a href="https://drive.google.com/file/d/16gacBqZuRAEh7CJvKe8d4RM8CARvzQbe/view?usp=sharing" target="_blank">Cars dataset</a>
-
-* <a href="https://colab.research.google.com/drive/1UxCxsdlqs80gST1AapO2mL2vJZca4rlB?usp=sharing" target="_blank">Code for lab 2 (without exercise solutions)</a>
-
-* <a href="https://colab.research.google.com/drive/1495z7o4psw1Zl22e72pL2Y1Tf9eo638P?usp=sharing" target="_blank">Code for lab 2 (with exercise solutions)</a>
-
-* <a href="https://utoronto.zoom.us/rec/share/vEgSQ73fbfbDr5H5ELyoXiWW51pdoGtxpEZyI3YV4HFHk8v0EvYidoc1jHQm8ze4.vdVWq23rY5t9VRQ7?startTime=1643216943000" target="_blank">Recording</a> 
+<!-- The password for the lab recordings is the same as for the lectures. -->
 
 
-## Lab 3: GitHub and Linear Regression - Feb 2
+<!-- ## Lab 2: EDA - Jan 26 -->
 
-* <a href="https://github.com/jlgrons/JSC270_Lab3" target="_blank">GitHub repo for Lab 3</a>
+<!-- * <a href="https://drive.google.com/file/d/16gacBqZuRAEh7CJvKe8d4RM8CARvzQbe/view?usp=sharing" target="_blank">Cars dataset</a> -->
 
-* <a href="https://colab.research.google.com/drive/1PZ9sQyQui8Ngw2uvKyxjzDWdI7ImMc0v?usp=sharing" target="_blank">Code for lab 3 (without exercise solutions)</a>
+<!-- * <a href="https://colab.research.google.com/drive/1UxCxsdlqs80gST1AapO2mL2vJZca4rlB?usp=sharing" target="_blank">Code for lab 2 (without exercise solutions)</a> -->
 
-* <a href="https://drive.google.com/file/d/1LLMOnobfj4hSCD0rSqEKTRV0JZv-4idm/view?usp=sharing" target="_blank">Code for lab 3 (with exercise solutions)</a>
+<!-- * <a href="https://colab.research.google.com/drive/1495z7o4psw1Zl22e72pL2Y1Tf9eo638P?usp=sharing" target="_blank">Code for lab 2 (with exercise solutions)</a> -->
 
-* <a href="https://utoronto.zoom.us/rec/share/1plVkjbJXYHrc90zJG_FMEI0fpEgdGPuu9Ygwaf7SSlU0Wgq8G7BDRInleUZRZNt.JdkHGholgmBAHpf4" target="_blank">Recording</a>
-
-## Lab 4: Introduction to Git Bash - Feb 9
-
-* <a href="https://docs.google.com/presentation/d/1FUkpVRdCFq4gTeT21yI8dRwzyTwqmQf-/edit?usp=sharing&ouid=109675889642089730351&rtpof=true&sd=true" target="_blank">Slides</a>
-
-* <a href="https://utoronto.zoom.us/rec/share/tMWBVf4keIiXUG5FqLmaRpUI0Mw_-pk72YCirmj-K85e4yietf1gjsUSd5G2HvWp.Zjop6azsV-WESp4f" target="_blank">Recording</a>
+<!-- * <a href="https://utoronto.zoom.us/rec/share/vEgSQ73fbfbDr5H5ELyoXiWW51pdoGtxpEZyI3YV4HFHk8v0EvYidoc1jHQm8ze4.vdVWq23rY5t9VRQ7?startTime=1643216943000" target="_blank">Recording</a>  -->
 
 
-## Lab 5: Simulation - Feb 16
+<!-- ## Lab 3: GitHub and Linear Regression - Feb 2 -->
 
-* <a href="https://colab.research.google.com/drive/1BgGut3hG3K-fP021PXywhPrXBnp6ysze?usp=sharing" target="_blank">Code for lab 5 (without exercise solutions)</a>
+<!-- * <a href="https://github.com/jlgrons/JSC270_Lab3" target="_blank">GitHub repo for Lab 3</a> -->
 
-* <a href="https://colab.research.google.com/drive/1si4FZIlYnztR7C-q7XuqzOIg_pSWH_D8?usp=sharing" target="_blank">Code for lab 5 (with exercise solutions)</a>
+<!-- * <a href="https://colab.research.google.com/drive/1PZ9sQyQui8Ngw2uvKyxjzDWdI7ImMc0v?usp=sharing" target="_blank">Code for lab 3 (without exercise solutions)</a> -->
 
-* <a href="https://utoronto.zoom.us/rec/share/k2XiEhiBV1KQ18GxC8uGL_HnySbPtEpBPxsD_wv6mCXh6Mws0Mk7o07KOlk9z7l2.Vcd8GlnaR37RrQxB" target="_blank">Recording</a>
+<!-- * <a href="https://drive.google.com/file/d/1LLMOnobfj4hSCD0rSqEKTRV0JZv-4idm/view?usp=sharing" target="_blank">Code for lab 3 (with exercise solutions)</a> -->
 
+<!-- * <a href="https://utoronto.zoom.us/rec/share/1plVkjbJXYHrc90zJG_FMEI0fpEgdGPuu9Ygwaf7SSlU0Wgq8G7BDRInleUZRZNt.JdkHGholgmBAHpf4" target="_blank">Recording</a> -->
 
-## Lab 6: Numpy and Scikit-Learn - March 2
+<!-- ## Lab 4: Introduction to Git Bash - Feb 9 -->
 
-* <a href="https://github.com/jlgrons/JSC270_Lab6" target="_blank">GitHub repo for Lab 6</a>
+<!-- * <a href="https://docs.google.com/presentation/d/1FUkpVRdCFq4gTeT21yI8dRwzyTwqmQf-/edit?usp=sharing&ouid=109675889642089730351&rtpof=true&sd=true" target="_blank">Slides</a> -->
 
-* <a href="https://colab.research.google.com/drive/1bNY0mEUwCRXQtzGHGEldtS1vnbRnC-f-?usp=sharing" target="_blank">Code with solutions (Numpy)</a>
-
-* <a href="https://colab.research.google.com/drive/1GeY3AXTtfbr20bMDVFDAFj9uIPWZVSBd?usp=sharing" target="_blank">Code with solutions (Scikit-Learn)</a>
-
-## Lab 7: NLP intro and Twitter API - March 9
-
-* <a href="https://github.com/jlgrons/JSC270_Lab7" target="_blank">GitHub repo for Lab 7</a>
-
-* <a href="https://colab.research.google.com/drive/1TJYSFV9jAeXYKrDWukiLoJqmbX3VaLtb?usp=sharing" target="_blank">Code with solutions for NLP intro</a>
-
-* <a href="https://utoronto.zoom.us/rec/share/Oi1R1sqzAKIaoQv_5_ClHboOYNUeJ2Zln8rUPxIyGVvPncho-mq2T_s0D4BjKYJN.-DrZk6O3agHpzUOl?startTime=1646845660000" target="_blank">Recording</a>
+<!-- * <a href="https://utoronto.zoom.us/rec/share/tMWBVf4keIiXUG5FqLmaRpUI0Mw_-pk72YCirmj-K85e4yietf1gjsUSd5G2HvWp.Zjop6azsV-WESp4f" target="_blank">Recording</a> -->
 
 
-## Lab 8: Predictive Performance - March 16
+<!-- ## Lab 5: Simulation - Feb 16 -->
 
-* <a href="https://github.com/jlgrons/JSC270_Lab8" target="_blank">GitHub repo for Lab 8</a>
+<!-- * <a href="https://colab.research.google.com/drive/1BgGut3hG3K-fP021PXywhPrXBnp6ysze?usp=sharing" target="_blank">Code for lab 5 (without exercise solutions)</a> -->
 
-* <a href="https://colab.research.google.com/drive/1gJlrWvp8uxlykIki9oNz1IAd7KT44XGW?usp=sharing">Code for lab 8</a>
+<!-- * <a href="https://colab.research.google.com/drive/1si4FZIlYnztR7C-q7XuqzOIg_pSWH_D8?usp=sharing" target="_blank">Code for lab 5 (with exercise solutions)</a> -->
 
-* <a href="https://colab.research.google.com/drive/1jYd8MU3fPYCKuzTQSmFLkXkJcMXAXgBk?usp=sharing">Code for lab 8 with solutions</a>
-
-* <a href="https://utoronto.zoom.us/rec/share/Gc7BazhTd7sxzmOW98jm19j4LWMxD5RAgWXofgmG71AEzhGjVrBt6xP-7SW6cE_y.1Sp2-N10cXFuCRNw?startTime=1647447621000">Recording</a>
+<!-- * <a href="https://utoronto.zoom.us/rec/share/k2XiEhiBV1KQ18GxC8uGL_HnySbPtEpBPxsD_wv6mCXh6Mws0Mk7o07KOlk9z7l2.Vcd8GlnaR37RrQxB" target="_blank">Recording</a> -->
 
 
-## Lab 9: Clustering - March 23
+<!-- ## Lab 6: Numpy and Scikit-Learn - March 2 -->
 
-* <a href="https://docs.google.com/presentation/d/18wECwhN9EHl1AIV23-xtKWLOcbONVQxWXnlgq0vX8PE/edit?usp=sharing" target="_blank">Slides (k-means clustering)</a>
+<!-- * <a href="https://github.com/jlgrons/JSC270_Lab6" target="_blank">GitHub repo for Lab 6</a> -->
 
-* <a href="https://github.com/jlgrons/JSC270_Lab9" target="_blank">GitHub repo for Lab 9</a>
+<!-- * <a href="https://colab.research.google.com/drive/1bNY0mEUwCRXQtzGHGEldtS1vnbRnC-f-?usp=sharing" target="_blank">Code with solutions (Numpy)</a> -->
 
-* <a href="https://colab.research.google.com/drive/14pwIf4_WwLEwgySSwrXqDuhG7RcaoNfD?usp=sharing">Code for lab 9</a>
+<!-- * <a href="https://colab.research.google.com/drive/1GeY3AXTtfbr20bMDVFDAFj9uIPWZVSBd?usp=sharing" target="_blank">Code with solutions (Scikit-Learn)</a> -->
 
-* <a href="https://colab.research.google.com/drive/1RfaIzI7-otBvA1UPe77huQPyWA1iIAoO?usp=sharing" target="_blank">Code for lab 9 with solutions</a>
+<!-- ## Lab 7: NLP intro and Twitter API - March 9 -->
+
+<!-- * <a href="https://github.com/jlgrons/JSC270_Lab7" target="_blank">GitHub repo for Lab 7</a> -->
+
+<!-- * <a href="https://colab.research.google.com/drive/1TJYSFV9jAeXYKrDWukiLoJqmbX3VaLtb?usp=sharing" target="_blank">Code with solutions for NLP intro</a> -->
+
+<!-- * <a href="https://utoronto.zoom.us/rec/share/Oi1R1sqzAKIaoQv_5_ClHboOYNUeJ2Zln8rUPxIyGVvPncho-mq2T_s0D4BjKYJN.-DrZk6O3agHpzUOl?startTime=1646845660000" target="_blank">Recording</a> -->
+
+
+<!-- ## Lab 8: Predictive Performance - March 16 -->
+
+<!-- * <a href="https://github.com/jlgrons/JSC270_Lab8" target="_blank">GitHub repo for Lab 8</a> -->
+
+<!-- * <a href="https://colab.research.google.com/drive/1gJlrWvp8uxlykIki9oNz1IAd7KT44XGW?usp=sharing">Code for lab 8</a> -->
+
+<!-- * <a href="https://colab.research.google.com/drive/1jYd8MU3fPYCKuzTQSmFLkXkJcMXAXgBk?usp=sharing">Code for lab 8 with solutions</a> -->
+
+<!-- * <a href="https://utoronto.zoom.us/rec/share/Gc7BazhTd7sxzmOW98jm19j4LWMxD5RAgWXofgmG71AEzhGjVrBt6xP-7SW6cE_y.1Sp2-N10cXFuCRNw?startTime=1647447621000">Recording</a> -->
+
+
+<!-- ## Lab 9: Clustering - March 23 -->
+
+<!-- * <a href="https://docs.google.com/presentation/d/18wECwhN9EHl1AIV23-xtKWLOcbONVQxWXnlgq0vX8PE/edit?usp=sharing" target="_blank">Slides (k-means clustering)</a> -->
+
+<!-- * <a href="https://github.com/jlgrons/JSC270_Lab9" target="_blank">GitHub repo for Lab 9</a> -->
+
+<!-- * <a href="https://colab.research.google.com/drive/14pwIf4_WwLEwgySSwrXqDuhG7RcaoNfD?usp=sharing">Code for lab 9</a> -->
+
+<!-- * <a href="https://colab.research.google.com/drive/1RfaIzI7-otBvA1UPe77huQPyWA1iIAoO?usp=sharing" target="_blank">Code for lab 9 with solutions</a> -->
 
 
 <!-- <br> -->
