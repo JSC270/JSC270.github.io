@@ -17,115 +17,115 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 ******
 
-<!-- Documents from class will be posted on this page. -->
+Documents from class will be posted on this page.
 
-<!-- <br> -->
+<br>
 
-<!-- ## Lecture 1: Introduction - Jan 10 -->
+## Lecture 1: Introduction - Jan 10
 
-<!-- * <a href="https://drive.google.com/file/d/177-GVP5ZYFuQxca-HYkwK5ao8Wog6btR/view?usp=sharing" target="_blank">Slides</a> -->
+* <a href="https://drive.google.com/file/d/177-GVP5ZYFuQxca-HYkwK5ao8Wog6btR/view?usp=sharing" target="_blank">Slides</a>
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/p8nlgJ8l65LmY89CpgqkvcvWm_q6jLYtbielzfFOp4ybGOJ6RE4qctFLgrsi3yNr.IjIFwZ-lpejQldZC" target="_blank">Recording</a> -->
+* <a href="https://utoronto.zoom.us/rec/share/p8nlgJ8l65LmY89CpgqkvcvWm_q6jLYtbielzfFOp4ybGOJ6RE4qctFLgrsi3yNr.IjIFwZ-lpejQldZC" target="_blank">Recording</a>
 
-<!-- The password that will be used for all recordings is on the [Quercus](https://q.utoronto.ca/courses/256475) homepage. -->
+The password that will be used for all recordings is on the [Quercus](https://q.utoronto.ca/courses/256475) homepage.
 
-<!-- ## Lecture 2: EDA - Jan 17 -->
+## Lecture 2: EDA - Jan 17
 
-<!-- * <a href="https://drive.google.com/file/d/1_tUiEvLg3yB_lRyu-v1SwE3HWyeIuOOo/view?usp=sharing" target="_blank">Slides</a> -->
+* <a href="https://drive.google.com/file/d/1_tUiEvLg3yB_lRyu-v1SwE3HWyeIuOOo/view?usp=sharing" target="_blank">Slides</a>
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/32k7HmLWR3nKx37lMHTWJSnzIfcIUN866Ig5y9hy1g_4da-8rvA-GQ8Ggqty4ohX.NU88gtXkgrmOMJsF" target="_blank">Recording</a> -->
+* <a href="https://utoronto.zoom.us/rec/share/32k7HmLWR3nKx37lMHTWJSnzIfcIUN866Ig5y9hy1g_4da-8rvA-GQ8Ggqty4ohX.NU88gtXkgrmOMJsF" target="_blank">Recording</a>
 
-<!-- * EDA Example from class: Download the drugsComTest_raw.csv file from Kaggle and make a copy of the colab in your own drive to run the code.   -->
+* EDA Example from class: Download the drugsComTest_raw.csv file from Kaggle and make a copy of the colab in your own drive to run the code.
 
-<!--   - <a href="https://colab.research.google.com/drive/1z7bCpPXGtWHyLh6kCsbTv5hdfAd8gwRR?usp=sharing" target="_blank">EDA Colab</a> -->
+  - <a href="https://colab.research.google.com/drive/1z7bCpPXGtWHyLh6kCsbTv5hdfAd8gwRR?usp=sharing" target="_blank">EDA Colab</a>
 
-<!--   - <a href="https://www.kaggle.com/jessicali9530/kuc-hackathon-winter-2018" target="_blank">Prescription Review Data from Kaggle</a> -->
+  - <a href="https://www.kaggle.com/jessicali9530/kuc-hackathon-winter-2018" target="_blank">Prescription Review Data from Kaggle</a>
 
-<!-- * <a href="https://drive.google.com/file/d/1i0ychQST504tpkFzGxqF9hU8p_zerU94/view?usp=sharing" target="_blank">Why the (n-1) is the sample variance? (Optional)</a> -->
+* <a href="https://drive.google.com/file/d/1i0ychQST504tpkFzGxqF9hU8p_zerU94/view?usp=sharing" target="_blank">Why the (n-1) is the sample variance? (Optional)</a>
 
-<!-- ## Lecture 3: Modeling - Jan 24 -->
+## Lecture 3: Modeling - Jan 24
 
-<!-- * <a href="https://drive.google.com/file/d/1tBWGAIyENXXhgsf7K2gbok423Es3WQrb/view?usp=sharing" target="_blank">Slides</a> -->
+* <a href="https://drive.google.com/file/d/1tBWGAIyENXXhgsf7K2gbok423Es3WQrb/view?usp=sharing" target="_blank">Slides</a>
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/g72AG4H12lpCTcxl0r3SyfRXWfCnA8p_POBSpjXRXCJBZAlJN4a7Lad2p5TrYGNL.rn6iagrOsyPnj8Dp?startTime=1643044384000" target="_blank">Recording</a> -->
+* <a href="https://utoronto.zoom.us/rec/share/g72AG4H12lpCTcxl0r3SyfRXWfCnA8p_POBSpjXRXCJBZAlJN4a7Lad2p5TrYGNL.rn6iagrOsyPnj8Dp?startTime=1643044384000" target="_blank">Recording</a>
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/dGgFUFaMyGj3lGlhRTqcyh8h6CeSk0QLl7yI9K49kedToHKPkrrFNYcXBil6SFs-.ffIkfaA1VgF2kUp-?startTime=1643144474000" target="_blank">Guest Lecture Recording </a> (Password: `r&o9atYm@1`)  -->
+* <a href="https://utoronto.zoom.us/rec/share/dGgFUFaMyGj3lGlhRTqcyh8h6CeSk0QLl7yI9K49kedToHKPkrrFNYcXBil6SFs-.ffIkfaA1VgF2kUp-?startTime=1643144474000" target="_blank">Guest Lecture Recording </a> (Password: `r&o9atYm@1`)
 
-<!-- ## Lecture 4: Linear Regression - Jan 31 -->
+## Lecture 4: Linear Regression - Jan 31
 
-<!-- * <a href="https://drive.google.com/file/d/1LDnCWphKwoNgBjWARHzgFTG0xCXuqz4Q/view?usp=sharing" target="_blank">Slides</a> -->
+* <a href="https://drive.google.com/file/d/1LDnCWphKwoNgBjWARHzgFTG0xCXuqz4Q/view?usp=sharing" target="_blank">Slides</a>
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/IGIxuzWmJrwZ9mV1L-6oTMI3dZf99Nw1WM7wq9lyJ4pABDLg04_2HOeIJ61S-lY4.UvNggpJe2fvvHEPo?startTime=1643649071000" target="_blank">Recording</a> -->
+* <a href="https://utoronto.zoom.us/rec/share/IGIxuzWmJrwZ9mV1L-6oTMI3dZf99Nw1WM7wq9lyJ4pABDLg04_2HOeIJ61S-lY4.UvNggpJe2fvvHEPo?startTime=1643649071000" target="_blank">Recording</a>
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/IGIxuzWmJrwZ9mV1L-6oTMI3dZf99Nw1WM7wq9lyJ4pABDLg04_2HOeIJ61S-lY4.UvNggpJe2fvvHEPo?startTime=1643652178000" target="_blank">Guest Lecture Recording </a> -->
+* <a href="https://utoronto.zoom.us/rec/share/IGIxuzWmJrwZ9mV1L-6oTMI3dZf99Nw1WM7wq9lyJ4pABDLg04_2HOeIJ61S-lY4.UvNggpJe2fvvHEPo?startTime=1643652178000" target="_blank">Guest Lecture Recording </a>
 
-<!-- * <a href="https://github.com/jlgrons/JSC270_Lecture4/blob/main/Palmer_Penguins_Regression.ipynb">Colab</a> : Click the `Open in Colab` button if you want to run it yourself -->
-
-
-<!-- ## Lecture 5: Communication - Feb 7 -->
-
-<!-- * <a href="https://drive.google.com/file/d/1AZuV1fIV-j0LVjWs6TdapQAkgyx09M08/view?usp=sharing" target="_blank">Slides</a> -->
-
-<!-- * <a href="https://utoronto.zoom.us/rec/share/BGGY4deCcK_h3C10xyzOsxQ1Fhw5lDpGbxZZEJJCJZ0AJVF_HZESp3rWtoEGKYZ5.GzUxbKC0aU4RfRWY" target="_blank">Recording</a> -->
-
-<!-- * <a href="https://utoronto.zoom.us/rec/share/r9TFlXGbeKM5q4vHuG5jiu-HAU75RpKuV0ktuAsfEkT4L6a1XFfSDvTR-oKAXzEs.EtcE1PINCx6PD_0U?startTime=1644353990000" target="_blank">Guest Lecture Recording</a> (Password: `4T1nKw#3KM`) -->
+* <a href="https://github.com/jlgrons/JSC270_Lecture4/blob/main/Palmer_Penguins_Regression.ipynb">Colab</a> : Click the `Open in Colab` button if you want to run it yourself
 
 
-<!-- ## Lecture 6: Simulation - Feb 14 -->
+## Lecture 5: Communication - Feb 7
 
-<!-- * <a href="https://drive.google.com/file/d/1pkwbNQbLnfOorVfhEsz5mghIEOBBxaUl/view?usp=sharing">Slides</a> -->
+* <a href="https://drive.google.com/file/d/1AZuV1fIV-j0LVjWs6TdapQAkgyx09M08/view?usp=sharing" target="_blank">Slides</a>
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/8YkjMDw2efKlE44j0Bxj8vpC1zSAMHTjUf7Rm1r7W5wMCXTb32zALfMaX3FVQSmk.Hh3ayie1nTcPMz0i?startTime=1644858642000" target="_blank">Recording</a> -->
+* <a href="https://utoronto.zoom.us/rec/share/BGGY4deCcK_h3C10xyzOsxQ1Fhw5lDpGbxZZEJJCJZ0AJVF_HZESp3rWtoEGKYZ5.GzUxbKC0aU4RfRWY" target="_blank">Recording</a>
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/8YkjMDw2efKlE44j0Bxj8vpC1zSAMHTjUf7Rm1r7W5wMCXTb32zALfMaX3FVQSmk.Hh3ayie1nTcPMz0i?startTime=1644861769000" target="_blank">Guest Lecture Recording</a> -->
-
-<!-- * <a href="https://github.com/jlgrons/JSC270_Lecture6">Colab</a>  -->
-
-<!-- ## Lecture 7: Classification - Feb 28 -->
+* <a href="https://utoronto.zoom.us/rec/share/r9TFlXGbeKM5q4vHuG5jiu-HAU75RpKuV0ktuAsfEkT4L6a1XFfSDvTR-oKAXzEs.EtcE1PINCx6PD_0U?startTime=1644353990000" target="_blank">Guest Lecture Recording</a> (Password: `4T1nKw#3KM`)
 
 
-<!-- * <a href="https://drive.google.com/file/d/13nvf1QVEtSyrrB_19O1lsNEaGI0FxkOy/view?usp=sharing">Slides</a> -->
+## Lecture 6: Simulation - Feb 14
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/3pChZSQjfcVRqlTXa4BNjFr8jUh1ngy2MYOa-agMvHRrnLsQwMr_BWZ_SISxB8Jk.Xw4cmtF5IuBqbybl?startTime=1646168723000" target="_blank">Guest Lecture Recording</a> (Password: `wip*w@T2Nt`) -->
+* <a href="https://drive.google.com/file/d/1pkwbNQbLnfOorVfhEsz5mghIEOBBxaUl/view?usp=sharing">Slides</a>
 
-<!-- * <a href=https://drive.google.com/file/d/1SMIu_gNdB5y3i1ST5CBu82iQuCrkY7P9/view?usp=sharing" target="_blank">Guest Lecture Slides</a>  -->
+* <a href="https://utoronto.zoom.us/rec/share/8YkjMDw2efKlE44j0Bxj8vpC1zSAMHTjUf7Rm1r7W5wMCXTb32zALfMaX3FVQSmk.Hh3ayie1nTcPMz0i?startTime=1644858642000" target="_blank">Recording</a>
 
+* <a href="https://utoronto.zoom.us/rec/share/8YkjMDw2efKlE44j0Bxj8vpC1zSAMHTjUf7Rm1r7W5wMCXTb32zALfMaX3FVQSmk.Hh3ayie1nTcPMz0i?startTime=1644861769000" target="_blank">Guest Lecture Recording</a>
 
-<!-- ## Lecture 8: More Classification - Mar 7 -->
+* <a href="https://github.com/jlgrons/JSC270_Lecture6">Colab</a>
 
-<!-- * <a href="https://drive.google.com/file/d/1Nm1NPDLwTpFVsGAUoobWxGDbyalKuHOP/view?usp=sharing">Slides</a> -->
-
-<!-- * <a href="https://github.com/jlgrons/JSC270_Lecture8" target="_blank">Colab on Bivariate Normal</a> (In case you want to gain familiarity with the distribution.) -->
-
-<!-- * <a href="https://github.com/alistairewj/lecture-intro-to-nlp" target="_blank">Guest Lecture Slides + Repo </a>  -->
-
-<!-- * <a href="https://utoronto.zoom.us/rec/share/ng8f0DFFzVt9wAr6qYQ4raEM5QdwBfczGR6nx0-_-AExhKvmrbzCuEg6E-n-KLhF.0118VJZT5B-SsSbK?startTime=1646676686000">Guest Lecture Recording </a>  -->
+## Lecture 7: Classification - Feb 28
 
 
-<!-- ## Lecture 9: Predictive Performance - Mar 14 -->
+* <a href="https://drive.google.com/file/d/13nvf1QVEtSyrrB_19O1lsNEaGI0FxkOy/view?usp=sharing">Slides</a>
 
-<!-- * <a href="https://drive.google.com/file/d/1tMRAFP3tOr5VVKpxD0_VimjH9UMsfy4t/view?usp=sharing">Slides</a> -->
+* <a href="https://utoronto.zoom.us/rec/share/3pChZSQjfcVRqlTXa4BNjFr8jUh1ngy2MYOa-agMvHRrnLsQwMr_BWZ_SISxB8Jk.Xw4cmtF5IuBqbybl?startTime=1646168723000" target="_blank">Guest Lecture Recording</a> (Password: `wip*w@T2Nt`)
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/3h5ircwZcEskGDH5ciPcl38o_vx89gi16ALj8sowMbtgRlWtIt9_aa6eviY5s1-W.p3I5yEKgecMLRfmv?startTime=1647375092000" target="_blank">Guest Lecture Recording</a> (Password: `^P+.1dVci=`) -->
-
-
-<!-- ## Lecture 10: Clustering - Mar 21 -->
-
-<!-- * <a href="https://drive.google.com/file/d/1FtaFHWxXtwj5nvrkWXj7cKcLKcW5N40S/view?usp=sharing">Slides</a> -->
-
-<!-- * <a href="https://utoronto.zoom.us/rec/share/U7SPGxEjq9OKn7Phk5-fcBiBg35kZW40DgHiZXh07V2uG5TlVo_cya_JxQ9OVAQs._9VNdics1YIaktfC?startTime=1647979485000" target="_blank">Guest Lecture Recording</a> (Password: `y2%LN!2BcN`) -->
+* <a href=https://drive.google.com/file/d/1SMIu_gNdB5y3i1ST5CBu82iQuCrkY7P9/view?usp=sharing" target="_blank">Guest Lecture Slides</a>
 
 
-<!-- ## Lecture 11: DS Workflow - Mar 28 -->
+## Lecture 8: More Classification - Mar 7
 
-<!-- * <a href="https://drive.google.com/file/d/16ZlPYGYaqE2kn0WmB-DifxPz3p9HNMjS/view?usp=sharing">Slides</a> -->
+* <a href="https://drive.google.com/file/d/1Nm1NPDLwTpFVsGAUoobWxGDbyalKuHOP/view?usp=sharing">Slides</a>
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/Uj5w_cHQEZ2-nrHV0_10XlJyNfrrnWQMeFH4p56TBm1bDmVAsf_BbFij350PovM.HTFwCPZMZIfpGTSU?startTime=1648584100000" target="_blank">Guest Lecture Recording</a> (Password: `yDZD*$VC0W`) -->
+* <a href="https://github.com/jlgrons/JSC270_Lecture8" target="_blank">Colab on Bivariate Normal</a> (In case you want to gain familiarity with the distribution.)
+
+* <a href="https://github.com/alistairewj/lecture-intro-to-nlp" target="_blank">Guest Lecture Slides + Repo </a>
+
+* <a href="https://utoronto.zoom.us/rec/share/ng8f0DFFzVt9wAr6qYQ4raEM5QdwBfczGR6nx0-_-AExhKvmrbzCuEg6E-n-KLhF.0118VJZT5B-SsSbK?startTime=1646676686000">Guest Lecture Recording </a>
 
 
-<!-- ## Lecture 12: A4 Presentations - Apr 4 -->
+## Lecture 9: Predictive Performance - Mar 14
 
-<!-- * <a href="https://utoronto.zoom.us/rec/share/YhUXOW2QPDq1V1PMsEMtsHopzUG3Mx2Jw10YpADFjX5a7ORH4XN7xnSrVmIn_8Xe.-FHxaE8cVu7aL5ml" target="_blank">Guest Lecture Recording</a> (Password: `5$qX^rTBG7`) -->
+* <a href="https://drive.google.com/file/d/1tMRAFP3tOr5VVKpxD0_VimjH9UMsfy4t/view?usp=sharing">Slides</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/3h5ircwZcEskGDH5ciPcl38o_vx89gi16ALj8sowMbtgRlWtIt9_aa6eviY5s1-W.p3I5yEKgecMLRfmv?startTime=1647375092000" target="_blank">Guest Lecture Recording</a> (Password: `^P+.1dVci=`)
+
+
+## Lecture 10: Clustering - Mar 21
+
+* <a href="https://drive.google.com/file/d/1FtaFHWxXtwj5nvrkWXj7cKcLKcW5N40S/view?usp=sharing">Slides</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/U7SPGxEjq9OKn7Phk5-fcBiBg35kZW40DgHiZXh07V2uG5TlVo_cya_JxQ9OVAQs._9VNdics1YIaktfC?startTime=1647979485000" target="_blank">Guest Lecture Recording</a> (Password: `y2%LN!2BcN`)
+
+
+## Lecture 11: DS Workflow - Mar 28
+
+* <a href="https://drive.google.com/file/d/16ZlPYGYaqE2kn0WmB-DifxPz3p9HNMjS/view?usp=sharing">Slides</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/Uj5w_cHQEZ2-nrHV0_10XlJyNfrrnWQMeFH4p56TBm1bDmVAsf_BbFij350PovM.HTFwCPZMZIfpGTSU?startTime=1648584100000" target="_blank">Guest Lecture Recording</a> (Password: `yDZD*$VC0W`)
+
+
+## Lecture 12: A4 Presentations - Apr 4
+
+* <a href="https://utoronto.zoom.us/rec/share/YhUXOW2QPDq1V1PMsEMtsHopzUG3Mx2Jw10YpADFjX5a7ORH4XN7xnSrVmIn_8Xe.-FHxaE8cVu7aL5ml" target="_blank">Guest Lecture Recording</a> (Password: `5$qX^rTBG7`)
 
 
 
