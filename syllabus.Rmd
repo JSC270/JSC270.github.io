@@ -41,9 +41,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
-- Professor: 
-  - In-person from 1-2pm on Mondays when guest lectures are on Tuesdays (see course schedule [here](schedule.html)).
-  - Virtual from 2:30-3:30pm on Mondays when guest lectures are on Mondays (Zoom link [here](https://q.utoronto.ca/courses/256475)).
+- Professor: Virtual from 2:30-3:30pm on Mondays. Zoom link TBD.
 
 - Teaching Assistants: Virtual from 11-12 on Thursdays.  Zoom link TBD.
 
@@ -57,16 +55,12 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ### _Lectures_
 - Monday, 12-2pm EST
-- Lectures through January 24 will be held via Zoom. The link is provided on [Quercus](https://q.utoronto.ca/courses/256475).
-- The first hour will be dedicated to teaching new material, while the second hour
-will be used to address student questions or for a guest lecture.
 - All lecture slides will be posted to the course website once the lecture is finished.
 
 <br>
 
 ### _Laboratory Sessions_
 - Wednesday, 12-2pm EST 
-- Lab Sessions through January 26 will be held via Zoom . The link will be provided on [Quercus](https://q.utoronto.ca/courses/256475).
 - All code will be posted to the course website once the lab is finished.
 
 <br>
