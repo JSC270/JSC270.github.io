@@ -204,14 +204,14 @@ The password for the lab recordings is the same as for the lectures.
 
 <!-- **** -->
 
-# Tutorial Schedule
+<!-- # Tutorial Schedule -->
 
-The following is a tentative schedule, subject to change slightly.
+<!-- The following is a tentative schedule, subject to change slightly. -->
 
-```{r, echo=FALSE}
-jsc270_tutsched <- read_csv("tut_sched.csv", col_types = cols(Week = col_character()), na = "null")
-knitr::kable(jsc270_tutsched)
-```
+<!-- ```{r, echo=FALSE} -->
+<!-- jsc270_tutsched <- read_csv("tut_sched.csv", col_types = cols(Week = col_character()), na = "null") -->
+<!-- knitr::kable(jsc270_tutsched) -->
+<!-- ``` -->
 
-This is the section for Tutorial Labs. These labs will be held on Wednesdays, from 12-2pm on Zoom. The link and password can be found on Quercus. The goal of these Labs is to teach students how to implement the theory they learn in lecture. After each lab, the code (and any other relevant files) will be posted below. See the class schedule for a tentative list of the Lab topics. 
---->
+<!-- This is the section for Tutorial Labs. These labs will be held on Wednesdays, from 12-2pm on Zoom. The link and password can be found on Quercus. The goal of these Labs is to teach students how to implement the theory they learn in lecture. After each lab, the code (and any other relevant files) will be posted below. See the class schedule for a tentative list of the Lab topics.  -->
+<!-- ---> -->
