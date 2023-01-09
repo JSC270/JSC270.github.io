@@ -31,7 +31,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-comment" aria-hidden="true"></i> Course Communication
 
-- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the [Piazza discussion board](https://q.utoronto.ca/courses/256475) integrated within Quercus, which students can access by logging in with their UTORID.  One of the TAs will try to answer promptly.  Please see the Course Policies section for more detail. 
+- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the [Piazza discussion board](https://q.utoronto.ca/courses/298689) integrated within Quercus, which students can access by logging in with their UTORID.  One of the TAs will try to answer promptly.  Please see the Course Policies section for more detail. 
 
 - <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don't think your question is appropriate for the class discussion board (e.g.\ it is not related to course content or logistics), please reach out to the teaching team using the direct message functionality on Quercus.  Allow up to 72 business hours for a reply. Regular emails will not be answered. 
 
@@ -163,7 +163,7 @@ Throughout the semester several foundational papers will be posted for students 
 These are short answer quizzes designed to test your understanding of the material,
 and to make you think critically about concepts learned in lecture.
 
-These quizzes will be held throughout the course and will be completed and submitted in [Quercus]((https://q.utoronto.ca/courses/256475)), under the `Assignments` tab. These assignments are to be completed individually.
+These quizzes will be held throughout the course and will be completed and submitted in [Quercus]((https://q.utoronto.ca/courses/298689)), under the `Assignments` tab. These assignments are to be completed individually.
 
 <br>
 
