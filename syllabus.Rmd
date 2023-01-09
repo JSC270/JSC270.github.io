@@ -120,7 +120,7 @@ knitr::kable(jsc270coursegrading[1:8,])
 
 - Class slides, notes, and other important information can be found on the [course website.](https://jsc270.github.io/)
 
-- Questions and Answers can be posted on the [Piazza discussion board](https://q.utoronto.ca/courses/256475).
+- Questions and Answers can be posted on the [Piazza discussion board](https://q.utoronto.ca/courses/298689).
 
 
 <br>
