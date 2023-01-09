@@ -1,7 +1,7 @@
 name: jsc270website
 output_dir: '.'
 navbar:
-  title: JSC270 Winter 2022
+  title: JSC270 Winter 2021
   left:
     - text: Syllabus
       href: syllabus.html

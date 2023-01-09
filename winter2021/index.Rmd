@@ -1,6 +1,6 @@
 ---
 title: "JSC270H1S: Data Science I"
-subtitle: "Winter 2022, Course Website"
+subtitle: "Winter 2021, Course Website"
 
 output: 
   html_document:
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br>
 
-  Welcome to the Winter 2022 course website for __JSC270H1S__ (Data Science I). This course is offered jointly by the departments of [Computer Science](https://www.utoronto.ca) and [Statistical Sciences](http://utstat.toronto.edu), and is the first of three canonical data science courses designed for students in the Data Science Specialist Program. 
+  Welcome to the Winter 2021 course website for __JSC270H1S__ (Data Science I). This course is offered jointly by the departments of [Computer Science](https://www.utoronto.ca) and [Statistical Sciences](http://utstat.toronto.edu), and is the first of three canonical data science courses designed for students in the Data Science Specialist Program. 
 
 __Prerequisites__
 

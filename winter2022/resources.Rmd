@@ -1,0 +1,82 @@
+---
+title: "Data + Science"
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+_Elements of Statistical Learning_ is one of the best texts in the field of ML. You'll likely use it in later courses (recommended, but not required for this course): <a href="https://web.stanford.edu/~hastie/Papers/ESLII.pdf" target="_blank">PDF</a>
+
+<br>
+
+# Articles/Posts 
+
+David Donoho (2017) 50 Years of Data Science, Journal of Computational and Graphical Statistics, 26:4, 745-766. [pdf](https://www.tandfonline.com/doi/abs/10.1080/10618600.2017.1384734)
+
+[Ethics + Data Science, DJ, Patil](https://medium.com/@dpatil/ethics-data-science-ff21d0c29346)
+
+[A Code of Ethics for Data Science, DJ, Patil](https://medium.com/@dpatil/a-code-of-ethics-for-data-science-cda27d1fac1)
+
+[The Scientific Paper Is Obsolete](https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/)
+
+[The Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)
+
+Carmichael, I. & Marron, J.S. Jpn J Stat Data Sci (2018) 1: 117. [pdf](https://link.springer.com/article/10.1007/s42081-018-0009-3#citeas)
+
+[How a Math Genius Hacked OKCupid to Find True Love](https://www.wired.com/2014/01/how-to-hack-okcupid/)
+
+[How scientists fool themselves – and how they can stop](https://www.nature.com/news/how-scientists-fool-themselves-and-how-they-can-stop-1.18517?WT.mc_id=TWT_NatureNews)
+
+[Optimized Prime: How AI And Anticipation Power Amazon's 1-Hour Deliveries](https://www.npr.org/2018/11/21/660168325/optimized-prime-how-ai-and-anticipation-power-amazons-1-hour-deliveries)
+
+# Blogs/Websites
+
+<br>
+
+## Corporate
+
+
+[facebook research Data Science](https://research.fb.com/category/data-science/)
+
+[Geotab Data](https://data.geotab.com)
+
+[The Unofficial Google Data Science Blog](http://www.unofficialgoogledatascience.com)
+
+[ExP Experimentation Platform](https://exp-platform.com)
+
+[Amazon Supply Chain Optimization Technologies (SCOT)](http://bit.ly/amazon-scot)
+
+
+## Non-corporate
+
+
+
+[Simply Statistics](https://simplystatistics.org)
+
+[Statistical Modeling, Causal Inference, and Social Science](https://statmodeling.stat.columbia.edu)
+
+[Wes McKinney - creator of pandas](http://wesmckinney.com)
+
+[setosa](http://setosa.io/#/)
+
+[Seeing Theory](https://seeing-theory.brown.edu)
+
+Cathy O'Neil is the author of Weapons of Math Destruction.  She blogs at [mathbabe](https://mathbabe.org).
+
+
+# Data Journalism
+
+
+
+[FiveThirtyEight](https://fivethirtyeight.com)
+
+[ProPublica](https://www.propublica.org)
+
+[NYT - The Upshot](https://www.nytimes.com/section/upshot)
+

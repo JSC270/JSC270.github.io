@@ -1,0 +1,57 @@
+---
+title: ""
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: yeti
+---
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+knitr::opts_chunk$set(warning = F, message = F)
+```
+<br>
+
+# <span class="glyphicon glyphicon-calendar" aria-hidden="false"></span> Course Schedule
+Below is our course schedule, which may change as the course progresses.  Details regarding evaluation due dates can be found below the table.
+
+```{r, echo=FALSE}
+library(tidyverse)
+library(kableExtra)
+options(knitr.kable.NA = '')
+
+my_backgrounds <- colorRampPalette(c("white", "gray"))(5)
+k <- 9
+row_nums <-sort(c(seq(1,39,6), seq(2,39,6), seq(3,39,6)))
+
+jsc270courseschedule <- read_csv("Winter2022_schedule - Website Schedule.csv")
+knitr::kable(jsc270courseschedule[1:39,]) %>%  
+  kable_styling(full_width = T, position = "float_left")   %>%   
+  row_spec(row_nums ,background = my_backgrounds[2]) 
+```
+
+<br>
+
+# <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Evaluation Details
+
+Assignments and reflection quizzes are to be submitted via Quercus.  Perusall papers are completed within the Perusall application.
+
+The deadline for submission for assignments, Perusall papers, and reflection quizzes is always 10:59am EST on the due date (1 hour before class starts).
+
+<!-- # ```{r, echo=FALSE} -->
+<!-- # library(tidyverse) -->
+<!-- # library(kableExtra) -->
+<!-- # options(knitr.kable.NA = '') -->
+<!-- #  -->
+<!-- # my_backgrounds <- colorRampPalette(c("white", "gray"))(5) -->
+<!-- # k = 6  -->
+<!-- # row_nums <-c(rbind(1+4*(0:k), 2+4*(0:k))) -->
+<!-- #  -->
+<!-- # jsc270courseassschedule <- read_csv("Winter2022_assignment_schedule.csv") -->
+<!-- # knitr::kable(jsc270courseassschedule[1:26,])  %>%  -->
+<!-- #    kable_styling(full_width = T, position = "float_left")   %>%  -->
+<!-- #   row_spec(row_nums,background = my_backgrounds[2])  -->
+<!-- # ``` -->
+
+<!-- <br> -->

@@ -1,7 +1,7 @@
 ---
 title: "JSC270H1S: Data Science I"
 subtitle: "Syllabus"
-date: Winter 2022
+date: Winter 2021
 
 output: 
   html_document:

@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>schedule.knit</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">JSC270 Winter 2022</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Course Documents
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="class_docs.html">Classes</a>
+    </li>
+    <li>
+      <a href="tut_docs.html">Laboratories</a>
+    </li>
+    <li>
+      <a href="assign_docs.html">Assignments</a>
+    </li>
+    <li>
+      <a href="assignment_rubrics.html">Rubrics</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="announcements.html">Announcements</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<p><br></p>
+<div id="course-schedule" class="section level1">
+<h1><span class="glyphicon glyphicon-calendar" aria-hidden="false"></span> Course Schedule</h1>
+<p>Below is our course schedule, which may change as the course progresses. Details regarding evaluation due dates can be found below the table.</p>
+<table class="table" style="float: left; margin-right: 10px;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Week
+</th>
+<th style="text-align:left;">
+Date
+</th>
+<th style="text-align:left;">
+Session
+</th>
+<th style="text-align:left;">
+Description
+</th>
+<th style="text-align:left;">
+Assignment
+</th>
+<th style="text-align:left;">
+Perusall
+</th>
+<th style="text-align:left;">
+Reflection
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+1
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Jan 10
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 1
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Course Introduction + What is Data Science?
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Jan 10
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 1
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+xx
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Jan 12
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 1
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+xx
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Paper 1 Posted
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+Mon. Jan 17
+</td>
+<td style="text-align:left;">
+Lecture 2
+</td>
+<td style="text-align:left;">
+Exploratory Data Analysis (EDA)
+</td>
+<td style="text-align:left;">
+Assignment 1 Posted
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Mon. Jan 17
+</td>
+<td style="text-align:left;">
+Guest Lecture 2
+</td>
+<td style="text-align:left;">
+Life as a Data Scientist, Aaron Sonabend (Google)
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Jan 19
+</td>
+<td style="text-align:left;">
+Lab 2
+</td>
+<td style="text-align:left;">
+Intro to Python + pandas
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+3
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Jan 24
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 3
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Modeling
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Paper 1 Due
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Tues. Jan 25
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 3
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Life as a Data Scientist, Stefanie Nickels (Verily)
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Jan 26
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 3
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+EDA with NumPy and Matplotlib
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Reflection 1 Posted
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+Mon. Jan 31
+</td>
+<td style="text-align:left;">
+Lecture 4
+</td>
+<td style="text-align:left;">
+Regression I
+</td>
+<td style="text-align:left;">
+Assignment 1 Due, Assignment 2 Posted
+</td>
+<td style="text-align:left;">
+Paper 2 Posted
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Mon. Jan 31
+</td>
+<td style="text-align:left;">
+Guest Lecture 4
+</td>
+<td style="text-align:left;">
+Life as a Data Scientist, Kathy Evans (NBA)
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Feb 2
+</td>
+<td style="text-align:left;">
+Lab 4
+</td>
+<td style="text-align:left;">
+Git + Regression with Scikit Learn
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Reflection 1 Due
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+5
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Feb 7
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 5
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Communication
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Tues. Feb 8
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 5
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Life as a Grad Student, Yanbo Tang, Robert Zimmerman, Siyue Yang (DoSS)
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Feb 9
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 5
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Version Control: Git/Github/Bash
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Paper 2 Due
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Reflection 2 Posted
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+Mon. Feb 14
+</td>
+<td style="text-align:left;">
+Lecture 6
+</td>
+<td style="text-align:left;">
+Simulation
+</td>
+<td style="text-align:left;">
+Assignment 2 Due
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Mon. Feb 14
+</td>
+<td style="text-align:left;">
+Guest Lecture 6
+</td>
+<td style="text-align:left;">
+Being an Effective Data Scientist, Paul Varghese (Verily)
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Feb 16
+</td>
+<td style="text-align:left;">
+Lab 6
+</td>
+<td style="text-align:left;">
+Simulation with Scikit learn
+</td>
+<td style="text-align:left;">
+Assignment 3 Posted
+</td>
+<td style="text-align:left;">
+Paper 3 Posted
+</td>
+<td style="text-align:left;">
+Reflection 2 Due
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+7
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Feb 21
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+READING WEEK
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+xx
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Feb 21
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+READING WEEK
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+xx
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Feb 23
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+READING WEEK
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+xx
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+Mon. Feb 28
+</td>
+<td style="text-align:left;">
+Lecture 7
+</td>
+<td style="text-align:left;">
+Classifiers
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Tues. Mar 1
+</td>
+<td style="text-align:left;">
+Guest Lecture 7
+</td>
+<td style="text-align:left;">
+Genomic Data Science, Lisa Strug (U of T)
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Mar 2
+</td>
+<td style="text-align:left;">
+Lab 7
+</td>
+<td style="text-align:left;">
+Classification with Scikit learn
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Paper 3 Due
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+9
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Mar 7
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 8
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Classifiers 2
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Assignment 3 Due, Assignment 4 Posted
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Mar 7
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 8
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Natural Language Processing, Alistair Johnson (Sick Kids)
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Mar 9
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 8
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Twitter API + Natural Language Processing
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Reflection 3 Posted
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+Mon. Mar 14
+</td>
+<td style="text-align:left;">
+Lecture 9
+</td>
+<td style="text-align:left;">
+Evaluating Predictions
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Tues. Mar 15
+</td>
+<td style="text-align:left;">
+Guest Lecture 9
+</td>
+<td style="text-align:left;">
+Life as Data Scientist, Ellen Stephenson (U of T)
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Mar 16
+</td>
+<td style="text-align:left;">
+Lab 9
+</td>
+<td style="text-align:left;">
+Prediction Metrics
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Reflection 3 Due
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+11
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Mar 21
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 10
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Clustering
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Paper 4 Posted
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Mar 21
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 10
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Life as Data Scientist, Amy Braverman (NASA/JPL)
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Mar 23
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 10
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Clustering
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Reflection 4 Posted
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+Mon. Mar 28
+</td>
+<td style="text-align:left;">
+Lecture 11
+</td>
+<td style="text-align:left;">
+Data Science Workflow
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Paper 4 Due
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Tues. Mar 29
+</td>
+<td style="text-align:left;">
+Guest Lecture 11
+</td>
+<td style="text-align:left;">
+Applications of Hidden Markov Models, Sofia Ruiz (National University of Rosario) and Yunyi Shen (U Wisconsin-Madison)
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+Wed. Mar 30
+</td>
+<td style="text-align:left;">
+Lab 11
+</td>
+<td style="text-align:left;">
+A4 Work Session
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Reflection 4 Due
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+13
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Apr 4
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lecture 12
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Final Presentations
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Mon. Apr 4
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Guest Lecture 12
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+A Statistical Perspective of Data Science, Radu Craiu (U of T)
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Wed. Apr 6
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Lab 12
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Final Presentations
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+Assignment 4 Due (4/8)
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+<td style="text-align:left;background-color: #EEEEEE !important;">
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="evaluation-details" class="section level1">
+<h1><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Evaluation Details</h1>
+<p>Assignments and reflection quizzes are to be submitted via Quercus. Perusall papers are completed within the Perusall application.</p>
+<p>The deadline for submission for assignments, Perusall papers, and reflection quizzes is always 10:59am EST on the due date (1 hour before class starts).</p>
+<!-- # ```{r, echo=FALSE} -->
+<!-- # library(tidyverse) -->
+<!-- # library(kableExtra) -->
+<!-- # options(knitr.kable.NA = '') -->
+<!-- #  -->
+<!-- # my_backgrounds <- colorRampPalette(c("white", "gray"))(5) -->
+<!-- # k = 6  -->
+<!-- # row_nums <-c(rbind(1+4*(0:k), 2+4*(0:k))) -->
+<!-- #  -->
+<!-- # jsc270courseassschedule <- read_csv("Winter2022_assignment_schedule.csv") -->
+<!-- # knitr::kable(jsc270courseassschedule[1:26,])  %>%  -->
+<!-- #    kable_styling(full_width = T, position = "float_left")   %>%  -->
+<!-- #   row_spec(row_nums,background = my_backgrounds[2])  -->
+<!-- # ``` -->
+<!-- <br> -->
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+Week,Date,Session,Description,Assignment,Perusall,Reflection
+1,Mon. Jan 10,Lecture 1,Course Introduction + What is Data Science?,,,
+,Mon. Jan 10,Guest Lecture 1,xx,,,
+,Wed. Jan 12,Lab 1,xx,,Paper 1 Posted,
+2,Mon. Jan 17,Lecture 2,Exploratory Data Analysis (EDA),Assignment 1 Posted,,
+,Mon. Jan 17,Guest Lecture 2,"Life as a Data Scientist, Aaron Sonabend (Google)",,,
+,Wed. Jan 19,Lab 2,Intro to Python + pandas,,,
+3,Mon. Jan 24,Lecture 3,Modeling,,Paper 1 Due,
+,Tues. Jan 25,Guest Lecture 3,"Life as a Data Scientist, Stefanie Nickels (Verily)",,,
+,Wed. Jan 26,Lab 3,EDA with NumPy and Matplotlib,,,Reflection 1 Posted
+4,Mon. Jan 31,Lecture 4,Regression I,"Assignment 1 Due, Assignment 2 Posted",Paper 2 Posted,
+,Mon. Jan 31,Guest Lecture 4,"Life as a Data Scientist, Kathy Evans (NBA)",,,
+,Wed. Feb 2,Lab 4,Git + Regression with Scikit Learn,,,Reflection 1 Due
+5,Mon. Feb 7,Lecture 5,Communication,,,
+,Tues. Feb 8,Guest Lecture 5,"Life as a Grad Student, Yanbo Tang, Robert Zimmerman, Siyue Yang (DoSS)",,,
+,Wed. Feb 9,Lab 5,Version Control: Git/Github/Bash,,Paper 2 Due,Reflection 2 Posted
+6,Mon. Feb 14,Lecture 6,Simulation,"Assignment 2 Due",,
+,Mon. Feb 14,Guest Lecture 6,"Being an Effective Data Scientist, Paul Varghese (Verily)",,,
+,Wed. Feb 16,Lab 6,Simulation with Scikit learn ,Assignment 3 Posted,Paper 3 Posted,Reflection 2 Due
+7,Mon. Feb 21,READING WEEK,xx,,,
+,Mon. Feb 21,READING WEEK,xx,,,
+,Wed. Feb 23,READING WEEK,xx,,,
+8,Mon. Feb 28,Lecture 7,Classifiers,,,
+,Tues. Mar 1,Guest Lecture 7,"Genomic Data Science, Lisa Strug (U of T)",,,
+,Wed. Mar 2,Lab 7,Classification with Scikit learn,,Paper 3 Due,
+9,Mon. Mar 7,Lecture 8,Classifiers 2,"Assignment 3 Due, Assignment 4 Posted",,
+,Mon. Mar 7,Guest Lecture 8,"Natural Language Processing, Alistair Johnson (Sick Kids)",,,
+,Wed. Mar 9,Lab 8,Twitter API + Natural Language Processing,,,Reflection 3 Posted
+10,Mon. Mar 14,Lecture 9,Evaluating Predictions,,,
+,Tues. Mar 15,Guest Lecture 9,"Life as Data Scientist, Ellen Stephenson (U of T)",,,
+,Wed. Mar 16,Lab 9,Prediction Metrics,,,Reflection 3 Due
+11,Mon. Mar 21,Lecture 10,Clustering,,Paper 4 Posted,
+,Mon. Mar 21,Guest Lecture 10,"Life as Data Scientist, Amy Braverman (NASA/JPL)",,,
+,Wed. Mar 23,Lab 10,Clustering,,,Reflection 4 Posted
+12,Mon. Mar 28,Lecture 11,Data Science Workflow,,Paper 4 Due,
+,Tues. Mar 29,Guest Lecture 11,"Applications of Hidden Markov Models, Sofia Ruiz (National University of Rosario) and Yunyi Shen (U Wisconsin-Madison)",,,
+,Wed. Mar 30,Lab 11,A4 Work Session,,,Reflection 4 Due
+13,Mon. Apr 4,Lecture 12,Final Presentations,,,
+,Mon. Apr 4,Guest Lecture 12,"A Statistical Perspective of Data Science, Radu Craiu (U of T)",,,
+,Wed. Apr 6,Lab 12,Final Presentations,Assignment 4 Due (4/8),,
