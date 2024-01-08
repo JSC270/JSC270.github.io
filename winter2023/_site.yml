@@ -1,0 +1,33 @@
+name: jsc270website
+output_dir: '.'
+navbar:
+  title: JSC270 Winter 2023
+  left:
+    - text: Syllabus
+      href: syllabus.html
+    - text: Schedule
+      href: schedule.html
+    - text: Course Documents
+      menu:
+        - text: Classes
+          href: class_docs.html
+#        - text: "-----------------"
+        - text: Laboratories
+          href: tut_docs.html
+#        - text: Laboratories Grading
+#          href: tut_grading.html
+#        - text: "-----------------"
+        - text: Assignments
+          href: assign_docs.html
+        - text: Rubrics
+          href: assignment_rubrics.html
+#    - text: Discussion Forum
+#      href: XXXXXTO-UPDATEXXX
+#    - text: Resources
+#      href: resources.html
+    - text: Announcements
+      href: announcements.html
+output:
+  html_document:
+    lib_dir: site_libs
+    self_contained: no

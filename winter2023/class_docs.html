@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Class Documents</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">JSC270 Winter 2023</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Course Documents
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="class_docs.html">Classes</a>
+    </li>
+    <li>
+      <a href="tut_docs.html">Laboratories</a>
+    </li>
+    <li>
+      <a href="assign_docs.html">Assignments</a>
+    </li>
+    <li>
+      <a href="assignment_rubrics.html">Rubrics</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="announcements.html">Announcements</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Class Documents</h1>
+
+</div>
+
+
+<hr />
+<p>Documents from class will be posted on this page.</p>
+<p><br></p>
+<div id="lecture-1-introduction---jan-10" class="section level2">
+<h2>Lecture 1: Introduction - Jan 10</h2>
+<ul>
+<li><p><a href="https://drive.google.com/file/d/1IiiiL-I33d8MCQ-alcjIQV31huP63XRF/view?usp=sharing" target="_blank">Slides</a></p></li>
+<!-- <li><p><a href="https://utoronto.zoom.us/rec/share/p8nlgJ8l65LmY89CpgqkvcvWm_q6jLYtbielzfFOp4ybGOJ6RE4qctFLgrsi3yNr.IjIFwZ-lpejQldZC" target="_blank">Recording</a></p></li> -->
+</ul>
+<!-- <p>The password that will be used for all recordings is on the <a href="https://q.utoronto.ca/courses/298689">Quercus</a> homepage.</p> -->
+</div>
+<div id="lecture-2-eda---jan-17" class="section level2">
+<h2>Lecture 2: EDA - Jan 17</h2>
+<ul>
+<li><p><a href="https://drive.google.com/file/d/1KW4k5zg1D-_gqPzFcwKSIKV-swkkKBtX/view?usp=sharing" target="_blank">Slides</a></p></li>
+<!-- <li><p><a href="https://utoronto.zoom.us/rec/share/32k7HmLWR3nKx37lMHTWJSnzIfcIUN866Ig5y9hy1g_4da-8rvA-GQ8Ggqty4ohX.NU88gtXkgrmOMJsF" target="_blank">Recording</a></p></li> -->
+<li><p>EDA Example: Download the drugsComTest_raw.csv file from Kaggle and make a copy of the colab in your own drive to run the code.</p>
+<ul>
+<li><p><a href="https://colab.research.google.com/drive/1z7bCpPXGtWHyLh6kCsbTv5hdfAd8gwRR?usp=sharing" target="_blank">EDA Colab</a></p></li>
+<li><p><a href="https://www.kaggle.com/jessicali9530/kuc-hackathon-winter-2018" target="_blank">Prescription Review Data from Kaggle</a></p></li>
+</ul></li>
+<!-- <li><p><a href="https://drive.google.com/file/d/1i0ychQST504tpkFzGxqF9hU8p_zerU94/view?usp=sharing" target="_blank">Why the (n-1) is the sample variance? (Optional)</a></p></li> -->
+</ul>
+</div>
+<div id="lecture-3-modeling---jan-24" class="section level2">
+<h2>Lecture 3: Modeling - Jan 24</h2>
+<ul>
+<li><p><a href="https://drive.google.com/file/d/1MP-o6jSMZfie2mNJDA20x2oXA6dfSDPU/view?usp=sharing" target="_blank">Slides</a></p></li>
+<!-- <li><p><a href="https://utoronto.zoom.us/rec/share/g72AG4H12lpCTcxl0r3SyfRXWfCnA8p_POBSpjXRXCJBZAlJN4a7Lad2p5TrYGNL.rn6iagrOsyPnj8Dp?startTime=1643044384000" target="_blank">Recording</a></p></li> -->
+<li><p><a href="https://utoronto.zoom.us/rec/share/osKLPSSatks7OkH3p9H7gkT6ZiQATdXOOEvsMoSRRqdsOI7z9IYEutnOAXLfrATJ.X6IKO2-xU_VlLwLg" target="_blank">Guest Lecture Recording </a> (Password: <code>#22Jxn$B&a</code>)</p></li>
+</ul>
+</div>
+<div id="lecture-4-linear-regression---jan-31" class="section level2">
+<h2>Lecture 4: Linear Regression - Jan 31</h2>
+<ul>
+<!-- <li><p><a href="https://drive.google.com/file/d/1LDnCWphKwoNgBjWARHzgFTG0xCXuqz4Q/view?usp=sharing" target="_blank">Slides</a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/IGIxuzWmJrwZ9mV1L-6oTMI3dZf99Nw1WM7wq9lyJ4pABDLg04_2HOeIJ61S-lY4.UvNggpJe2fvvHEPo?startTime=1643649071000" target="_blank">Recording</a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/IGIxuzWmJrwZ9mV1L-6oTMI3dZf99Nw1WM7wq9lyJ4pABDLg04_2HOeIJ61S-lY4.UvNggpJe2fvvHEPo?startTime=1643652178000" target="_blank">Guest Lecture Recording </a></p></li>
+<li><p><a href="https://github.com/jlgrons/JSC270_Lecture4/blob/main/Palmer_Penguins_Regression.ipynb">Colab</a> : Click the <code>Open in Colab</code> button if you want to run it yourself</p></li> -->
+</ul>
+</div>
+<div id="lecture-5-communication---feb-7" class="section level2">
+<h2>Lecture 5: Communication - Feb 7</h2>
+<ul>
+<!-- <li><p><a href="https://drive.google.com/file/d/1AZuV1fIV-j0LVjWs6TdapQAkgyx09M08/view?usp=sharing" target="_blank">Slides</a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/BGGY4deCcK_h3C10xyzOsxQ1Fhw5lDpGbxZZEJJCJZ0AJVF_HZESp3rWtoEGKYZ5.GzUxbKC0aU4RfRWY" target="_blank">Recording</a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/r9TFlXGbeKM5q4vHuG5jiu-HAU75RpKuV0ktuAsfEkT4L6a1XFfSDvTR-oKAXzEs.EtcE1PINCx6PD_0U?startTime=1644353990000" target="_blank">Guest Lecture Recording</a> (Password: <code>4T1nKw#3KM</code>)</p></li> -->
+</ul>
+</div>
+<div id="lecture-6-simulation---feb-14" class="section level2">
+<h2>Lecture 6: Simulation - Feb 14</h2>
+<ul>
+<!-- <li><p><a href="https://drive.google.com/file/d/1pkwbNQbLnfOorVfhEsz5mghIEOBBxaUl/view?usp=sharing">Slides</a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/8YkjMDw2efKlE44j0Bxj8vpC1zSAMHTjUf7Rm1r7W5wMCXTb32zALfMaX3FVQSmk.Hh3ayie1nTcPMz0i?startTime=1644858642000" target="_blank">Recording</a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/8YkjMDw2efKlE44j0Bxj8vpC1zSAMHTjUf7Rm1r7W5wMCXTb32zALfMaX3FVQSmk.Hh3ayie1nTcPMz0i?startTime=1644861769000" target="_blank">Guest Lecture Recording</a></p></li>
+<li><p><a href="https://github.com/jlgrons/JSC270_Lecture6">Colab</a></p></li> -->
+</ul>
+</div>
+<div id="lecture-7-classification---feb-28" class="section level2">
+<h2>Lecture 7: Classification - Feb 28</h2>
+<ul>
+<!-- <li><p><a href="https://drive.google.com/file/d/13nvf1QVEtSyrrB_19O1lsNEaGI0FxkOy/view?usp=sharing">Slides</a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/3pChZSQjfcVRqlTXa4BNjFr8jUh1ngy2MYOa-agMvHRrnLsQwMr_BWZ_SISxB8Jk.Xw4cmtF5IuBqbybl?startTime=1646168723000" target="_blank">Guest Lecture Recording</a> (Password: <code>wip*w@T2Nt</code>)</p></li>
+<li><p><a href=https://drive.google.com/file/d/1SMIu_gNdB5y3i1ST5CBu82iQuCrkY7P9/view?usp=sharing" target="_blank">Guest Lecture Slides</a></p></li> -->
+</ul>
+</div>
+<div id="lecture-8-more-classification---mar-7" class="section level2">
+<h2>Lecture 8: More Classification - Mar 7</h2>
+<ul>
+<!-- <li><p><a href="https://drive.google.com/file/d/1Nm1NPDLwTpFVsGAUoobWxGDbyalKuHOP/view?usp=sharing">Slides</a></p></li>
+<li><p><a href="https://github.com/jlgrons/JSC270_Lecture8" target="_blank">Colab on Bivariate Normal</a> (In case you want to gain familiarity with the distribution.)</p></li>
+<li><p><a href="https://github.com/alistairewj/lecture-intro-to-nlp" target="_blank">Guest Lecture Slides + Repo </a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/ng8f0DFFzVt9wAr6qYQ4raEM5QdwBfczGR6nx0-_-AExhKvmrbzCuEg6E-n-KLhF.0118VJZT5B-SsSbK?startTime=1646676686000">Guest Lecture Recording </a></p></li> -->
+</ul>
+</div>
+<div id="lecture-9-predictive-performance---mar-14" class="section level2">
+<h2>Lecture 9: Predictive Performance - Mar 14</h2>
+<ul>
+<!-- <li><p><a href="https://drive.google.com/file/d/1tMRAFP3tOr5VVKpxD0_VimjH9UMsfy4t/view?usp=sharing">Slides</a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/3h5ircwZcEskGDH5ciPcl38o_vx89gi16ALj8sowMbtgRlWtIt9_aa6eviY5s1-W.p3I5yEKgecMLRfmv?startTime=1647375092000" target="_blank">Guest Lecture Recording</a> (Password: <code>^P+.1dVci=</code>)</p></li> -->
+</ul>
+</div>
+<div id="lecture-10-clustering---mar-21" class="section level2">
+<h2>Lecture 10: Clustering - Mar 21</h2>
+<ul>
+<!-- <li><p><a href="https://drive.google.com/file/d/1FtaFHWxXtwj5nvrkWXj7cKcLKcW5N40S/view?usp=sharing">Slides</a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/U7SPGxEjq9OKn7Phk5-fcBiBg35kZW40DgHiZXh07V2uG5TlVo_cya_JxQ9OVAQs._9VNdics1YIaktfC?startTime=1647979485000" target="_blank">Guest Lecture Recording</a> (Password: <code>y2%LN!2BcN</code>)</p></li> -->
+</ul>
+</div>
+<div id="lecture-11-ds-workflow---mar-28" class="section level2">
+<h2>Lecture 11: DS Workflow - Mar 28</h2>
+<ul>
+<!-- <li><p><a href="https://drive.google.com/file/d/16ZlPYGYaqE2kn0WmB-DifxPz3p9HNMjS/view?usp=sharing">Slides</a></p></li>
+<li><p><a href="https://utoronto.zoom.us/rec/share/Uj5w_cHQEZ2-nrHV0_10XlJyNfrrnWQMeFH4p56TBm1bDmVAsf_BbFij350PovM.HTFwCPZMZIfpGTSU?startTime=1648584100000" target="_blank">Guest Lecture Recording</a> (Password: <code>yDZD*$VC0W</code>)</p></li> -->
+</ul>
+</div>
+<div id="lecture-12-a4-presentations---apr-4" class="section level2">
+<h2>Lecture 12: A4 Presentations - Apr 4</h2>
+<ul>
+<!-- <li><a href="https://utoronto.zoom.us/rec/share/YhUXOW2QPDq1V1PMsEMtsHopzUG3Mx2Jw10YpADFjX5a7ORH4XN7xnSrVmIn_8Xe.-FHxaE8cVu7aL5ml" target="_blank">Guest Lecture Recording</a> (Password: <code>5$qX^rTBG7</code>)</li> -->
+</ul>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

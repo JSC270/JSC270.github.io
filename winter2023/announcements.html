@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Announcements</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">JSC270 Winter 2023</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Course Documents
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="class_docs.html">Classes</a>
+    </li>
+    <li>
+      <a href="tut_docs.html">Laboratories</a>
+    </li>
+    <li>
+      <a href="assign_docs.html">Assignments</a>
+    </li>
+    <li>
+      <a href="assignment_rubrics.html">Rubrics</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="announcements.html">Announcements</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Announcements</h1>
+
+</div>
+
+
+<hr />
+<div id="march-1-2022" class="section level2">
+<h2>March 1, 2022</h2>
+<ul>
+<li><a href="https://carte.utoronto.ca/event/oil-and-water-or-vinaigrette-the-forklift-industry-and-data-science/">CARTE Seminar on Mar 10: “Oil and Water or Vinaigrette? The Forklift Industry and Data Science”</a></li>
+<li><a href="https://carte.utoronto.ca/event/lumos-ml-unilevers-ai-driven-decision-support-systems/">CARTE Seminar on Mar 25: “Lumos ML: Unilever’s AI-driven Decision Support Systems”</a></li>
+</ul>
+</div>
+<div id="january-20-2022" class="section level2">
+<h2>January 20, 2022</h2>
+<ul>
+<li><a href="ashttps://www.eventbrite.ca/e/hi-how-can-i-help-you-intelligent-robots-as-a-part-of-our-everyday-lives-tickets-243954413217">MScAC Seminar on Jan 27: ``Hi, How Can I Help You?: Intelligent Robots as a Part of our Everyday Lives ’’</a></li>
+</ul>
+</div>
+<div id="january-10-2022" class="section level2">
+<h2>January 10, 2022</h2>
+<p>Summer undergraduate data science opportunities:</p>
+<ul>
+<li><a href="https://datasciences.utoronto.ca/suds/">DSI Summer Undergraduate Data Science (SUDS) Research Program</a></li>
+<li><a href="https://tcairem.utoronto.ca/call-student-researchers">T-CAIREM AI in Medicine Summer Student Research Program</a></li>
+</ul>
+</div>
+<div id="december-27-2021" class="section level2">
+<h2>December 27, 2021</h2>
+<p>Data science seminars at the University of Toronto:</p>
+<ul>
+<li><a href="https://canssiontario.utoronto.ca/events/ares/">Data Science Applied Research and Education Seminar</a></li>
+<li><a href="https://canssiontario.utoronto.ca/events/dsssuoft/">Data Science Speaker Series</a></li>
+</ul>
+<!-- </br> -->
+<!-- ### __Content from 2021__ -->
+<!-- ### __Mar 8, 2021__ -->
+<!-- Tomorrow (Tuesday) from 3:10 - 4:30pm, Alp Kucukelbir, a U of Toronto and Columbia alum, now c-founder of an ML-based startup, will be talking about "Industrial ML". -->
+<!-- The talk will be geared towards a non-ML audience, with plenty of time for Q&A. -->
+<!-- Here is the Zoom link: -->
+<!-- https://utoronto.zoom.us/j/89713225921 -->
+<!-- <br> -->
+<!-- Due to technical difficulties, we're using a different Zoom call today: <a href='https://vectorinstitute.zoom.us/j/98405655848?pwd=VENrVDhVQWdqbDgvZS9LamMxTy9BZz09 -->
+<!-- '>Zoom Link</a>  -->
+<!-- <br> -->
+<!-- ### __Feb 23rd, 2021__ -->
+<!-- Although this is late notice, we wanted to let you know that the JSC370 class has another guest lecture: -->
+<!-- __Speaker__: Wanying Zhao, Ontario Trillium Foundation -->
+<!-- __Topic__: Measuring the impact of charitable intervations -->
+<!-- __Date/Time__: Feb 23rd, 2021, 3:10-4:00pm EST -->
+<!-- __Zoom Info__: https://utoronto.zoom.us/j/89713225921 -->
+<!-- Meeting ID: 897 1322 5921 -->
+<!-- We hope to see you there. -->
+<!-- <br> -->
+<!-- ### __Feb 20th, 2021__ -->
+<!-- Join us for the February installment of the Data Science Speaker Series at U of T. -->
+<!-- Speaker: -->
+<!-- Dr. Tom Wright, -->
+<!-- Research Scientist, Kensington Vision Research Centre -->
+<!-- Assistant Professor, Department of Ophthalmology and Vision Science, University of Toronto -->
+<!-- Talk Title: __From mosquitos to flying saucers: Modelling in an imperfect world__ -->
+<!-- Date & Time: Monday, Feb 22, 2021 | 5:15-6:15 pm ET -->
+<!-- Location: Online -->
+<!-- Free Event | All Welcome | [Register Here](https://canssiontario.utoronto.ca/event/dsss_tom-wright/) -->
+<!-- __Abstract:__ -->
+<!-- Modern technologies for measuring the function of the in-vivo visual system produce a wealth of data which is not completely understood. Current analysis techniques are often subjective, relying on interpretation by trained specialists and often rely on information reduction to enable the use of traditional inferential statistics. Using the example of Hydroxychloroquine, a newly (in) famous disease modifying anti-rheumatic drug (DMARD), we will examine the problems and advantages of applying machine learning to the interpretation of medical tests. -->
+<!-- __Profile:__ -->
+<!-- Dr. Wright is an assistant professor in the Department of Ophthalmology and Vision Sciences at the University of Toronto. He established the only visual electrophysiology diagnostic service providing routine adult testing in Southern Ontario. His research interests involve using visual electrophysiology and high resolution retinal imaging to describe the phenotypic effects of disease and other insults on the human visual system. By applying a partial least squares analysis, originally developed for fMRI analysis, to the multifocal Electroretinogram he identified deficits in the retinal function of adolescents with Type 1 diabetes before the onset of clinical retinopathy. His recent work has focused on describing retinal phenotypes of patients with inherited retinal disease. -->
+<!-- </br> -->
+<!-- ### __Feb 19th, 2021__ -->
+<!-- Hello everyone, -->
+<!-- The departments of Statistical Sciences and Computer Science are announcing the following events: -->
+<!-- __Program Exploration Days__ -->
+<!-- February 23, 24 & 25, 2021 -->
+<!-- [Join us on Zoom for Arts & Science Program Exploration Days](https://sidneysmithcommons.artsci.utoronto.ca/program/program-exploration-days/). Connect with faculty, staff and upper-year students to learn about the various academic programs of study available to you, including specialist, majors and minors. You can also hear what students love about their programs! -->
+<!-- __Math, Physical Sciences & Computer Sciences Programs__ -->
+<!-- Tuesday, February 23, 2021 -->
+<!-- 9:00 am – 11:00 am (EST) -->
+<!-- 2:00 pm – 4:00 pm (EST) -->
+<!-- __Life Sciences Programs__ -->
+<!-- Wednesday, February 24, 2021 -->
+<!-- 9:00 am – 11:00 am (EST) -->
+<!-- 2:00 pm – 4:00 pm (EST) -->
+<!-- __Social Sciences, Humanities & Rotman Programs__ -->
+<!-- Thursday, February 25, 2021 -->
+<!-- 9:00 am – 11:00 am (EST)  -->
+<!-- 3:00 pm – 5:00 pm (EST) -->
+<!-- [Register to attend Program Exploration Days](https://sidneysmithcommons.artsci.utoronto.ca/program/program-exploration-days/) to receive your Zoom link. -->
+<!-- Before program enrolment begins on March 1, 2021, take the time to browse the Program Toolkit to: -->
+<!-- - Learn [how to apply](https://sidneysmithcommons.artsci.utoronto.ca/program/apply-for-programs/) for your program -->
+<!-- - See a [complete list of programs](https://sidneysmithcommons.artsci.utoronto.ca/program/list-of-programs/) -->
+<!-- - Explore the new [program showcase](https://sidneysmithcommons.artsci.utoronto.ca/program/program-showcase/) -->
+<!-- - Watch [student videos](https://artsci-programs.capsule.video/) sharing their experience -->
+<!-- </br> -->
+<!-- ### __Feb 8th, 2021__ -->
+<!-- Hello everyone, -->
+<!-- As we approach the half-way point of this class, we'd like to hear your feedback on this course. With this in mind, we've designed a short survey to gather your feedback. Please note that this survey is completely anonymous, and will not impact your grade in this course. -->
+<!-- You can complete the survey by following  <a href="https://forms.gle/wYGYuSaCgNDbQgBv8" target="_blank"> this link </a>. -->
+<!-- </br> -->
+<!-- ### __Feb 2nd, 2021__ -->
+<!-- Sorry for the late notice everyone, -->
+<!-- On __Tuesday, Feb 2nd, from 3:10pm to 4:00pm__, JSC370 will be hosting __Farah Bastien, Manager of Data Science for Maple Leaf Sports and Entertainment__ (who own the Leafs and the raptors), along with a junior data scientist from her team. -->
+<!-- Farah will be talking about her experience with data science in industry, including how she got there, what's valued, what's typically used, what's expected, what's missing, how their analyses get used, etc.  Her team member is also going to walk us through some example analyses using publicly-available data: -->
+<!-- https://github.com/statsbomb/open-data -->
+<!-- Such as player role classification, rewarding narrow misses, and estimating ball speed. -->
+<!-- The zoom link is here: -->
+<!-- https://utoronto.zoom.us/j/89713225921 -->
+<!-- Meeting ID: 897 1322 5921 -->
+<!-- <br> -->
+<!-- ****** -->
+<!-- ### __Jan 18th, 2021__ -->
+<!-- Just a reminder about the guest lecture for JSC370: -->
+<!-- Speaker: __Ben Allison, Principal Machine Learning Scientist at Amazon.__ -->
+<!-- Date & Time: __Tuesday, Jan 19, 2021, 3:10pm - 4:00pm EST__ -->
+<!-- Meeting Link: <a href = "https://utoronto.zoom.us/j/89713225921" target = "_blank">Zoom</a>  -->
+<!-- Meeting ID: 897 1322 5921 -->
+<!-- You're also welcome to stay for the lecture afterwards. -->
+<!-- - Also, slides for Lecture 2 are posted. -->
+<!-- ****** -->
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
