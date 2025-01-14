@@ -1,0 +1,217 @@
+---
+title: "Laboratories Documents"
+output: 
+  html_document:
+   toc: true
+   toc_depth: 3
+   toc_float: true
+   theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+library(tidyverse)
+```
+
+******
+
+Documents from tutorials will be posted on this page.
+
+<br>
+
+# Lab 1: Introduction - Jan 19
+
+* <a href="https://colab.research.google.com/drive/1YQyO7FlVK11sHRpIFzdaty8ZuWqCf2bn?usp=sharing" target="_blank">Code for lab 1 (without exercise solutions)</a>
+
+* <a href="https://colab.research.google.com/drive/1xQL80y4bgtwOrH6SGXRLe6KBewQm7th6?usp=sharing" target="_blank">Code for lab 1 (with exercise solutions)</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/BUTX6N48Ipy2_jXZ5ekhloy9Me6IDKE2X-DrIIksJNODJLdgzdznUW96scaUHHzq.iNyxaWus5_EYQnNE" target="_blank">Recording</a>
+
+The password for the lab recordings is the same as for the lectures.
+
+
+# Lab 2: EDA - Jan 26
+
+* <a href="https://drive.google.com/file/d/16gacBqZuRAEh7CJvKe8d4RM8CARvzQbe/view?usp=sharing" target="_blank">Cars dataset</a>
+
+* <a href="https://colab.research.google.com/drive/1UxCxsdlqs80gST1AapO2mL2vJZca4rlB?usp=sharing" target="_blank">Code for lab 2 (without exercise solutions)</a>
+
+* <a href="https://colab.research.google.com/drive/1495z7o4psw1Zl22e72pL2Y1Tf9eo638P?usp=sharing" target="_blank">Code for lab 2 (with exercise solutions)</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/vEgSQ73fbfbDr5H5ELyoXiWW51pdoGtxpEZyI3YV4HFHk8v0EvYidoc1jHQm8ze4.vdVWq23rY5t9VRQ7?startTime=1643216943000" target="_blank">Recording</a>
+
+
+# Lab 3: GitHub and Linear Regression - Feb 2
+
+* <a href="https://github.com/jlgrons/JSC270_Lab3" target="_blank">GitHub repo for Lab 3</a>
+
+* <a href="https://colab.research.google.com/drive/1PZ9sQyQui8Ngw2uvKyxjzDWdI7ImMc0v?usp=sharing" target="_blank">Code for lab 3 (without exercise solutions)</a>
+
+* <a href="https://drive.google.com/file/d/1LLMOnobfj4hSCD0rSqEKTRV0JZv-4idm/view?usp=sharing" target="_blank">Code for lab 3 (with exercise solutions)</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/1plVkjbJXYHrc90zJG_FMEI0fpEgdGPuu9Ygwaf7SSlU0Wgq8G7BDRInleUZRZNt.JdkHGholgmBAHpf4" target="_blank">Recording</a>
+
+# Lab 4: Introduction to Git Bash - Feb 9
+
+* <a href="https://docs.google.com/presentation/d/1FUkpVRdCFq4gTeT21yI8dRwzyTwqmQf-/edit?usp=sharing&ouid=109675889642089730351&rtpof=true&sd=true" target="_blank">Slides</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/tMWBVf4keIiXUG5FqLmaRpUI0Mw_-pk72YCirmj-K85e4yietf1gjsUSd5G2HvWp.Zjop6azsV-WESp4f" target="_blank">Recording</a>
+
+
+# Lab 5: Simulation - Feb 16
+
+* <a href="https://colab.research.google.com/drive/1BgGut3hG3K-fP021PXywhPrXBnp6ysze?usp=sharing" target="_blank">Code for lab 5 (without exercise solutions)</a>
+
+* <a href="https://colab.research.google.com/drive/1si4FZIlYnztR7C-q7XuqzOIg_pSWH_D8?usp=sharing" target="_blank">Code for lab 5 (with exercise solutions)</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/k2XiEhiBV1KQ18GxC8uGL_HnySbPtEpBPxsD_wv6mCXh6Mws0Mk7o07KOlk9z7l2.Vcd8GlnaR37RrQxB" target="_blank">Recording</a>
+
+
+# Lab 6: Numpy and Scikit-Learn - March 2
+
+* <a href="https://github.com/jlgrons/JSC270_Lab6" target="_blank">GitHub repo for Lab 6</a>
+
+* <a href="https://colab.research.google.com/drive/1bNY0mEUwCRXQtzGHGEldtS1vnbRnC-f-?usp=sharing" target="_blank">Code with solutions (Numpy)</a>
+
+* <a href="https://colab.research.google.com/drive/1GeY3AXTtfbr20bMDVFDAFj9uIPWZVSBd?usp=sharing" target="_blank">Code with solutions (Scikit-Learn)</a>
+
+# Lab 7: NLP intro and Twitter API - March 9
+
+* <a href="https://github.com/jlgrons/JSC270_Lab7" target="_blank">GitHub repo for Lab 7</a>
+
+* <a href="https://colab.research.google.com/drive/1TJYSFV9jAeXYKrDWukiLoJqmbX3VaLtb?usp=sharing" target="_blank">Code with solutions for NLP intro</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/Oi1R1sqzAKIaoQv_5_ClHboOYNUeJ2Zln8rUPxIyGVvPncho-mq2T_s0D4BjKYJN.-DrZk6O3agHpzUOl?startTime=1646845660000" target="_blank">Recording</a>
+
+
+# Lab 8: Predictive Performance - March 16
+
+* <a href="https://github.com/jlgrons/JSC270_Lab8" target="_blank">GitHub repo for Lab 8</a>
+
+* <a href="https://colab.research.google.com/drive/1gJlrWvp8uxlykIki9oNz1IAd7KT44XGW?usp=sharing">Code for lab 8</a>
+
+* <a href="https://colab.research.google.com/drive/1jYd8MU3fPYCKuzTQSmFLkXkJcMXAXgBk?usp=sharing">Code for lab 8 with solutions</a>
+
+* <a href="https://utoronto.zoom.us/rec/share/Gc7BazhTd7sxzmOW98jm19j4LWMxD5RAgWXofgmG71AEzhGjVrBt6xP-7SW6cE_y.1Sp2-N10cXFuCRNw?startTime=1647447621000">Recording</a>
+
+
+# Lab 9: Clustering - March 23
+
+* <a href="https://docs.google.com/presentation/d/18wECwhN9EHl1AIV23-xtKWLOcbONVQxWXnlgq0vX8PE/edit?usp=sharing" target="_blank">Slides (k-means clustering)</a>
+
+* <a href="https://github.com/jlgrons/JSC270_Lab9" target="_blank">GitHub repo for Lab 9</a>
+
+* <a href="https://colab.research.google.com/drive/14pwIf4_WwLEwgySSwrXqDuhG7RcaoNfD?usp=sharing">Code for lab 9</a>
+
+* <a href="https://colab.research.google.com/drive/1RfaIzI7-otBvA1UPe77huQPyWA1iIAoO?usp=sharing" target="_blank">Code for lab 9 with solutions</a>
+
+
+<br>
+
+<!-- # Lab 2 - Jan 20 -->
+
+<!-- Here is the Cars dataset for Tutorial 2: <a href="./datasets/archive.zip">CSV File</a>. -->
+
+<!-- Here is the code: <a href ="https://colab.research.google.com/drive/1SCp5yXNc7rhhDmcLMmsEBPTcB7arMNYw?usp=sharing" target="_blank">Colab Notebook</a> -->
+
+<!-- This is the recording: <a href="https://drive.google.com/file/d/1EH_OREaBRUZTfMzwFF65ZxL1mkrAJ487/view?usp=sharing" target="_blank">MP4 File</a> -->
+
+<!-- <br> -->
+
+<!-- # Lab 3 - Jan 27 -->
+
+<!-- Here are the slides from the first part of the lab: <a href="JSC270.github.io/docs/JSC270-Lab3.pdf" target="_blank">Slides</a> -->
+
+<!-- Here is the code: <a href ="https://colab.research.google.com/drive/1a9ugvVbtnR7Oz1L3yQxJWJ2SawagHb2p?usp=sharing" target="_blank">Colab Notebook</a> -->
+
+<!-- Here is the recording: <a href="https://drive.google.com/file/d/11mOQPW8hSae_sRjfosOZum30XlSW4Xud/view?usp=sharing" target="_blank">MP4 File</a> -->
+
+<!-- <br> -->
+
+<!-- # Lab 4 - Feb 3 -->
+<!-- Here are today's slides on Git and Bash:  <a href="JSC270.github.io/docs/git-bash-slides.pdf" target="_blank">PDF</a> -->
+
+<!-- Here is the recording: <a href="https://drive.google.com/file/d/1wB55_DgI7NkisGPsX379tdUWlA1PhiH3/view?usp=sharing" target="_blank">MP4 File</a> -->
+
+<!-- <br> -->
+
+<!-- # Lab 5 - Feb 10 -->
+
+<!-- Here is the lab notebook on simulation: <a href="https://colab.research.google.com/drive/16MIUuVSw5q2F8QDkzHNU9mu9-IaMX5p7?usp=sharing" target="_blank">Colab Notebook</a> -->
+
+<!-- Here is the recording for part I: <a href="https://drive.google.com/file/d/1Gl_Wsj5R-F707urKtoBpK1Yh1kAK_gsq/view?usp=sharing" target="_blank">MP4 File</a> -->
+
+<!-- Here is the recording for part II: <a href="https://drive.google.com/file/d/1bwhfqcwzkAhU60bxDM7uWvhyZ6CEaxW1/view?usp=sharing" target="_blank">MP4 File</a> -->
+
+<!-- <br> -->
+
+<!-- # Lab 6 - Feb 24 -->
+
+<!-- Here is the notebook for `numpy` (Part I): <a href="https://colab.research.google.com/drive/1tpNMLACA8_8lqwnU13wxSvwmPPjHIxyL?usp=sharing" target="_blank">Colab Notebook</a> -->
+
+<!-- Here is the notebook for `scikit-learn` (Part II): <a href="https://colab.research.google.com/drive/1Jk1_s7qR7IdE2gnqqD2pZ5yO-K7t7voe?usp=sharing" target="_blank">Colab Notebook</a> -->
+
+<!-- Here is the recording: <a href="https://drive.google.com/file/d/1gai970OsKv1FfGv65hqLUkq1RZO7b9Ul/view?usp=sharing" target="_blank">MP4 File</a> -->
+
+<!-- <br> -->
+
+<!-- # Lab 7 - Mar 3rd -->
+
+<!-- Here is a link to the git repo for this lab: <a href="https://github.com/larunerdman/JSC270_Lab7" target="_blank">GitHub</a> -->
+
+<!-- Here is the recording: <a href="https://drive.google.com/file/d/1clctHp933PCeP5VBRUG9-6ggEsBC9FZj/view?usp=sharing" target="_blank">MP4 File</a> -->
+
+<!-- <br> -->
+
+<!-- # Lab 8 - Mar 10th -->
+
+<!-- Here is the NLP notebook (part I): <a href="https://colab.research.google.com/drive/15VzAybbRK2qmXfA3_PFeL22NpGyYNfik?usp=sharing" target="_blank">Colab Notebook</a> -->
+
+<!-- Here is the spam dataset for Part I: <a href="https://drive.google.com/file/d/10vSo6HaJDVqCgti07q87KkpCMYzdJf6v/view?usp=sharing">CSV File</a>. -->
+
+<!-- Here is the notebook on the Twitter API (part II): <a href="https://colab.research.google.com/drive/1zSlUQbrysSnibrumNIPK5Ul7H0aa8oeF?usp=sharing" target="_blank">Colab Notebook</a> -->
+
+<!-- Here is the recording: <a href="https://drive.google.com/file/d/1o8IhwKD6fh6HOWyonLOaWc8twZeUV7d0/view?usp=sharing" target="_blank">MP4 File</a> -->
+
+<!-- # Lab 9 - March 17th -->
+
+<!-- Here is the notebook: <a href="https://colab.research.google.com/drive/1zyXzj2BZujHSs8dhrwzMt3W7wxjuxoHj?usp=sharing" target="_blank">Colab Notebook</a> -->
+
+<!-- Here is the recording: <a href="https://drive.google.com/file/d/1_IGQdtiGbZha2EHVBSS-mC3he3R0BSN6/view?usp=sharing" target="_blank">MP4 File</a> -->
+
+<!-- <br> -->
+
+<!-- # Lab 10 - March 24th -->
+
+<!-- Here is the Bias Assessment notebook: <a href="https://colab.research.google.com/drive/1jA7E8W-A9gRu83B_dvEzoncL2IR1O574?usp=sharing" target="_blank">Colab Notebook</a> -->
+
+<!-- Here is the recording: <a href="https://drive.google.com/file/d/1cA0kFsFvBmLLi1lyZWVrl2LsRhV_JgUg/view?usp=sharing" target="_blank">MP4 File</a> -->
+
+<!-- # Lab 11 - March 31st -->
+
+<!-- Here is the notebook: <a href="https://colab.research.google.com/drive/12USwE_Rtd3eetnA3oiJcWDm3dt1i55lu?usp=sharing">Colab Notebook</a> -->
+
+<!-- Here is the dataset: <a href="https://drive.google.com/file/d/1jNnUP8Q1hqRb-K3mLAADko1AlV2ITHwo/view?usp=sharing">CSV File</a>. -->
+
+<!-- Here is the recording: <a href="https://drive.google.com/file/d/11m9W9aXWqdqPDCWqkB17Gv077fwUsyCX/view?usp=sharing">MP4 File</a> -->
+
+<!-- <br> -->
+
+<!-- # Lab 12 - April 7th -->
+
+<!-- No lab this week. Time is reserved for project presentations. -->
+<!-- <!--- <br -->
+
+<!-- **** -->
+
+<!-- # Tutorial Schedule -->
+
+<!-- The following is a tentative schedule, subject to change slightly. -->
+
+<!-- ```{r, echo=FALSE} -->
+<!-- jsc270_tutsched <- read_csv("tut_sched.csv", col_types = cols(Week = col_character()), na = "null") -->
+<!-- knitr::kable(jsc270_tutsched) -->
+<!-- ``` -->
+
+<!-- This is the section for Tutorial Labs. These labs will be held on Wednesdays, from 12-2pm on Zoom. The link and password can be found on Quercus. The goal of these Labs is to teach students how to implement the theory they learn in lecture. After each lab, the code (and any other relevant files) will be posted below. See the class schedule for a tentative list of the Lab topics.  -->
+<!-- ---> -->

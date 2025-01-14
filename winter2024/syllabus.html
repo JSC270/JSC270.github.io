@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>JSC270H1S: Data Science I</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">JSC270 Winter 2024</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Course Documents
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="class_docs.html">Classes</a>
+    </li>
+    <li>
+      <a href="tut_docs.html">Laboratories</a>
+    </li>
+    <li>
+      <a href="assign_docs.html">Assignments</a>
+    </li>
+    <li>
+      <a href="assignment_rubrics.html">Rubrics</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="announcements.html">Announcements</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">JSC270H1S: Data Science I</h1>
+<h3 class="subtitle">Syllabus</h3>
+<h4 class="date">Winter 2024</h4>
+
+</div>
+
+
+<p><br></p>
+<div id="teaching-team" class="section level2">
+<h2><i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team</h2>
+<ul>
+<li><p><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: <a href="https://sites.google.com/view/jgronsbell/home?authuser=0">Carolina Nobre</a></p></li>
+<li><p><span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistants: </br>        TBD (Stats) </br>        Xuezhi Xie (CS)</p></li>
+
+<!-- <li><p><span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistant: </br>        Liam Welsh (Stats) </br></p></li> -->
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="course-communication" class="section level2">
+<h2><i class="glyphicon glyphicon-comment" aria-hidden="true"></i> Course Communication</h2>
+<ul>
+<li><p><span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the <a href="https://q.utoronto.ca/courses/298689">Piazza discussion board</a> integrated within Quercus, which students can access by logging in with their UTORID. One of the TAs will try to answer promptly. Please see the Course Policies section for more detail.</p></li>
+<li><p><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don’t think your question is appropriate for the class discussion board (e.g. it is not related to course content or logistics), please reach out to the teaching team using the direct message functionality on Quercus. Allow up to 72 business hours for a reply. Regular emails will not be answered.</p></li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="office-hours" class="section level2">
+<h2><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours</h2>
+<ul>
+<li><p>Professor: On demand, email cnobre@cs.toronto.edu to set up a time.</p></li>
+<li>
+   <p> Xuezhi Virtual Office Hour:TBD. <a href="">Zoom link</a> .</p> 
+
+  <!-- <p>(Password: <strong>JSC270OH</strong>)</p> -->
+</li>
+
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="class-times-and-location" class="section level2">
+<h2><i class="glyphicon glyphicon-blackboard" aria-hidden="true"></i> Class Times and Location</h2>
+<p><br></p>
+<div id="lectures" class="section level3">
+<h3><em>Lectures</em></h3>
+<ul>
+<li>Tuesdays, 3-5pm EST</li>
+<li>Room: ES B142</li>
+<li>All lecture slides will be posted to the course website once the lecture is finished.</li>
+</ul>
+<p><br></p>
+</div>
+<div id="laboratory-sessions" class="section level3">
+<h3><em>Laboratory Sessions</em></h3>
+<ul>
+<li>Thursdays, 3-5pm EST</li>
+<li>Room: ES B142</li>
+<li>All code will be posted to the course website once the lab is finished.</li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+</div>
+<div id="course-description" class="section level2">
+<h2><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description</h2>
+<p>Data Science is a relatively new interdisciplinary field that encompasses statistical methods, the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data, and the communication of analysis processes and extracted knowledge. Statistical reasoning, computing with data, and visualization play important roles in this emerging discipline. The purpose of this course is to give you a broad introduction to many of the ways data scientists learn from data, including statistical reasoning, computation and communication. We will use the Python programming language. Tutorial labs will give students hands-on experience in executing and communicating data science problems and solutions.</p>
+<p>Through this course, you will gain experience working on data science projects that involve using data from industry, science, or the humanities to help answer salient questions; interact with data scientists, researchers, or other professionals from academia or industry; learn how to translate data science skills across domains and think critically about data and models of data; develop strong oral and written communication skills and the ability to work in multidisciplinary teams.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="learning-objectives" class="section level2">
+<h2><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives</h2>
+<p>By the end of this course, you should be able to:</p>
+<ul>
+<li><p>Apply and evaluate statistical methods to develop solutions to questions based on real data.</p></li>
+<li><p>Become proficient in state-of-the-art software packages for handling data.</p></li>
+<li><p>Write computer programs to wrangle and analyse data.</p></li>
+<li><p>Understand ethical issues related to data analysis and software development.</p></li>
+<li><p>Identify and answer questions that involve applying statistical methods or machine learning algorithms to complex data.</p></li>
+<li><p>Work in a team to solve data science problems.</p></li>
+<li><p>Present the results and limitations of a data analysis at appropriate technical levels for the intended audience.</p></li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="evaluation" class="section level2">
+<h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation</h2>
+<p>Students will be evaluated according to <a href="https://governingcouncil.utoronto.ca/secretariat/policies/grading-practices-policy-university-assessment-and-january-26-2012">University Assessment and Grading Practices Policy</a>. The table below shows the weight of each assessment.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Assessment</th>
+<th align="left">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Assignment 1</td>
+<td align="left">10%</td>
+</tr>
+<tr class="even">
+<td align="left">Assignment 2</td>
+<td align="left">15%</td>
+</tr>
+<tr class="odd">
+<td align="left">Assignment 3</td>
+<td align="left">20%</td>
+</tr>
+<tr class="even">
+<td align="left">Assignment 4</td>
+<td align="left">20%</td>
+</tr>
+<tr class="odd">
+<td align="left">Perusall Papers (4)</td>
+<td align="left">12%</td>
+</tr>
+<tr class="even">
+<td align="left">Reflections Quizzes (4)</td>
+<td align="left">12%</td>
+</tr>
+<tr class="odd">
+<td align="left">Final Presentation</td>
+<td align="left">11%</td>
+</tr>
+<tr class="even">
+<td align="left">Ethics Module Surveys</td>
+<td align="left">1%</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<hr />
+</div>
+<div id="course-websites" class="section level2">
+<h2><span class="fas fa-globe" aria-hidden="true"></span> Course Websites</h2>
+<ul>
+<li><p>Class slides, notes, and other important information can be found on the <a href="https://jsc270.github.io/">course website.</a></p></li>
+<li><p>Questions and Answers can be posted on the <a href="https://piazza.com/class/lr5bh8a713f56c">Piazza discussion board</a>.</p></li>
+<li><p><a href="https://piazza.com/utoronto.ca/winter2024/jsc270"> Link to sign up to the class on Piazza for the first time</a></p></li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="computing" class="section level2">
+<h2><i class="fas fa-code" aria-hidden="true"></i> Computing</h2>
+<p>The course will use <a href="https://www.python.org/">Python 3</a> for computing.</p>
+<p>Assignments and Labs will use <a href="https://colab.research.google.com/notebooks/intro.ipynb">Google Colab</a>, an interactive coding environment that is completely self-contained.</p>
+<p>A similar system called Jupyter is available on <a href="https://www.teach.cs.toronto.edu" class="uri">https://www.teach.cs.toronto.edu</a>.</p>
+<p><a href="https://jupyter.teach.cs.toronto.edu/hub/login">Click here for direct access to Jupyter</a> on teach.cs.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="perusall" class="section level2">
+<h2><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> Perusall</h2>
+<p>Perusall is an online tool that allows students to read and annotate course content. To get access to Perusall, please use the following link:</p>
+<p>Perusall: <a href="https://app.perusall.com/home" class="uri">https://app.perusall.com/home</a></p>
+<p>You will need to sign up for a free account. Once your account is confirmed, you can enroll in this class using the course code: <code>NOBRE-8CPJ6</code>.</p>
+<p>Throughout the semester several foundational papers will be posted for students to read and analyze.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="reflection-quizzes" class="section level2">
+<h2><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> Reflection Quizzes</h2>
+<p>These are short answer quizzes designed to test your understanding of the material, and to make you think critically about concepts learned in lecture.</p>
+<p>These quizzes will be held throughout the course and will be completed and submitted in <a href="(https://q.utoronto.ca/courses/298689)">Quercus</a>, under the <code>Assignments</code> tab. These assignments are to be completed individually.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="course-policies" class="section level2">
+<h2><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policies</h2>
+<p><br></p>
+<div id="missed_work" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Work Policy</h3>
+<p>Valid reasons for missing an assessment include: illness, injury, or other relevant personal issues. Any of the following types of documentation will be accepted to verify a student’s reason for missing an assessment:</p>
+<ul>
+<li><p><a href="http://www.illnessverification.utoronto.ca/index.php">University of Toronto Verification of Student Illness or Injury form</a>. The form must indicate that the degree of incapacitation on academic functioning is moderate, serious, or severe in order to be considered a valid medical reason for missing.</p></li>
+<li><p>Student Health or Disability Related Certificate.</p></li>
+<li><p>A College Registrar’s Letter.</p></li>
+<li><p>Accessibility Services Letter.</p></li>
+</ul>
+<p>If an assignment due date is missed for a valid reason then your assignment will not be subject to a late penalty.</p>
+<p>Other reasons for missing an assignment due date, without documentation, will require prior approval by your instructor. If prior approval is not received and an assessment is not submitted on time then your assessment will be subject to a late penalty (see <a href="#late_penalty">Late Penalty</a>).</p>
+<p><br></p>
+<!-- ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>  Missed Oral Presentation -->
+<!-- If an oral presentation is missed for a valid reason (see [Missed Work Policy](#missed_work)) then you may be given another opportunity to give your oral presentation (even if you were part of a group) provided that class or lab time is available, otherwise you will be required to submit a video of your presentation within one week of the presentation date. If an oral presentation is missed and you do not contact the professor with a reason, then a late penalty (see [Late Penalty](#late_penalty)) will be applied, and you will be required to submit a video of your oral presentation within one week of the missed due date. -->
+<!-- <br> -->
+<!-- ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Due Date for Written Report -->
+<!-- If a written report due date is missed for a valid reason (see [Missed Work Policy](#missed_work)) then you will be required to submit the written report within one week of the missed due date. If a due date is missed and no reason is given then a late penalty (see [Late Penalty](#late_penalty)) will be applied. -->
+<!-- <br> -->
+<!-- ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Lab or Class -->
+<!-- If a lab or class is missed for a valid reason (see [Missed Work Policy](#missed_work)) then the the weight of the in-lab component will be shifted to the subsequent lab components. If a lab or class is missed and no reason is given then you will recieve a grade of zero. -->
+<!-- <br> -->
+</div>
+<div id="late_penalty" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Late Penalty</h3>
+<p>The late penalty for a missed due date is 20% per day (i.e., 24 hours). For example, if the work is submitted after 5 days (including weekend days and holidays) then you will receive a grade of zero for the missed work.</p>
+<p><br></p>
+</div>
+<div id="marking-concerns" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Marking Concerns</h3>
+<p>Any requests to have your work remarked must contain a written justification for consideration. Remarking requests should be made within one week of receiving your marked work. Re-evaluation appeals are at the discretion of the instructors. Note that adjustments in marks will be rare and could equally result in a lowering or raising of the mark. If a re-revaluation is completed by the instructors, the student must accept the resulting mark as the new mark, whether it goes up or down or remains the same. When appealing a re-evaluation decision, the student accepts this condition.</p>
+<p><br></p>
+<!-- ### <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Getting Help -->
+<!-- This term you will have the option to use the Quercus discussion board for class discussion. If you decide not to use the discussion board it will not disadvantage you in any way, and will not affect official University outcomes (e.g., grades and learning opportunities). If you choose not to opt-into the discussion board then you can ask questions or discuss course material with the instructor or TAs during office hours. -->
+<!-- Be sure to read [Discourse's Privacy Policy](https://www.discourse.org/privacy) and [Terms of Use](https://meta.discourse.org/tos) carefully. Take time to understand and be comfortable with what they say. They provide for substantial sharing and disclosure of your personal information held by Discourse, which affects your privacy. If you decide to participate in Discourse, only provide content that you are comfortable sharing under the terms of the Privacy Policy and Terms of Use. -->
+<!-- You can also visit your instructor or the teaching assistants during their office hours. -->
+</div>
+<div id="communicating" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Communicating with the teaching team</h3>
+<p>Questions about course material or organization, such as,</p>
+<ul>
+<li>Is it appropriate to use this statistical method?</li>
+<li>How do I get rid of this error message?</li>
+<li>What is the due date?</li>
+</ul>
+<p>should be posted on the Quercus discussion board.</p>
+<p>If your communication is private, such as, “I missed the test because I was ill”, then contact your instructor.</p>
+<p>Always use the direct messaging functionality on <a href="https://q.utoronto.ca/">Quercus</a> to ensure that your message reaches out the instructor and/or TA’s. Allow up to 72 business hours for a reply. Regular emails will not be answered.</p>
+<p><br></p>
+</div>
+<div id="academic-integrity" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Academic Integrity</h3>
+<p>You are responsible for knowing the content of the <a href="http://www.governingcouncil.utoronto.ca/policies/behaveac.htm">University of Toronto’s Code of Behaviour on Academic Matters</a>.</p>
+<p>As a general rule, we encourage you to discuss course material with each other and ask others for advice. However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in. When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class. For example, “For question 2.1 what pandas function did you use?” is a fair question; “Please show me your code for question 2.1” is not.</p>
+<p>If you have any questions about what is or is not permitted in this course, please do not hesitate to contact <a href="https://q.utoronto.ca/">the professor and/or teaching assistants via Quercus</a>.</p>
+<p><br></p>
+</div>
+<div id="accessibility-needs" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs</h3>
+<p>Students with diverse learning styles and needs are welcome in this course. If you have an acute or ongoing disability issue or accommodation need, you should register with Accessibility Services (AS) at the beginning of the academic year by visiting <a href="http://www.studentlife.utoronto.ca/as/new-registration">http://www.studentlife.utoronto.ca/as/new-registration</a>. Without registration, you will not be able to verify your situation with your instructors, and instructors will not be advised about your accommodation needs. AS will assess your situation, develop an accommodation plan with you, and support you in requesting accommodation for your course work. Remember that the process of accommodation is private: AS will not share details of your needs or condition with any instructor, and your instructors will not reveal that you are registered with AS</p>
+<p><br></p>
+</div>
+<div id="religious-accomodations" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Religious Accomodations</h3>
+<p>As a student at the University of Toronto, you are part of a diverse community that welcomes and includes students and faculty from a wide range of cultural and religious traditions. For my part, I will make every reasonable effort to avoid scheduling tests, examinations, or other compulsory activities on religious holy days not captured by statutory holidays. Further to University Policy, if you anticipate being absent from class or missing a major course activity (such as a test or in-class assignment) due to a religious observance, please let me know as early in the course as possible, and with sufficient notice (at least two to three weeks), so that we can work together to make alternate arrangements.</p>
+<p><br></p>
+</div>
+<div id="specific-medical-circumstances" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Specific Medical Circumstances</h3>
+<p>If you become ill and it affects your ability to do your academic work, consult me right away. Normally, I will ask you for medical documentation in support of your specific medical circumstances. The University’s Verification of Student Illness or Injury (VOI) form is recommended because it indicates the impact and severity of the illness, while protecting your privacy about the details of the nature of the illness. You can submit a different form (like a letter from a doctor), as long as it is an original document, and it contains the same information as the VOI. For more information, please see <a href="http://www.illnessverification.utoronto.ca">http://www.illnessverification.utoronto.ca</a> If you get a concussion, break your hand, or suffer some other acute injury, you should register with Accessibility Services as soon as possible.</p>
+<p><br></p>
+</div>
+<div id="accommodation-for-personal-reasons" class="section level3">
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accommodation for Personal Reasons</h3>
+<p>There may be times when you are unable to complete course work on time due to non-medical reasons. If you have concerns, speak to me or to an advisor in your College Registrar’s office; they can help you to decide if you want to request an extension or accommodation. They may be able to provide you with a College Registrar’s letter of support to give to your instructors, and importantly, connect you with other resources on campus for help with your situation.</p>
+<p><br></p>
+<hr />
+</div>
+</div>
+<div id="acknowledgements" class="section level2">
+<h2><i class="fas fa-user-plus" aria-hidden="true"></i> Acknowledgements</h2>
+<p>The following people have contributed to the design of the course materials and website: Prof. Fanny Chevalier (2019-2020), Prof. Nathan Taback (2019), Nicole Sultanum (2019), Prof. Anna Goldenberg (2021), Lauren Erdman (2021), Matthew Edwards (2021). <br></p>
+<hr />
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

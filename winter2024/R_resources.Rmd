@@ -1,0 +1,113 @@
+---
+title: "R Resources for JSC270"
+output: 
+  html_document:
+    theme: yeti
+    css: custom.css
+---
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+There are lots of free resources available for learning R.  This page contains some excellent resources, but we certainly can't list all the excellent resources available.
+
+<br>
+
+*****
+
+# Running R 
+
+<a href= "https://www.r-project.org"><i class="fab fa-r-project fa-1x"></i></a> is a software environment for statistical computing and graphics that can be freely downloaded at [CRAN](https://cran.r-project.org).
+
+[RStudio](https://www.rstudio.com) is a popular integrated development environment for <i class="fab fa-r-project fa-1x"></i> that we will be using throughout the course.
+
+There are two ways that students can run R using RStudio:
+
+1. Create an account on [RStudio Cloud](https://rstudio.cloud).
+
+2. Install RStudio on your computer.  A desktop version is available to [download](https://www.rstudio.com/products/rstudio/#Desktop) on to your personal computer for free. 
+
+<br>
+
+<div class="yourturn">
+<i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+<strong> Test your setup! </strong><br><br>
+
+1. Create a new project in RStudio (desktop or cloud version), and create a new R script file
+2. Type and run the following code:
+```    
+    print("Hello World!")
+    n <- c(1,2,3,4)       
+    n
+```
+3. Install the `car` package:
+```  
+    install.packages("car")
+    library("car")
+```
+
+4. One of the data sets in the package, called `Prestige`, contains data on the prestige and other characteristics of 102 Canadian occupations around 1970. Find out what's in the data set by looking at its help page `(?Prestige)`
+
+5. Copy and execute the code [Descriptive analysis and visualization in R using Prestige dataset in the car package](https://rstudio-pubs-static.s3.amazonaws.com/291237_ccac14a9e129479c8d07e1dcfac5a697.html) to familiarize yourself with the language and the R Studio environment.
+
+</div>
+
+<br>
+
+*****
+
+# Getting Started with R
+
+- If you have never programmed before then [Hands-On Programming with R, by Garrett Grolemund](https://d1b10bmlvqabco.cloudfront.net/attach/ighbo26t3ua52t/igp9099yy4v10/igz7vp4w5su9/OReilly_HandsOn_Programming_with_R_2014.pdf) is a great place to start.
+- [R for Data Science, by Hadley Wickham and Garrett Grolemund](http://r4ds.had.co.nz) is a wonderful resource. 
+- [Datacamp](https://www.datacamp.com) offers a free online [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r).
+
+<br>
+
+*****
+
+# R Style Guide
+
+> Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread. Just as with punctuation, while there are many code styles to choose from, some are more reader-friendly than others. _Hadley Wickham, [Tidyverse Style Guide](http://style.tidyverse.org/index.html)._
+
+When you write code, especially when it will be read by other people (e.g., your TA), refer to the [Tidyverse Style Guide](http://style.tidyverse.org/index.html) for best practices.  
+
+<br>
+
+*****
+
+# R Markdown 
+
+[R Markdown](http://rmarkdown.rstudio.com) documents can be used to create documents that weave together code and text.  
+
+An R Markdown Cheat Sheet downloaded from [RStudio](https://www.rstudio.com/resources/cheatsheets/) is available [here](rmarkdown-2.0.pdf).
+
+A guide to producing R Markdown documents for class assignments is available [here](Rmarkdownforclassreports.html).  This guide also includes a short introduction to $\LaTeX$ for including math in R Markdown.
+
+<br>
+
+<p class="yourturn">
+<i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+<strong> Test your setup! </strong><br><br>
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</p>
+
+<br>
+
+*****
+
+# Getting Help with R
+
+Students can always ask a member of the teaching staff for help during office hours, tutorial, or on the class [discussion forum](https://piazza.com/utoronto.ca/winter2018/sta130h1/home).
+
+[stackoverflow](https://stackoverflow.com) is a popular forum for posting and answering questions related to programming.  Questions tagged R can be found [here](https://stackoverflow.com/questions/tagged/r) and questions tagged RStudio can be found [here](https://stackoverflow.com/questions/tagged/rstudio).
+
+<br>
+
+*****
+
+R Markdown source for this page  <a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/R_resources.Rmd">
+<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+</a>
+
